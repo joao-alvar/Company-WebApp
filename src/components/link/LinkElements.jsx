@@ -1,6 +1,6 @@
-import styled, {css} from 'styled-components'
+import Link from 'next/link'
 
-import {NavLink as Link} from 'react-router-dom'
+import styled from 'styled-components'
 
 export const LinkStyled = styled.div`
   text-decoration: none;

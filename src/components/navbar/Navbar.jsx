@@ -1,4 +1,7 @@
-import React, {useState, useEffect} from 'react'
+import {useState} from 'react'
+
+import NavigationLink from '../link/Link'
+import MobileMenu from '../mobile/menu/MobileMenu'
 import {
   Header,
   Nav,
@@ -8,47 +11,23 @@ import {
   LogoContainer,
   LogoImg,
 } from './NavbarElements'
-import logo from '../../assets/images/Atalaso_logo.png'
-import NavigationLink from '../link/Link'
-import MobileMenu from '../mobile/MobileMenu'
-import {useInView} from 'react-intersection-observer'
-import useScrollDirection from '../hooks'
-import './styles.scss'
+
+import logo from '/public/images/Atalaso_logo.png'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
-  const isHidden = useScrollDirection()
-
-  const header = document.querySelector('header')
-  const section = document.querySelector('#solutions')
-
-  const sectionOptions = {
-    threShold: 0,
-    rootMargin: '0px 0px -230px 0px',
-  }
-
-  function sectionObserver() {
-    new IntersectionObserver(function (entries, sectionObserver) {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-          header.classList.remove('active')
-        } else {
-          header.classList.add('active')
-        }
-      })
-    }, sectionOptions)
-    sectionObserver.observe(section)
-  }
-
-  console.log(useScrollDirection)
   return (
     <>
-      <Header className={
-            `header ${isHidden ? "header-hide" : "header-show"}`
-        }>
+      <Header>
         <Nav>
-          <LogoContainer to="/">
-            <LogoImg src={logo} alt="Atalaso logo" />
+          <LogoContainer href="/">
+            <LogoImg
+              src={logo}
+              alt="Atalaso logo"
+              // objectFit="cover"
+              // quality="100"
+              // priority
+            />
           </LogoContainer>
           <NavLinks
             role="navigation"
@@ -57,35 +36,31 @@ const Navbar = () => {
           >
             <NavigationLink
               type="router"
-              routerTo="/"
+              href="/"
               title="Home"
               className="do_not_display"
             />
             <NavigationLink
-              type="scroll"
-              scrollTo="/#solutions"
+              type="router"
+              href="/#solutions"
               title="Solutions"
             />
             <NavigationLink
               type="router"
-              routerTo="/web-development"
+              href="/web-development"
               title="Web development"
               className="active_link"
             />
-            <NavigationLink
-              type="scroll"
-              scrollTo="/#branding"
-              title="Branding"
-            />
+            <NavigationLink type="router" href="/#branding" title="Branding" />
             <NavigationLink
               type="router"
-              routerTo="/about-us"
+              href="/about"
               title="Who we Are"
               className="active_link"
             />
           </NavLinks>
           <NavBtn>
-            <NavBtnLink to="/contact-us">Contact Us</NavBtnLink>
+            <NavBtnLink href="/contact-us">Contact Us</NavBtnLink>
           </NavBtn>
           <MobileMenu
             onClick={() => {

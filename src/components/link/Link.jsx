@@ -1,16 +1,10 @@
-import React, {Children, useState} from 'react'
-import {LinkStyled, NavigationLink} from './LinkElements'
-import {bool, element, func, string} from 'prop-types'
-import {NavHashLink} from 'react-router-hash-link'
+import React, {useState} from 'react'
 
-const Link = ({
-  type,
-  scrollTo,
-  routerTo,
-  style,
-  className,
-  title,
-}) => {
+import {LinkStyled, NavigationLink} from './LinkElements'
+
+// import {bool, element, func, string} from 'prop-types'
+
+const Link = ({type, scrollTo, href, style, className, title}) => {
   function remove_hash_from_url() {
     // Function to hide #elements in url hashNavLink
     setTimeout(() => {
@@ -30,14 +24,18 @@ const Link = ({
         switch (type) {
           case 'router':
             return (
-              <NavigationLink to={routerTo} style={style} className={className}>
+              <NavigationLink
+                href={href}
+                onClick={remove_hash_from_url}
+                style={style}
+                className={className}
+              >
                 {title}
               </NavigationLink>
             )
           case 'scroll':
             return (
               <NavigationLink
-                as={NavHashLink}
                 onClick={remove_hash_from_url}
                 to={scrollTo}
                 style={style}

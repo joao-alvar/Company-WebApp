@@ -1,3 +1,7 @@
+import React, {Fragment, Suspense} from 'react'
+
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/navbar/Navbar'
 import {ThemeProvider} from 'styled-components'
 
 import '../styles/fonts.css'
@@ -9,7 +13,11 @@ const App = ({Component, pageProps}) => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <Component {...pageProps} />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </Suspense>
       </ThemeProvider>
     </>
   )

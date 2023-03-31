@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import theme from '../../styles/Theme'
-import {NavLink as Link} from 'react-router-dom'
+import styled from 'styled-components'
 
 export const Header = styled.header`
   position: sticky;
@@ -118,8 +118,7 @@ export const LogoContainer = styled(Link)`
   }
 `
 
-export const LogoImg = styled.img`
-  height: fit-content;
+export const LogoImg = styled(Image)`
   text-indent: -9999px;
   margin-bottom: 0.5rem;
 `
