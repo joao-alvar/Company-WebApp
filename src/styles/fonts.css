@@ -1,0 +1,197 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-200.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-200.woff')
+    format('woff');
+}
+
+/* titillium-web-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-300.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-300.woff')
+    format('woff');
+}
+
+/* titillium-web-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-regular.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-regular.woff')
+    format('woff');
+}
+
+/* titillium-web-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-600.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-600.woff')
+    format('woff');
+}
+
+/* titillium-web-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-700.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-700.woff')
+    format('woff');
+}
+
+/* titillium-web-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'titillium';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-900.ttf')
+    format('truetype');
+  src: url('../assets/fonts/titillium/titillium-web-v15-latin-900.woff')
+    format('woff');
+}
+
+/* overpass-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 200;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-200.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-200.woff')
+    format('woff');
+}
+/* overpass-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-300.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-300.woff')
+    format('woff');
+}
+/* overpass-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-regular.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-regular.woff')
+    format('woff');
+}
+/* overpass-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-500.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-500.woff')
+    format('woff');
+}
+/* overpass-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-600.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-600.woff')
+    format('woff');
+}
+/* overpass-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-700.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-700.woff')
+    format('woff');
+}
+/* overpass-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-800.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-800.woff')
+    format('woff');
+}
+/* overpass-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/overpass/overpass-v12-latin-900.ttf')
+    format('truetype');
+  src: url('../assets/fonts/overpass/overpass-v12-latin-900.woff')
+    format('woff');
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/inter/inter-v12-latin-regular.ttf')
+    format('truetype');
+  src: url('../assets/fonts/inter/inter-v12-latin-regular.woff') format('woff');
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/inter/inter-v12-latin-600.ttf') format('truetype');
+  src: url('../assets/fonts/inter/inter-v12-latin-600.woff') format('woff');
+}
+/* inter-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/fonts/inter/inter-v12-latin-800.ttf') format('truetype');
+  src: url('../assets/fonts/inter/inter-v12-latin-800.woff') format('woff');
+}
+/* inter-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  src: url('../assets/fonts/inter/inter-v12-latin-900.ttf') format('truetype');
+  src: url('../assets/fonts/inter/inter-v12-latin-900.woff') format('woff');
+}

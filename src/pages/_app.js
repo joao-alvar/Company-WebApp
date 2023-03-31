@@ -1,5 +1,18 @@
-import '@/styles/globals.css'
+import {ThemeProvider} from 'styled-components'
 
-export default function App({Component, pageProps}) {
-  return <Component {...pageProps} />
+import '../styles/fonts.css'
+import {GlobalStyles} from '../styles/Global'
+import {theme} from '../styles/Theme'
+
+const App = ({Component, pageProps}) => {
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  )
 }
+
+export default App
