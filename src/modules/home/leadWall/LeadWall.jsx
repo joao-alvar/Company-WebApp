@@ -1,8 +1,12 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 import {Section} from '../hero/HeroElements'
-import {LeadContainer, LeadContentText, LeadImageWrap} from './LeadWallElements'
+import {
+  LeadContainer,
+  LeadContentText,
+  LeadImageWrap,
+  LeadImage,
+} from './LeadWallElements'
 
 import ImageGallery from '/public/images/Gallery_2.jpg'
 
@@ -12,9 +16,10 @@ const LeadWall = () => {
       <Section>
         <LeadContainer>
           <LeadImageWrap>
-            <Image
+            <LeadImage
               src={ImageGallery}
-              alt="Women with painted face"
+              alt="Art gallery full of people"
+              object-fit="cover"
               placeholder="blur"
             />
           </LeadImageWrap>
