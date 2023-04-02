@@ -1,5 +1,3 @@
-import React, {useState} from 'react'
-
 import {LinkStyled, NavigationLink} from './LinkElements'
 
 // import {bool, element, func, string} from 'prop-types'

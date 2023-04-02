@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 import styled from 'styled-components'
 
 export const LeadContainer = styled.div`
@@ -55,4 +57,9 @@ export const LeadImageWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+`
+export const LeadImage = styled(Image)`
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 `

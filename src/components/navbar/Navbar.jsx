@@ -1,4 +1,5 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import {useInView} from 'react-intersection-observer'
 
 import NavigationLink from '../link/Link'
 import MobileMenu from '../mobile/menu/MobileMenu'
@@ -13,21 +14,49 @@ import {
 } from './NavbarElements'
 
 import logo from '/public/images/Atalaso_logo.png'
+import {element} from 'prop-types'
 
 const Navbar = () => {
+  const [scrollDirection, setScrollDirection] = useState(0)
+  // const [ref, inView] = useInView({
+  //   threshold: 0,
+  // })
+  // function scrollMotherfucker() {
+  //   useEffect(() => {
+  //     const handleScroll = () => {
+  //       const currentScrollPosition = window.pageYOffset
+  //       if (currentScrollPosition > lastScrollPosition) {
+  //         setScrollDirection('down')
+  //       } else {
+  //         setScrollDirection('up')
+  //       }
+
+  //       lastScrollPosition = currentScrollPosition
+  //     }
+
+  //     let lastScrollPosition = window.pageYOffset
+
+  //     window.addEventListener('scroll', handleScroll)
+  //   }, [])
+  // }
+
+  useEffect(() => {
+    const element = window.scrollY
+
+    if (element > 0)
+      return () => {
+        console.log('true')
+      }
+  }, [])
+  console.log(element)
+
   const [isOpen, setOpen] = useState(false)
   return (
     <>
       <Header>
         <Nav>
           <LogoContainer href="/">
-            <LogoImg
-              src={logo}
-              alt="Atalaso logo"
-              // objectFit="cover"
-              // quality="100"
-              // priority
-            />
+            <LogoImg src={logo} alt="Atalaso logo" quality="100" priority />
           </LogoContainer>
           <NavLinks
             role="navigation"
@@ -58,6 +87,8 @@ const Navbar = () => {
               title="Who we Are"
               className="active_link"
             />
+            {/* {inView && <h1>Hello World!</h1>}
+            {scrollDirection === 'down' && <p>Scrolling down!</p>} */}
           </NavLinks>
           <NavBtn>
             <NavBtnLink href="/contact-us">Contact Us</NavBtnLink>
