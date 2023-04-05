@@ -25,7 +25,12 @@ const AboutModules = () => {
         <AboutContainer>
           <MemoirWrap>
             <MemoirContentLeft>
-              <Image src={Bg} alt="Maze Illustration" draggable={false} />
+              <Image
+                src={Bg}
+                alt="Maze Illustration"
+                placeholder="blur"
+                draggable={false}
+              />
             </MemoirContentLeft>
             <MemoirContentRight unselectable="on">
               <h1>Who we are</h1>
@@ -72,6 +77,7 @@ const AboutModules = () => {
             <Image
               src={AboutIllustration}
               alt="Statue illustration"
+              placeholder="blur"
               draggable={false}
             />
             <p>

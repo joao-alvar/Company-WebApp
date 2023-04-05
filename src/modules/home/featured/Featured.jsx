@@ -29,7 +29,11 @@ const Featured = () => {
         <FeaturedWrap>
           <FeaturedContentLeft>
             <ContentLeftWrap>
-              <Image src={featuredImage} alt="Board meeting" />
+              <Image
+                src={featuredImage}
+                alt="Board meeting"
+                placeholder="blur"
+              />
             </ContentLeftWrap>
           </FeaturedContentLeft>
           <FeaturedContentRight>

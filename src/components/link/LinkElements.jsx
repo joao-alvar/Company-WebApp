@@ -10,7 +10,7 @@ export const NavigationLink = styled(Link)`
   position: relative;
   color: ${({theme}) => theme.colors.text};
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   padding-top: 0.7em;
   cursor: pointer;
 `

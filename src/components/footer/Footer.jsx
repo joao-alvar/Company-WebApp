@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <FooterSection id='footer'>
+    <FooterSection id="footer">
       <h1 style={{color: 'green', textAlign: 'center', marginTop: '-50px'}}>
         Hello
       </h1>

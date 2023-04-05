@@ -16,8 +16,8 @@ export const LeadCardContainer = styled.div`
   flex-shrink: 0;
   flex-direction: column;
   width: 100%;
-  height: 58rem;
-  margin-bottom: 10em;
+  height: 70rem;
+  margin: 2em 0 4em;
   line-height: initial;
 
   h2 {

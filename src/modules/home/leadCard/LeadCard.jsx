@@ -19,7 +19,7 @@ const LeadCard = () => {
         <h2>Scale your business with amazing design and great architecture</h2>
         <LeadCardList>
           <li>
-            <Image src={Card_1} alt="Meeting" />
+            <Image src={Card_1} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
               <h2>Amazing design</h2>
               <p> business with amazing design and great architecture</p>
@@ -29,7 +29,7 @@ const LeadCard = () => {
             </LeadCardContent>
           </li>
           <li>
-            <Image src={Card_2} alt="Meeting" />
+            <Image src={Card_2} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
               <h2>Amazing design</h2>
               <p> business with amazing design and great architecture</p>
@@ -39,7 +39,7 @@ const LeadCard = () => {
             </LeadCardContent>
           </li>
           <li>
-            <Image src={Card_3} alt="Meeting" />
+            <Image src={Card_3} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
               <h2>Amazing design</h2>
               <p> business with amazing design and great architecture</p>

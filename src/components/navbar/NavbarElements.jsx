@@ -5,7 +5,6 @@ import styled from 'styled-components'
 
 export const Header = styled.header`
   position: sticky;
-  /* display: block; */
   height: 10.5rem;
   width: 100%;
   top: 0;
@@ -29,13 +28,15 @@ export const Nav = styled.nav`
   background: ${({theme}) => theme.colors.white};
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   justify-content: space-between;
-  padding: 3.5rem;
+  padding: 2.5rem 6em;
 `
 
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-left: auto;
+  margin-right: 4em;
   font-weight: 600;
 
   @media screen and (min-width: ${({theme}) => theme.size.md}) {
@@ -92,12 +93,6 @@ export const NavLinks = styled.div`
     }
   }
 
-  .do_not_display {
-    @media screen and (min-width: ${({theme}) => theme.size.md}) {
-      display: none;
-    }
-  }
-
   .active_link {
     &.active {
       color: ${({theme}) => theme.colors.primary};
@@ -107,10 +102,9 @@ export const NavLinks = styled.div`
 
 export const LogoContainer = styled(Link)`
   display: flex;
-  width: 14em;
   align-items: center;
   justify-content: center;
-  margin-left: -2.2em;
+  margin-left: -1.2em;
   z-index: 11;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -141,7 +135,7 @@ export const NavBtnLink = styled(Link)`
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 700;
   &:hover,
   &.active {
