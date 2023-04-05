@@ -32,7 +32,6 @@ body,
 __#next {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
   line-height: 1.30769231;
   scroll-behavior: smooth;
 }

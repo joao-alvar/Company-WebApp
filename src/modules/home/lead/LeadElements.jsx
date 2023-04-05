@@ -10,12 +10,12 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50em;
-  margin: 6em 0 4em;
+  height: 45em;
+  /* margin: 6em 0 4em; */
 `
 
 export const LeadInformation = styled.div`
-  height: 85%;
+  height: 100%;
   width: 90%;
   display: flex;
   align-items: center;

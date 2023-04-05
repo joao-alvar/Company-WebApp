@@ -25,11 +25,23 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+`
+
+export const TypeContainer = styled.div`
+  height: 6em;
+  width: auto;
 
   .typedText {
     font-family: 'Inter';
     font-size: 4em;
   }
+`
+
+export const HeroText = styled.h1`
+  font-size: 2em;
+  margin-bottom: 0.41em;
 `
 
 export const ArrowIcon = styled(AiOutlineArrowRight)`
