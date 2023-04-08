@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 import {TypeAnimation} from 'react-type-animation'
 
@@ -7,6 +8,9 @@ import {
   Content,
   TypeContainer,
   HeroText,
+  ButtonContainer,
+  HeroBtn,
+  ArrowIconWrap,
 } from './HeroElements'
 
 const Hero = () => {
@@ -14,6 +18,9 @@ const Hero = () => {
     <>
       <Section>
         <Container>
+          <video autoPlay loop muted>
+            <source src="./videos/heroVideo.mp4" type="video/mp4" />
+          </video>
           <Content>
             <TypeContainer>
               <TypeAnimation
@@ -33,17 +40,20 @@ const Hero = () => {
               />
             </TypeContainer>
             <HeroText>
-              Our platform offers a range of tools and services to help you
-              streamline your operations, reach new customers, and ultimately
-              increase your bottom line
+              We offer a range of services to help you streamline your
+              operations, reach new customers, and ultimately increase your
+              bottom line
             </HeroText>
-            <p>
-              out or looking to take your business to the next level, we have
-              the resources you need to succeed. to make that possible. Whether
-              you&apos;re a small startup or a large enterprise, we have the
-              tools and resources you need to scale your business and achieve
-              your goals. So why wait?
-            </p>
+            <ButtonContainer>
+              <Link href="/">
+                <HeroBtn>Learn more</HeroBtn>
+              </Link>
+              <ArrowIconWrap>
+                <span className="m_scroll_arrows one" />
+                <span className="m_scroll_arrows two" />
+                <span className="m_scroll_arrows three" />
+              </ArrowIconWrap>
+            </ButtonContainer>
           </Content>
         </Container>
       </Section>
