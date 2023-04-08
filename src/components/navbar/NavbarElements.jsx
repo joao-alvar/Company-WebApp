@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 export const Header = styled.header`
   position: sticky;
+  display: none;
   height: 10.5rem;
   width: 100%;
   top: 0;

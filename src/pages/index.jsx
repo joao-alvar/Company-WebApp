@@ -5,11 +5,15 @@ const Featured = React.lazy(() => import('@/modules/home/featured/Featured'))
 
 const Hero = React.lazy(() => import('@/modules/home/hero/Hero'))
 
+const LeadGrid = React.lazy(() => import('@/modules/home/leadGrid/LeadGrid'))
+
 const Lead = React.lazy(() => import('@/modules/home/lead/Lead'))
 
 const LeadWall = React.lazy(() => import('@/modules/home/leadWall/LeadWall'))
 
 const LeadCard = React.lazy(() => import('@/modules/home/leadCard/LeadCard'))
+
+const LeadList = React.lazy(() => import('@/modules/home/leadList/LeadList'))
 
 const LeadFeature = React.lazy(() =>
   import('@/modules/home/LeadFeature/LeadFeature')
@@ -31,9 +35,11 @@ export default function Home() {
       <main>
         <div>
           <Hero />
+          <LeadGrid />
           <Lead />
           <LeadCard />
           <LeadWall />
+          <LeadList />
           <Featured />
           <LeadFeature />
           <LeadContact />

@@ -23,30 +23,25 @@ export const LeadInformation = styled.div`
   text-align: center;
   flex-direction: column;
   font-family: 'Inter';
-  color: ${({theme}) => theme.colors.primaryTextColor};
-  border-top: 2px solid ${({theme}) => theme.colors.primaryTextColor};
+  /* color: ${({theme}) => theme.colors.primaryTextColor}; */
+  /* border-top: 2px solid ${({theme}) => theme.colors.primaryTextColor}; */
   border-bottom: 2px solid ${({theme}) => theme.colors.primaryTextColor};
 
   h2 {
-    font-weight: 900;
-    font-size: 2.5em;
-    text-transform: uppercase;
-    padding-top: 0.9em;
-  }
-
-  h3 {
+    font-family: Inter;
     font-weight: 600;
-    font-size: 1.5em;
-    padding: 2em;
-    color: ${({theme}) => theme.colors.secondaryTextColor};
+    font-size: 3.6em;
+    padding: 0.9em 2em 0 2em;
   }
 
   button {
-    padding: 0.8em 1em 0.5em 1em;
-    text-transform: uppercase;
-    font-size: 1.7em;
+    padding: 8px 12px;
+    font-size: 1.4em;
+    border-radius: 6px;
     font-weight: 600;
-    border: 2px solid ${({theme}) => theme.colors.primaryTextColor};
+    color: ${({theme}) => theme.colors.white};
+    background: ${({theme}) => theme.colors.black};
+    margin-top: 3em;
     &:hover {
       color: ${({theme}) => theme.colors.white};
       background: ${({theme}) => theme.colors.primaryTextColor};

@@ -8,13 +8,9 @@ const Lead = () => {
       <LeadSection id="lead">
         <Container>
           <LeadInformation>
-            <h2>Lorem ipsum, dolor sit amet</h2>
-            <h3>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. At odit
-              culpa molestias pariatur esse itaque soluta quaerat eligendi Lorem
-              ipsum, dolor sit amet consectetur adipisicing elit. At odit culpa
-              molestias pariatur esse itaque soluta quaerat eligendi
-            </h3>
+            <h2>
+              Join 28+ million people who already trust us with their money
+            </h2>
             <Link href="/">
               <button>Get Started</button>
             </Link>

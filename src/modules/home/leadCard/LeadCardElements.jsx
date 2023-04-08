@@ -17,11 +17,11 @@ export const LeadCardContainer = styled.div`
   flex-direction: column;
   width: 100%;
   height: 70rem;
-  margin: 2em 0 4em;
+  margin: 3em 0 5em;
   line-height: initial;
 
   h2 {
-    font-size: 1.9em;
+    font-size: 2.2em;
     font-weight: 400;
     color: ${({theme}) => theme.colors.black};
   }
