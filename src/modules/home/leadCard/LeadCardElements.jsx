@@ -48,6 +48,7 @@ export const LeadCardList = styled.ul`
     max-height: 450px;
     transition: 0.4s ease-in-out;
     overflow: hidden;
+    cursor: pointer;
     box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.4);
     background: black;
 

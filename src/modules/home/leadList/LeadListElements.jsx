@@ -50,6 +50,12 @@ export const ListContent = styled.div`
     background: #fff;
   }
 
+  img {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    pointer-events: none
+  }
+
   .text_container {
     margin: 1.8em 0 0;
   }

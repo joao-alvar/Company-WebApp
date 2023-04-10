@@ -1,3 +1,5 @@
+import {IoIosArrowDown} from 'react-icons/io'
+
 import styled from 'styled-components'
 
 export const Section = styled.section`
@@ -8,72 +10,77 @@ export const Section = styled.section`
 `
 
 export const Container = styled.div`
+  background: #f5f5f5;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 55rem;
+  height: 57rem;
   line-height: initial;
-
-  video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    filter: brightness(40%);
-    z-index: -1;
-  }
 `
 
-export const Content = styled.div`
-  width: 80%;
-  height: 80%;
+export const ContentLeft = styled.div`
+  width: 60%;
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0 6em;
+  flex-direction: column;
+  color: ${({theme}) => theme.colors.black};
+`
+
+export const ContentRight = styled.div`
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  color: ${({theme}) => theme.colors.white};
-  gap: 2em;
-  text-shadow: 0.07em 0 black, 0 0.07em black, -0.07em 0 black, 0 -0.07em black;
-`
+  width: 40%;
+  height: 100%;
 
-export const TypeContainer = styled.div`
-  height: 5em;
-  width: auto;
-
-  .typedText {
-    font-family: 'Inter';
-    font-size: 4em;
+  .image_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  img {
+    background-position: center;
+    object-fit: cover;
+    margin-bottom: 5em;
   }
 `
 
-export const HeroText = styled.h1`
+export const Title = styled.h1`
+  font-size: 2em;
+  font-family: 'Inter';
+  font-weight: 600;
+  margin: 0 0 1.2em;
+`
+
+export const HeroText = styled.h2`
   font-family: 'Overpass';
-  font-size: 1.6em;
-  font-weight: 200;
-  padding: 0 4em;
-  margin-bottom: 0.41em;
+  font-size: 1.4em;
+  font-weight: 600;
+  /* padding: 0 4em; */
+  margin: 0 0 2.41em;
 `
 
 export const ButtonContainer = styled.div`
   display: flex;
-  align-items: center;
+  /* gap: 2em; */
+  /* align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
-  gap: 2em;
+  position: relative; */
 `
 
 export const HeroBtn = styled.button`
   background: transparent;
-  border: 2px solid ${({theme}) => theme.colors.white};
-  color: ${({theme}) => theme.colors.white};
-  text-transform: uppercase;
+  color: ${({theme}) => theme.colors.black};
+  border: 2px solid ${({theme}) => theme.colors.black};
   font-family: Inter;
   font-size: 1.2em;
   border-radius: 4px;
@@ -81,10 +88,21 @@ export const HeroBtn = styled.button`
   font-weight: 500;
 
   &:hover {
-    background: ${({theme}) => theme.colors.white};
-    color: ${({theme}) => theme.colors.black};
+    background: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.white};
     transition: all 0.2s ease-in-out;
-    font-weight: 700;
+  }
+`
+
+export const HeroBtnRight = styled.button`
+  color: ${({theme}) => theme.colors.black};
+  font-family: 'Overpass';
+  margin-left: 1em;
+  font-size: 1.3em;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
   }
 `
 
@@ -94,114 +112,67 @@ export const HeroBtn = styled.button`
 
 export const ArrowIconWrap = styled.div`
   position: absolute;
-  top: 3.2em;
-  display: none;
-  ${ButtonContainer}:hover & {
-    display: block;
-    transition: all 0.2s ease-in-out;
-  }
+  bottom: 1.2em;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+`
 
-  .m_scroll_arrows {
-    display: block;
-    width: 5px;
-    height: 5px;
-    -ms-transform: rotate(45deg); /* IE 9 */
-    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
-    transform: rotate(45deg);
+export const ArrowDown = styled(IoIosArrowDown)`
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  color: ${({theme}) => theme.colors.black};
+  font-size: 2.2em;
+  -webkit-animation: jump 1s infinite;
+  -moz-animation: jump 1s infinite;
+  animation: jump 1s infinite;
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
 
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-    margin: 0 0 3px 4px;
-
-    width: 16px;
-    height: 16px;
-  }
-
-  .one {
-    margin-top: 1px;
-  }
-
-  .one,
-  .two,
-  .three {
-    -webkit-animation: mouse-scroll 1s infinite;
-    -moz-animation: mouse-scroll 1s infinite;
-    animation: mouse-scroll 1s infinite;
-  }
-
-  .one {
-    -webkit-animation-delay: 0.1s;
-    -moz-animation-delay: 0.1s;
-    -webkit-animation-direction: alternate;
-
-    animation-direction: alternate;
-    animation-delay: alternate;
-  }
-
-  .two {
-    -webkit-animation-delay: 0.2s;
-    -moz-animation-delay: 0.2s;
-    -webkit-animation-direction: alternate;
-
-    animation-delay: 0.2s;
-    animation-direction: alternate;
-
-    margin-top: -6px;
-  }
-
-  .three {
-    -webkit-animation-delay: 0.3s;
-    -moz-animation-delay: 0.3s;
-    -webkit-animation-direction: alternate;
-
-    animation-delay: 0.3s;
-    animation-direction: alternate;
-
-    margin-top: -6px;
-  }
-
-  @-webkit-keyframes mouse-scroll {
+  animation-direction: alternate;
+  animation-delay: alternate;
+  @-webkit-keyframes jump {
     0% {
-      opacity: 0;
+      top: 0;
     }
     50% {
-      opacity: 0.5;
+      top: 50px;
     }
     100% {
-      opacity: 1;
+      top: 0;
     }
   }
-  @-moz-keyframes mouse-scroll {
+  @-moz-keyframes jump {
     0% {
-      opacity: 0;
+      top: 0;
     }
     50% {
-      opacity: 0.5;
+      top: 50px;
     }
     100% {
-      opacity: 1;
+      top: 0;
     }
   }
-  @-o-keyframes mouse-scroll {
+  @-o-keyframes jump {
     0% {
-      opacity: 0;
+      top: 0;
     }
     50% {
-      opacity: 0.5;
+      top: 50px;
     }
     100% {
-      opacity: 1;
+      top: 0;
     }
   }
-  @keyframes mouse-scroll {
+  @keyframes jump {
     0% {
-      opacity: 0;
+      top: 0;
     }
     50% {
-      opacity: 0.5;
+      top: 5px;
     }
     100% {
-      opacity: 1;
+      top: 11px;
     }
   }
 `
