@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import CountUp from 'react-countup'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {BsPercent} from 'react-icons/bs'
@@ -63,6 +64,20 @@ export const GridContainer = styled.div`
   gap: 1.5em;
 `
 
+export const LinkGrid = styled(Link)`
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  &:hover .grid_1_span {
+    background-color: #0000003d;
+  }
+  &:hover .grid_2_span {
+    background-color: #fffefe2f;
+  }
+`
+
 export const GridTop = styled.div`
   height: 15em;
   padding: 20px;
@@ -72,14 +87,6 @@ export const GridTop = styled.div`
   align-items: center;
   position: relative;
   background-color: #faf0e6;
-
-  a {
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
 
   .grid_1_container {
     width: 50%;
@@ -98,9 +105,6 @@ export const GridTop = styled.div`
     bottom: 1em;
     border-radius: 18px;
     padding: 6px 8px;
-    &:hover {
-      background-color: #0000003d;
-    }
   }
 
   .grid_1_gif {

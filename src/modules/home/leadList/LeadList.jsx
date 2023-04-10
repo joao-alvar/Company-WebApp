@@ -24,7 +24,7 @@ const LeadList = () => {
 
   console.log(isShown)
   return (
-    <Section>
+    <Section name="solutions" id="solutions">
       <Container>
         <TitleContainer>
           <h2>Send, spend and save smarter</h2>

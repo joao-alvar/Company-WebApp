@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import {SlGlobe} from 'react-icons/sl'
 
 import styled from 'styled-components'
 
 export const Header = styled.header`
   position: sticky;
-  display: none;
   height: 10.5rem;
   width: 100%;
   top: 0;
@@ -27,17 +27,35 @@ export const Nav = styled.nav`
   width: 100%;
   height: 100%;
   background: ${({theme}) => theme.colors.white};
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   justify-content: space-between;
-  padding: 2.5rem 6em;
+  /* padding: 2.5rem 6em; */
+  padding: 0 1em;
+`
+
+export const LogoContainer = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-left: -1.2em; */
+  z-index: 11;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    margin-left: -3.2em;
+  }
+`
+
+export const LogoImg = styled(Image)`
+  text-indent: -9999px;
+  margin-bottom: 0.5rem;
 `
 
 export const NavLinks = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-left: auto;
-  margin-right: 4em;
+  /* margin-left: auto;
+  margin-right: 4em; */
   font-weight: 600;
 
   @media screen and (min-width: ${({theme}) => theme.size.md}) {
@@ -101,23 +119,6 @@ export const NavLinks = styled.div`
   }
 `
 
-export const LogoContainer = styled(Link)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: -1.2em;
-  z-index: 11;
-
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    margin-left: -3.2em;
-  }
-`
-
-export const LogoImg = styled(Image)`
-  text-indent: -9999px;
-  margin-bottom: 0.5rem;
-`
-
 export const NavBtn = styled.button`
   display: flex;
   align-items: center;
@@ -143,4 +144,24 @@ export const NavBtnLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     background: ${({theme}) => theme.colors.text};
   }
+`
+
+export const OtherLinks = styled.div`
+  /* margin-left: auto;  */
+  /* margin-right: 1em; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  gap: 2em;
+
+  a {
+    font-size: 1.4em;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+  }
+`
+
+export const GlobalIcon = styled(SlGlobe)`
+  font-size: 1.8em;
 `

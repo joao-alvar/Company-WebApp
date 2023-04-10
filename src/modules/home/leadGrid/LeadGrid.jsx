@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import {
   Container,
@@ -10,6 +9,7 @@ import {
   ArrowIcon,
   GridBottomWrap,
   GridLeft,
+  LinkGrid,
   GridRight,
   PercentageIcon,
   Count,
@@ -20,7 +20,7 @@ import GraphicGifBg from 'public/images/Graphic_illustration.gif'
 
 const LeadGrid = () => {
   return (
-    <GridSection>
+    <GridSection id="section-1">
       <Container>
         <TitleContainer>
           <p>Everyday essentials</p>
@@ -31,7 +31,7 @@ const LeadGrid = () => {
         </TitleContainer>
         <GridContainer>
           <GridTop>
-            <Link href="/">
+            <LinkGrid href="/">
               <div className="grid_1_container">
                 <h3 className="grid_1_content_h3">
                   Pay and get paid, hassle-free
@@ -48,11 +48,11 @@ const LeadGrid = () => {
               <div className="grid_1_gif">
                 <Image src={GirlGifBg} />
               </div>
-            </Link>
+            </LinkGrid>
           </GridTop>
           <GridBottomWrap>
             <GridLeft>
-              <Link href="/">
+              <LinkGrid href="/">
                 <div className="grid_2_container">
                   <h3 className="grid_2_content_h3">
                     Earn interest on your savings and watch your money grow
@@ -70,10 +70,10 @@ const LeadGrid = () => {
                     width="500"
                   />
                 </div>
-              </Link>
+              </LinkGrid>
             </GridLeft>
             <GridRight>
-              <Link href="/">
+              <LinkGrid href="/">
                 <div className="grid_2_container">
                   <h3 className="grid_3_content_h3">
                     Earn interest on your savings and watch your money grow
@@ -87,7 +87,7 @@ const LeadGrid = () => {
                   <Count start={0} end={70} duration={5} />
                   <PercentageIcon />
                 </div>
-              </Link>
+              </LinkGrid>
             </GridRight>
           </GridBottomWrap>
         </GridContainer>

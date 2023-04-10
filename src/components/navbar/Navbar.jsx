@@ -21,7 +21,7 @@ const Navbar = () => {
       <Header>
         <Nav>
           <LogoContainer href="/">
-            <LogoImg src={logo} alt="Atalaso logo" quality="100" priority />
+            <LogoImg src={logo} alt="Atalaso logo" height="94" width="128" quality="100" priority />
           </LogoContainer>
           <NavLinks
             role="navigation"
@@ -48,7 +48,7 @@ const Navbar = () => {
             />
           </NavLinks>
           <NavBtn>
-            <NavBtnLink href="/contact-us">Contact Us</NavBtnLink>
+            <NavBtnLink href="/contact">Contact Us</NavBtnLink>
           </NavBtn>
           <MobileMenu
             onClick={() => {

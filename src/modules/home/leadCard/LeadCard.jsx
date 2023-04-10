@@ -14,7 +14,7 @@ import Card_3 from '/public/images/Card_3.jpg'
 
 const LeadCard = () => {
   return (
-    <LeadCardSection name="solutions" id="solutions">
+    <LeadCardSection>
       <LeadCardContainer>
         <h2>Scale your business with amazing design and great architecture</h2>
         <LeadCardList>

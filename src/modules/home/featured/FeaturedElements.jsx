@@ -66,6 +66,7 @@ export const ContentLeftWrap = styled.div`
 
   img {
     height: 100%;
+    border-radius: 8px;
   }
 `
 
