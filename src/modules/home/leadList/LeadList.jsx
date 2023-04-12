@@ -7,24 +7,16 @@ import {Container, ListContainer, ListContent} from './LeadListElements'
 
 import Advertising from 'public/images/Advertising.jpg'
 import Creativity from 'public/images/Creativity.jpg'
-import Optimazation from 'public/images/Optimazation.jpg'
+import Optimization from 'public/images/Optimization.jpg'
 import Search from 'public/images/Search.jpg'
 import Seo from 'public/images/Seo.jpg'
 import WebDevelopment from 'public/images/WebDevelopment.jpg'
 
 const LeadList = () => {
-  const [isShown, setIsShown] = useState(0)
+  const [isShow, setIsShow] = useState(0)
 
-  //   const handleClick = (event) => {
-  //  toggle shown state
-  // setIsShown((current) => !current)
-  //  or simply set it to true
-  // setIsShown(true)
-  //   }
-
-  console.log(isShown)
   return (
-    <Section name="solutions" id="solutions">
+    <Section name="Overview" id="overview">
       <Container>
         <TitleContainer>
           <h2>Send, spend and save smarter</h2>
@@ -35,44 +27,44 @@ const LeadList = () => {
         <ListContainer>
           <ul>
             <li
-              onClick={() => setIsShown(0)}
-              className={isShown == 0 ? 'active' : null}
+              onClick={() => setIsShow(0)}
+              className={isShow == 0 ? 'active' : null}
             >
-              Advertasing
+              Advertising
             </li>
             <li
-              onClick={() => setIsShown(1)}
-              className={isShown == 1 ? 'active' : null}
+              onClick={() => setIsShow(1)}
+              className={isShow == 1 ? 'active' : null}
             >
               Web Development
             </li>
             <li
-              onClick={() => setIsShown(2)}
-              className={isShown == 2 ? 'active' : null}
+              onClick={() => setIsShow(2)}
+              className={isShow == 2 ? 'active' : null}
             >
               Paid Search
             </li>
             <li
-              onClick={() => setIsShown(3)}
-              className={isShown == 3 ? 'active' : null}
+              onClick={() => setIsShow(3)}
+              className={isShow == 3 ? 'active' : null}
             >
               SEO
             </li>
             <li
-              onClick={() => setIsShown(4)}
-              className={isShown == 4 ? 'active' : null}
+              onClick={() => setIsShow(4)}
+              className={isShow == 4 ? 'active' : null}
             >
               Creative Solutions
             </li>
             <li
-              onClick={() => setIsShown(5)}
-              className={isShown == 5 ? 'active' : null}
+              onClick={() => setIsShow(5)}
+              className={isShow == 5 ? 'active' : null}
             >
-              Website optimazation and Accesibility
+              Website optimization and Accessibility
             </li>
           </ul>
           <ListContent>
-            {isShown == 0 && (
+            {isShow == 0 && (
               <div>
                 <div className="image_container">
                   <Image
@@ -93,7 +85,7 @@ const LeadList = () => {
               </div>
             )}
 
-            {isShown == 1 && (
+            {isShow == 1 && (
               <div>
                 <div className="image_container">
                   <Image
@@ -114,7 +106,7 @@ const LeadList = () => {
                 </div>
               </div>
             )}
-            {isShown == 2 && (
+            {isShow == 2 && (
               <div>
                 <div className="image_container">
                   <Image
@@ -135,7 +127,7 @@ const LeadList = () => {
                 </div>
               </div>
             )}
-            {isShown == 3 && (
+            {isShow == 3 && (
               <div>
                 <div className="image_container">
                   <Image
@@ -156,7 +148,7 @@ const LeadList = () => {
                 </div>
               </div>
             )}
-            {isShown == 4 && (
+            {isShow == 4 && (
               <div>
                 <div className="image_container">
                   <Image
@@ -177,11 +169,11 @@ const LeadList = () => {
                 </div>
               </div>
             )}
-            {isShown == 5 && (
+            {isShow == 5 && (
               <div>
                 <div className="image_container">
                   <Image
-                    src={Optimazation}
+                    src={Optimization}
                     alt="Computer and design"
                     placeholder="bluer"
                     height="400"
