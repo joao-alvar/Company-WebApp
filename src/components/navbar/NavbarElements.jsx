@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 import {SlGlobe} from 'react-icons/sl'
 
 import styled from 'styled-components'
@@ -85,36 +86,99 @@ export const NavLinks = styled.div`
     }
   }
 
-  a {
-    @media screen and (min-width: ${({theme}) => theme.size.md}) {
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0%;
-        bottom: -8px;
-        height: 2px;
-        background-color: ${({theme}) => theme.colors.text};
-        transition: 0.2s ease-out;
-      }
-      :hover::after {
-        left: 0;
-        width: 100%;
-      }
-    }
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      display: block;
-      height: 100%;
-      width: 100%;
-      padding: 1em;
-      padding-left: 1.4em;
-    }
-  }
-
   .active_link {
     &.active {
       color: ${({theme}) => theme.colors.primary};
+    }
+  }
+`
+
+export const NavigationLink = styled(Link)`
+  position: relative;
+  color: ${({theme}) => theme.colors.text};
+  text-decoration: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  @media screen and (min-width: ${({theme}) => theme.size.md}) {
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0%;
+      bottom: -8px;
+      height: 2px;
+      background-color: ${({theme}) => theme.colors.text};
+      transition: 0.2s ease-out;
+    }
+    :hover::after {
+      left: 0;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+    padding-left: 1.4em;
+  }
+`
+
+export const LinkTitle = styled.span`
+  position: relative;
+  display: flex;
+
+  .drop {
+    visibility: visible;
+    transform: translateY(2.6em);
+    transition: visibility 0.4s, opacity 0.4s ease,
+      transform 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
+  }
+`
+
+export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
+  position: absolute;
+  font-size: 1.8em;
+  top: 1px;
+  right: -1em;
+  transition: 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
+  transform: ${({show}) => (show ? 'rotate(179deg)' : '')};
+`
+
+export const DropdownMenu = styled.ul`
+  position: absolute;
+  padding: 0.5rem 0;
+  border: 1px solid #ebeaeb;
+  border-radius: 8px;
+  margin-left: -3px;
+  z-index: 9;
+  width: 17em;
+  min-width: unset;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  transform: translateY(0.5em);
+
+  li {
+    padding: 0.2em;
+    font-size: 1.3em;
+  }
+
+  a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    font-weight: 600;
+    color: #1d1d1d;
+    width: 100%;
+    padding: 0 1rem;
+    height: 30px;
+    margin: auto;
+    &:hover {
+      background: ${({theme}) => theme.colors.primary};
+      color: #fff;
     }
   }
 `
