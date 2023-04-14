@@ -22,10 +22,8 @@ import featuredImage from '/public/images/Results.jpg'
 
 const Featured = () => {
   return (
-    <FeaturedSection id="branding">
+    <FeaturedSection>
       <FeaturedContainer>
-        {/* <h2>Choose Atalaso’s expertise</h2>
-        <p>Three reasons to become a customer:</p> */}
         <FeaturedWrap>
           <FeaturedContentLeft>
             <ContentLeftWrap>

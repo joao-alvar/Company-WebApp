@@ -14,10 +14,6 @@ export const Header = styled.header`
   user-select: none;
   transition: transform 150ms ease-in-out;
   z-index: 9999;
-
-  .nav-bar--hidden {
-    transform: translateY(-100%);
-  }
 `
 
 export const Nav = styled.nav`
@@ -86,10 +82,8 @@ export const NavLinks = styled.div`
     }
   }
 
-  .active_link {
-    &.active {
-      color: ${({theme}) => theme.colors.primary};
-    }
+  .active {
+    color: ${({theme}) => theme.colors.primary};
   }
 `
 
@@ -138,12 +132,8 @@ export const LinkTitle = styled.span`
 `
 
 export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
-  position: absolute;
   font-size: 1.8em;
-  top: 1px;
-  right: -1em;
-  transition: 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
-  transform: ${({show}) => (show ? 'rotate(179deg)' : '')};
+  transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
 `
 
 export const DropdownMenu = styled.ul`
@@ -159,7 +149,7 @@ export const DropdownMenu = styled.ul`
   background-color: #fff;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
   visibility: hidden;
-  transform: translateY(0.5em);
+  transform: translateY(1em);
 
   li {
     padding: 0.2em;
@@ -177,8 +167,8 @@ export const DropdownMenu = styled.ul`
     height: 30px;
     margin: auto;
     &:hover {
-      background: ${({theme}) => theme.colors.primary};
-      color: #fff;
+      color: ${({theme}) => theme.colors.primary};
+      /* text-decoration: underline; */
     }
   }
 `

@@ -51,17 +51,26 @@ export const LeadCardList = styled.ul`
     cursor: pointer;
     box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.4);
     background: black;
+    &:hover img {
+      -ms-transform: scale(1.05); /* IE 9 */
+      -webkit-transform: scale(1.05); /* Safari 3-8 */
+      transform: scale(1.05);
+    }
 
     img {
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
+      max-width: 100%;
       background-position: center;
       background-size: cover;
       z-index: 1;
       border-radius: 12px;
       filter: brightness(50%);
+      -moz-transition: all 0.7s;
+      -webkit-transition: all 0.7s;
+      transition: all 0.7s;
     }
   }
 `
