@@ -1,10 +1,9 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import {HeroBtn, Section} from '@/modules/home/hero/HeroElements'
 
-import {Container, Content, HeroLink} from './HeroElements'
+import {Container, ImgContainer, Content, HeroLink} from './HeroElements'
 
 import DevelopmentBg from 'public/images/DevelopmentHero.jpeg'
 
@@ -12,7 +11,6 @@ const Hero = () => {
   return (
     <Section>
       <Container>
-        <Image src={DevelopmentBg} />
         <Content>
           <p className="pre_title">Development</p>
           <h1>
@@ -28,6 +26,9 @@ const Hero = () => {
             <HeroBtn>Get started</HeroBtn>
           </HeroLink>
         </Content>
+        <ImgContainer>
+          <Image src={DevelopmentBg} alt="Laptop illustration" />
+        </ImgContainer>
       </Container>
     </Section>
   )

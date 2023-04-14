@@ -9,19 +9,24 @@ export const Container = styled.div`
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 57rem;
+  height: 54rem;
   line-height: initial;
+`
 
+export const ImgContainer = styled.div`
+  width: 55%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
-    position: absolute;
     top: 0;
     right: 0;
-    width: 55%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     background-position: center;
     z-index: -1;
-    /* filter: grayscale(30%); */
   }
 `
 
@@ -32,7 +37,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-right: auto;
+  /* margin-right: auto; */
   padding: 2em;
   background: #ffffff;
   color: ${({theme}) => theme.colors.black};
@@ -63,6 +68,6 @@ export const Content = styled.div`
   }
 `
 export const HeroLink = styled(Link)`
-  margin-top: 1em;
+  margin-top: 2em;
   margin-right: auto;
 `

@@ -41,6 +41,7 @@ export const LeadContentText = styled.div`
     font-size: 1.2em;
     font-weight: 700;
     padding: 0.8em 1em 0.4em 1em;
+    transition: all 0.3s;
     margin-top: 0.8em;
     margin-left: 1.9em;
     text-transform: uppercase;
