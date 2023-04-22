@@ -33,18 +33,18 @@ export const LeadInformation = styled.div`
     font-size: 3.6em;
     padding: 0.9em 2em 0 2em;
   }
+`
 
-  button {
-    padding: 8px 12px;
-    font-size: 1.4em;
-    border-radius: 6px;
-    font-weight: 600;
+export const Button = styled.button`
+  padding: 8px 12px;
+  font-size: 1.4em;
+  border-radius: 6px;
+  font-weight: 600;
+  color: ${({theme}) => theme.colors.white};
+  background: ${({theme}) => theme.colors.black};
+  margin-top: 3em;
+  &:hover {
     color: ${({theme}) => theme.colors.white};
-    background: ${({theme}) => theme.colors.black};
-    margin-top: 3em;
-    &:hover {
-      color: ${({theme}) => theme.colors.white};
-      background: ${({theme}) => theme.colors.primaryTextColor};
-    }
+    background: ${({theme}) => theme.colors.primaryTextColor};
   }
 `

@@ -1,6 +1,26 @@
 import Head from 'next/head'
 import React from 'react'
 
+const AdsLead = React.lazy(() =>
+  import('@/modules/advertising/adsLead/AdsLead')
+)
+
+const AdsWall = React.lazy(() =>
+  import('@/modules/advertising/adsWall/AdsWall')
+)
+
+const AdsFeatures = React.lazy(() =>
+  import('@/modules/advertising/adsFeatures/AdsFeatures')
+)
+
+const AdsList = React.lazy(() =>
+  import('@/modules/advertising/adsList/AdsList')
+)
+
+const AdsBenefits = React.lazy(() =>
+  import('@/modules/advertising/adsBenefits/AdsBenefits')
+)
+
 const advertising = () => {
   return (
     <>
@@ -10,7 +30,13 @@ const advertising = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>Advertising</main>
+      <main>
+        <AdsBenefits />
+        <AdsLead />
+        <AdsFeatures />
+        <AdsWall />
+        <AdsList />
+      </main>
     </>
   )
 }
