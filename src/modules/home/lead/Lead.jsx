@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import {Container, LeadInformation, LeadSection} from './LeadElements'
+import {Button, Container, LeadInformation, LeadSection} from './LeadElements'
 
 const Lead = () => {
   return (
@@ -12,7 +12,7 @@ const Lead = () => {
               Join 28+ million people who already trust us with their money
             </h2>
             <Link href="/">
-              <button>Get Started</button>
+              <Button>Get Started</Button>
             </Link>
           </LeadInformation>
         </Container>
