@@ -36,6 +36,11 @@ __#next {
   scroll-behavior: smooth;
 }
 
+main {
+  overflow-x: hidden;
+  min-width: 312px;
+}
+
 h1,
 h2,
 h3,

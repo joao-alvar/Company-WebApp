@@ -24,6 +24,7 @@ const DevList = () => {
           >
             <Icon
               src={OptimizationImg}
+              alt="Illustration of a man with a telescope"
               height={300}
               width={300}
               className={show == 0 ? 'show' : null}
@@ -36,6 +37,7 @@ const DevList = () => {
           >
             <Icon
               src={TrendImg}
+              alt="Illustration of three people and web components"
               height={300}
               width={300}
               className={show == 1 ? 'show' : null}
@@ -48,6 +50,7 @@ const DevList = () => {
           >
             <Icon
               src={DevicesIllustrationImg}
+              alt="Illustration of a man sitting in front and web components"
               height={300}
               width={500}
               className={show == 2 ? 'show' : null}

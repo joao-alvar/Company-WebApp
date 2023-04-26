@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import React from 'react'
 
+const HeroAds = React.lazy(() =>
+  import('@/modules/advertising/heroAds/HeroAds')
+)
+
 const AdsLead = React.lazy(() =>
   import('@/modules/advertising/adsLead/AdsLead')
 )
@@ -17,8 +21,16 @@ const AdsList = React.lazy(() =>
   import('@/modules/advertising/adsList/AdsList')
 )
 
+const AdsBanner = React.lazy(() =>
+  import('@/modules/advertising/adsBanner/AdsBanner')
+)
+
 const AdsBenefits = React.lazy(() =>
   import('@/modules/advertising/adsBenefits/AdsBenefits')
+)
+
+const AdsQuote = React.lazy(() =>
+  import('@/modules/advertising/adsQuote/AdsQuote')
 )
 
 const advertising = () => {
@@ -31,11 +43,14 @@ const advertising = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <HeroAds />
+        <AdsBanner />
         <AdsBenefits />
         <AdsLead />
         <AdsFeatures />
         <AdsWall />
         <AdsList />
+        <AdsQuote />
       </main>
     </>
   )

@@ -1,60 +1,55 @@
+import {AiOutlineCopyrightCircle} from 'react-icons/ai'
+
 import styled from 'styled-components'
 
-import theme from '../../styles/Theme'
-
 export const FooterSection = styled.div`
-  padding: 80px 60px;
-  background: black;
+  background: #15141d;
   position: static;
   bottom: 0;
+  height: 10em;
   width: 100%;
-
-  @media (max-width: 1000px) {
-    padding: 70px 30px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    padding: 8em 0;
   }
 `
 
 export const FooterContainer = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  /* background: red; */
-`
-
-export const Column = styled.div`
-  display: flex;
+  align-items: center;
   flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
-`
-
-export const Row = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
-  grid-gap: 20px;
-
-  @media (max-width: 1000px) {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 1000px;
+  width: 80%;
+  margin: 0 auto;
+  gap: 1em;
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    width: 98%;
+    text-align: center;
   }
 `
 
-export const FooterLink = styled.a`
-  color: #fff;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-decoration: none;
+export const LinksContainer = styled.div`
+  display: flex;
+  gap: 1em;
 
-  &:hover {
-    color: green;
-    transition: 200ms ease-in;
+  a {
+    font-size: 1.3em;
+    color: #88869a;
+    text-decoration: none;
+    &:hover {
+      color: ${({theme}) => theme.colors.white};
+    }
   }
 `
 
-export const Heading = styled.p`
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 40px;
-  font-weight: bold;
+export const AllRights = styled.div`
+  display: flex;
+  font-size: 1.3em;
+  color: #88869a;
+`
+
+export const CopyIcon = styled(AiOutlineCopyrightCircle)`
+  color: #88869a;
 `

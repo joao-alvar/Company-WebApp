@@ -70,17 +70,15 @@ export const HeroText = styled.h2`
 
 export const ButtonContainer = styled.div`
   display: flex;
-  /* gap: 2em; */
-  /* align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  position: relative; */
+
+  a {
+    text-decoration: none;
+  }
 `
 
 export const HeroBtn = styled.button`
-  background: transparent;
-  color: ${({theme}) => theme.colors.black};
-  border: 2px solid ${({theme}) => theme.colors.black};
+  color: ${({theme}) => theme.colors.white};
+  background: ${({theme}) => theme.colors.black};
   font-family: Inter;
   font-size: 1.2em;
   border-radius: 4px;
@@ -88,14 +86,17 @@ export const HeroBtn = styled.button`
   font-weight: 500;
 
   &:hover {
-    background: ${({theme}) => theme.colors.black};
-    color: ${({theme}) => theme.colors.white};
+    background: ${({theme}) => theme.colors.primaryTextColor};
     transition: all 0.2s ease-in-out;
+  }
+
+  a {
+    color: ${({theme}) => theme.colors.white};
   }
 `
 
 export const HeroBtnRight = styled.button`
-  color: ${({theme}) => theme.colors.black};
+  text-align: center;
   font-family: 'Overpass';
   margin-left: 1em;
   font-size: 1.3em;
@@ -103,6 +104,10 @@ export const HeroBtnRight = styled.button`
 
   &:hover {
     text-decoration: underline;
+  }
+
+  a {
+    color: ${({theme}) => theme.colors.black};
   }
 `
 
@@ -122,9 +127,9 @@ export const ArrowDown = styled(IoIosArrowDown)`
   transition: all 0.2s ease-in-out;
   color: ${({theme}) => theme.colors.black};
   font-size: 2.2em;
-  -webkit-animation: jump 1s infinite;
-  -moz-animation: jump 1s infinite;
-  animation: jump 1s infinite;
+  -webkit-animation: jump 0.6s infinite;
+  -moz-animation: jump 0.6s infinite;
+  animation: jump 0.6s infinite;
   -webkit-animation-delay: 0.1s;
   -moz-animation-delay: 0.1s;
   -webkit-animation-direction: alternate;

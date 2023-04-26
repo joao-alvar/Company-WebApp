@@ -38,7 +38,7 @@ export const LogoContainer = styled(Link)`
   z-index: 11;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    margin-left: -3.2em;
+    /* margin-left: -3.2em; */
   }
 `
 

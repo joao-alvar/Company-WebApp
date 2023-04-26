@@ -10,53 +10,49 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 8em 0 4em;
+  padding: 8em 0;
   line-height: initial;
-  gap: 8.5em;
+  background-color: #020202;
 `
 
 export const Wrapper = styled.div`
   display: flex;
   max-width: 100%;
+  height: 100%;
 `
-export const Banner = styled.div`
-  display: flex;
-  width: 80%;
-  height: 37em;
-  /* background-color: #; */
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
-  border-radius: 18px;
-  margin: 0 auto;
-  transition: all 0.3s;
-  cursor: default;
+export const Grid = styled.div`
+  display: grid;
+  grid-auto-columns: 1fr;
+  align-items: start;
+  justify-items: start;
+  grid-column-gap: 7rem;
+  grid-row-gap: 4.5rem;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
 `
 
-export const Content = styled.div`
+export const GridContent = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: start;
   flex-direction: column;
-  width: 60%;
+  /* width: 60%; */
   height: 100%;
   padding: 2em;
+  color: ${({theme}) => theme.colors.white};
   gap: 1.2em;
 
   h2 {
-    font-size: 1.8em;
+    font-size: 3.2em;
     font-family: Inter;
-    font-weight: 600;
+    font-weight: 800;
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 `
 
 export const IconWrap = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  width: 40%;
-  height: 100%;
-  /* background-color: #20f; */
+  color: ${({theme}) => theme.colors.white};
+  font-size: 5em;
 `
