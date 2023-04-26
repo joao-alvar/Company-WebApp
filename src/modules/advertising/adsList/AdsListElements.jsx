@@ -27,12 +27,13 @@ export const Wrapper = styled.div`
 
 export const ImageWrap = styled.div`
   display: flex;
-  flex: 1 0 50%;
-  width: calc(50% - 50px);
-  text-align: center;
+  width: 100%;
+  height: 30em;
+  padding: 4em 0;
 
   img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
   }
 `

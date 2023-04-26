@@ -2,7 +2,7 @@ export const theme = {
   colors: {
     primary: '#B12B28',
     secondary: '#CBD4DB',
-    tertiary: '#E1BE78',
+    tertiary: '#15141d',
     text: '#000000',
     primaryTextColor: '#312c2c',
     secondaryTextColor: '#515151',
@@ -31,7 +31,8 @@ export const theme = {
     xs: '400px', // for small screen mobile
     sm: '600px', // for mobile screen
     md: '910px', // for tablets
-    lg: '1280px', // for laptops
+    lg: '1160px', // for laptops
+    // lg: '1280px', // for laptops
     xl: '1440px', // for desktop / monitors
     xxl: '1920px', // for big screens
   },

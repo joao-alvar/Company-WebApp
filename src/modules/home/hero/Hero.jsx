@@ -42,10 +42,9 @@ const Hero = () => {
               bottom line
             </HeroText>
             <ButtonContainer>
-              <Link href="/">
-                <HeroBtn>Learn more</HeroBtn>
-                <HeroBtnRight>Learn more</HeroBtnRight>
-              </Link>
+              <HeroBtn>
+                <Link href="/">Learn more</Link>
+              </HeroBtn>
             </ButtonContainer>
           </ContentLeft>
           <ContentRight>

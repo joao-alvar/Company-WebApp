@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {useState} from 'react'
 import {RiArrowUpSLine} from 'react-icons/ri'
 
@@ -10,7 +11,10 @@ import {
   ListWrap,
   StyledList,
   Icon,
+  ImageWrap,
 } from './AdsListElements'
+
+import featuredImage from '/public/images/Results.jpg'
 
 const AdsList = () => {
   const [isOpen, setIsOpen] = useState(0)
@@ -19,13 +23,58 @@ const AdsList = () => {
       <Container>
         <Wrapper>
           <Content>
-            <span>Electric vehicles</span>
-            <h2>Electric vehicles will never be the same</h2>
-            <p>
-              Ultium. The innovation powering General Motors&apos; expanding
-              lineup of EVs for every person and every purpose. Explore the
-              benefits of choosing an EV powered by Ultium.
-            </p>
+            {isOpen == 0 && (
+              <>
+                <span>Electric vehicles</span>
+                <h2>Electric vehicles will never be the same</h2>
+                <p>
+                  Ultium. The innovation powering General Motors&apos; expanding
+                  lineup of EVs for every person and every purpose. Explore the
+                  benefits of choosing an EV powered by Ultium.
+                </p>
+                <ImageWrap>
+                  <Image src={featuredImage} alt="something" />
+                </ImageWrap>
+              </>
+            )}
+            {isOpen == 1 && (
+              <>
+                <ImageWrap>
+                  <Image src={featuredImage} alt="something" />
+                </ImageWrap>
+                <h2>Electric vehicles will never be the same</h2>
+                <p>
+                  Ultium. The innovation powering General Motors&apos; expanding
+                  lineup of EVs for every person and every purpose. Explore the
+                  benefits of choosing an EV powered by Ultium.
+                </p>
+              </>
+            )}
+            {isOpen == 2 && (
+              <>
+                <span>Electric vehicles</span>
+                <h2>Electric vehicles will never be the same</h2>
+                <p>
+                  Ultium. The innovation powering General Motors&apos; expanding
+                  lineup of EVs for every person and every purpose. Explore the
+                  benefits of choosing an EV powered by Ultium.
+                </p>
+              </>
+            )}
+              {isOpen == 3 && (
+              <>
+                <span>Electric vehicles</span>
+                <h2>Electric vehicles will never be the same</h2>
+                <p>
+                  Ultium. The innovation powering General Motors&apos; expanding
+                  lineup of EVs for every person and every purpose. Explore the
+                  benefits of choosing an EV powered by Ultium.
+                </p>
+                <ImageWrap>
+                  <Image src={featuredImage} alt="something" />
+                </ImageWrap>
+              </>
+            )}
           </Content>
           <ListWrap>
             <StyledList>

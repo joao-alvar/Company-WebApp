@@ -1,7 +1,17 @@
 import Head from 'next/head'
 import React from 'react'
 
-const AboutModules = React.lazy(() => import('@/modules/about/AboutModules'))
+const AboutHero = React.lazy(() => import('@/modules/about/hero/AboutHero'))
+
+const Mission = React.lazy(() => import('@/modules/about/mission/Mission'))
+
+const CallToAction = React.lazy(() =>
+  import('@/modules/about/callToAction/CallToAction')
+)
+
+const Purpose = React.lazy(() => import('@/modules/about/purpose/Purpose'))
+
+const Quote = React.lazy(() => import('@/modules/about/quote/Quote'))
 
 const About = () => {
   return (
@@ -13,7 +23,11 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <AboutModules />
+        <AboutHero />
+        <Mission />
+        <Purpose />
+        <CallToAction />
+        <Quote />
       </main>
     </>
   )
