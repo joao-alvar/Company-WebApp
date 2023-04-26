@@ -11,7 +11,7 @@ export const Container = styled.div`
   width: 100%;
   height: 45rem;
   line-height: initial;
-  background: #252525;
+  background: ${({theme}) => theme.colors.tertiary};
 `
 
 export const ImageWrap = styled.div`
