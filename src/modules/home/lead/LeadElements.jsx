@@ -10,8 +10,14 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 45em;
-  /* margin: 6em 0 4em; */
+  height: auto;
+  padding: 12em 0 4em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding: 8em 0 2em;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 2em 0 0;
+  }
 `
 
 export const LeadInformation = styled.div`
@@ -23,28 +29,43 @@ export const LeadInformation = styled.div`
   text-align: center;
   flex-direction: column;
   font-family: 'Inter';
-  /* color: ${({theme}) => theme.colors.primaryTextColor}; */
-  /* border-top: 2px solid ${({theme}) => theme.colors.primaryTextColor}; */
   border-bottom: 2px solid ${({theme}) => theme.colors.primaryTextColor};
+  padding-bottom: 8.2em;
+  @media screen and (max-width: 700px) {
+    border-bottom: none;
+  }
 
   h2 {
     font-family: Inter;
     font-weight: 600;
     font-size: 3.6em;
     padding: 0.9em 2em 0 2em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      padding: 0.9em 0.2em 0 0.2em;
+    }
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 2.6em;
+    }
   }
 `
 
 export const Button = styled.button`
-  padding: 8px 12px;
+  padding: 10px 29px;
   font-size: 1.4em;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   color: ${({theme}) => theme.colors.white};
   background: ${({theme}) => theme.colors.black};
   margin-top: 3em;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
   &:hover {
     color: ${({theme}) => theme.colors.white};
     background: ${({theme}) => theme.colors.primaryTextColor};
+  }
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.white};
   }
 `

@@ -23,6 +23,12 @@ export const Wrapper = styled.div`
   display: flex;
   max-width: 100%;
   padding: 8em 0;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+  padding: 2em 0;
+  }
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `
 
 export const ImageWrap = styled.div`
@@ -44,6 +50,13 @@ export const Content = styled.div`
   width: 50%;
   margin-top: 2em;
   padding: 0 5em;
+  @media screen and (max-width: 1200px) {
+    width: 98%;
+    padding: 0 2em;
+  }
+  @media screen and (max-width: 670px) {
+    padding: 0 8px;
+  }
 
   span {
     text-transform: uppercase;
@@ -72,12 +85,22 @@ export const Content = styled.div`
 export const ListWrap = styled.div`
   margin-top: 1em;
   width: 50%;
+  @media screen and (max-width: 1200px) {
+    width: 98%;
+  }
 `
 
 export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
   padding: 1em 2em;
+  @media screen and (max-width: 670px) {
+    padding: 1em 0;
+  }
+
+  .active {
+    background: #f2f2f2;
+  }
 
   li {
     position: relative;
@@ -89,8 +112,13 @@ export const StyledList = styled.ul`
     border-radius: 10px;
     padding: 30px;
     transition: 0.4s all ease-in-out;
-    /* background: ${({isOpen}) => (isOpen ? '#f8f8f8' : 'none')}; */
-
+    /* background: ${({isOpen}) => (isOpen ? '#f2f2f2' : 'none')}; */
+    @media screen and (max-width: 1200px) {
+      width: 98%;
+    }
+    @media screen and (max-width: 670px) {
+      padding: 30px 8px;
+    }
     .list_content {
       align-items: center;
     }
@@ -117,5 +145,5 @@ export const Icon = styled(RiArrowDownSLine)`
   color: ${({theme}) => theme.colors.primary};
   font-size: 2.5em;
   position: absolute;
-  right: 1em;
+  right: 5px;
 `

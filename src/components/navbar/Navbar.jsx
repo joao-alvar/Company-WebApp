@@ -6,9 +6,9 @@ import MobileMenu from '../mobile/menu/MobileMenu'
 import {
   Header,
   Nav,
-  NavLinks,
-  NavigationLink,
-  LinkTitle,
+  LinksContainer,
+  NavLink,
+  LinkTree,
   NavBtn,
   NavBtnLink,
   LogoContainer,
@@ -23,6 +23,16 @@ const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
   const [show, setShow] = useState(false)
   const router = useRouter()
+
+  const openMenu = () => {
+    setOpen(!isOpen)
+    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
+    if (!isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'unset'
+    }
+  }
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -69,22 +79,25 @@ const Navbar = () => {
               priority
             />
           </LogoContainer>
-          <NavLinks
+          <LinksContainer
             role="navigation"
             aria-label="main navigation"
             isOpen={isOpen}
           >
-            <LinkTitle
+            <LinkTree
               ref={wrapperRef}
               onClick={() => {
                 setShow(!show)
               }}
             >
-              <NavigationLink as="span">Solutions</NavigationLink>
+              <NavLink as="span" className="dropdown_link">
+                Solutions
+              </NavLink>
               <ArrowIconDown
-                style={{
-                  transform: show ? 'rotate(179deg)' : '',
-                }}
+                show={show}
+                // style={{
+                //   transform: show ? 'rotate(179deg)' : '',
+                // }}
               />
 
               <DropdownMenu
@@ -105,37 +118,35 @@ const Navbar = () => {
                   <Link href="/web-development#optimization">Optimization</Link>
                 </li>
               </DropdownMenu>
-            </LinkTitle>
-
-            <NavigationLink
+            </LinkTree>
+            <NavLink
               href="/advertising"
               className={router.pathname == '/advertising' ? 'active' : ''}
             >
               Advertising
-            </NavigationLink>
+            </NavLink>
 
-            <NavigationLink
+            <NavLink
               href="/web-development"
               className={router.pathname == '/web-development' ? 'active' : ''}
             >
               Web development
-            </NavigationLink>
+            </NavLink>
 
-            <NavigationLink
+            <NavLink
               href="/about"
               className={router.pathname == '/about' ? 'active' : ''}
             >
               Who we Are
-            </NavigationLink>
-          </NavLinks>
+            </NavLink>
+            <div className="mobile_contact_link">
+              <NavLink href="/contact">Contact</NavLink>
+            </div>
+          </LinksContainer>
           <NavBtn>
             <NavBtnLink href="/contact">Contact Us</NavBtnLink>
           </NavBtn>
-          <MobileMenu
-            onClick={() => {
-              setOpen(!isOpen)
-            }}
-          />
+          <MobileMenu onClick={openMenu} />
         </Nav>
       </Header>
     </>

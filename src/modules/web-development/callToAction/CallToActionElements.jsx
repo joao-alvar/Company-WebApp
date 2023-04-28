@@ -5,6 +5,7 @@ export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  text-align: center;
   justify-content: center;
   flex-direction: column;
   min-height: 100px;
@@ -15,6 +16,9 @@ export const Container = styled.div`
   line-height: initial;
   background: ${({theme}) => theme.colors.primary};
   color: ${({theme}) => theme.colors.white};
+  @media screen and (max-width: 425px) {
+    padding: 1em;
+  }
 
   h2 {
     font-size: 3.4em;
@@ -35,7 +39,6 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   color: ${({theme}) => theme.colors.white};
-  margin-top: 1em;
   font-size: 1.6em;
   font-weight: 600;
   padding: 4px 12px;

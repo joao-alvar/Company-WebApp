@@ -11,9 +11,9 @@ const Lead = () => {
             <h2>
               Join 28+ million people who already trust us with their money
             </h2>
-            <Link href="/">
-              <Button>Get Started</Button>
-            </Link>
+            <Button>
+              <Link href="/">Get Started</Link>
+            </Button>
           </LeadInformation>
         </Container>
       </LeadSection>

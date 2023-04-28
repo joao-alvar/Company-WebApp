@@ -31,7 +31,7 @@ const LeadGrid = () => {
         </TitleContainer>
         <GridContainer>
           <GridTop>
-            <LinkGrid href="/">
+            <LinkGrid href="/" className="grid_container">
               <div className="grid_1_container">
                 <h3 className="grid_1_content_h3">
                   Pay and get paid, hassle-free

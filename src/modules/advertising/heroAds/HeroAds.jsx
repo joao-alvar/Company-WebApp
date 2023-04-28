@@ -1,7 +1,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import {HeroBtn, HeroBtnRight, Section} from '@/modules/home/hero/HeroElements'
+import {
+  ButtonContainer,
+  HeroBtn,
+  HeroBtnRight,
+  Section,
+} from '@/modules/home/hero/HeroElements'
 
 import {Container, Content, LinkWrap, ImageWrap} from './HeroAdsElements'
 
@@ -23,12 +28,14 @@ const HeroAds = () => {
             Learn what sets ION apart and what you can expect as a customer.
           </p>
           <LinkWrap>
-            <HeroBtn>
-              <Link href="/contact">Get started</Link>
-            </HeroBtn>
-            <HeroBtnRight>
-              <span onClick={handleClickScroll}>Learn more</span>
-            </HeroBtnRight>
+            <ButtonContainer>
+              <HeroBtn>
+                <Link href="/contact">Get started</Link>
+              </HeroBtn>
+              <HeroBtnRight>
+                <span onClick={handleClickScroll}>Learn more</span>
+              </HeroBtnRight>
+            </ButtonContainer>
           </LinkWrap>
         </Content>
         <ImageWrap>

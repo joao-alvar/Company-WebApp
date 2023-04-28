@@ -25,12 +25,25 @@ export const Container = styled.div`
   gap: 4em;
   flex-direction: column;
   height: 108em;
+  @media screen and (max-width: 1210px) {
+    width: 98%;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 7em;
+  }
+  @media screen and (max-width: 700px) {
+    padding-bottom: 10em;
+  }
 `
 
 export const TitleContainer = styled.div`
   text-align: center;
   margin: 2em;
   font-family: Inter;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
 
   p {
     font-size: 1.6em;
@@ -45,6 +58,9 @@ export const TitleContainer = styled.div`
     color: rgb(25, 28, 31);
     margin: 0.71rem 0 0;
     padding: 0px;
+    @media screen and (max-width: 700px) {
+      font-size: 3em;
+    }
   }
 
   h3 {
@@ -54,6 +70,9 @@ export const TitleContainer = styled.div`
     word-break: break-word;
     margin: 1.2rem 0 0;
     padding: 0px;
+    @media screen and (max-width: 700px) {
+      font-size: 1.5em;
+    }
   }
 `
 
@@ -62,6 +81,12 @@ export const GridContainer = styled.div`
   height: 80%;
   display: grid;
   gap: 1.5em;
+
+  .grid_container {
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      flex-direction: column;
+    }
+  }
 `
 
 export const LinkGrid = styled(Link)`
@@ -71,10 +96,10 @@ export const LinkGrid = styled(Link)`
   display: flex;
   align-items: center;
   &:hover .grid_1_span {
-    background-color: #0000003d;
+    text-decoration: underline;
   }
   &:hover .grid_2_span {
-    background-color: #fffefe2f;
+    text-decoration: underline;
   }
 `
 
@@ -87,11 +112,23 @@ export const GridTop = styled.div`
   align-items: center;
   position: relative;
   background-color: #faf0e6;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    height: auto;
+  }
 
   .grid_1_container {
     width: 50%;
-    /* height: 40%; */
     color: #000;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    @media screen and (max-width: 700px) {
+      text-align: center;
+    }
   }
 
   .grid_1_content_p {
@@ -111,6 +148,10 @@ export const GridTop = styled.div`
     position: absolute;
     top: 0;
     right: 0;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      position: initial;
+      padding: 2em 0 3em;
+    }
   }
 `
 
@@ -122,11 +163,13 @@ export const ArrowIcon = styled(AiOutlineArrowRight)`
 export const GridBottomWrap = styled.div`
   display: flex;
   gap: 1.5em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+  }
 `
 
 export const GridLeft = styled.div`
   width: 50%;
-  height: 18em;
   padding: 20px;
   font-size: 30px;
   border-radius: 14px;
@@ -134,7 +177,9 @@ export const GridLeft = styled.div`
   align-items: center;
   position: relative;
   background-color: ${({theme}) => theme.colors.black};
-
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
   a {
     text-decoration: none;
     width: 100%;
@@ -146,6 +191,9 @@ export const GridLeft = styled.div`
 
   .grid_2_container {
     color: ${({theme}) => theme.colors.white};
+    @media screen and (max-width: 700px) {
+      text-align: center;
+    }
   }
 
   .grid_2_content_h3 {
@@ -166,19 +214,32 @@ export const GridLeft = styled.div`
 
   .grid_2_gif {
     margin: -1.8em 0 0;
+    @media screen and (max-width: 450px) {
+      img {
+        object-fit: contain;
+      }
+    }
   }
 `
 
 export const GridRight = styled(GridLeft)`
   align-items: center;
   background-color: ${({theme}) => theme.colors.primary};
-
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    height: 20em;
+  }
   .grid_3_content_h3 {
     font-weight: 600;
   }
 
   .grid_3_count {
     margin: 2.5em 0 0 1em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      margin: 3.5em 0 3em;
+    }
+    @media screen and (max-width: 500px) {
+      margin: 2.5em 0 0;
+    }
   }
 `
 

@@ -12,6 +12,12 @@ export const Container = styled.div`
   height: 45rem;
   line-height: initial;
   background: ${({theme}) => theme.colors.tertiary};
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    height: auto;
+    padding: 8em 0;
+    gap: 3em;
+  }
 `
 
 export const ImageWrap = styled.div`
@@ -19,6 +25,9 @@ export const ImageWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
 
   img {
     object-fit: cover;
@@ -27,6 +36,9 @@ export const ImageWrap = styled.div`
     height: 100%;
     pointer-events: none;
     cursor: default;
+    @media screen and (max-width: 700px) {
+      width: 100%;
+    }
   }
 `
 
@@ -34,6 +46,14 @@ export const Content = styled.div`
   width: 50%;
   padding-right: 5em;
   color: ${({theme}) => theme.colors.white};
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 80%;
+    padding-right: 0;
+    padding-left: 0.5em;
+  }
+  @media screen and (max-width: 700px) {
+    width: 98%;
+  }
 
   h2 {
     font-size: 3.5em;
@@ -59,5 +79,8 @@ export const Button = styled.button`
   &:hover {
     background: ${({theme}) => theme.colors.primaryTextColor};
     border-color: ${({theme}) => theme.colors.primaryTextColor};
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    width: 98%;
   }
 `

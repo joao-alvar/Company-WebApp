@@ -15,10 +15,11 @@ export const Container = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
+    padding: 5em 2em;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-     padding: 12em 10px;
+    padding: 5em 10px;
   }
 `
 

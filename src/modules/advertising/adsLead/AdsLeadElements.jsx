@@ -15,12 +15,29 @@ export const Container = styled.div`
   padding: 0;
   margin: 0 auto;
   line-height: initial;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    .bottom_wrapper {
+      margin-top: 4em;
+    }
+    .bottom_content {
+      padding-bottom: 4em;
+  }
+
+  @media screen and (max-width: 410px) {
+    .bottom_wrapper {
+      margin-top: 2em;
+    }
+  }
 `
 
 export const Wrapper = styled.div`
   display: flex;
   max-width: 100%;
   padding: 8em 0;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    padding: 0;
+  }
 `
 
 export const ImageWrap = styled.div`
@@ -28,6 +45,10 @@ export const ImageWrap = styled.div`
   flex: 1 0 50%;
   width: calc(50% - 50px);
   text-align: center;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex: none;
+    width: 100%;
+  }
 
   img {
     width: 100%;
@@ -41,6 +62,14 @@ export const Content = styled.div`
   width: 50%;
   justify-content: center;
   padding: 0 5em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+    padding-top: 5em;
+  }
+
+  @media screen and (max-width: 410px) {
+    padding: 4em 1em;
+  }
 
   span {
     text-transform: uppercase;
@@ -63,9 +92,16 @@ export const Content = styled.div`
 
   a {
     width: max-content;
+    @media screen and (max-width: 410px) {
+      width: 100%;
+    }
   }
 `
 
 export const StyledButton = styled(Button)`
   margin-top: 1em;
+
+  @media screen and (max-width: 410px) {
+    width: 100%;
+  }
 `
