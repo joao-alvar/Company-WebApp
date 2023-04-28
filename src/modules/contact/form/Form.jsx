@@ -36,6 +36,7 @@ const Form = () => {
               <Field>
                 <label htmlFor="first-name">First Name*</label>
                 <input
+                  onChange={onChange}
                   id="first-name"
                   className="regular_input"
                   aria-invalid={errors.firstName ? 'true' : 'false'}

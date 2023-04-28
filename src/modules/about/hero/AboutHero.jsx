@@ -29,8 +29,8 @@ const AboutHero = () => {
               <p>
                 To answer this, we need to bring a common problem faced by all
                 of us, The labyrinth, everyone has been there, this is a
-                constant feeling for entrepreneurs, our mission It's helping our
-                customers on this journey, to find the right path.
+                constant feeling for entrepreneurs, our mission It&apos;s
+                helping our customers on this journey, to find the right path.
               </p>
             </Content>
           </Wrapper>

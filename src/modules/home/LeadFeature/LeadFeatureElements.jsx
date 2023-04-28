@@ -21,8 +21,8 @@ export const LeadFeatureContainer = styled.div`
   color: ${({theme}) => theme.colors.white};
   background: ${({theme}) => theme.colors.primary};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      padding: 4em 0;
-    }
+    padding: 4em 0;
+  }
 `
 
 export const LeadFeatureContent = styled.div`

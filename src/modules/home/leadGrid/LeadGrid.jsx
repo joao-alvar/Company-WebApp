@@ -46,7 +46,10 @@ const LeadGrid = () => {
                 </span>
               </div>
               <div className="grid_1_gif">
-                <Image src={GirlGifBg} />
+                <Image
+                  src={GirlGifBg}
+                  alt="Illustration of a girl and web components"
+                />
               </div>
             </LinkGrid>
           </GridTop>

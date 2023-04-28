@@ -2,8 +2,6 @@ import {RiArrowDownSLine} from 'react-icons/ri'
 
 import styled from 'styled-components'
 
-import {Button} from '@/modules/home/lead/LeadElements'
-
 export const Container = styled.div`
   position: relative;
   display: flex;
@@ -24,7 +22,7 @@ export const Wrapper = styled.div`
   max-width: 100%;
   padding: 8em 0;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-  padding: 2em 0;
+    padding: 2em 0;
   }
   @media screen and (max-width: 1200px) {
     flex-direction: column;
