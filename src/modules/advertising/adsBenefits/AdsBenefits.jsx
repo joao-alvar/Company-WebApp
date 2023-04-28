@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import {FaPiggyBank} from 'react-icons/fa'
 
 import {Section} from '@/modules/home/hero/HeroElements'
@@ -10,8 +9,6 @@ import {
   GridContent,
   IconWrap,
 } from './AdsBenefitsElements'
-
-import illustration_1 from '/public/images/Trend.jpeg'
 
 const AdsBenefits = () => {
   return (
