@@ -15,7 +15,7 @@ import illustration_1 from '/public/images/Trend.jpeg'
 
 const AdsBanner = () => {
   return (
-    <Section id='seo'>
+    <Section id="seo">
       <Container>
         <Banner>
           <Content>
@@ -60,9 +60,6 @@ const AdsBanner = () => {
               to drive ongoing brand awareness, ROI, and loyalty.
             </p>
           </Content>
-          {/* <IconWrap>
-            <Image src={building} style={{objectFit: 'cover'}} alt="Building" />
-          </IconWrap> */}
           <Image src={building} alt="Building" />
         </BannerRight>
       </Container>

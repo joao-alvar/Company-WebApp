@@ -20,7 +20,7 @@ const AdsQuote = () => {
               <h2>Without publicity there is no prosperity</h2>
               <QuoteIconRight />
             </div>
-            <h3>Yakov Borisovich Zel'dovich</h3>
+            <h3>Yakov Borisovich Zel&apos;dovich</h3>
           </QuoteText>
         </QuoteContainer>
       </Container>

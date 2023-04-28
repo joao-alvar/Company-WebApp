@@ -31,8 +31,8 @@ const PrivacyPolicy = () => {
             <Link href="https://www.atalaso.com">https://www.atalaso.com</Link>
             ), and/or any related services, sales, marketing or events (we refer
             to them collectively in this privacy policy as the
-            "Services").Please read this privacy policy carefully as it will
-            help you make informed decisions about sharing your personal
+            &quot;Services&quot;).Please read this privacy policy carefully as
+            it will help you make informed decisions about sharing your personal
             information with us.
           </p>
           <list>
@@ -59,10 +59,10 @@ const PrivacyPolicy = () => {
                 register using social media account details, like your Facebook,
                 Twitter or other social media account. If you choose to register
                 in this way, we will collect the Information described in the
-                section called "HOW DO WE HANDLE YOUR SOCIAL LOGINS" below. All
-                personal information that you provide to us must be true,
-                complete and accurate, and you must notify us of any changes to
-                such personal information.
+                section called &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot;
+                below. All personal information that you provide to us must be
+                true, complete and accurate, and you must notify us of any
+                changes to such personal information.
               </p>
             </li>
             <li>
@@ -84,8 +84,9 @@ const PrivacyPolicy = () => {
                   (such as your Google or Facebook account), we use the
                   information you allowed us to collect from those third parties
                   to facilitate account creation and logon process for the
-                  performance of the contract. See the section below headed "HOW
-                  DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+                  performance of the contract. See the section below headed
+                  &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
+                  information.
                 </li>
                 <li>
                   To facilitate account creation and logon process. If you
@@ -93,8 +94,9 @@ const PrivacyPolicy = () => {
                   (such as your Google or Facebook account), we use the
                   information you allowed us to collect from those third parties
                   to facilitate account creation and logon process for the
-                  performance of the contract. See the section below headed "HOW
-                  DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+                  performance of the contract. See the section below headed
+                  &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
+                  information.
                 </li>
                 <li>
                   To facilitate account creation and logon process. If you
@@ -102,8 +104,9 @@ const PrivacyPolicy = () => {
                   (such as your Google or Facebook account), we use the
                   information you allowed us to collect from those third parties
                   to facilitate account creation and logon process for the
-                  performance of the contract. See the section below headed "HOW
-                  DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+                  performance of the contract. See the section below headed
+                  &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
+                  information.
                 </li>
                 <li>
                   To facilitate account creation and logon process. If you
@@ -111,8 +114,9 @@ const PrivacyPolicy = () => {
                   (such as your Google or Facebook account), we use the
                   information you allowed us to collect from those third parties
                   to facilitate account creation and logon process for the
-                  performance of the contract. See the section below headed "HOW
-                  DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+                  performance of the contract. See the section below headed
+                  &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
+                  information.
                 </li>
                 <li>
                   To facilitate account creation and logon process. If you
@@ -120,8 +124,9 @@ const PrivacyPolicy = () => {
                   (such as your Google or Facebook account), we use the
                   information you allowed us to collect from those third parties
                   to facilitate account creation and logon process for the
-                  performance of the contract. See the section below headed "HOW
-                  DO WE HANDLE YOUR SOCIAL LOGINS" for further information.
+                  performance of the contract. See the section below headed
+                  &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
+                  informatin.
                 </li>
               </ul>
             </li>
@@ -223,7 +228,10 @@ const PrivacyPolicy = () => {
               <h2>9. How can you contact us about this Policy?</h2>
               <p>
                 If you have questions or comments about this policy, you may
-                email us at <Link href="mailto:contact@atalaso.com">contact@atalaso.com</Link>
+                email us at{' '}
+                <Link href="mailto:contact@atalaso.com">
+                  contact@atalaso.com
+                </Link>
               </p>
             </li>
           </list>

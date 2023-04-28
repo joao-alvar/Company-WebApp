@@ -42,8 +42,8 @@ const AdsLead = () => {
             </Link>
           </Content>
         </Wrapper>
-        <Wrapper className='bottom_wrapper' style={{background: '#f2f2f2'}}>
-          <Content className='bottom_content' style={{justifyContent: 'end',}}>
+        <Wrapper className="bottom_wrapper" style={{background: '#f2f2f2'}}>
+          <Content className="bottom_content" style={{justifyContent: 'end'}}>
             <span>Electric vehicles</span>
             <h2>Electric vehicles will never be the same</h2>
             <p>

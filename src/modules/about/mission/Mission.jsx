@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {AboutContainer, Content, AboutLead, AboutTitle} from './MissionElements'
+import {AboutContainer, Content, AboutTitle} from './MissionElements'
 
 import AboutIllustration from '/public/images/AboutIllustration.png'
 
@@ -13,22 +13,23 @@ const Mission = () => {
           <Content>
             <AboutTitle>Our Mission</AboutTitle>
             <p>
-              Run a business is hard, we know, but lucky you don't have to do it
-              alone. Your growth and development is our purpose Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Voluptates corrupti
-              provident voluptatem officia totam sequi eum consequuntur,
-              recusandae animi fugit odit, sint dolore. Dolorum quis iste illo
-              illum? Expedita, ex! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptates corrupti provident voluptatem officia
-              totam sequi eum consequuntur, recusandae animi fugit odit, sint
-              dolore. Dolorum quis iste illo illum? Expedita, ex! Lorem ipsum
-              dolor sit amet consectetur adipisicing elit. Voluptates corrupti
-              provident voluptatem officia totam sequi eum consequuntur,
-              recusandae animi fugit odit, sint dolore. Dolorum quis iste illo
-              illum? Expedita, ex! Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Voluptates corrupti provident voluptatem officia
-              totam sequi eum consequuntur, recusandae animi fugit odit, sint
-              dolore. Dolorum quis iste illo illum? Expedita, ex!
+              Run a business is hard, we know, but lucky you don&apos;t have to
+              do it alone. Your growth and development is our purpose Lorem
+              ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+              corrupti provident voluptatem officia totam sequi eum
+              consequuntur, recusandae animi fugit odit, sint dolore. Dolorum
+              quis iste illo illum? Expedita, ex! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Voluptates corrupti provident
+              voluptatem officia totam sequi eum consequuntur, recusandae animi
+              fugit odit, sint dolore. Dolorum quis iste illo illum? Expedita,
+              ex! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates corrupti provident voluptatem officia totam sequi eum
+              consequuntur, recusandae animi fugit odit, sint dolore. Dolorum
+              quis iste illo illum? Expedita, ex! Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Voluptates corrupti provident
+              voluptatem officia totam sequi eum consequuntur, recusandae animi
+              fugit odit, sint dolore. Dolorum quis iste illo illum? Expedita,
+              ex!
             </p>
           </Content>
           <Content>
