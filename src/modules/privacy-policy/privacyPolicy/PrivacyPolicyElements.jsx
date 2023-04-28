@@ -21,8 +21,8 @@ export const Content = styled.div`
   font-family: Overpass;
   font-weight: 400;
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      width: 95%;
-    }
+    width: 95%;
+  }
   h1 {
     width: 50%;
     text-align: center;

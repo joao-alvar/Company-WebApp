@@ -6,8 +6,6 @@ import {
   FooterContainer,
   LinksContainer,
   AllRights,
-  FooterLink,
-  Heading,
   CopyIcon,
 } from './FooterElements'
 

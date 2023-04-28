@@ -16,8 +16,8 @@ import {
   // StyledButton,
 } from './AdsFeaturesElements'
 
-import Ads_1 from '/public/images/Trend.jpeg'
 import Ads_2 from '/public/images/Optimized.jpeg'
+import Ads_1 from '/public/images/Trend.jpeg'
 
 const AdsFeatures = () => {
   return (
