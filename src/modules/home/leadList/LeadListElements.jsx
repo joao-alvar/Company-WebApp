@@ -6,7 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   flex-shrink: 0;
-  height: 60em;
+  min-height: 60em;
+  height: auto;
   width: 100%;
   margin: 8em 0 0;
   gap: 4em;
@@ -16,11 +17,17 @@ export const ListContainer = styled.div`
   width: 100%;
   height: 100%;
   display: flex;
+  @media screen and (max-width: 970px) {
+    flex-direction: column;
+  }
 
   ul {
     width: 50%;
     height: 100%;
     background: #fff;
+    @media screen and (max-width: 970px) {
+      width: 100%;
+    }
   }
 
   li {
@@ -33,6 +40,9 @@ export const ListContainer = styled.div`
     font-size: 2em;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.5);
+    @media screen and (max-width: 700px) {
+      width: 98%;
+    }
   }
 
   .active {
@@ -43,7 +53,14 @@ export const ListContainer = styled.div`
 export const ListContent = styled.div`
   width: 50%;
   height: 100%;
-  /* background: #fff; */
+  @media screen and (max-width: 970px) {
+    padding-top: 3em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  @media screen and (max-width: 700px) {
+    width: 98%;
+  }
 
   .image_container {
     width: 100%;
@@ -53,7 +70,10 @@ export const ListContent = styled.div`
   img {
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    pointer-events: none
+    pointer-events: none;
+    @media screen and (max-width: 970px) {
+      width: 100%;
+    }
   }
 
   .text_container {
@@ -74,7 +94,3 @@ export const ListContent = styled.div`
     margin: 0.5em 0 0;
   }
 `
-
-// export const ListDisplay = styled.div`
-
-// `

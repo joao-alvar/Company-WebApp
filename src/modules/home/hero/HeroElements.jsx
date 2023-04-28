@@ -19,17 +19,27 @@ export const Container = styled.div`
   width: 100%;
   height: 57rem;
   line-height: initial;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 3em 0;
+  }
 `
 
 export const ContentLeft = styled.div`
   width: 60%;
   height: 100%;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   padding: 0 6em;
   flex-direction: column;
   color: ${({theme}) => theme.colors.black};
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 0 2em 2em;
+  }
 `
 
 export const ContentRight = styled.div`
@@ -38,6 +48,9 @@ export const ContentRight = styled.div`
   align-items: center;
   width: 40%;
   height: 100%;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 
   .image_container {
     display: flex;
@@ -64,13 +77,19 @@ export const HeroText = styled.h2`
   font-family: 'Overpass';
   font-size: 1.4em;
   font-weight: 600;
-  /* padding: 0 4em; */
   margin: 0 0 2.41em;
 `
 
 export const ButtonContainer = styled.div`
   display: flex;
-
+  width: 100%;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 1em;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    flex-direction: column;
+    gap: 1em;
+  }
   a {
     text-decoration: none;
   }
@@ -81,10 +100,15 @@ export const HeroBtn = styled.button`
   background: ${({theme}) => theme.colors.black};
   font-family: Inter;
   font-size: 1.2em;
-  border-radius: 4px;
+  border-radius: 8px;
   padding: 7px 12px;
   font-weight: 500;
-
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    padding: 10px 12px;
+  }
   &:hover {
     background: ${({theme}) => theme.colors.primaryTextColor};
     transition: all 0.2s ease-in-out;
@@ -101,6 +125,15 @@ export const HeroBtnRight = styled.button`
   margin-left: 1em;
   font-size: 1.3em;
   font-weight: 600;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    margin-left: 0;
+    border: 2px solid ${({theme}) => theme.colors.black};
+    border-radius: 8px;
+    padding: 5px 12px;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -110,10 +143,6 @@ export const HeroBtnRight = styled.button`
     color: ${({theme}) => theme.colors.black};
   }
 `
-
-// export const ArrowIcon = styled(AiOutlineArrowRight)`
-//   transform: translateY(2px);
-// `
 
 export const ArrowIconWrap = styled.div`
   position: absolute;

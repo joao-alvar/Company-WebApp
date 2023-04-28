@@ -14,6 +14,9 @@ export const Container = styled.div`
   padding: 4em 0 8em;
   margin: 0 auto;
   line-height: initial;
+  @media screen and (max-width: 1095px) {
+    width: 98%;
+  }
 
   h2 {
     font-size: 4em;
@@ -33,9 +36,12 @@ export const Container = styled.div`
 export const StyledList = styled.div`
   list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 5em;
+  @media screen and (max-width: 1055px) {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
 
   .active {
     border-color: ${({theme}) => theme.colors.primary};
@@ -75,15 +81,25 @@ export const ListContent = styled.div`
   width: 60%;
   height: auto;
   padding: 2em 0;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 98%;
+    padding: 1em;
+  }
 
   h2 {
     font-size: 2.2em;
     text-align: start;
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
   }
 
   p {
     font-size: 1.5em;
     text-align: start;
     color: #2d2d2d;
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
   }
 `

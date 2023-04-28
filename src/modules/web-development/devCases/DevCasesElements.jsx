@@ -16,10 +16,20 @@ export const Container = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    img {
+      width: 100%;
+    }
+  }
 
   img {
     object-fit: cover;
     width: 33%;
     pointer-events: none;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 100%;
+      height: 100%;
+    }
   }
 `

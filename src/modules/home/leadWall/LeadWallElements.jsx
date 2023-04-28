@@ -7,6 +7,14 @@ export const LeadContainer = styled.div`
   width: 100%;
   display: flex;
   background: ${({theme}) => theme.colors.black};
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 5em;
+  }
+  /* @media screen and (max-width: 1100px) {
+    flex-direction: column;
+  } */
 `
 
 export const LeadContentText = styled.div`
@@ -16,11 +24,20 @@ export const LeadContentText = styled.div`
   display: flex;
   flex-direction: column;
   color: ${({theme}) => theme.colors.white};
+  @media screen and (max-width: 1100px) {
+    width: 50%;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
 
   h2 {
     padding: 0 1.2em;
     margin-top: 2em;
     font-size: 2em;
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      padding: 0 0.7em 0.4em;
+    }
   }
 
   p {
@@ -28,6 +45,9 @@ export const LeadContentText = styled.div`
     font-family: Overpass;
     font-size: 1.4em;
     font-weight: 300;
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      padding: 0 1em;
+    }
   }
 
   .lead_content_p {
@@ -50,6 +70,9 @@ export const LeadContentText = styled.div`
       color: ${({theme}) => theme.colors.black};
       background: ${({theme}) => theme.colors.white};
     }
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      margin-left: 1.2em;
+    }
   }
 `
 export const LeadImageWrap = styled.div`
@@ -58,6 +81,12 @@ export const LeadImageWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 1100px) {
+    width: 50%;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
 `
 export const LeadImage = styled(Image)`
   object-fit: cover;

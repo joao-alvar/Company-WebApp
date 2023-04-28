@@ -22,11 +22,22 @@ export const Wrapper = styled.div`
   justify-content: center;
   width: 70%;
   height: 30em;
+  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    height: auto;
+  }
 `
 export const ListWrap = styled.div`
   position: relative;
   width: max-content;
   padding: 4em 1em;
+  @media screen and (max-width: 510px) {
+    width: 100%;
+  }
 
   span {
     font-size: 1.1em;
@@ -65,6 +76,9 @@ export const StyledList = styled.div`
     font-size: 1.4em;
     padding: 1em 0 0 1em;
     align-items: center;
+    @media screen and (max-width: 510px) {
+      padding: 1em 0 0 0;
+    }
   }
 `
 
@@ -75,6 +89,7 @@ export const StyledButton = styled(Button)`
 export const Icon = styled.span`
   font-size: 1.6em;
   margin-right: 10px;
+  flex-shrink: 0;
   color: ${({theme}) => theme.colors.primary};
 `
 
@@ -82,6 +97,9 @@ export const LinkWrap = styled.div`
   display: block;
   text-align: center;
   padding: 6em 0 8em;
+  @media screen and (max-width: 510px) {
+    width: 90%;
+  }
 
   h2 {
     font-size: 2em;

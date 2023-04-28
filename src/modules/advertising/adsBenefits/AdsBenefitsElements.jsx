@@ -29,6 +29,9 @@ export const Grid = styled.div`
   grid-row-gap: 4.5rem;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    grid-template-columns: none;
+  }
 `
 
 export const GridContent = styled.div`

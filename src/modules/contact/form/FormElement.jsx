@@ -23,6 +23,9 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   padding: 4em 2em;
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    padding: 4em 0.5em;
+  }
 `
 
 export const StyledForm = styled.form`
@@ -34,6 +37,12 @@ export const StyledForm = styled.form`
   background: #ffffff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   gap: 2em;
+  @media screen and (max-width: 1234px) {
+    width: 80%;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 98%;
+  }
 
   .regular_input,
   textarea {
@@ -118,8 +127,15 @@ export const Checkbox = styled.div`
     margin-top: 3px;
   }
 
-  .mail_policy {
-    margin-top: 1.4em;
+  fieldset {
+border: none;
+  }
+
+  .mail_policy_checkbox {
+    margin-top: .2em;
+    margin-right: .4em;
+    float: left;
+}
   }
 `
 
@@ -127,6 +143,10 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   gap: 1em;
+  @media screen and (max-width: 775px) {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
 `
 
 export const CapContainer = styled.div`
