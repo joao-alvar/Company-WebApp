@@ -159,21 +159,25 @@ const Form = () => {
               </Field>
             </Wrap>
             <Checkbox>
-              <input
-                id="mailPolicy"
-                type="checkbox"
-                {...register('mailPolicy', {})}
-              />
-              <label className="mail_policy" htmlFor="mailPolicy">
-                Get emails from Atalaso about product updates, industry news,
-                and events. If you change your mind, you can unsubscribe at any
-                time. Data will be processed according to our
-                <Link className="link" href="/privacy-policy">
-                  {' '}
-                  Privacy Policy
-                </Link>
-                .
-              </label>
+              <fieldset data-role="controlgroup">
+                <input
+                  id="mailPolicy"
+                  type="checkbox"
+                  name="mailPolicy"
+                  className="mail_policy_checkbox"
+                  {...register('mailPolicy', {})}
+                />
+                <label htmlFor="mailPolicy">
+                  Get emails from Atalaso about product updates, industry news,
+                  and events. If you change your mind, you can unsubscribe at
+                  any time. Data will be processed according to our
+                  <Link className="link" href="/privacy-policy">
+                    {' '}
+                    Privacy Policy
+                  </Link>
+                  .
+                </label>
+              </fieldset>
             </Checkbox>
             <CapContainer>
               <HCaptcha

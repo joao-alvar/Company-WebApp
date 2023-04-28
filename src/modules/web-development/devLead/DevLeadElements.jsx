@@ -11,14 +11,24 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 6em 0 14.4em;
+  padding: 2em 0 8em;
   line-height: initial;
-  /* background: rgb(248 248 248); */
+  flex-direction: column;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding: 2em 0 6em;
+  }
 `
 
 export const Content = styled.div`
   width: 90%;
   padding-right: 6em;
+  @media screen and (max-width: 690px) {
+    width: 100%;
+    padding: 1em;
+    @media screen and (max-width: 460px) {
+      text-align: center;
+    }
+  }
 
   h2 {
     font-size: 3.5em;
@@ -39,6 +49,9 @@ export const BtnWrap = styled.div`
   width: 70%;
   margin: 2em 0;
   gap: 1em;
+  @media screen and (max-width: 495px) {
+    width: 98%;
+  }
 
   .active {
     background: ${({theme}) => theme.colors.black};
@@ -67,6 +80,20 @@ export const ActiveContent = styled.div`
   height: auto;
   width: 90%;
   gap: 2em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    width: 98%;
+
+    .img_wrapp {
+      width: 100%;
+    }
+
+    img {
+      margin: 0 auto;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 
   .img_wrapp {
     display: flex;
@@ -84,6 +111,14 @@ export const ActiveContent = styled.div`
     /* margin-left: auto; */
     flex-direction: column;
     font-weight: 600;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 100%;
+      padding-right: 2em;
+    }
+    @media screen and (max-width: 425px) {
+      text-align: center;
+      padding: 0;
+    }
   }
 
   h2 {
@@ -102,6 +137,9 @@ export const ActiveContent = styled.div`
   a {
     text-decoration: none;
     width: max-content;
+    @media screen and (max-width: 425px) {
+      margin: 0 auto;
+    }
   }
 `
 

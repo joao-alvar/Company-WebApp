@@ -16,15 +16,22 @@ export const LeadFeatureContainer = styled.div`
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 22em;
+  min-height: 22em;
+  height: auto;
   color: ${({theme}) => theme.colors.white};
   background: ${({theme}) => theme.colors.primary};
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      padding: 4em 0;
+    }
 `
 
 export const LeadFeatureContent = styled.div`
   ul {
     display: flex;
     gap: 2em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      flex-direction: column;
+    }
   }
 
   li {

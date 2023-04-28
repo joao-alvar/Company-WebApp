@@ -68,9 +68,11 @@ const Featured = () => {
                 </div>
               </ContentRight>
               <ButtonWrap>
-                <Link href="contact-us" style={{textDecoration: 'none'}}>
-                  <FeaturedButton>Start Now</FeaturedButton>
-                </Link>
+                <FeaturedButton>
+                  <Link href="contact-us" style={{textDecoration: 'none'}}>
+                    Start Now
+                  </Link>
+                </FeaturedButton>
               </ButtonWrap>
             </ContentRightWrap>
           </FeaturedContentRight>

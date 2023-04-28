@@ -19,11 +19,19 @@ export const LeadCardContainer = styled.div`
   height: 70rem;
   margin: 3em 0 5em;
   line-height: initial;
+  @media screen and (max-width: 1010px) {
+    height: auto;
+    padding: 4em 0 1em;
+  }
 
   h2 {
     font-size: 2.2em;
     font-weight: 400;
     color: ${({theme}) => theme.colors.black};
+    @media screen and (max-width: 1010px) {
+      padding: 0 2em;
+      text-align: center;
+    }
   }
 `
 
@@ -36,11 +44,14 @@ export const LeadCardList = styled.ul`
   gap: 0.9em;
   margin-top: 3em;
   flex-shrink: 0;
+  @media screen and (max-width: 1010px) {
+    flex-direction: column;
+  }
 
   li {
     position: relative;
     width: calc(33% - 1rem);
-    height: 40vw;
+    height: 40em;
     padding: 0;
     margin: 0 0.5rem 1rem;
     border-radius: 10px;
@@ -51,6 +62,21 @@ export const LeadCardList = styled.ul`
     cursor: pointer;
     box-shadow: 0px 0.15rem 0.5rem rgba(0, 0, 0, 0.4);
     background: black;
+    @media screen and (max-width: 1010px) {
+      width: 60%;
+      max-width: 100%;
+      max-height: 100%;
+      height: 60em;
+    }
+    @media screen and (max-width: 700px) {
+      width: 100%;
+      height: 70em;
+    }
+    @media screen and (max-width: 510px) {
+      width: 100%;
+      height: 43em;
+    }
+
     &:hover img {
       -ms-transform: scale(1.05); /* IE 9 */
       -webkit-transform: scale(1.05); /* Safari 3-8 */

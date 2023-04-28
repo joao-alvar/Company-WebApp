@@ -30,7 +30,7 @@ const DevFeatures = () => {
             </p>
           </Content>
         </Wrapper>
-        <Wrapper>
+        <Wrapper className='content_reverse'>
           <Content>
             <h2>Something in the way</h2>
             <p>

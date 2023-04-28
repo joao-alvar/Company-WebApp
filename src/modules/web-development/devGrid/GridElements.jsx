@@ -12,6 +12,10 @@ export const Container = styled.div`
   width: 100%;
   height: 77rem;
   line-height: initial;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    height: auto;
+    padding: 2em 0;
+  }
 `
 export const Wrapper = styled.div`
   display: grid;
@@ -19,6 +23,10 @@ export const Wrapper = styled.div`
   gap: 1.3em;
   grid-auto-rows: minmax(200px, auto);
   padding: 3em;
+  @media screen and (max-width: 805px) {
+    padding: 1.5em;
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 export const Grid = styled.div`
   display: flex;

@@ -61,7 +61,7 @@ const AdsList = () => {
                 </p>
               </>
             )}
-              {isOpen == 3 && (
+            {isOpen == 3 && (
               <>
                 <span>Electric vehicles</span>
                 <h2>Electric vehicles will never be the same</h2>
@@ -78,7 +78,7 @@ const AdsList = () => {
           </Content>
           <ListWrap>
             <StyledList>
-              <li isOpen={isOpen}>
+              <li isOpen={isOpen} className={isOpen == 0 ? 'active' : null}>
                 <div className="list_content">
                   <Icon as={isOpen == 0 && RiArrowUpSLine} />
                   <h3 onClick={() => setIsOpen(0)}>
@@ -93,7 +93,7 @@ const AdsList = () => {
                   )}
                 </div>
               </li>
-              <li>
+              <li className={isOpen == 1 ? 'active' : null}>
                 <Icon as={isOpen == 1 && RiArrowUpSLine} />
                 <div className="list_content">
                   <h3 onClick={() => setIsOpen(1)}>
@@ -108,7 +108,7 @@ const AdsList = () => {
                   )}
                 </div>
               </li>
-              <li>
+              <li className={isOpen == 2 ? 'active' : null}>
                 <Icon as={isOpen == 2 && RiArrowUpSLine} />
                 <div className="list_content">
                   <h3 onClick={() => setIsOpen(2)}>
@@ -123,7 +123,7 @@ const AdsList = () => {
                   )}
                 </div>
               </li>
-              <li>
+              <li className={isOpen == 3 ? 'active' : null}>
                 <Icon as={isOpen == 3 && RiArrowUpSLine} />
                 <div className="list_content">
                   <h3 onClick={() => setIsOpen(3)}>

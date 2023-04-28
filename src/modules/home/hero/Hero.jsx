@@ -10,7 +10,6 @@ import {
   HeroText,
   ButtonContainer,
   HeroBtn,
-  HeroBtnRight,
   ArrowIconWrap,
   ArrowDown,
 } from './HeroElements'
@@ -27,9 +26,6 @@ const Hero = () => {
     <>
       <Section>
         <Container>
-          {/* <video autoPlay loop muted>
-            <source src="./videos/heroVideo.mp4" type="video/mp4" />
-          </video> */}
           <ContentLeft>
             <Title>
               Empowering Your company and expand your horizons and maximizing
