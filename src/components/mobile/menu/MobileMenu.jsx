@@ -1,15 +1,26 @@
 import React from 'react'
 
-import {MobileMenuContainer} from './MobileMenuElements'
+import {Burger, MobileMenuContainer} from './MobileMenuElements'
 
-import {Divide as Hamburger} from 'hamburger-react'
+// import {Divide as Hamburger} from 'hamburger-react'
 
-const MobileMenu = ({onClick}) => {
+const MobileMenu = ({onClick, className}) => {
   // const [isOpen, setOpen] = useState(false)
 
   return (
-    <MobileMenuContainer onClick={onClick}>
-      <Hamburger distance="md" size={28} label="Show menu" />
+    <MobileMenuContainer>
+      <Burger
+        onClick={onClick}
+        aria-label="Menu"
+        data-qa="menu"
+        data-clog-click
+      >
+        <div className="menu__icon">
+          <div className={className}>
+            <div className="menu__btn__burger"></div>
+          </div>
+        </div>
+      </Burger>
     </MobileMenuContainer>
   )
 }

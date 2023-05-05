@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 
-const Form = React.lazy(() => import('@/modules/contact/form/Form'))
+const ContactForm = React.lazy(() =>
+  import('@/modules/contact/form/ContactForm')
+)
 
 const contact = () => {
   return (
@@ -12,8 +14,8 @@ const contact = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
-        <Form />
+      <main style={{backgroundColor: '#f2f2f2'}} role="main">
+        <ContactForm />
       </main>
     </>
   )

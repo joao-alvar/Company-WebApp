@@ -15,6 +15,12 @@ export const Container = styled.div`
   line-height: initial;
   background: #f2f2f2;
   color: #425466;
+
+  .modal {
+    &.open {
+      display: flex;
+    }
+  }
 `
 
 export const Content = styled.div`
@@ -28,7 +34,7 @@ export const Content = styled.div`
   }
 `
 
-export const StyledForm = styled.form`
+export const FormControl = styled.form`
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -86,9 +92,22 @@ export const StyledForm = styled.form`
     }
   }
 
+  .got_error {
+    color: ${({theme}) => theme.colors.primary};
+  }
+
+  .got_error_message {
+    color: #b30808;
+    font-family: Overpass;
+    font-weight: 600;
+    margin-top: 0.2em;
+  }
+
   .button {
     padding: 6px 12px;
     width: 8em;
+    display: flex;
+    justify-content: center;
     font-size: 1.4em;
     border-radius: 6px;
     font-weight: 600;
@@ -107,7 +126,11 @@ export const StyledForm = styled.form`
 export const Wrap = styled.div`
   display: flex;
   width: 100%;
-  gap: 2em;
+  gap: 8px;
+  @media screen and (max-width: 648px) {
+    flex-direction: column;
+    gap: 2em;
+  }
 `
 
 export const Field = styled.div`

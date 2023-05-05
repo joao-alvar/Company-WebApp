@@ -1,3 +1,4 @@
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
 
 import {FeaturedSection} from '../featured/FeaturedElements'
@@ -40,32 +41,21 @@ export const LeadInformation = styled.div`
     font-weight: 600;
     font-size: 3.6em;
     padding: 0.9em 2em 0 2em;
+    margin-bottom: 1em;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       padding: 0.9em 0.2em 0 0.2em;
     }
     @media screen and (max-width: ${({theme}) => theme.size.sm}) {
       font-size: 2.6em;
+      letter-spacing: -0.008em;
+      line-height: 3pc;
     }
   }
-`
 
-export const Button = styled.button`
-  padding: 10px 29px;
-  font-size: 1.4em;
-  border-radius: 8px;
-  font-weight: 600;
-  color: ${({theme}) => theme.colors.white};
-  background: ${({theme}) => theme.colors.black};
-  margin-top: 3em;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-  &:hover {
-    color: ${({theme}) => theme.colors.white};
-    background: ${({theme}) => theme.colors.primaryTextColor};
-  }
-  a {
-    text-decoration: none;
-    color: ${({theme}) => theme.colors.white};
+  .button {
+    @media screen and (max-width: 700px) {
+      width: 90%;
+      padding: 0.9em 2em;
+    }
   }
 `

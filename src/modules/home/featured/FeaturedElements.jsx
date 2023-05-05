@@ -65,7 +65,6 @@ export const FeaturedContentRight = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     padding-top: 2em;
-    /* background-color: #f29; */
   }
 `
 
@@ -78,7 +77,9 @@ export const ContentLeftWrap = styled.div`
   align-items: center;
   justify-content: center;
   border-color: ${({theme}) => theme.colors.primary};
-
+  @media screen and (max-width: 700px) {
+    width: 98%;
+  }
   img {
     height: 100%;
     border-radius: 8px;
@@ -88,7 +89,9 @@ export const ContentLeftWrap = styled.div`
 export const ContentRightWrap = styled.div`
   width: 90%;
   height: 85%;
-
+  @media screen and (max-width: 700px) {
+    width: 98%;
+  }
   h2 {
     font-size: 3.8em;
     font-weight: 600;
@@ -129,28 +132,11 @@ export const ButtonWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`
 
-export const FeaturedButton = styled.button`
-  margin-top: 1.2em;
-  font-size: 1.5em;
-  border-radius: 8px;
-  padding: 8px 29px;
-  background: ${({theme}) => theme.colors.black};
-  outline: none;
-  border: none;
-  text-decoration: none;
-  font-weight: 700;
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 100%;
-  }
-
-  &:hover {
-    background: ${({theme}) => theme.colors.primaryTextColor};
-    transition: all 0.2s ease-in-out;
-  }
-
-  a {
-    color: ${({theme}) => theme.colors.white};
+  .featured_button {
+    padding: 0.8rem 1.3rem;
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      width: 100%;
+    }
   }
 `

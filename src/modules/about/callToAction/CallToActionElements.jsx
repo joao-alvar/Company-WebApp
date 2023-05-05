@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -40,23 +41,20 @@ export const Content = styled.div`
   }
 `
 
-export const Button = styled.button`
-  padding: 0.6em 0.8em;
+export const Button = styled(Link)`
+  padding: 0.4em 0.8em;
   font-size: 1.4em;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
   background: ${({theme}) => theme.colors.black};
   margin-top: 3em;
+  text-decoration: none;
+  color: ${({theme}) => theme.colors.white};
   &:hover {
     background: ${({theme}) => theme.colors.primaryTextColor};
   }
-
-  a {
-    text-decoration: none;
-    color: ${({theme}) => theme.colors.white};
-  }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 0.8em 1em;
+    padding: 0.6em 1em;
   }
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 90%;

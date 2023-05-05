@@ -33,7 +33,7 @@ export const Container = styled.div`
   }
 `
 
-export const StyledList = styled.div`
+export const StyledList = styled.ul`
   list-style: none;
   display: flex;
   margin-top: 5em;
@@ -57,7 +57,7 @@ export const List = styled.li`
   border-bottom: 2px solid #cdcdcd;
   cursor: pointer;
 
-  span {
+  button {
     padding-top: 0.7em;
     font-size: 1.6em;
   }

@@ -20,8 +20,12 @@ function Footer() {
           </p>
         </AllRights>
         <LinksContainer>
-          <Link href="/privacy-policy">Privacy policy</Link>
-          <Link href="/about">About us</Link>
+          <Link href="/privacy-policy" data-clog-click>
+            Privacy policy
+          </Link>
+          <Link href="/about" data-clog-click>
+            About us
+          </Link>
         </LinksContainer>
       </FooterContainer>
     </FooterSection>

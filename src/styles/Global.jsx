@@ -38,7 +38,14 @@ __#next {
 
 main {
   overflow-x: hidden;
-  min-width: 312px;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.scroll {
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    overflow: hidden;
+  }
 }
 
 h1,

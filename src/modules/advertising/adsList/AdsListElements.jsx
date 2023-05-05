@@ -52,6 +52,9 @@ export const Content = styled.div`
     width: 98%;
     padding: 0 2em;
   }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    display: none;
+  }
   @media screen and (max-width: 670px) {
     padding: 0 8px;
   }
@@ -98,6 +101,10 @@ export const StyledList = styled.ul`
 
   .active {
     background: #f2f2f2;
+
+    button {
+      cursor: default;
+    }
   }
 
   li {
@@ -110,7 +117,6 @@ export const StyledList = styled.ul`
     border-radius: 10px;
     padding: 30px;
     transition: 0.4s all ease-in-out;
-    /* background: ${({isOpen}) => (isOpen ? '#f2f2f2' : 'none')}; */
     @media screen and (max-width: 1200px) {
       width: 98%;
     }
@@ -121,12 +127,15 @@ export const StyledList = styled.ul`
       align-items: center;
     }
 
-    h3 {
+    button {
+      text-align: start;
+      display: flex;
+      width: 100%;
+      transition: 0.4s all ease-in-out;
       font-size: 1.5em;
       text-transform: uppercase;
       padding-right: 2em;
-      cursor: pointer;
-      /* font-family: Inter; */
+      font-weight: 700;
     }
 
     p {
@@ -136,6 +145,12 @@ export const StyledList = styled.ul`
       padding-right: 1em;
       color: #010101;
     }
+
+    .content_p {
+      @media screen and (max-width: ${({theme}) => theme.size.md}) {
+        display: none;
+      }
+    }
   }
 `
 
@@ -144,4 +159,17 @@ export const Icon = styled(RiArrowDownSLine)`
   font-size: 2.5em;
   position: absolute;
   right: 5px;
+  top: 0.9em;
+`
+
+export const ContentMobile = styled.div`
+  display: none;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      margin-top: 1em;
+    }
+  }
 `

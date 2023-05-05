@@ -25,7 +25,6 @@ export const Nav = styled.nav`
   background: ${({theme}) => theme.colors.white};
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   justify-content: space-between;
-  /* padding: 2.5rem 6em; */
   padding: 0 1em;
 `
 
@@ -34,10 +33,6 @@ export const LogoContainer = styled(Link)`
   align-items: center;
   justify-content: center;
   z-index: 11;
-  /* 
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    
-  } */
 `
 
 export const LogoImg = styled(Image)`
@@ -45,7 +40,7 @@ export const LogoImg = styled(Image)`
   margin-bottom: 0.5rem;
 `
 
-export const LinksContainer = styled.div`
+export const NavList = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -55,33 +50,25 @@ export const LinksContainer = styled.div`
     gap: 3.8em;
   }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    display: ${({isOpen}) => (isOpen ? 'flex' : 'none')};
     transform: ${({isOpen}) =>
-      isOpen ? 'translateY(0)' : 'translateY(-100%)'};
+      isOpen ? 'translateX(0)' : 'translateX(-100%)'};
     position: fixed;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
-    width: 50%;
+    align-items: start;
+    width: 100%;
     height: 100%;
     background: #ffffff;
     top: 0;
     left: 0;
     padding-top: 10em;
     padding-left: 1.7em;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
     gap: 1.5em;
     z-index: 10;
-  }
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
   }
 
   div {
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       width: 100%;
-      border-top: 1px solid ${({theme}) => theme.colors.secondary};
     }
   }
 
@@ -93,14 +80,55 @@ export const LinksContainer = styled.div`
     display: none;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       display: block;
-      width: 97%;
-      padding-top: 1em;
-      margin-top: 0.5em;
-      border-top: 1px solid ${({theme}) => theme.colors.secondary};
-
       a {
         font-size: 1.4em;
       }
+    }
+  }
+`
+
+export const List = styled.ul`
+  justify-content: flex-start;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 2em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+  }
+
+  li {
+    position: relative;
+    width: auto;
+    backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .drop {
+    visibility: visible;
+    transform: translateY(2.6em);
+    transition: visibility 0.4s, opacity 0.4s ease,
+      transform 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      display: block;
+      transform: translateY(5px);
+    }
+  }
+
+  .dropdown_link {
+    display: flex;
+    margin-right: 1em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 100%;
+    }
+  }
+  .dropdown_container {
+    position: relative;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 95%;
+      outline: 0;
     }
   }
 `
@@ -123,7 +151,7 @@ export const NavLink = styled(Link)`
       background-color: ${({theme}) => theme.colors.text};
       transition: 0.2s ease-out;
     }
-    :hover::after {
+    &:hover::after {
       left: 0;
       width: 100%;
     }
@@ -133,42 +161,11 @@ export const NavLink = styled(Link)`
   }
 `
 
-export const LinkTree = styled.span`
-  position: relative;
-  display: flex;
-  cursor: pointer;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    /* background: #ffff20; */
-    width: 97%;
-  }
-
-  .drop {
-    visibility: visible;
-    transform: translateY(2.6em);
-    transition: visibility 0.4s, opacity 0.4s ease,
-      transform 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      display: block;
-    }
-  }
-`
-
-export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
-  font-size: 1.8em;
-  transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
-  transform: ${({show}) => (show ? 'rotate(179deg)' : '')};
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    position: absolute;
-    right: 0;
-    font-size: 2.2em;
-    transform: ${({show}) => (show ? 'rotate(0)' : 'rotate(-92deg)')};
-  }
-`
-
-export const DropdownMenu = styled.ul`
+export const DropdownMenu = styled.div`
   @media screen and (min-width: ${({theme}) => theme.size.md}) {
     position: absolute;
-    padding: 0.5rem 0;
+    padding: 1.2rem 0;
+    margin-top: -1.4em;
     border: 1px solid #ebeaeb;
     border-radius: 8px;
     margin-left: -3px;
@@ -182,16 +179,7 @@ export const DropdownMenu = styled.ul`
   }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     display: none;
-    padding-bottom: 2em;
-    margin-left: -6.5em;
-  }
-
-  li {
-    padding: 0.2em;
-    font-size: 1.3em;
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      font-size: 1.45em;
-    }
+    margin-top: 0.8em;
   }
 
   a {
@@ -199,18 +187,39 @@ export const DropdownMenu = styled.ul`
     text-decoration: none;
     align-items: center;
     font-weight: 600;
+    font-size: 1.3em;
     color: #1d1d1d;
     width: 100%;
     padding: 0 1rem;
     height: 30px;
-    margin: auto;
+    @media screen and (min-width: ${({theme}) => theme.size.md}) {
+      padding: 1.1em 1rem;
+    }
+
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      font-size: 1.45em;
+    }
     &:hover {
       color: ${({theme}) => theme.colors.primary};
     }
   }
 `
 
-export const NavBtn = styled.button`
+export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
+  font-size: 1.3em;
+  position: absolute;
+  right: -1em;
+  transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
+  transform: ${({show}) => (show ? 'rotate(179deg)' : '')};
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    right: 0;
+    top: -2px;
+    font-size: 1.5em;
+    transform: ${({show}) => (show ? 'rotate(0)' : 'rotate(-92deg)')};
+  }
+`
+
+export const NavButtonContainer = styled.button`
   display: flex;
   align-items: center;
   cursor: default;
@@ -219,17 +228,17 @@ export const NavBtn = styled.button`
   }
 `
 
-export const NavBtnLink = styled(Link)`
+export const NavButton = styled(Link)`
   border-radius: 8px;
   background: ${({theme}) => theme.colors.primary};
-  padding: 10px 22px;
+  padding: 0.7rem 1.3rem;
   color: ${({theme}) => theme.colors.white};
   outline: none;
   border: none;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
   font-size: 1.4em;
-  font-weight: 700;
+  font-weight: 600;
   &:hover,
   &.active {
     background: ${({theme}) => theme.colors.black};

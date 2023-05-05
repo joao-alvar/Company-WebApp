@@ -12,7 +12,7 @@ export const Container = styled.div`
   width: 100%;
   height: 77rem;
   line-height: initial;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+  @media screen and (max-width: 1000px) {
     height: auto;
     padding: 2em 0;
   }

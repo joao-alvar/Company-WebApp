@@ -12,7 +12,7 @@ import {
   LinkGrid,
   GridRight,
   PercentageIcon,
-  Count,
+  Number,
 } from './LeadGridElements'
 
 import GirlGifBg from 'public/images/Girl_illustration.gif'
@@ -86,8 +86,8 @@ const LeadGrid = () => {
                     <ArrowIcon />
                   </span>
                 </div>
-                <div className="grid_3_count">
-                  <Count start={0} end={70} duration={5} />
+                <div className="grid_3_number">
+                  <Number>70</Number>
                   <PercentageIcon />
                 </div>
               </LinkGrid>

@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-import {HeroBtn, Section} from '@/modules/home/hero/HeroElements'
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 
-import {Container, ImgContainer, Content, HeroLink} from './HeroElements'
+import {Section} from '@/modules/home/hero/HeroElements'
+
+import {Container, ImgContainer, Content} from './HeroElements'
 
 import DevelopmentBg from 'public/images/DevelopmentHero.jpeg'
 
@@ -22,9 +24,9 @@ const Hero = () => {
             looking to launch an online store, or an established organization
             seeking to improve your online presence, we are here to guide you.
           </p>
-          <HeroLink href="/contact">
-            <HeroBtn>Get started</HeroBtn>
-          </HeroLink>
+          <ButtonPrimary href="/contact" className="button" data-clog-click>
+            Get started
+          </ButtonPrimary>
         </Content>
         <ImgContainer>
           <Image src={DevelopmentBg} alt="Laptop illustration" />

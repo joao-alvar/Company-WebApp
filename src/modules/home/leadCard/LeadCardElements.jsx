@@ -26,11 +26,16 @@ export const LeadCardContainer = styled.div`
 
   h2 {
     font-size: 2.2em;
-    font-weight: 400;
+    font-family: Inter;
+    font-weight: 600;
     color: ${({theme}) => theme.colors.black};
     @media screen and (max-width: 1010px) {
       padding: 0 2em;
       text-align: center;
+    }
+    @media screen and (max-width: 575px) {
+      font-size: 2em;
+      padding: 0 15px;
     }
   }
 `
@@ -112,7 +117,7 @@ export const LeadCardContent = styled.div`
   font-family: Overpass;
   font-weight: 400;
 
-  h2 {
+  h3 {
     color: ${({theme}) => theme.colors.white};
     font-size: 2.6em;
     margin-left: 0.7em;

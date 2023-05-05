@@ -1,6 +1,5 @@
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
-
-import {Button} from '@/modules/home/lead/LeadElements'
 
 export const Container = styled.div`
   position: relative;
@@ -98,8 +97,9 @@ export const Content = styled.div`
   }
 `
 
-export const StyledButton = styled(Button)`
+export const StyledButton = styled(ButtonPrimary)`
   margin-top: 1em;
+  padding: 0.6rem 1.2rem;
 
   @media screen and (max-width: 410px) {
     width: 100%;

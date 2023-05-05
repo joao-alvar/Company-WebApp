@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import React from 'react'
 
 import {Section} from '@/modules/home/hero/HeroElements'
@@ -11,11 +10,9 @@ const CallToAction = () => {
       <Container>
         <h2>Ready to get started?</h2>
         <p>Join 20,000+ innovative businesses – big and small</p>
-        <Link href="/contact">
-          <Button>
-            Start now <IconArrow />
-          </Button>
-        </Link>
+        <Button href="/contact" data-clog-click>
+          Start now <IconArrow />
+        </Button>
       </Container>
     </Section>
   )

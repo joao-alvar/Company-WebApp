@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -84,7 +86,7 @@ export const ActiveContent = styled.div`
     flex-direction: column;
     width: 98%;
 
-    .img_wrapp {
+    .img_wrap {
       width: 100%;
     }
 
@@ -95,7 +97,7 @@ export const ActiveContent = styled.div`
     }
   }
 
-  .img_wrapp {
+  .img_wrap {
     display: flex;
 
     img {
@@ -103,7 +105,7 @@ export const ActiveContent = styled.div`
     }
   }
 
-  .content_wrapp {
+  .content_wrap {
     width: 60%;
     display: flex;
     justify-content: start;
@@ -133,20 +135,19 @@ export const ActiveContent = styled.div`
     color: #2d2d2d;
     padding-bottom: 1em;
   }
-
-  a {
-    text-decoration: none;
-    width: max-content;
-    @media screen and (max-width: 425px) {
-      margin: 0 auto;
-    }
-  }
 `
 
-export const ButtonActive = styled.button`
+export const ButtonActive = styled(Link)`
+  width: max-content;
+  color: ${({theme}) => theme.colors.black};
   font-size: 1.6em;
   text-decoration: underline;
+  width: fit-content;
   &:hover {
     color: ${({theme}) => theme.colors.primary};
+  }
+  @media screen and (max-width: 425px) {
+    margin: 0 auto;
+    text-underline-offset: 2px;
   }
 `

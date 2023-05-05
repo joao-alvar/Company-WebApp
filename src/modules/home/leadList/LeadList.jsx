@@ -26,41 +26,59 @@ const LeadList = () => {
         </TitleContainer>
         <ListContainer>
           <ul>
-            <li
-              onClick={() => setIsShow(0)}
-              className={isShow == 0 ? 'active' : null}
-            >
-              Advertising
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(0)}
+                className={isShow == 0 ? 'active' : null}
+              >
+                Advertising
+              </button>
             </li>
-            <li
-              onClick={() => setIsShow(1)}
-              className={isShow == 1 ? 'active' : null}
-            >
-              Web Development
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(1)}
+                className={isShow == 1 ? 'active' : null}
+              >
+                Web Development
+              </button>
             </li>
-            <li
-              onClick={() => setIsShow(2)}
-              className={isShow == 2 ? 'active' : null}
-            >
-              Paid Search
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(2)}
+                className={isShow == 2 ? 'active' : null}
+              >
+                Paid Search
+              </button>{' '}
             </li>
-            <li
-              onClick={() => setIsShow(3)}
-              className={isShow == 3 ? 'active' : null}
-            >
-              SEO
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(3)}
+                className={isShow == 3 ? 'active' : null}
+              >
+                SEO
+              </button>
             </li>
-            <li
-              onClick={() => setIsShow(4)}
-              className={isShow == 4 ? 'active' : null}
-            >
-              Creative Solutions
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(4)}
+                className={isShow == 4 ? 'active' : null}
+              >
+                Creative Solutions
+              </button>
             </li>
-            <li
-              onClick={() => setIsShow(5)}
-              className={isShow == 5 ? 'active' : null}
-            >
-              Website optimization and Accessibility
+            <li>
+              <button
+                data-clog-clicks
+                onClick={() => setIsShow(5)}
+                className={isShow == 5 ? 'active' : null}
+              >
+                Website optimization and Accessibility
+              </button>
             </li>
           </ul>
           <ListContent>

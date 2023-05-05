@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import {HiArrowRight} from 'react-icons/hi'
 
 import styled from 'styled-components'
@@ -31,13 +32,10 @@ export const Container = styled.div`
     font-size: 1.5em;
     padding-bottom: 0.5em;
   }
-
-  a {
-    text-decoration: none;
-  }
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
+  text-decoration: none;
   color: ${({theme}) => theme.colors.white};
   font-size: 1.6em;
   font-weight: 600;

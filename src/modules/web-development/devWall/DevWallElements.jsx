@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -52,7 +54,7 @@ export const Content = styled.div`
     padding-left: 0.5em;
   }
   @media screen and (max-width: 700px) {
-    width: 98%;
+    width: 95%;
   }
 
   h2 {
@@ -60,6 +62,9 @@ export const Content = styled.div`
     font-family: Inter;
     font-weight: 600;
     margin-left: -8px;
+    @media screen and (max-width: 430px) {
+      margin-left: -4px;
+    }
   }
 
   p {
@@ -68,11 +73,12 @@ export const Content = styled.div`
   }
 `
 
-export const Button = styled.button`
+export const Button = styled(Link)`
   padding: 6px 12px;
   font-size: 1.5em;
   border-radius: 8px;
   font-weight: 600;
+  text-decoration: none;
   border: 2px solid #ffffff;
   color: #ffffff;
   transition: all 0.3s;

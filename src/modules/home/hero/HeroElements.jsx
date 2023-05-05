@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import {IoIosArrowDown} from 'react-icons/io'
 
-import styled from 'styled-components'
+import styled, {css} from 'styled-components'
 
 export const Section = styled.section`
   position: relative;
@@ -87,64 +88,37 @@ export const ButtonContainer = styled.div`
     padding-bottom: 1em;
   }
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    flex-direction: column;
     gap: 1em;
+  }
+  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    flex-direction: column;
   }
   a {
     text-decoration: none;
   }
 `
 
-export const HeroBtn = styled.button`
-  color: ${({theme}) => theme.colors.white};
-  background: ${({theme}) => theme.colors.black};
-  font-family: Inter;
-  font-size: 1.2em;
-  border-radius: 8px;
-  padding: 7px 12px;
-  font-weight: 500;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 10px 12px;
-  }
-  &:hover {
-    background: ${({theme}) => theme.colors.primaryTextColor};
-    transition: all 0.2s ease-in-out;
-  }
+// export const ButtonSecondary = styled(Link)`
+//   color: ${({theme}) => theme.colors.black};
+//   text-decoration: none;
+//   text-align: center;
+//   font-family: 'Overpass';
+//   margin-left: 1em;
+//   font-size: 1.3em;
+//   font-weight: 600;
+//   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+//     margin-left: 0;
+//     border: 2px solid ${({theme}) => theme.colors.black};
+//     border-radius: 8px;
+//     padding: 5px 12px;
+//   }
 
-  a {
-    color: ${({theme}) => theme.colors.white};
-  }
-`
+//   &:hover {
+//     text-decoration: underline;
+//   }
+// `
 
-export const HeroBtnRight = styled.button`
-  text-align: center;
-  font-family: 'Overpass';
-  margin-left: 1em;
-  font-size: 1.3em;
-  font-weight: 600;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    margin-left: 0;
-    border: 2px solid ${({theme}) => theme.colors.black};
-    border-radius: 8px;
-    padding: 5px 12px;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-
-  a {
-    color: ${({theme}) => theme.colors.black};
-  }
-`
-
-export const ArrowIconWrap = styled.div`
+export const ArrowIconWrap = styled.button`
   position: absolute;
   bottom: 1.2em;
   transition: all 0.2s ease-in-out;
