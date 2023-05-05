@@ -2,8 +2,6 @@ import {HiArrowLeft} from 'react-icons/hi'
 
 import styled from 'styled-components'
 
-import {HeroBtn} from '@/modules/home/hero/HeroElements'
-
 import {ButtonPrimary} from '../button/ButtonElements'
 export const ModalContainer = styled.div`
   /* position: fixed; */

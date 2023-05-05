@@ -1,9 +1,4 @@
-import {ButtonPrimary} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
-
-import {FeaturedSection} from '../featured/FeaturedElements'
-
-export const LeadSection = styled(FeaturedSection)``
 
 export const Container = styled.div`
   position: relative;
