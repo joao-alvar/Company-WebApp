@@ -1,5 +1,26 @@
-import '@/styles/globals.css'
+import React, {Suspense} from 'react'
 
-export default function App({Component, pageProps}) {
-  return <Component {...pageProps} />
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/navbar/Navbar'
+import {ThemeProvider} from 'styled-components'
+
+import '../styles/fonts.css'
+import {GlobalStyles} from '../styles/Global'
+import {theme} from '../styles/Theme'
+
+const App = ({Component, pageProps}) => {
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </Suspense>
+      </ThemeProvider>
+    </>
+  )
 }
+
+export default App
