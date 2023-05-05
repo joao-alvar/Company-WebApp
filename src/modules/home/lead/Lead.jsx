@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
-import {Button, Container, LeadInformation, LeadSection} from './LeadElements'
+import {ButtonPrimary} from '@/components/button/ButtonElements'
+
+import {Container, LeadInformation, LeadSection} from './LeadElements'
 
 const Lead = () => {
   return (
@@ -11,9 +13,9 @@ const Lead = () => {
             <h2>
               Join 28+ million people who already trust us with their money
             </h2>
-            <Button>
-              <Link href="/">Get Started</Link>
-            </Button>
+            <ButtonPrimary href="/" className="button" data-clog-click>
+              Get Started
+            </ButtonPrimary>
           </LeadInformation>
         </Container>
       </LeadSection>

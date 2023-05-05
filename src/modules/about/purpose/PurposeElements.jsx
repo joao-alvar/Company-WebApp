@@ -30,13 +30,13 @@ export const Content = styled.div`
     font-size: 4em;
     font-family: Inter;
     margin-bottom: 0.4em;
-    background: linear-gradient(
+    background: -webkit-linear-gradient(
       90deg,
       rgba(131, 58, 180, 1) 0%,
       rgba(253, 29, 29, 1) 50%,
       rgba(252, 176, 69, 1) 100%
     );
-    background: -webkit-linear-gradient(
+    background: linear-gradient(
       90deg,
       rgba(131, 58, 180, 1) 0%,
       rgba(253, 29, 29, 1) 50%,

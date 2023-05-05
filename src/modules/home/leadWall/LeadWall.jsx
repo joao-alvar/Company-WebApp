@@ -1,11 +1,10 @@
-import Link from 'next/link'
-
 import {Section} from '../hero/HeroElements'
 import {
   LeadContainer,
   LeadContentText,
   LeadImageWrap,
   LeadImage,
+  Button,
 } from './LeadWallElements'
 
 import ImageGallery from '/public/images/Gallery_2.jpg'
@@ -37,9 +36,7 @@ const LeadWall = () => {
               delectus repudiandae! Blanditiis quam dolores iste illo numquam
               exercitationem aliquam molestias dolorum?
             </p>
-            <Link href="/advertising">
-              <button>Learn More</button>
-            </Link>
+            <Button href="/advertising">Learn more</Button>
           </LeadContentText>
         </LeadContainer>
       </Section>

@@ -9,8 +9,8 @@ const AboutWall = () => {
       <Container>
         <Content>
           <h2>Join 28+ million people who already trust us with their money</h2>
-          <Button>
-            <Link href="/contact">Get Started</Link>
+          <Button href="/contact" data-clog-click>
+            Get Started
           </Button>
         </Content>
       </Container>

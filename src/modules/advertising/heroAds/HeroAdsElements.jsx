@@ -61,6 +61,12 @@ export const LinkWrap = styled.div`
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
+
+  .button {
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    width: 100%;
+  }
+  }
 `
 
 export const ImageWrap = styled.div`

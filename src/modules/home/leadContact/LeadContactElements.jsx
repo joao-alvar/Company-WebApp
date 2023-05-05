@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styled from 'styled-components'
 
 import {FeaturedButton} from '../featured/FeaturedElements'
@@ -37,9 +39,16 @@ export const LeadContent = styled.h3`
   }
 `
 
-export const LeadButton = styled(FeaturedButton)`
+export const LeadButton = styled(Link)`
+  margin-top: 1.2em;
+  border-radius: 8px;
+  padding: 0.4rem 1.3rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-weight: 700;
   font-size: 1.5em;
-  margin-top: 2em;
   background: transparent;
   color: ${({theme}) => theme.colors.white};
   border: 2px solid ${({theme}) => theme.colors.white};

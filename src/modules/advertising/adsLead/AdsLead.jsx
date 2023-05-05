@@ -37,9 +37,10 @@ const AdsLead = () => {
               lineup of EVs for every person and every purpose. Explore the
               benefits of choosing an EV powered by Ultium.
             </p>
-            <Link href="/">
-              <StyledButton>Learn more</StyledButton>
-            </Link>
+
+            <StyledButton href="/" data-clog-click>
+              Learn more
+            </StyledButton>
           </Content>
         </Wrapper>
         <Wrapper className="bottom_wrapper" style={{background: '#f2f2f2'}}>
@@ -51,9 +52,10 @@ const AdsLead = () => {
               lineup of EVs for every person and every purpose. Explore the
               benefits of choosing an EV powered by Ultium.
             </p>
-            <Link href="/">
-              <StyledButton>Learn more</StyledButton>
-            </Link>
+
+            <StyledButton href="/" data-clog-click>
+              Learn more
+            </StyledButton>
           </Content>
           <ImageWrap style={{justifyContent: 'end'}}>
             <Image

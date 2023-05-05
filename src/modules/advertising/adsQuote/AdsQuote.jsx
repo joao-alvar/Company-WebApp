@@ -15,10 +15,11 @@ const AdsQuote = () => {
         <QuoteContainer>
           <QuoteText>
             <div>
-              <QuoteIconLeft />
-
-              <h2>Without publicity there is no prosperity</h2>
-              <QuoteIconRight />
+              <h2>
+                <QuoteIconLeft />
+                Without publicity there is no prosperity
+                <QuoteIconRight />
+              </h2>
             </div>
             <h3>Yakov Borisovich Zel&apos;dovich</h3>
           </QuoteText>

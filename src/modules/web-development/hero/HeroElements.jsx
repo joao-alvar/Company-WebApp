@@ -77,12 +77,11 @@ export const Content = styled.div`
     margin: 1.2rem 0 0;
     padding: 0px;
   }
-`
-export const HeroLink = styled(Link)`
-  margin-top: 2em;
-  margin-right: auto;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    padding: 1em 0;
+  .button {
+    margin-top: 1.2em;
+    margin-right: auto;
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      width: 100%;
+    }
   }
 `

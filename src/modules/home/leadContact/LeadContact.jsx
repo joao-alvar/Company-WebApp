@@ -12,7 +12,7 @@ const LeadContact = () => {
         <LeadContainer>
           <LeadContent>Is only the beginning of your growth</LeadContent>
           <LeadContent>Enjoy the journey!</LeadContent>
-          <LeadButton href="/contact-us">Start Now</LeadButton>
+          <LeadButton href="/contact" data-clog-click>Start Now</LeadButton>
         </LeadContainer>
       </LeadSection>
     </div>
