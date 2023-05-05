@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import {AboutSection} from '../hero/AboutHeroElements'
 import {Container, Content, Button} from './CallToActionElements'
 

@@ -2,8 +2,6 @@ import Link from 'next/link'
 
 import styled from 'styled-components'
 
-import {FeaturedButton} from '../featured/FeaturedElements'
-
 export const LeadSection = styled.section`
   position: relative;
   height: auto;
