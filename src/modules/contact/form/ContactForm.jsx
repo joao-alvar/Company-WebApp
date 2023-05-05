@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import React, {useEffect, useRef, useState} from 'react'
-import ReCAPTCHA from 'react-google-recaptcha'
+import React, {useRef, useState} from 'react'
+// import ReCAPTCHA from 'react-google-recaptcha'
 import {useForm} from 'react-hook-form'
 import toast, {Toaster} from 'react-hot-toast'
 
@@ -223,11 +223,11 @@ const ContactForm = () => {
   return (
     <Section>
       <Container>
-        <button
+        {/* <button
           onClick={() => {
             captchaVerification()
           }}
-        >
+        > */}
           Hello
         </button>
         {!modalOpen && (
@@ -508,10 +508,10 @@ const ContactForm = () => {
               </Checkbox>
               <CapContainer>
                 <HCaptcha
-                sitekey={SITE_KEY}
-                 onVerify={onCaptchaChange}
-                 ref={captchaRef}
-              />
+                  sitekey={SITE_KEY}
+                  onVerify={onCaptchaChange}
+                  ref={captchaRef}
+                />
                 {/* <ReCAPTCHA
                   sitekey={SITE_KEY}
                   onChange={onCaptchaChange}

@@ -64,8 +64,8 @@ export const LinkWrap = styled.div`
 
   .button {
     @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 100%;
-  }
+      width: 100%;
+    }
   }
 `
 

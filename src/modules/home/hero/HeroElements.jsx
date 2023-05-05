@@ -1,7 +1,6 @@
-import Link from 'next/link'
 import {IoIosArrowDown} from 'react-icons/io'
 
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 
 export const Section = styled.section`
   position: relative;
