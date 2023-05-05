@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import {
@@ -31,8 +30,8 @@ const Modal = ({className, onClick}) => {
             <h2>Thank you for submitting!</h2>
             <p>
               from the common confirmation and appreciation words, this example
-              offers instructions to guide users to download the company’s
-              mobile app. If they don't want to download it directly on the
+              offers instructions to guide users to download the company&apos;s
+              mobile app. If they don&apos;t want to download it directly on the
               website, they can choose to type in their phone number and receive
               a link
             </p>
