@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
 
+import {ButtonPrimary} from '@/components/button/ButtonElements'
+
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {
@@ -8,7 +10,6 @@ import {
   Content,
   ImageContainer,
   TextWrap,
-  Button,
 } from './PageNotFoundElements'
 
 import not_found_illustration from '/public/images/not_found_illustration.png'
@@ -32,9 +33,9 @@ const PageNotFound = () => {
               You didn&apos;t break the internet, but we can&apos;t find what
               you are looking for.
             </p>
-            <Button href="https://atalaso.com/" data-clog-click>
+            <ButtonPrimary href="https://atalaso.com/" data-clog-click>
               Go back home
-            </Button>
+            </ButtonPrimary>
           </TextWrap>
         </Content>
       </Container>
