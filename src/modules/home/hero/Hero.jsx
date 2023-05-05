@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import Link from 'next/link'
+
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 
 import {
   Section,
@@ -9,7 +10,6 @@ import {
   Title,
   HeroText,
   ButtonContainer,
-  HeroBtn,
   ArrowIconWrap,
   ArrowDown,
 } from './HeroElements'
@@ -38,9 +38,9 @@ const Hero = () => {
               bottom line
             </HeroText>
             <ButtonContainer>
-              <HeroBtn>
-                <Link href="/">Learn more</Link>
-              </HeroBtn>
+              <ButtonPrimary href="/" data-clog-click>
+                Learn more
+              </ButtonPrimary>
             </ButtonContainer>
           </ContentLeft>
           <ContentRight>
@@ -53,10 +53,8 @@ const Hero = () => {
               />
             </div>
           </ContentRight>
-          <ArrowIconWrap onClick={handleClickScroll}>
+          <ArrowIconWrap onClick={handleClickScroll} data-clog-click>
             <ArrowDown />
-            {/* <span className="m_scroll_arrows two" /> */}
-            {/* <span className="m_scroll_arrows three" /> */}
           </ArrowIconWrap>
         </Container>
       </Section>

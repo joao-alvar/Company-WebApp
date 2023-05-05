@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import CountUp from 'react-countup'
 import {AiOutlineArrowRight} from 'react-icons/ai'
 import {BsPercent} from 'react-icons/bs'
 
@@ -26,7 +25,7 @@ export const Container = styled.div`
   flex-direction: column;
   height: 108em;
   @media screen and (max-width: 1210px) {
-    width: 98%;
+    width: 92%;
     height: auto;
   }
   @media screen and (max-width: 768px) {
@@ -95,6 +94,7 @@ export const LinkGrid = styled(Link)`
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 20px;
   &:hover .grid_1_span {
     text-decoration: underline;
   }
@@ -105,15 +105,18 @@ export const LinkGrid = styled(Link)`
 
 export const GridTop = styled.div`
   height: 15em;
-  padding: 20px;
   font-size: 30px;
   border-radius: 14px;
   display: flex;
   align-items: center;
   position: relative;
   background-color: #faf0e6;
+  flex-shrink: 0;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: auto;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.9em;
   }
 
   .grid_1_container {
@@ -122,18 +125,16 @@ export const GridTop = styled.div`
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       width: 100%;
       display: flex;
-      align-items: center;
-      justify-content: center;
       flex-direction: column;
-    }
-    @media screen and (max-width: 700px) {
-      text-align: center;
     }
   }
 
   .grid_1_content_p {
     font-size: 0.61em;
     margin: 0.5em 0 0;
+    @media screen and (max-width: 500px) {
+      font-size: 0.8em;
+    }
   }
 
   .grid_1_span {
@@ -170,15 +171,18 @@ export const GridBottomWrap = styled.div`
 
 export const GridLeft = styled.div`
   width: 50%;
-  padding: 20px;
   font-size: 30px;
   border-radius: 14px;
   display: flex;
   align-items: center;
   position: relative;
+  flex-shrink: 0;
   background-color: ${({theme}) => theme.colors.black};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    font-size: 1.6em;
   }
   a {
     text-decoration: none;
@@ -191,9 +195,6 @@ export const GridLeft = styled.div`
 
   .grid_2_container {
     color: ${({theme}) => theme.colors.white};
-    @media screen and (max-width: 700px) {
-      text-align: center;
-    }
   }
 
   .grid_2_content_h3 {
@@ -232,13 +233,18 @@ export const GridRight = styled(GridLeft)`
     font-weight: 600;
   }
 
-  .grid_3_count {
-    margin: 2.5em 0 0 1em;
+  .grid_3_number {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1em;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      margin: 3.5em 0 3em;
+      height: 70%;
     }
-    @media screen and (max-width: 500px) {
-      margin: 2.5em 0 0;
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      height: 60%;
     }
   }
 `
@@ -249,7 +255,7 @@ export const PercentageIcon = styled(BsPercent)`
   transform: translateY(14px);
 `
 
-export const Count = styled(CountUp)`
+export const Number = styled.span`
   color: ${({theme}) => theme.colors.white};
   font-size: 5em;
 `

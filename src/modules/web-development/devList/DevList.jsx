@@ -29,7 +29,7 @@ const DevList = () => {
               width={300}
               className={show == 0 ? 'show' : null}
             />
-            <span>Accelerating tech adoption</span>
+            <button data-clog-click>Accelerating tech adoption</button>
           </List>
           <List
             onClick={() => setShow(1)}
@@ -42,7 +42,7 @@ const DevList = () => {
               width={300}
               className={show == 1 ? 'show' : null}
             />
-            <span>Delivering trust and transparency</span>
+            <button data-clog-click>Delivering trust and transparency</button>
           </List>
           <List
             onClick={() => setShow(2)}
@@ -55,7 +55,7 @@ const DevList = () => {
               width={500}
               className={show == 2 ? 'show' : null}
             />
-            <span>Strategic planing and development</span>
+            <button data-clog-click>Strategic planing and development</button>
           </List>
         </StyledList>
         {show == 0 && (

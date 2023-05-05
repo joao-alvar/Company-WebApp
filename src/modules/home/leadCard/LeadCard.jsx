@@ -21,7 +21,7 @@ const LeadCard = () => {
           <li>
             <Image src={Card_1} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
-              <h2>Amazing design</h2>
+              <h3>Amazing design</h3>
               <p> business with amazing design and great architecture</p>
               <button>
                 Learn More <ArrowIcon />{' '}
@@ -31,7 +31,7 @@ const LeadCard = () => {
           <li>
             <Image src={Card_2} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
-              <h2>Amazing design</h2>
+              <h3>Amazing design</h3>
               <p> business with amazing design and great architecture</p>
               <button>
                 Learn More <ArrowIcon />{' '}
@@ -41,7 +41,7 @@ const LeadCard = () => {
           <li>
             <Image src={Card_3} alt="Meeting" placeholder="blur" />
             <LeadCardContent>
-              <h2>Amazing design</h2>
+              <h3>Amazing design</h3>
               <p> business with amazing design and great architecture</p>
               <button>
                 Learn More <ArrowIcon />{' '}

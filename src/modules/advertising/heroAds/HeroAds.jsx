@@ -1,12 +1,9 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import {
-  ButtonContainer,
-  HeroBtn,
-  HeroBtnRight,
-  Section,
-} from '@/modules/home/hero/HeroElements'
+import {ButtonPrimary} from '@/components/button/ButtonElements'
+
+import {ButtonContainer, Section} from '@/modules/home/hero/HeroElements'
 
 import {Container, Content, LinkWrap, ImageWrap} from './HeroAdsElements'
 
@@ -29,12 +26,17 @@ const HeroAds = () => {
           </p>
           <LinkWrap>
             <ButtonContainer>
-              <HeroBtn>
-                <Link href="/contact">Get started</Link>
-              </HeroBtn>
-              <HeroBtnRight>
-                <span onClick={handleClickScroll}>Learn more</span>
-              </HeroBtnRight>
+              <ButtonPrimary href="/contact" className="button">
+                Get started
+              </ButtonPrimary>
+              <ButtonPrimary
+                as="button"
+                onClick={handleClickScroll}
+                isPrimary
+                className="button_secondary button"
+              >
+                Learn more
+              </ButtonPrimary>
             </ButtonContainer>
           </LinkWrap>
         </Content>

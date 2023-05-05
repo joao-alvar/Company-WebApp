@@ -4,6 +4,8 @@ import {AiOutlineGlobal} from 'react-icons/ai'
 import {IoPhonePortraitOutline} from 'react-icons/io5'
 import {RiComputerLine} from 'react-icons/ri'
 
+import {ButtonPrimary} from '@/components/button/ButtonElements'
+
 import {
   ButtonWrap,
   ContentLeftWrap,
@@ -68,11 +70,13 @@ const Featured = () => {
                 </div>
               </ContentRight>
               <ButtonWrap>
-                <FeaturedButton>
-                  <Link href="contact-us" style={{textDecoration: 'none'}}>
-                    Start Now
-                  </Link>
-                </FeaturedButton>
+                <ButtonPrimary
+                  href="contact"
+                  className="featured_button"
+                  data-clog-click
+                >
+                  Start now
+                </ButtonPrimary>
               </ButtonWrap>
             </ContentRightWrap>
           </FeaturedContentRight>

@@ -6,11 +6,11 @@ import MobileMenu from '../mobile/menu/MobileMenu'
 import {
   Header,
   Nav,
-  LinksContainer,
+  NavList,
+  List,
   NavLink,
-  LinkTree,
-  NavBtn,
-  NavBtnLink,
+  NavButtonContainer,
+  NavButton,
   LogoContainer,
   LogoImg,
   ArrowIconDown,
@@ -28,9 +28,9 @@ const Navbar = () => {
     setOpen(!isOpen)
     // Unsets Background Scrolling to use when SideDrawer/Modal is closed
     if (!isOpen) {
-      document.body.style.overflow = 'hidden'
+      document.querySelector('body').classList.add('scroll')
     } else {
-      document.body.style.overflow = 'unset'
+      document.querySelector('body').classList.remove('scroll')
     }
   }
 
@@ -67,9 +67,14 @@ const Navbar = () => {
   }
   return (
     <>
-      <Header>
-        <Nav>
-          <LogoContainer href="/">
+      <Header role="banner">
+        <Nav role="navigation" aria-label="Primary Navigation">
+          <LogoContainer
+            href="https://atalaso.com/"
+            data-clog-click
+            aria-label="Atalaso"
+            data-qa="logo"
+          >
             <LogoImg
               src={logo}
               alt="Atalaso logo"
@@ -77,76 +82,138 @@ const Navbar = () => {
               width="128"
               quality="100"
               priority
+              viewBox="0 0 240 60"
+              shapeRendering="geometricPrecision"
             />
           </LogoContainer>
-          <LinksContainer
+          <NavList
             role="navigation"
             aria-label="main navigation"
             isOpen={isOpen}
           >
-            <LinkTree
-              ref={wrapperRef}
-              onClick={() => {
-                setShow(!show)
-              }}
-            >
-              <NavLink as="span" className="dropdown_link">
-                Solutions
-              </NavLink>
-              <ArrowIconDown
-                show={show}
-                // style={{
-                //   transform: show ? 'rotate(179deg)' : '',
-                // }}
-              />
+            <List>
+              <li className="dropdown_container" ref={wrapperRef}>
+                <NavLink
+                  as="button"
+                  data-clog-click
+                  className="dropdown_link"
+                  onClick={() => {
+                    setShow(!show)
+                  }}
+                >
+                  Solutions
+                  <ArrowIconDown show={show} />
+                </NavLink>
+                <DropdownMenu
+                  onClick={remove_hash_from_url}
+                  className={`${show ? 'drop' : ''}`}
+                  show={show}
+                >
+                  <Link
+                    href="/#overview"
+                    data-clog-click
+                    onClick={() => {
+                      openMenu(false), setShow(!show)
+                    }}
+                  >
+                    Overview
+                  </Link>
+                  <Link
+                    href="/advertising#paid-search"
+                    data-clog-click
+                    onClick={() => {
+                      openMenu(false), setShow(!show)
+                    }}
+                  >
+                    Paid Search
+                  </Link>
+                  <Link
+                    href="/advertising#seo"
+                    data-clog-click
+                    onClick={() => {
+                      openMenu(false), setShow(!show)
+                    }}
+                  >
+                    SEO
+                  </Link>
+                  <Link
+                    href="/web-development#optimization"
+                    data-clog-click
+                    onClick={() => {
+                      openMenu(false), setShow(!show)
+                    }}
+                  >
+                    Optimization
+                  </Link>
+                </DropdownMenu>
+              </li>
+              <li>
+                <NavLink
+                  href="/advertising"
+                  data-clog-click
+                  className={router.pathname == '/advertising' ? 'active' : ''}
+                  onClick={() => {
+                    openMenu(false)
+                  }}
+                >
+                  Advertising
+                </NavLink>
+              </li>
 
-              <DropdownMenu
-                onClick={remove_hash_from_url}
-                className={`${show ? 'drop' : ''}`}
-                show={show}
-              >
-                <li>
-                  <Link href="/#overview">Overview</Link>
-                </li>
-                <li>
-                  <Link href="/advertising#paid-search">Paid Search</Link>
-                </li>
-                <li>
-                  <Link href="/advertising#seo">SEO</Link>
-                </li>
-                <li>
-                  <Link href="/web-development#optimization">Optimization</Link>
-                </li>
-              </DropdownMenu>
-            </LinkTree>
-            <NavLink
-              href="/advertising"
-              className={router.pathname == '/advertising' ? 'active' : ''}
-            >
-              Advertising
-            </NavLink>
+              <li>
+                <NavLink
+                  href="/web-development"
+                  data-clog-click
+                  className={
+                    router.pathname == '/web-development' ? 'active' : ''
+                  }
+                  onClick={() => {
+                    openMenu(false)
+                  }}
+                >
+                  Web development
+                </NavLink>
+              </li>
 
-            <NavLink
-              href="/web-development"
-              className={router.pathname == '/web-development' ? 'active' : ''}
-            >
-              Web development
-            </NavLink>
-
-            <NavLink
-              href="/about"
-              className={router.pathname == '/about' ? 'active' : ''}
-            >
-              Who we Are
-            </NavLink>
-            <div className="mobile_contact_link">
-              <NavLink href="/contact">Contact</NavLink>
-            </div>
-          </LinksContainer>
-          <NavBtn>
-            <NavBtnLink href="/contact">Contact Us</NavBtnLink>
-          </NavBtn>
-          <MobileMenu onClick={openMenu} />
+              <li>
+                <NavLink
+                  href="/about"
+                  data-clog-click
+                  className={router.pathname == '/about' ? 'active' : ''}
+                  onClick={() => {
+                    openMenu(false)
+                  }}
+                >
+                  Who we Are
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  href="/contact"
+                  data-clog-click
+                  className="mobile_contact_link"
+                  style={{
+                    color:
+                      router.pathname == '/contact' ? '#B12B28' : '#000000',
+                  }}
+                  onClick={() => {
+                    openMenu(false)
+                  }}
+                >
+                  Contact
+                </NavLink>
+              </li>
+            </List>
+          </NavList>
+          <NavButtonContainer>
+            <NavButton href="/contact" data-clog-click>
+              Contact us
+            </NavButton>
+          </NavButtonContainer>
+          <MobileMenu
+            onClick={openMenu}
+            className={isOpen ? 'menu__btn open' : 'menu__btn'}
+          />
         </Nav>
       </Header>
     </>

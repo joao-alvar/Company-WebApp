@@ -1,6 +1,5 @@
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
-
-import {Button} from '@/modules/home/lead/LeadElements'
 
 export const Container = styled.div`
   position: relative;
@@ -22,10 +21,6 @@ export const Wrapper = styled.div`
   justify-content: center;
   width: 70%;
   height: 30em;
-  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
-    width: 90%;
-  }
-
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     height: auto;
@@ -66,7 +61,7 @@ export const ImageWrap = styled.div`
   }
 `
 
-export const StyledList = styled.div`
+export const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,10 +75,6 @@ export const StyledList = styled.div`
       padding: 1em 0 0 0;
     }
   }
-`
-
-export const StyledButton = styled(Button)`
-  margin-top: 1.4em;
 `
 
 export const Icon = styled.span`
@@ -103,5 +94,16 @@ export const LinkWrap = styled.div`
 
   h2 {
     font-size: 2em;
+    padding-bottom: 1em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
+`
+
+export const StyledButton = styled(ButtonPrimary)`
+  @media screen and (max-width: 768px) {
+    /* width: 10%; */
   }
 `

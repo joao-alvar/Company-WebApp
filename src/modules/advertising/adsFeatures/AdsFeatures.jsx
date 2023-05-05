@@ -1,9 +1,7 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import {AiFillCheckCircle} from 'react-icons/ai'
 
 import {Section} from '@/modules/home/hero/HeroElements'
-import {Button} from '@/modules/home/lead/LeadElements'
 
 import {
   Container,
@@ -13,7 +11,7 @@ import {
   Wrapper,
   Icon,
   LinkWrap,
-  // StyledButton,
+  StyledButton,
 } from './AdsFeaturesElements'
 
 import Ads_2 from '/public/images/Optimized.jpeg'
@@ -95,9 +93,9 @@ const AdsFeatures = () => {
             Want to discover more about the benefits of driving an EV powered by
             Ultium Platform?
           </h2>
-          <Link href="/">
-            <Button>Learn more</Button>
-          </Link>
+          <StyledButton href="/" data-clog-click>
+            Learn more
+          </StyledButton>
         </LinkWrap>
       </Container>
     </Section>

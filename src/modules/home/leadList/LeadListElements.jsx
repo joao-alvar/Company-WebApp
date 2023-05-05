@@ -34,14 +34,19 @@ export const ListContainer = styled.div`
     width: 80%;
     margin: 0 auto;
     border-bottom: 1px solid ${({theme}) => theme.colors.secondary};
-    padding: 0.8em 0;
     font-family: Overpass;
     font-weight: 600;
     font-size: 2em;
     cursor: pointer;
-    color: rgba(0, 0, 0, 0.5);
     @media screen and (max-width: 700px) {
       width: 98%;
+    }
+    button {
+      color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+      display: flex;
+      padding: 0.8em 0;
+      text-align: start;
     }
   }
 

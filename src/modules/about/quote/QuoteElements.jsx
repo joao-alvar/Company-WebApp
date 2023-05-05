@@ -46,12 +46,12 @@ export const QuoteText = styled.section`
 `
 
 export const QuoteIconLeft = styled(FaQuoteLeft)`
-  font-size: 0.81em;
+  font-size: 0.61em;
   margin-bottom: 0.41em;
   margin-right: 5px;
 `
 
 export const QuoteIconRight = styled(FaQuoteRight)`
-  font-size: 0.81em;
+  font-size: 0.61em;
   margin-left: 5px;
 `

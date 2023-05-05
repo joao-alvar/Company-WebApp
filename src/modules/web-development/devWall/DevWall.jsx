@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -22,9 +21,9 @@ const DevWall = () => {
             marketing experts create modern, leading-edge marketing strategies
             producing the results your business needs now and in the long term.
           </p>
-          <Link href="/">
-            <Button>Get started</Button>
-          </Link>
+          <Button href="/" data-clog-click>
+            Get started
+          </Button>
         </Content>
       </Container>
     </Section>
