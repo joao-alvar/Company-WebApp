@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import {HeroBtn} from '@/modules/home/hero/HeroElements'
-
 export const Container = styled.div`
   position: relative;
   display: flex;
@@ -53,8 +51,4 @@ export const TextWrap = styled.div`
     /* margin-top: 0.2em; */
     margin-bottom: 0.5em;
   }
-`
-
-export const Button = styled(HeroBtn)`
-
 `

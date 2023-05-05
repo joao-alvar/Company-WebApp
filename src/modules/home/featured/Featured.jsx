@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import {AiOutlineGlobal} from 'react-icons/ai'
 import {IoPhonePortraitOutline} from 'react-icons/io5'
 import {RiComputerLine} from 'react-icons/ri'
@@ -11,7 +10,6 @@ import {
   ContentLeftWrap,
   ContentRight,
   ContentRightWrap,
-  FeaturedButton,
   FeaturedContainer,
   FeaturedContentLeft,
   FeaturedContentRight,
