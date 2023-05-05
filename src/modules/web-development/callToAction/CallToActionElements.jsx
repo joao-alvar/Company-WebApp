@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import {HiArrowRight} from 'react-icons/hi'
 
 import styled from 'styled-components'
