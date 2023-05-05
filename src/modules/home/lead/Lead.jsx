@@ -1,13 +1,12 @@
-import Link from 'next/link'
-
 import {ButtonPrimary} from '@/components/button/ButtonElements'
 
+import {FeaturedSection} from '../featured/FeaturedElements'
 import {Container, LeadInformation, LeadSection} from './LeadElements'
 
 const Lead = () => {
   return (
     <>
-      <LeadSection id="lead">
+      <FeaturedSection id="lead">
         <Container>
           <LeadInformation>
             <h2>
@@ -18,7 +17,7 @@ const Lead = () => {
             </ButtonPrimary>
           </LeadInformation>
         </Container>
-      </LeadSection>
+      </FeaturedSection>
     </>
   )
 }

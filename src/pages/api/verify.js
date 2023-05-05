@@ -1,6 +1,5 @@
 // import axios from 'axios'
 import axios from 'axios'
-import fetch from 'node-fetch'
 
 export default async function handler(req, res) {
   const {body, method} = req

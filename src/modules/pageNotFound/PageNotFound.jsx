@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 
 import {Section} from '@/modules/home/hero/HeroElements'
@@ -30,8 +29,8 @@ const PageNotFound = () => {
           <TextWrap>
             <h1>Page not found</h1>
             <p>
-              You didn't break the internet, but we can't find what you are
-              looking for.
+              You didn&apos;t break the internet, but we can&apos;t find what
+              you are looking for.
             </p>
             <Button href="https://atalaso.com/" data-clog-click>
               Go back home

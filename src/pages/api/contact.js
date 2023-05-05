@@ -1,4 +1,3 @@
-import axios from 'axios'
 import nodemailer from 'nodemailer'
 
 export default async function verification(req, res) {
@@ -34,7 +33,7 @@ export default async function verification(req, res) {
   if (data.status === 200) {
     // Nodemailer
     try {
-      const emailRes = await transporter.sendMail({
+      await transporter.sendMail({
         from: email,
         to: process.env.NEXT_PUBLIC_USER,
         subject: `Contact form submission from ${firstName} ${lastName}`,
