@@ -1,5 +1,5 @@
-import Link from 'next/link'
-
+import {ButtonPrimary} from '@/components/button/ButtonElements'
+import { IoIosArrowForward } from 'react-icons/io'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -21,10 +21,9 @@ export const Content = styled.div`
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  font-family: 'Inter';
 
   h2 {
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3.6em;
     padding: 0.9em 2em 0 2em;
@@ -42,17 +41,14 @@ export const Content = styled.div`
   }
 `
 
-export const Button = styled(Link)`
-  padding: 0.4em 0.8em;
-  font-size: 1.4em;
-  border-radius: 8px;
-  font-weight: 600;
-  background: ${({theme}) => theme.colors.black};
-  margin-top: 3em;
-  text-decoration: none;
-  color: ${({theme}) => theme.colors.white};
+export const Button = styled(ButtonPrimary)`
+  position: relative;
+  margin-top: 1em;
+  padding: 0;
+  @media screen and (max-width: 1060px) {
+    border: none;
+  }
   &:hover {
-    background: ${({theme}) => theme.colors.primaryTextColor};
   }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     padding: 0.6em 1em;
@@ -60,4 +56,11 @@ export const Button = styled(Link)`
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 90%;
   }
+`
+
+export const Icon = styled(IoIosArrowForward)`
+  position: absolute;
+  top: 4px;
+  margin-left: 2px;
+  font-size: 1em;
 `

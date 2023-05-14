@@ -3,28 +3,19 @@ export const theme = {
     primary: '#B12B28',
     secondary: '#CBD4DB',
     tertiary: '#15141d',
-    text: '#000000',
+    black: '#000000',
+    text: 'rgb(25, 28, 31)',
     primaryTextColor: '#312c2c',
     secondaryTextColor: '#515151',
     inputPlaceholder: '#777777',
     darkGrayText: '#303030',
     darkText: '#1A1A1A',
-    black: '#000000',
     white: '#ffffff',
     dark: '',
-    medium: '',
-    light: '',
+    medium: '#b30808',
+    lightDark: '#15141d',
     danger: '',
     success: '#66A15A',
-  },
-
-  paddings: {
-    container: '15px',
-    pageTop: '30px',
-  },
-
-  margins: {
-    pageTop: '30px',
   },
 
   size: {

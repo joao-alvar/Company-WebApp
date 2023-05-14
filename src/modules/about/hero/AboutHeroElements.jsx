@@ -18,9 +18,15 @@ export const AboutContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  margin-top: 1em;
+  height: 45em;
   display: flex;
+  align-items: center;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: ${({theme}) => theme.colors.black};
+  color: ${({theme}) => theme.colors.white};
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column-reverse;
@@ -28,15 +34,20 @@ export const Wrapper = styled.div`
 `
 
 export const ImageWrap = styled.div`
-  width: 55%;
-  height: 100%;
+  width: 48%;
+  height: 60%;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 4em;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-size: cover;
-    border-bottom-right-radius: 12px;
+    background-size: contain;
+    border-radius: 12px;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -55,15 +66,15 @@ export const Content = styled.div`
   user-select: none;
 
   h1 {
-    font-family: Inter;
+    font-family: var(--font-heading);
+    font-size: 3.4em;
     font-weight: 600;
-    font-size: 2.3em;
   }
 
   p {
-    font-weight: 400;
-    font-size: 1.6em;
-    /* margin: 0 2.5em; */
+    font-size: 1.4em;
+    line-height: 1.7em;
+    font-weight: 600;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {

@@ -17,7 +17,7 @@ import {
   DropdownMenu,
 } from './NavbarElements'
 
-import logo from '/public/images/Atalaso_logo.png'
+import logoImage from '/public/images/logo-atalaso.svg'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -76,14 +76,13 @@ const Navbar = () => {
             data-qa="logo"
           >
             <LogoImg
-              src={logo}
+              src={logoImage}
               alt="Atalaso logo"
-              height="94"
-              width="128"
-              quality="100"
+              height={0}
+              width={100}
+              quality={100}
+              unoptimized={true}
               priority
-              viewBox="0 0 240 60"
-              shapeRendering="geometricPrecision"
             />
           </LogoContainer>
           <NavList
@@ -191,11 +190,11 @@ const Navbar = () => {
                 <NavLink
                   href="/contact"
                   data-clog-click
-                  className="mobile_contact_link"
-                  style={{
-                    color:
-                      router.pathname == '/contact' ? '#B12B28' : '#000000',
-                  }}
+                  className={
+                    router.pathname == '/contact'
+                      ? 'mobile_contact_link active'
+                      : 'mobile_contact_link'
+                  }
                   onClick={() => {
                     openMenu(false)
                   }}

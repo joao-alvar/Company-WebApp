@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -34,11 +34,12 @@ const AdsBanner = () => {
             </p>
           </Content>
           <IconWrap>
-            <Image
+            <ImageComponent
               src={illustration_1}
               width={300}
               height={300}
               alt="Illustration"
+              
             />
           </IconWrap>
         </Banner>
@@ -60,7 +61,7 @@ const AdsBanner = () => {
               to drive ongoing brand awareness, ROI, and loyalty.
             </p>
           </Content>
-          <Image src={building} alt="Building" />
+          <ImageComponent src={building} alt="Building" />
         </BannerRight>
       </Container>
     </Section>

@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import React from 'react'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -14,9 +15,9 @@ const DevCases = () => {
     <Section>
       <Container>
         <Content>
-          <Image src={Cases_1} alt="" height={250} />
-          <Image src={Cases_2} alt="" height={250} />
-          <Image src={Cases_3} alt="" height={250} />
+          <ImageComponent src={Cases_1} alt="" height={250} />
+          <ImageComponent src={Cases_2} alt="" height={250} />
+          <ImageComponent src={Cases_3} alt="" height={250} />
         </Content>
       </Container>
     </Section>

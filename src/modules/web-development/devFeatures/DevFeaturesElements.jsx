@@ -9,7 +9,7 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 90%;
   height: auto;
-  padding: 4em 0 8em;
+  padding: 8em 0;
   margin: 0 auto;
   line-height: initial;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -65,14 +65,14 @@ export const Content = styled.div`
 
   h2 {
     font-size: 3em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
     font-size: 1.6em;
-    font-weight: 600;
-    color: #24292f;
+    font-weight: 500;
+    line-height: 1.4em;
     padding-top: 0.81em;
   }
 `
