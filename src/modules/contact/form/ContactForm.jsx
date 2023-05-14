@@ -1,180 +1,60 @@
 import Link from 'next/link'
-import React, {useRef, useState} from 'react'
-// import ReCAPTCHA from 'react-google-recaptcha'
+import React, {useEffect, useState} from 'react'
 import {useForm} from 'react-hook-form'
-import toast, {Toaster} from 'react-hot-toast'
 
-import ButtonLoader from '@/components/buttonLoader/ButtonLoader'
+import ButtonLoader from '@/components/loading/buttonLoader/ButtonLoader'
 import Modal from '@/components/modal/Modal'
 
-import {Section} from '@/modules/home/hero/HeroElements'
-
+import HeaderContent from '../content/HeaderContent'
 import {
+  Section,
   Container,
   Content,
   FormControl,
+  Title,
   Wrap,
   Field,
   Checkbox,
   List,
-  CapContainer,
 } from './ContactFormElement'
 
-import HCaptcha from '@hcaptcha/react-hcaptcha'
 import axios from 'axios'
 
 const ContactForm = () => {
-  const SITE_KEY = process.env.NEXT_PUBLIC_HCAPTCHA_SECRET_KEY
-  const captchaRef = useRef(null)
-  const [isVerified, setIsVerified] = useState(true)
   const [isLoading, setLoading] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
+  const [countries, setCountries] = useState([])
+
+  const goToTop = () => {
+    window.scrollTo(0, 0)
+  }
+
+  useEffect(() => {
+    const countryData = require('@/data/country.json')
+    setCountries(countryData)
+  }, [])
+
   const {
     register,
     handleSubmit,
     reset,
     formState: {errors},
   } = useForm()
+
   const notify = () => {
-    toast.error('An error occurred, please verify that you are not a robot.', {
-      duration: 8000,
-      position: 'bottom-center',
-      className: 'toast_style',
-      iconTheme: {
-        primary: '#991212',
-        secondary: '#fff',
-      },
-      // Aria
-      ariaProps: {
-        role: 'status',
-        'aria-live': 'error',
-      },
-    })
-  }
-
-  const onCaptchaChange = async (formData) => {
-    const recaptchaToken = '5002'
-    console.log('reCAPTCHA token:', recaptchaToken)
-    recaptchaToken
-    const config = {
-      method: 'POST',
-      url: `${process.env.NEXT_PUBLIC_API_URL}/api/verify`,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      data: formData,
-    }
-
-    try {
-      const response = await axios(config)
-
-      // if (response.data.success === true) {
-      if (response.status == 200) {
-        console.log('front response', response)
-        toast.success(response.data.message, {
-          duration: 8000,
-          position: 'bottom-center',
-          className: 'toast_style',
-          iconTheme: {
-            primary: '#66A15A',
-            secondary: '#fff',
-          },
-          // Aria
-          ariaProps: {
-            role: 'status',
-            'aria-live': 'error',
-          },
-        })
-        setIsVerified(true)
-      } else {
-        console.error(response)
-        // alert(
-        //   'There was a problem sending your message. Please try again later.'
-        // )
-        toast.error(
-          'There was a problem sending your message. Please try again later.',
-          {
-            duration: 8000,
-            position: 'bottom-center',
-            className: 'toast_style',
-            iconTheme: {
-              primary: '#991212',
-              secondary: '#fff',
-            },
-            // Aria
-            ariaProps: {
-              role: 'status',
-              'aria-live': 'error',
-            },
-          }
-        )
-      }
-    } catch (err) {
-      console.error(err)
-
-      if (err.code === 'ECONNABORTED') {
-        // alert(
-        //   'The server is taking too long to respond. Please try again later.'
-        // )
-        toast.error(
-          'The server is taking too long to respond. Please try again later.',
-          {
-            duration: 8000,
-            position: 'bottom-center',
-            className: 'toast_style',
-            iconTheme: {
-              primary: '#991212',
-              secondary: '#fff',
-            },
-            // Aria
-            ariaProps: {
-              role: 'status',
-              'aria-live': 'error',
-            },
-          }
-        )
-      } else if (err.response) {
-        console.error(err.response)
-        // alert(
-        //   'There was a problem sending your message. Please check your inputs and try again.'
-        // )
-        toast.error(
-          'There was a problem sending your message. Please check your inputs and try again.',
-          {
-            duration: 8000,
-            position: 'bottom-center',
-            className: 'toast_style',
-            iconTheme: {
-              primary: '#991212',
-              secondary: '#fff',
-            },
-            // Aria
-            ariaProps: {
-              role: 'status',
-              'aria-live': 'error',
-            },
-          }
-        )
-      } else {
-        toast.error(
-          'There was a problem connecting to the server. Please check your internet connection and try again.',
-          {
-            duration: 8000,
-            position: 'bottom-center',
-            className: 'toast_style',
-            iconTheme: {
-              primary: '#991212',
-              secondary: '#fff',
-            },
-            // Aria
-            ariaProps: {
-              role: 'status',
-              'aria-live': 'error',
-            },
-          }
-        )
-      }
-    }
+    // toast.error('An error occurred while submitting the form.', {
+    //   duration: 8000,
+    //   position: 'bottom-center',
+    //   iconTheme: {
+    //     primary: '#991212',
+    //     secondary: '#fff',
+    //   },
+    //   // Aria
+    //   ariaProps: {
+    //     role: 'status',
+    //     'aria-live': 'error',
+    //   },
+    // })
   }
 
   const onSubmit = async (data) => {
@@ -187,66 +67,36 @@ const ContactForm = () => {
       },
       data: data,
     }
-    if (isVerified === true) {
-      try {
-        const response = await axios(config)
-        console.log(response)
-        if (response.status == 200) {
-          reset()
-          setModalOpen(true)
-        }
-      } catch (err) {
-        console.error(err)
-        // alert('An error occurred while submitting the form.')
-        toast.error('An error occurred while submitting the form.', {
-          duration: 8000,
-          position: 'bottom-center',
-          className: 'toast_style',
-          iconTheme: {
-            primary: '#991212',
-            secondary: '#fff',
-          },
-          // Aria
-          ariaProps: {
-            role: 'status',
-            'aria-live': 'error',
-          },
-        })
+
+    try {
+      const response = await axios(config)
+      console.log(response)
+      if (response.status == 200) {
+        reset()
+        goToTop()
+        setModalOpen(true)
       }
-      setLoading(false)
-    } else {
-      setLoading(false)
+    } catch (err) {
+      console.error(err)
+      // alert('An error occurred while submitting the form.')
       notify()
     }
+    setLoading(false)
   }
 
   return (
     <Section>
       <Container>
-        {/* <button
-          onClick={() => {
-            captchaVerification()
-          }}
-        >
-          Hello
-        </button> */}
+        <HeaderContent />
         {!modalOpen && (
           <Content>
-            <Toaster
-              toastOptions={{
-                style: {
-                  border: '1px solid #880707',
-                  padding: '16px',
-                  color: '#880707',
-                  fontSize: '1.2em',
-                  fontFamily: 'Overpass',
-                  fontWeight: '600',
-                },
-              }}
-            />
-            <FormControl onSubmit={handleSubmit(onSubmit)}>
+            <FormControl onSubmit={handleSubmit(onSubmit)} role="submit">
+              <Title>
+                Just fill out the form and we will contact you as soon as
+                possible.
+              </Title>
               <Wrap>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.firstName ? 'got_error' : ''}
                     htmlFor="first-name"
@@ -258,6 +108,7 @@ const ContactForm = () => {
                     type="text"
                     name="first-name"
                     className="regular_input"
+                    aria-required="true"
                     aria-invalid={errors.firstName ? 'true' : 'false'}
                     {...register('firstName', {
                       required: {
@@ -276,7 +127,7 @@ const ContactForm = () => {
                     </span>
                   )}
                 </Field>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.lastName ? 'got_error' : ''}
                     htmlFor="last-name"
@@ -288,6 +139,8 @@ const ContactForm = () => {
                     type="text"
                     name="last-name"
                     className="regular_input"
+                    aria-required="true"
+                    aria-invalid={errors.lastName ? 'true' : 'false'}
                     {...register('lastName', {
                       required: {
                         value: true,
@@ -307,7 +160,7 @@ const ContactForm = () => {
                 </Field>
               </Wrap>
               <Wrap>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.companyName ? 'got_error' : ''}
                     htmlFor="company-name"
@@ -335,7 +188,7 @@ const ContactForm = () => {
                 </Field>
               </Wrap>
               <Wrap>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.email ? 'got_error' : ''}
                     htmlFor="email"
@@ -344,9 +197,10 @@ const ContactForm = () => {
                   </label>
                   <input
                     id="email"
-                    type="text"
+                    type="email"
                     name="email"
                     className="regular_input"
+                    aria-required="true"
                     aria-invalid={errors.email ? 'true' : 'false'}
                     {...register('email', {
                       required: {
@@ -366,7 +220,7 @@ const ContactForm = () => {
                     </span>
                   )}
                 </Field>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.Phone ? 'got_error' : ''}
                     htmlFor="phone"
@@ -397,7 +251,44 @@ const ContactForm = () => {
                   )}
                 </Field>
               </Wrap>
-              <div className="wrapper">
+              <Wrap>
+                <Field data-role="control-group">
+                  <label
+                    className={errors.country ? 'got_error' : ''}
+                    htmlFor="country"
+                  >
+                    Country*
+                  </label>
+                  <select
+                    id="country"
+                    type="text"
+                    name="country"
+                    className="regular_input"
+                    aria-invalid={errors.country ? 'true' : 'false'}
+                    {...register('country', {
+                      required: {
+                        value: true,
+                        message: 'You must enter your country',
+                      },
+                      minLength: {
+                        value: 2,
+                        message: 'You must enter your country',
+                      },
+                    })}
+                  >
+                    <option value="" hidden aria-hidden="true"></option>
+                    {countries.map((item) => {
+                      return <option key={item.country}>{item.country}</option>
+                    })}
+                  </select>
+                  {errors.country && (
+                    <span className="got_error_message" role="alert">
+                      {errors?.country?.message}
+                    </span>
+                  )}
+                </Field>
+              </Wrap>
+              <fieldset className="wrapper">
                 <h2>What you are looking for? (Check all that apply)</h2>
                 <List>
                   <li>
@@ -450,9 +341,9 @@ const ContactForm = () => {
                     </Checkbox>
                   </li>
                 </List>
-              </div>
+              </fieldset>
               <Wrap>
-                <Field>
+                <Field data-role="control-group">
                   <label
                     className={errors.Message ? 'got_error' : ''}
                     htmlFor="message"
@@ -464,7 +355,7 @@ const ContactForm = () => {
                     rows="6"
                     spellCheck="false"
                     name="message"
-                    aria-invalid="false"
+                    aria-invalid={errors.message ? 'true' : 'false'}
                     {...register('message', {
                       maxLength: {
                         value: 1500,
@@ -485,7 +376,7 @@ const ContactForm = () => {
                 </Field>
               </Wrap>
               <Checkbox>
-                <fieldset data-role="controlgroup">
+                <fieldset data-role="control-group">
                   <input
                     id="mailPolicy"
                     type="checkbox"
@@ -506,18 +397,6 @@ const ContactForm = () => {
                   </label>
                 </fieldset>
               </Checkbox>
-              <CapContainer>
-                <HCaptcha
-                  sitekey={SITE_KEY}
-                  onVerify={onCaptchaChange}
-                  ref={captchaRef}
-                />
-                {/* <ReCAPTCHA
-                  sitekey={SITE_KEY}
-                  onChange={onCaptchaChange}
-                  ref={captchaRef}
-                /> */}
-              </CapContainer>
               <button
                 className="button"
                 type="submit"

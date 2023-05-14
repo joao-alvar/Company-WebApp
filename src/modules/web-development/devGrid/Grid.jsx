@@ -5,7 +5,7 @@ import {MdOutlineDevices} from 'react-icons/md'
 import {TfiWrite, TfiStatsUp} from 'react-icons/tfi'
 
 import {Section} from '@/modules/home/hero/HeroElements'
-import {TitleContainer} from '@/modules/home/leadGrid/LeadGridElements'
+import {TitleContainer} from '@/modules/home/leadList/LeadListElements'
 
 import {Container, Wrapper, Grid, Icon} from './GridElements'
 
@@ -14,11 +14,7 @@ const GridSection = () => {
     <Section>
       <Container>
         <TitleContainer>
-          <p>Everyday essentials</p>
           <h2>Send, spend and save smarter</h2>
-          <h3>
-            Make day-to-day spending a breeze with all things money in one place
-          </h3>
         </TitleContainer>
         <Wrapper>
           <Grid>

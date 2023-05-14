@@ -46,7 +46,7 @@ export const GridContent = styled.div`
 
   h2 {
     font-size: 3.2em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 800;
   }
 

@@ -25,7 +25,7 @@ export const Content = styled.div`
   padding: 3em;
 
   h1 {
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3.4em;
     margin-bottom: 0.21em;
@@ -33,6 +33,7 @@ export const Content = styled.div`
 
   p {
     font-size: 1.6em;
+    line-height: 1.5em;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
@@ -63,6 +64,8 @@ export const LinkWrap = styled.div`
   }
 
   .button {
+    margin-left: 1em;
+
     @media screen and (max-width: ${({theme}) => theme.size.sm}) {
       width: 100%;
     }

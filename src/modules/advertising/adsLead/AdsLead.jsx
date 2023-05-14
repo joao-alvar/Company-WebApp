@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -18,7 +18,7 @@ const AdsLead = () => {
       <Container>
         <Wrapper>
           <ImageWrap>
-            <Image
+            <ImageComponent
               src={Ads_1}
               height={300}
               alt=""
@@ -42,7 +42,7 @@ const AdsLead = () => {
             </StyledButton>
           </Content>
         </Wrapper>
-        <Wrapper className="bottom_wrapper" style={{background: '#f2f2f2'}}>
+        <Wrapper>
           <Content className="bottom_content" style={{justifyContent: 'end'}}>
             <span>Electric vehicles</span>
             <h2>Electric vehicles will never be the same</h2>
@@ -57,7 +57,7 @@ const AdsLead = () => {
             </StyledButton>
           </Content>
           <ImageWrap style={{justifyContent: 'end'}}>
-            <Image
+            <ImageComponent
               src={Ads_1}
               height={300}
               alt=""

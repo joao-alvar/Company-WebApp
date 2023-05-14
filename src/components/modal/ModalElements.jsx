@@ -51,11 +51,19 @@ export const ModalButtonReturn = styled.button`
   outline: none;
   left: 2em;
   top: 2em;
+  border-radius: 8px;
+  padding-top: 2px;
+  &:hover,
+  &:focus {
+    background-color: #e6e3e3;
+  }
 `
 
 export const ReturnIcon = styled(HiArrowLeft)`
   color: ${({theme}) => theme.colors.black};
   font-size: 2.8em;
+  width: 1.4em;
+  height: 1.2em;
 `
 
 export const ImageContainer = styled.div`
@@ -103,7 +111,7 @@ export const TextContainer = styled.div`
   padding-right: 4em;
   gap: 0.8em;
   color: ${({theme}) => theme.colors.black};
-  font-family: Overpass;
+  font-family: var(--font-secondary-text);
   font-weight: 600;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     text-align: center;

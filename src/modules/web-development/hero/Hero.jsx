@@ -1,6 +1,5 @@
-import Image from 'next/image'
-
 import {ButtonPrimary} from '@/components/button/ButtonElements'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -28,7 +27,7 @@ const Hero = () => {
           </ButtonPrimary>
         </Content>
         <ImgContainer>
-          <Image src={DevelopmentBg} alt="Laptop illustration" />
+          <ImageComponent src={DevelopmentBg} alt="Laptop illustration" />
         </ImgContainer>
       </Container>
     </Section>
