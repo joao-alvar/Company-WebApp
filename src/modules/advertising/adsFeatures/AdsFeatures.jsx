@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import {AiFillCheckCircle} from 'react-icons/ai'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -45,7 +46,7 @@ const AdsFeatures = () => {
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <Image
+            <ImageComponent
               src={Ads_1}
               alt=""
               style={{
@@ -78,7 +79,7 @@ const AdsFeatures = () => {
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <Image
+            <ImageComponent
               src={Ads_2}
               alt=""
               style={{

@@ -12,24 +12,25 @@ export const MobileMenuContainer = styled.div`
     z-index: 10;
   }
 
-  /* Burger animation */
+  // Burger animation
   .menu__btn {
-    &.open .menu__btn__burger {
+    &.open .menu__btn__bar_one {
       transform: translateX(-50px);
       background: transparent;
+      pointer-events: none;
       box-shadow: none;
     }
   }
 
   .menu__btn {
-    &.open .menu__btn__burger::before {
-      transform: rotate(45deg) translate(35px, -35px);
+    &.open .menu__btn__bar_two {
+      transform: rotate(45deg);
     }
   }
 
   .menu__btn {
-    &.open .menu__btn__burger::after {
-      transform: rotate(-45deg) translate(35px, 35px);
+    &.open .menu__btn__bar_three {
+      transform: rotate(-45deg);
     }
   }
 `
@@ -47,7 +48,7 @@ export const Burger = styled.button`
     /* border: 3px solid #fff; */
   }
 
-  .menu__btn__burger {
+  .menu__btn__bar_one {
     display: flex;
     width: 30px;
     height: 2px;
@@ -55,24 +56,25 @@ export const Burger = styled.button`
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
     transition: all 0.5s ease-in-out;
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 30px;
-      height: 2px;
-      background: #000;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
-      transition: all 0.5s ease-in-out;
-    }
+  }
 
-    &::before {
-      transform: translateY(-8px);
-    }
+  .menu__btn__bar_two,
+  .menu__btn__bar_three {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    transition: all 0.5s ease-in-out;
+  }
 
-    &::after {
-      transform: translateY(8px);
-    }
+  .menu__btn__bar_two {
+    transform: translateY(-8px);
+  }
+
+  .menu__btn__bar_three {
+    transform: translateY(8px);
   }
 `

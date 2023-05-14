@@ -59,7 +59,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 3.5em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     margin-left: -8px;
     @media screen and (max-width: 430px) {
@@ -70,6 +70,7 @@ export const Content = styled.div`
   p {
     font-size: 1.72em;
     padding: 0.41em 0 1em;
+    line-height: 1.5em;
   }
 `
 

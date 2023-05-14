@@ -1,3 +1,5 @@
+import {IoIosArrowForward} from 'react-icons/io'
+
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -6,13 +8,12 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: auto;
-  padding: 12em 0 4em;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 8em 0 2em;
-  }
-  @media screen and (max-width: 700px) {
-    padding: 2em 0 0;
+  min-height: auto;
+  height: 35em;
+  @media screen and (max-width: 1060px) {
+    height: auto;
+    margin-bottom: 5pc;
+    justify-content: start;
   }
 `
 
@@ -24,33 +25,52 @@ export const LeadInformation = styled.div`
   justify-content: center;
   text-align: center;
   flex-direction: column;
-  font-family: 'Inter';
-  border-bottom: 2px solid ${({theme}) => theme.colors.primaryTextColor};
-  padding-bottom: 8.2em;
-  @media screen and (max-width: 700px) {
-    border-bottom: none;
-  }
 
   h2 {
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3.6em;
-    padding: 0.9em 2em 0 2em;
+  }
+
+  p {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgb(25, 28, 31);
+    word-break: break-word;
+    margin-top: 1.2rem;
     margin-bottom: 1em;
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      padding: 0.9em 0.2em 0 0.2em;
-    }
-    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      font-size: 2.6em;
-      letter-spacing: -0.008em;
-      line-height: 3pc;
+    padding: 0;
+    @media screen and (max-width: 700px) {
+      font-size: 1.4em;
     }
   }
 
   .button {
-    @media screen and (max-width: 700px) {
-      width: 90%;
-      padding: 0.9em 2em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    @media screen and (max-width: 1060px) {
+      border: none;
     }
   }
+
+  @media screen and (max-width: 1060px) {
+    align-items: start;
+    text-align: start;
+    width: 100%;
+    padding-left: 2em;
+    width: 30pc;
+    max-width: 45em;
+
+    h2 {
+      font-size: 3em;
+    }
+  }
+`
+
+export const Icon = styled(IoIosArrowForward)`
+  position: absolute;
+  top: 3px;
+  margin-left: 2px;
+  font-size: 1em;
 `

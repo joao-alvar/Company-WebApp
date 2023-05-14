@@ -13,17 +13,18 @@ export const Container = styled.div`
   overflow: hidden;
   flex-shrink: 0;
   width: 100%;
-  height: 35rem;
+  height: 30rem;
   line-height: initial;
-  background: ${({theme}) => theme.colors.primary};
+  background: ${({theme}) => theme.colors.black};
   color: ${({theme}) => theme.colors.white};
+  border-bottom: 1px solid ${({theme}) => theme.colors.primaryTextColor};
   @media screen and (max-width: 425px) {
     padding: 1em;
   }
 
   h2 {
     font-size: 3.4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     padding-bottom: 0.3em;
   }

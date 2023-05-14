@@ -1,6 +1,7 @@
-import Image from 'next/image'
 import {useState} from 'react'
 import {RiArrowUpSLine} from 'react-icons/ri'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -33,16 +34,10 @@ const AdsList = () => {
                   lineup of EVs for every person and every purpose. Explore the
                   benefits of choosing an EV powered by Ultium.
                 </p>
-                <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
-                </ImageWrap>
               </>
             )}
             {isOpen == 1 && (
               <>
-                <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
-                </ImageWrap>
                 <h2>Electric vehicles will never be the same</h2>
                 <p>
                   Ultium. The innovation powering General Motors&apos; expanding
@@ -53,7 +48,6 @@ const AdsList = () => {
             )}
             {isOpen == 2 && (
               <>
-                <span>Electric vehicles</span>
                 <h2>Electric vehicles will never be the same</h2>
                 <p>
                   Ultium. The innovation powering General Motors&apos; expanding
@@ -66,24 +60,22 @@ const AdsList = () => {
               <>
                 <span>Electric vehicles</span>
                 <h2>Electric vehicles will never be the same</h2>
-                <p>
-                  Ultium. The innovation powering General Motors&apos; expanding
-                  lineup of EVs for every person and every purpose. Explore the
-                  benefits of choosing an EV powered by Ultium.
-                </p>
                 <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
+                  <ImageComponent src={featuredImage} alt="something" />
                 </ImageWrap>
               </>
             )}
           </Content>
           <ListWrap>
             <StyledList>
-              <li isOpen={isOpen} className={isOpen == 0 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(0)}
+                data-clog-click
+                isOpen={isOpen}
+                className={isOpen == 0 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(0)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
+                  <button>Jump-start your day</button>
                   <Icon as={isOpen == 0 && RiArrowUpSLine} />
                   {isOpen == 0 && (
                     <>
@@ -99,19 +91,18 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 1 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(1)}
+                data-clog-click
+                className={isOpen == 1 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(1)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
+                  <button>Find notes fast</button>
                   <Icon as={isOpen == 1 && RiArrowUpSLine} />
                   {isOpen == 1 && (
                     <>
@@ -127,19 +118,18 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 2 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(2)}
+                data-clog-click
+                className={isOpen == 2 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(2)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
+                  <button>Get organized</button>
                   <Icon as={isOpen == 2 && RiArrowUpSLine} />
                   {isOpen == 2 && (
                     <>
@@ -155,19 +145,18 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 3 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(3)}
+                data-clog-click
+                className={isOpen == 3 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(3)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
+                  <button>No signal? no problem.</button>
                   <Icon as={isOpen == 3 && RiArrowUpSLine} />
                   {isOpen == 3 && (
                     <>
@@ -184,7 +173,7 @@ const AdsList = () => {
                           powered by Ultium.
                         </p>
                         <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
+                          <ImageComponent src={featuredImage} alt="something" />
                         </ImageWrap>
                       </ContentMobile>
                     </>

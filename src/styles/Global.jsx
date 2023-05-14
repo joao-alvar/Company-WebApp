@@ -1,6 +1,11 @@
 import {createGlobalStyle} from 'styled-components'
-
 export const GlobalStyles = createGlobalStyle`
+
+/* fonts variables */
+:root {
+  --font-heading: 'Inter', system-ui, sans-serif;
+  --font-secondary-text: Segoe UI, system-ui, sans-serif;
+}
 
 /* Box sizing rules */
 *,
@@ -16,15 +21,12 @@ html {
 }
 
 body {
-  direction: ltr;
-  display: flex;
-  min-height: 100vh;
   min-width: 320px;
-  flex-direction: column;
-  text-rendering: optimizeSpeed;
-  font-family: 'titillium', sans-serif;
+  min-height: 100%;
+  direction: ltr;
   font-size: 1.2rem;
-  color: ${({theme}) => theme.colors.text};
+  color: #000000;
+  background-color: rgb(243, 244, 245);
 }
 
 html,
@@ -34,34 +36,21 @@ __#next {
   width: 100%;
   line-height: 1.30769231;
   scroll-behavior: smooth;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 main {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
+  text-rendering: optimizeSpeed;
 }
 
 .scroll {
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     overflow: hidden;
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-figure,
-blockquote,
-dl,
-dd {
-  padding: 0;
-  margin: 0;
 }
 
 button {

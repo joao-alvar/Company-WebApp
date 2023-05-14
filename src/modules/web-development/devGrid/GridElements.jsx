@@ -41,12 +41,13 @@ export const Grid = styled.div`
   }
 
   h2 {
-    font-size: 1.5em;
-    padding: 10px 0 0;
+    font-size: 1.6em;
+    padding-top: 10px;
   }
 
   p {
     font-size: 1.2em;
+    font-weight: 500;
   }
 `
 export const Icon = styled.span`
