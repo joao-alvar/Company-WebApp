@@ -34,7 +34,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 3.5em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     margin-left: -8px;
   }
@@ -42,6 +42,9 @@ export const Content = styled.div`
   p {
     font-size: 1.72em;
     padding: 0.41em 0 1em;
+    line-height: 1.5em;
+    font-weight: 500;
+    color: ${({theme}) => theme.colors.text};
   }
 `
 
@@ -51,7 +54,7 @@ export const BtnWrap = styled.div`
   width: 70%;
   margin: 2em 0;
   gap: 1em;
-  @media screen and (max-width: 495px) {
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 98%;
   }
 
@@ -72,6 +75,10 @@ export const Button = styled.button`
   &:hover {
     background: ${({theme}) => theme.colors.black};
     color: ${({theme}) => theme.colors.white};
+  }
+  @media screen and (max-width: 380px) {
+    font-size: 1.2em;
+    padding: 4px 10px;
   }
 `
 
@@ -126,14 +133,15 @@ export const ActiveContent = styled.div`
   h2 {
     font-size: 2.4em;
     padding-bottom: 0.4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
-    font-size: 1.5em;
-    color: #2d2d2d;
+    font-size: 1.4em;
     padding-bottom: 1em;
+    font-weight: 500;
+    line-height: 1.5em;
   }
 `
 

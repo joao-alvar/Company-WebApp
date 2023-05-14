@@ -11,13 +11,16 @@ const MobileMenu = ({onClick, className}) => {
     <MobileMenuContainer>
       <Burger
         onClick={onClick}
-        aria-label="Menu"
+        aria-label="Menu toggle navigation"
         data-qa="menu"
         data-clog-click
+        type="button"
       >
         <div className="menu__icon">
           <div className={className}>
-            <div className="menu__btn__burger"></div>
+            <div className="menu__btn__bar_one"></div>
+            <div className="menu__btn__bar_two"></div>
+            <div className="menu__btn__bar_three"></div>
           </div>
         </div>
       </Burger>

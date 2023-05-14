@@ -13,7 +13,9 @@ export const Container = styled.div`
   height: auto;
   padding: 0;
   margin: 0 auto;
+  padding-bottom: 4em;
   line-height: initial;
+  background-color: rgb(243, 244, 245);
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     .bottom_wrapper {
       margin-top: 4em;
@@ -78,7 +80,7 @@ export const Content = styled.div`
   }
   h2 {
     font-size: 3em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 

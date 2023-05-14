@@ -18,7 +18,7 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 2em 0;
   width: 80%;
-  font-family: Overpass;
+  font-family: var(--font-secondary-text);
   font-weight: 400;
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 95%;
@@ -28,7 +28,7 @@ export const Content = styled.div`
     text-align: center;
     margin: 0 auto;
     font-size: 5em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     padding: 0.7em 0;
     border-bottom: 1px solid ${({theme}) => theme.colors.secondary};
@@ -47,6 +47,7 @@ export const Content = styled.div`
 
   p {
     font-size: 1.5em;
+    line-height: 1.3em;
   }
 
   a {
@@ -56,7 +57,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 2.4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     margin-top: 1em;
     padding-bottom: 1em;

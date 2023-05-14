@@ -33,12 +33,13 @@ export const ImageWrap = styled.div`
   display: flex;
   width: 100%;
   height: 30em;
-  padding: 4em 0;
+  padding: 1.5em 0;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
   }
 `
 
@@ -67,7 +68,7 @@ export const Content = styled.div`
   }
   h2 {
     font-size: 3em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 
@@ -113,12 +114,11 @@ export const StyledList = styled.ul`
     margin: 0 auto;
     min-height: 7em;
     width: 90%;
-    border-bottom: 1px #f2f2f2 solid;
-    border-radius: 10px;
     padding: 30px;
     transition: 0.4s all ease-in-out;
     @media screen and (max-width: 1200px) {
       width: 98%;
+      border-bottom: 1px #e0dcdc solid;
     }
     @media screen and (max-width: 670px) {
       padding: 30px 8px;
@@ -129,18 +129,20 @@ export const StyledList = styled.ul`
 
     button {
       text-align: start;
+      text-decoration: none;
+      color: ${({theme}) => theme.colors.black};
       display: flex;
       width: 100%;
       transition: 0.4s all ease-in-out;
-      font-size: 1.5em;
+      font-size: 1.4em;
       text-transform: uppercase;
       padding-right: 2em;
-      font-weight: 700;
+      font-family: var(--font-heading);
+      font-weight: 600;
     }
 
     p {
       font-size: 1.4em;
-      font-family: Overpass;
       padding-top: 0.5em;
       padding-right: 1em;
       color: #010101;
@@ -155,7 +157,7 @@ export const StyledList = styled.ul`
 `
 
 export const Icon = styled(RiArrowDownSLine)`
-  color: ${({theme}) => theme.colors.primary};
+  color: ${({theme}) => theme.colors.black};
   font-size: 2.5em;
   position: absolute;
   right: 5px;

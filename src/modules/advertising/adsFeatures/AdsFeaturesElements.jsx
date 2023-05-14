@@ -43,7 +43,6 @@ export const ListWrap = styled.div`
 
   h2 {
     font-size: 1.9em;
-    font-family: Overpass;
     padding-top: 0.31em;
   }
 `
@@ -87,14 +86,19 @@ export const Icon = styled.span`
 export const LinkWrap = styled.div`
   display: block;
   text-align: center;
-  padding: 6em 0 8em;
+  padding: 6em 0 2em;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding-bottom: 6em;
+  }
   @media screen and (max-width: 510px) {
     width: 90%;
   }
 
   h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 2em;
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       padding-left: 1em;
       padding-right: 1em;

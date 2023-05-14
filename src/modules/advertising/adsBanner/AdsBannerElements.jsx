@@ -35,6 +35,7 @@ export const Banner = styled.div`
   margin: 0 auto;
   transition: all 0.3s;
   cursor: default;
+  background-color: ${({theme}) => theme.colors.white};
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 99%;
@@ -45,6 +46,7 @@ export const Banner = styled.div`
 export const BannerRight = styled(Banner)`
   position: relative;
   box-shadow: none;
+  background-color: transparent;
 
   img {
     position: absolute;
@@ -71,6 +73,7 @@ export const Content = styled.div`
   gap: 1.2em;
 
   span {
+    font-family: var(--font-heading);
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: 600;
@@ -79,15 +82,14 @@ export const Content = styled.div`
 
   h2 {
     font-size: 2.4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
     font-size: 1.4em;
-    font-family: Overpass;
     font-weight: 600;
-    color: #6c6c6c;
+    color: #5d5c5c;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
