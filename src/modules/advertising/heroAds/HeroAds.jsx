@@ -1,6 +1,5 @@
-import Image from 'next/image'
-
 import {ButtonPrimary} from '@/components/button/ButtonElements'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {ButtonContainer, Section} from '@/modules/home/hero/HeroElements'
 
@@ -40,7 +39,7 @@ const HeroAds = () => {
           </LinkWrap>
         </Content>
         <ImageWrap>
-          <Image src={billboard} alt="Something" />
+          <ImageComponent src={billboard} alt="Something" />
         </ImageWrap>
       </Container>
     </Section>

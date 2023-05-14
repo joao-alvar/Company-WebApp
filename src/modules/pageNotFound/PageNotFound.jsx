@@ -1,7 +1,7 @@
-import Image from 'next/image'
 import React from 'react'
 
 import {ButtonPrimary} from '@/components/button/ButtonElements'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -20,7 +20,7 @@ const PageNotFound = () => {
       <Container>
         <Content>
           <ImageContainer>
-            <Image
+            <ImageComponent
               src={not_found_illustration}
               alt="Group of people around 404 number illustration"
               width={400}

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 import {
@@ -15,7 +15,7 @@ const AdsWall = () => {
     <Section>
       <Container>
         <ImageWrap>
-          <Image src={DesignTemplate} alt="something" />
+          <ImageComponent src={DesignTemplate} alt="something" />
         </ImageWrap>
         <Content>
           <h2>Top Lead Gen Case Studies</h2>
