@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
     height: auto;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: ${({theme}) => theme.colors.white};
-    width: 90%;
+    width: 92%;
     border-radius: 18px;
     margin: 0 auto;
   }
@@ -97,7 +97,7 @@ export const Button = styled(ButtonPrimary)`
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 1.3em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
 `

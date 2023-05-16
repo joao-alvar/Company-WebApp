@@ -59,8 +59,8 @@ export const Content = styled.div`
     width: 98%;
   }
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 0;
-    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   h2 {

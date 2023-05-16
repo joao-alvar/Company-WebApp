@@ -36,6 +36,9 @@ export const MobileMenuContainer = styled.div`
 `
 
 export const Burger = styled.button`
+  padding: 0.6em;
+  border-radius: 8px;
+
   .menu__btn {
     position: relative;
     display: flex;
@@ -45,7 +48,6 @@ export const Burger = styled.button`
     height: 20px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    /* border: 3px solid #fff; */
   }
 
   .menu__btn__bar_one {
@@ -54,7 +56,7 @@ export const Burger = styled.button`
     height: 2px;
     background: #000;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    /* box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2); */
     transition: all 0.5s ease-in-out;
   }
 
@@ -66,7 +68,7 @@ export const Burger = styled.button`
     height: 2px;
     background: #000;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+    /* box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2); */
     transition: all 0.5s ease-in-out;
   }
 
