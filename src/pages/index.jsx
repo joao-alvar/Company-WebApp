@@ -3,7 +3,7 @@ import React from 'react'
 
 const Hero = React.lazy(() => import('@/modules/home/hero/Hero'))
 
-const LeadCards = React.lazy(() => import('@/modules/home/leadCards/leadCards'))
+const LeadCards = React.lazy(() => import('@/modules/home/leadCards/LeadCards'))
 
 const LeadBenefits = React.lazy(() =>
   import('@/modules/home/leadBenefits/LeadBenefits')
@@ -20,7 +20,7 @@ const LeadBanner = React.lazy(() =>
 const LeadList = React.lazy(() => import('@/modules/home/leadList/LeadList'))
 
 const LeadFeatures = React.lazy(() =>
-  import('@/modules/home/LeadFeatures/LeadFeatures')
+  import('@/modules/home/leadFeatures/LeadFeatures')
 )
 
 const LeadContact = React.lazy(() =>
