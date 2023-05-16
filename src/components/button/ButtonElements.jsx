@@ -35,8 +35,7 @@ export const ButtonPrimary = styled(Link)`
         font-family: var(--font-secondary-text);
         font-size: 1.3em;
         font-weight: 600;
-        @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-          margin-left: 0;
+        @media screen and (max-width: 768px) {
           border: 2px solid ${({theme}) => theme.colors.black};
           border-radius: 8px;
           padding: 5px 12px;

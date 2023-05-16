@@ -3,12 +3,11 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 import {Section} from '@/modules/home/hero/HeroElements'
 import {
   LeadContent,
-  TextWrap,
   StyledList,
   List,
 } from '@/modules/home/leadWall/LeadWallElements'
 
-import {Container, Icon, IconTitle} from './AboutWallElements'
+import {Container, HeaderWrap, Icon, IconTitle} from './AboutWallElements'
 
 import cogwheels from 'public/images/cogwheels.png'
 import ideaLamp from 'public/images/idea-yellow-lamp.png'
@@ -19,7 +18,7 @@ const AboutWall = () => {
     <Section>
       <Container>
         <LeadContent>
-          <TextWrap>
+          <HeaderWrap>
             <header>
               <h2>
                 We continually study our platform to understand the real-world
@@ -31,7 +30,7 @@ const AboutWall = () => {
               by contributing to mental health knowledge and supporting academic
               research
             </h3>
-          </TextWrap>
+          </HeaderWrap>
           <StyledList>
             <List>
               <Icon>

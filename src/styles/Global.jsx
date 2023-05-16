@@ -36,6 +36,12 @@ __#next {
   width: 100%;
   line-height: 1.30769231;
   scroll-behavior: smooth;
+  vertical-align: baseline;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -44,7 +50,6 @@ main {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
-  text-rendering: optimizeSpeed;
 }
 
 .scroll {

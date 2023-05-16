@@ -7,20 +7,22 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100px;
+  width: 100%;
+  height: auto;
   max-width: 100%;
   overflow: hidden;
   flex-shrink: 0;
-  width: 100%;
-  height: auto;
-  padding-top: 4em;
-  margin: 0 auto;
+  padding-top: 2pc;
 `
 export const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 70%;
   height: 30em;
+  @media screen and (max-width: 1200px) {
+    width: 92%;
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     height: auto;
@@ -29,7 +31,8 @@ export const Wrapper = styled.div`
 export const ListWrap = styled.div`
   position: relative;
   width: max-content;
-  padding: 4em 1em;
+  padding-top: 4em;
+  padding-bottom: 4em;
   @media screen and (max-width: 510px) {
     width: 100%;
   }
@@ -67,12 +70,20 @@ export const StyledList = styled.ul`
 
   li {
     display: flex;
-    font-size: 1.4em;
-    padding: 1em 0 0 1em;
-    align-items: center;
+    padding-top: 1em;
+    padding-left: 1em;
+    align-items: flex-start;
     @media screen and (max-width: 510px) {
-      padding: 1em 0 0 0;
+      padding-left: 0;
     }
+  }
+
+  h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4em;
+    font-weight: 500;
+    /* flex-wrap: wrap; */
+    /* padding-right: 2em; */
   }
 `
 
@@ -80,34 +91,6 @@ export const Icon = styled.span`
   font-size: 1.6em;
   margin-right: 10px;
   flex-shrink: 0;
+  flex: none;
   color: ${({theme}) => theme.colors.primary};
-`
-
-export const LinkWrap = styled.div`
-  display: block;
-  text-align: center;
-  padding: 6em 0 2em;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding-bottom: 6em;
-  }
-  @media screen and (max-width: 510px) {
-    width: 90%;
-  }
-
-  h2 {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 2em;
-    padding-bottom: 1.5em;
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      padding-left: 1em;
-      padding-right: 1em;
-    }
-  }
-`
-
-export const StyledButton = styled(ButtonPrimary)`
-  @media screen and (max-width: 768px) {
-    /* width: 10%; */
-  }
 `

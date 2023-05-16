@@ -1,102 +1,162 @@
-import Image from 'next/image'
-import {BsGraphUpArrow} from 'react-icons/bs'
-import {GiShakingHands} from 'react-icons/gi'
+import {IoIosArrowForward} from 'react-icons/io'
 
 import styled from 'styled-components'
 
-export const Section = styled.section`
+export const GridSection = styled.section`
+  position: relative;
   height: auto;
   width: 100%;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  background-color: ${({theme}) => theme.colors.black};
 `
 
 export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-shrink: 0;
-  width: 100%;
-  min-height: 48em;
+  width: 95%;
   height: auto;
-  padding: 3pc 8em;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 4em 0;
+  margin-top: 2.5pc;
+  gap: 2pc;
+  padding-top: 2pc;
+  padding-bottom: 2pc;
+  flex-direction: column;
+
+  /* @media screen and (max-width: 768px) {
+    margin-top: 7em;
+  }
+  @media screen and (max-width: 700px) {
+    padding-bottom: 10em;
+  } */
+
+  // Card one
+  .card_image_one {
+    background-color: ${({theme}) => theme.colors.medium};
+  }
+
+  // Card two
+  .card_image_two {
+    /* border-top-left-radius: 1.5pc;
+    border-bottom-left-radius: 1.5pc; */
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
   }
 `
 
 export const TitleWrap = styled.header`
   h2 {
     font-family: var(--font-heading);
+    font-size: 3.4em;
     font-weight: 600;
-    font-size: 3.84em;
+    text-align: center;
+    margin-bottom: 1pc;
+    color: ${({theme}) => theme.colors.white};
   }
 `
 
-export const Content = styled.div`
-  display: flex;
+export const GridWrap = styled.div`
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: (3, 1fr);
+  grid-column-gap: 2pc;
+  -moz-column-gap: 2pc;
+  column-gap: 2pc;
+  grid-row-gap: 2pc;
+  grid-auto-rows: minmax(200px, auto);
+  row-gap: 2pc;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
   width: 100%;
-  margin-top: 2pc;
+`
+
+export const Cards = styled.article`
+  display: flex;
+  align-items: center;
+  min-height: 35em;
+  height: auto;
+  border-radius: 6px;
+  overflow: hidden;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+
+    &:nth-of-type(2) {
+      flex-direction: column-reverse;
+    }
+  }
+`
+
+export const CardContent = styled.div`
+  display: flex;
+  width: 50%;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
 `
 
 export const TextWrap = styled.div`
-  width: 50%;
-  padding-right: 6em;
-
-  p {
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
-`
-
-export const ListWrap = styled.ul`
-  width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    flex-direction: column;
-  }
+  padding: 2em;
 
-  li {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-    padding: 2em;
-    height: auto;
-    width: 100%;
-    border-radius: 1pc;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    background-color: ${({theme}) => theme.colors.white};
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 2.8em;
+    color: ${({theme}) => theme.colors.white};
   }
 
   p {
-    font-family: var(--font-heading);
+    font-size: 1.5em;
     font-weight: 600;
-    font-size: 1.4em;
-    line-height: 1.5em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    color: #818c96;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.white};
+    font-family: var(--font-heading);
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 0.4em;
+    width: max-content;
+    position: relative;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 `
 
-export const IconContainer = styled.div`
-  height: 5em;
-  width: 5em;
+export const Icon = styled(IoIosArrowForward)`
+  position: absolute;
+  top: 3px;
+  margin-left: 2px;
+  font-size: 0.95em;
+`
+
+export const ImageWrap = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: ${({theme}) => theme.colors.black};
-  border-radius: 1pc;
-  overflow: hidden;
-  color: ${({theme}) => theme.colors.white};
-`
-
-export const HandsIcon = styled(GiShakingHands)`
-  font-size: 4em;
-`
-
-export const GraphUpIcon = styled(BsGraphUpArrow)`
-  font-size: 3em;
-`
-
-export const IconSvg = styled(Image)`
-  width: 5em;
-  height: 3em;
+  width: 50%;
+  height: 80%;
   margin: 0 auto;
+  border-radius: 1.5pc;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 94%;
+  }
 `

@@ -1,7 +1,7 @@
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {AboutContainer, Content, AboutTitle, ImageWrap} from './StoryElements'
+import {AboutContainer, Content, ImageWrap} from './StoryElements'
 
 import Bg from 'public/images/Gallery.jpg'
 
