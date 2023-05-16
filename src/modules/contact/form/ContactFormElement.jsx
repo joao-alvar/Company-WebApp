@@ -5,7 +5,7 @@ export const Section = styled.section`
   height: auto;
   width: 100%;
   min-height: calc(100vh - 40px);
-  background: ${({theme}) => theme.colors.white};
+  background: ${({modalOpen}) => (modalOpen ? '#f2f2f2' : '#fff')};
 `
 
 export const Container = styled.div`

@@ -12,7 +12,7 @@ export const Container = styled.div`
   height: auto;
   padding: 8em 0;
   line-height: initial;
-  background-color: #020202;
+  background-color: ${({theme}) => theme.colors.black};
 `
 
 export const Wrapper = styled.div`
@@ -38,7 +38,6 @@ export const GridContent = styled.div`
   display: flex;
   align-items: start;
   flex-direction: column;
-  /* width: 60%; */
   height: 100%;
   padding: 2em;
   color: ${({theme}) => theme.colors.white};

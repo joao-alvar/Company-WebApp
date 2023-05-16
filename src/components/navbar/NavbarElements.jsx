@@ -85,7 +85,7 @@ export const NavList = styled.nav`
       }
     }
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      color: ${({theme}) => theme.colors.primary};
+      color: #880707;
     }
   }
 
@@ -213,7 +213,7 @@ export const DropdownMenu = styled.div`
       font-size: 1.45em;
     }
     &:hover {
-      color: ${({theme}) => theme.colors.primary};
+      color: #880707;
     }
   }
 `

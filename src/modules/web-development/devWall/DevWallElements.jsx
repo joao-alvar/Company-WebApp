@@ -7,16 +7,15 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100px;
+  width: 100%;
+  height: auto;
+  min-height: 45rem;
   overflow: hidden;
   flex-shrink: 0;
-  width: 100%;
-  height: 45rem;
   line-height: initial;
-  background: ${({theme}) => theme.colors.tertiary};
+  background: ${({theme}) => theme.colors.black};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
-    height: auto;
     padding: 8em 0;
     gap: 3em;
   }

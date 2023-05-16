@@ -49,9 +49,7 @@ export const LeadInformation = styled.div`
     position: relative;
     margin: 0;
     padding: 0;
-    @media screen and (max-width: 1060px) {
-      border: none;
-    }
+    border: none;
   }
 
   @media screen and (max-width: 1060px) {
