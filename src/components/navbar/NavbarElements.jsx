@@ -4,9 +4,11 @@ import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 
 import styled from 'styled-components'
 
+import {ButtonPrimary} from '../button/ButtonElements'
+
 export const Header = styled.header`
   position: sticky;
-  height: 10.5rem;
+  height: 8rem;
   width: 100%;
   top: 0;
   left: 0;
@@ -17,13 +19,12 @@ export const Header = styled.header`
 
 export const Nav = styled.nav`
   display: flex;
-  padding: 0;
-  position: absolute;
-  top: 0;
   width: 100%;
   height: 100%;
-  background: ${({theme}) => theme.colors.white};
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  backdrop-filter: blur(16px);
+  background-color: rgba(234, 237, 240, 0.8);
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   padding: 0 1em;
 `
@@ -31,7 +32,7 @@ export const Nav = styled.nav`
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   z-index: 11;
 `
 
@@ -44,11 +45,13 @@ export const NavList = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  font-family: var(--font-heading);
   font-weight: 600;
 
-  @media screen and (min-width: ${({theme}) => theme.size.md}) {
+  @media screen and (min-width: 911px) {
     gap: 3.8em;
   }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     transform: ${({isOpen}) =>
       isOpen ? 'translateX(0)' : 'translateX(-100%)'};
@@ -56,14 +59,16 @@ export const NavList = styled.nav`
     align-items: start;
     width: 100%;
     height: 100%;
-    background: #ffffff;
+    min-height: ${({isOpen}) => (isOpen ? '1000vh' : '100%')};
+    overflow: auto;
     top: 0;
     left: 0;
     padding-top: 10em;
     padding-left: 1.7em;
-    transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
     gap: 1.5em;
     z-index: 10;
+    transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
+    background: ${({theme}) => theme.colors.white};
   }
 
   div {
@@ -73,7 +78,15 @@ export const NavList = styled.nav`
   }
 
   .active {
-    color: ${({theme}) => theme.colors.primary};
+    @media screen and (min-width: 911px) {
+      &:after {
+        left: 0;
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      color: #880707;
+    }
   }
 
   .mobile_contact_link {
@@ -137,9 +150,9 @@ export const NavLink = styled(Link)`
   position: relative;
   color: ${({theme}) => theme.colors.text};
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  @media screen and (min-width: ${({theme}) => theme.size.md}) {
+  @media screen and (min-width: 911px) {
     &:after {
       content: '';
       position: absolute;
@@ -162,7 +175,7 @@ export const NavLink = styled(Link)`
 `
 
 export const DropdownMenu = styled.div`
-  @media screen and (min-width: ${({theme}) => theme.size.md}) {
+  @media screen and (min-width: 911px) {
     position: absolute;
     padding: 1.2rem 0;
     margin-top: -1.4em;
@@ -192,7 +205,7 @@ export const DropdownMenu = styled.div`
     width: 100%;
     padding: 0 1rem;
     height: 30px;
-    @media screen and (min-width: ${({theme}) => theme.size.md}) {
+    @media screen and (min-width: 911px) {
       padding: 1.1em 1rem;
     }
 
@@ -200,7 +213,7 @@ export const DropdownMenu = styled.div`
       font-size: 1.45em;
     }
     &:hover {
-      color: ${({theme}) => theme.colors.primary};
+      color: #880707;
     }
   }
 `
@@ -219,28 +232,16 @@ export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
   }
 `
 
-export const NavButtonContainer = styled.button`
+export const NavButtonContainer = styled.div`
   display: flex;
   align-items: center;
-  cursor: default;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     display: none;
   }
 `
 
-export const NavButton = styled(Link)`
-  border-radius: 8px;
-  background: ${({theme}) => theme.colors.primary};
-  padding: 0.7rem 1.3rem;
-  color: ${({theme}) => theme.colors.white};
-  outline: none;
-  border: none;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  font-size: 1.4em;
-  font-weight: 600;
-  &:hover,
-  &.active {
-    background: ${({theme}) => theme.colors.black};
-  }
+export const NavButton = styled(ButtonPrimary)`
+  font-family: var(--font-secondary-text);
+  font-size: 1.5rem;
+  font-weight: 500;
 `

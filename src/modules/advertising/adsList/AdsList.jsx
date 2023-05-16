@@ -1,17 +1,15 @@
-import Image from 'next/image'
 import {useState} from 'react'
-import {RiArrowUpSLine} from 'react-icons/ri'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {
   Container,
+  Text,
   Wrapper,
   Content,
   ListWrap,
   StyledList,
   Icon,
-  ImageWrap,
   ContentMobile,
 } from './AdsListElements'
 
@@ -22,76 +20,55 @@ const AdsList = () => {
   return (
     <Section>
       <Container>
+        <Text>Designed to help you scale at every step</Text>
         <Wrapper>
           <Content>
-            {isOpen == 0 && (
-              <>
-                <span>Electric vehicles</span>
-                <h2>Electric vehicles will never be the same</h2>
-                <p>
-                  Ultium. The innovation powering General Motors&apos; expanding
-                  lineup of EVs for every person and every purpose. Explore the
-                  benefits of choosing an EV powered by Ultium.
-                </p>
-                <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
-                </ImageWrap>
-              </>
-            )}
-            {isOpen == 1 && (
-              <>
-                <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
-                </ImageWrap>
-                <h2>Electric vehicles will never be the same</h2>
-                <p>
-                  Ultium. The innovation powering General Motors&apos; expanding
-                  lineup of EVs for every person and every purpose. Explore the
-                  benefits of choosing an EV powered by Ultium.
-                </p>
-              </>
-            )}
-            {isOpen == 2 && (
-              <>
-                <span>Electric vehicles</span>
-                <h2>Electric vehicles will never be the same</h2>
-                <p>
-                  Ultium. The innovation powering General Motors&apos; expanding
-                  lineup of EVs for every person and every purpose. Explore the
-                  benefits of choosing an EV powered by Ultium.
-                </p>
-              </>
-            )}
-            {isOpen == 3 && (
-              <>
-                <span>Electric vehicles</span>
-                <h2>Electric vehicles will never be the same</h2>
-                <p>
-                  Ultium. The innovation powering General Motors&apos; expanding
-                  lineup of EVs for every person and every purpose. Explore the
-                  benefits of choosing an EV powered by Ultium.
-                </p>
-                <ImageWrap>
-                  <Image src={featuredImage} alt="something" />
-                </ImageWrap>
-              </>
-            )}
+            <div className={isOpen == 0 ? 'text show' : 'text'}>
+              <h2>Electric vehicles will never be the same</h2>
+              <p>
+                Ultium. The innovation powering General Motors&apos; expanding
+                lineup of EVs for every person and every purpose. Explore the
+                benefits of choosing an EV powered by Ultium.
+              </p>
+            </div>
+            <div className={isOpen == 1 ? 'text show' : 'text'}>
+              <h2>Electric vehicles will never be the same</h2>
+              <p>
+                Ultium. The innovation powering General Motors&apos; expanding
+                lineup of EVs for every person and every purpose. Explore the
+                benefits of choosing an EV powered by Ultium.
+              </p>
+            </div>
+            <div className={isOpen == 2 ? 'text show' : 'text'}>
+              <h2>Electric vehicles will never be the same</h2>
+              <p>
+                Ultium. The innovation powering General Motors&apos; expanding
+                lineup of EVs for every person and every purpose. Explore the
+                benefits of choosing an EV powered by Ultium.
+              </p>
+            </div>
+            <div className={isOpen == 3 ? 'text show' : 'text'}>
+              <h2>Electric vehicles will never be the same</h2>
+              <p>
+                Ultium. The innovation powering General Motors&apos; expanding
+                lineup of EVs for every person and every purpose. Explore the
+                benefits of choosing an EV powered by Ultium.
+              </p>
+            </div>
           </Content>
           <ListWrap>
             <StyledList>
-              <li isOpen={isOpen} className={isOpen == 0 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(0)}
+                data-clog-click
+                isOpen={isOpen}
+                className={isOpen == 0 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(0)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
-                  <Icon as={isOpen == 0 && RiArrowUpSLine} />
+                  <button>Jump-start your day</button>
+                  <Icon className={isOpen == 0 ? 'arrow_up' : ''} />
                   {isOpen == 0 && (
                     <>
-                      <p className="content_p">
-                        expanding lineup of EVs for every person and every
-                        purpose. Explore the benefits of choosing an EV powered
-                        by Ultium.
-                      </p>
                       <ContentMobile>
                         <p>
                           Ultium. The innovation powering General Motors&apos;
@@ -99,27 +76,21 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 1 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(1)}
+                data-clog-click
+                className={isOpen == 1 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(1)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
-                  <Icon as={isOpen == 1 && RiArrowUpSLine} />
+                  <button>Find notes fast</button>
+                  <Icon className={isOpen == 1 ? 'arrow_up' : ''} />
                   {isOpen == 1 && (
                     <>
-                      <p className="content_p">
-                        expanding lineup of EVs for every person and every
-                        purpose. Explore the benefits of choosing an EV powered
-                        by Ultium.
-                      </p>
                       <ContentMobile>
                         <p>
                           Ultium. The innovation powering General Motors&apos;
@@ -127,27 +98,21 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 2 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(2)}
+                data-clog-click
+                className={isOpen == 2 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(2)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
-                  <Icon as={isOpen == 2 && RiArrowUpSLine} />
+                  <button>Get organized</button>
+                  <Icon className={isOpen == 2 ? 'arrow_up' : ''} />
                   {isOpen == 2 && (
                     <>
-                      <p className="content_p">
-                        expanding lineup of EVs for every person and every
-                        purpose. Explore the benefits of choosing an EV powered
-                        by Ultium.
-                      </p>
                       <ContentMobile>
                         <p>
                           Ultium. The innovation powering General Motors&apos;
@@ -155,27 +120,21 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}
                 </div>
               </li>
-              <li className={isOpen == 3 ? 'active' : null}>
+              <li
+                onClick={() => setIsOpen(3)}
+                data-clog-click
+                className={isOpen == 3 ? 'active' : null}
+              >
                 <div className="list_content">
-                  <button onClick={() => setIsOpen(3)} data-clog-click>
-                    Ultium. The innovation powering General Motors&apos;
-                  </button>
-                  <Icon as={isOpen == 3 && RiArrowUpSLine} />
+                  <button>No signal? no problem.</button>
+                  <Icon className={isOpen == 3 ? 'arrow_up' : ''} />
                   {isOpen == 3 && (
                     <>
-                      <p className="content_p">
-                        expanding lineup of EVs for every person and every
-                        purpose. Explore the benefits of choosing an EV powered
-                        by Ultium.
-                      </p>
                       <ContentMobile>
                         <p>
                           Ultium. The innovation powering General Motors&apos;
@@ -183,9 +142,6 @@ const AdsList = () => {
                           purpose. Explore the benefits of choosing an EV
                           powered by Ultium.
                         </p>
-                        <ImageWrap>
-                          <Image src={featuredImage} alt="something" />
-                        </ImageWrap>
                       </ContentMobile>
                     </>
                   )}

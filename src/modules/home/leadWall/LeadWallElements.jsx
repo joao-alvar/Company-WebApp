@@ -1,95 +1,104 @@
-import Image from 'next/image'
-import Link from 'next/link'
-
 import styled from 'styled-components'
 
 export const LeadContainer = styled.div`
-  height: 40em;
-  width: 100%;
-  display: flex;
-  background: ${({theme}) => theme.colors.black};
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 5em;
-  }
-`
-
-export const LeadContentText = styled.div`
-  position: relative;
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  color: ${({theme}) => theme.colors.white};
-  @media screen and (max-width: 1100px) {
-    width: 50%;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-  }
-
-  h2 {
-    padding: 0 1.2em;
-    margin-top: 2em;
-    font-size: 2em;
-    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-      padding: 0 0.7em 0.4em;
-    }
-  }
-
-  p {
-    padding: 0.9em 1.5em;
-    font-family: Overpass;
-    font-size: 1.4em;
-    font-weight: 300;
-    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-      padding: 0 1em;
-    }
-  }
-
-  .lead_content_p {
-    padding-top: 0.5em;
-  }
-`
-export const LeadImageWrap = styled.div`
-  width: 65%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: 1100px) {
-    width: 50%;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-  }
-`
-export const LeadImage = styled(Image)`
-  object-fit: cover;
+  flex-direction: column;
+  flex-shrink: 0;
+  min-height: 65em;
+  height: auto;
   width: 100%;
-  height: 100%;
+  background: ${({theme}) => theme.colors.black};
+
+  @media screen and (max-width: 960px) {
+    padding-top: 5pc;
+    padding-bottom: 5pc;
+  }
 `
 
-export const Button = styled(Link)`
-  text-decoration: none;
-  color: ${({theme}) => theme.colors.white};
-  background: transparent;
-  border: 2px solid ${({theme}) => theme.colors.white};
-  font-size: 1.2em;
-  font-weight: 700;
-  padding: 0.8em 1em 0.4em 1em;
-  transition: all 0.3s ease-in-out;
-  margin-top: 0.8em;
-  margin-left: 1.9em;
-  text-transform: uppercase;
-  font-family: Overpass;
-  width: 9em;
-  &:hover {
-    background: ${({theme}) => theme.colors.white};
-    color: ${({theme}) => theme.colors.black};
+export const LeadContent = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  @media screen and (min-width: 961px) {
+    gap: 3pc;
   }
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-    margin-left: 1.2em;
+`
+
+export const TextWrap = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  color: ${({theme}) => theme.colors.white};
+  text-align: center;
+
+  p {
+    font-size: 1.13em;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+  }
+
+  h2 {
+    font-size: 3.4em;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    margin-bottom: 0.4em;
+  }
+
+  h3 {
+    font-size: 1.54em;
+    line-height: 1.3em;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 440px) {
+    width: 90%;
+  }
+`
+
+export const StyledList = styled.ul`
+  margin: 0 auto;
+  width: 90%;
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr) [12];
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 2pc;
+  -moz-column-gap: 2pc;
+  column-gap: 2pc;
+  grid-row-gap: 2pc;
+  grid-auto-rows: minmax(200px, auto);
+  row-gap: 2pc;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / span 12;
+  @media screen and (max-width: 960px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
+
+export const List = styled.li`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: ${({theme}) => theme.colors.white};
+  gap: 0.8em;
+  /* background-color: ${({theme}) => theme.colors.primary}; */
+
+  h4 {
+    font-size: 6em;
+  }
+
+  p {
+    font-size: 1.4em;
+    font-weight: 500;
   }
 `

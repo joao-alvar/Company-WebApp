@@ -2,6 +2,11 @@ import Image from 'next/image'
 
 import styled from 'styled-components'
 
+import {Section} from '@/modules/home/hero/HeroElements'
+
+export const ListSection = styled(Section)`
+  background-color: ${({theme}) => theme.colors.white};
+`
 export const Container = styled.div`
   position: relative;
   display: flex;
@@ -11,16 +16,18 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 90%;
   height: auto;
-  padding: 4em 0 8em;
+  padding: 4em 0 10em;
   margin: 0 auto;
   line-height: initial;
   @media screen and (max-width: 1095px) {
-    width: 98%;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   h2 {
     font-size: 4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     margin-top: 1.5em;
     text-align: center;
@@ -60,6 +67,8 @@ export const List = styled.li`
   button {
     padding-top: 0.7em;
     font-size: 1.6em;
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.black};
   }
 
   .show {
@@ -69,7 +78,8 @@ export const List = styled.li`
 
 export const Icon = styled(Image)`
   filter: grayscale(90%);
-  transition: ease-out;
+  transition: ease-out 2s;
+  opacity: 0;
   ${List}:hover & {
     filter: none;
   }
@@ -89,17 +99,11 @@ export const ListContent = styled.div`
   h2 {
     font-size: 2.2em;
     text-align: start;
-    @media screen and (max-width: 460px) {
-      text-align: center;
-    }
   }
 
   p {
     font-size: 1.5em;
     text-align: start;
-    color: #2d2d2d;
-    @media screen and (max-width: 460px) {
-      text-align: center;
-    }
+    line-height: 1.5em;
   }
 `

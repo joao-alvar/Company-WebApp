@@ -45,7 +45,6 @@ export const TextWrap = styled.div`
   }
 
   p {
-    font-family: Overpass;
     font-weight: 600;
     font-size: 1.4em;
     /* margin-top: 0.2em; */

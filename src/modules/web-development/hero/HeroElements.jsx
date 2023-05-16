@@ -9,6 +9,7 @@ export const Container = styled.div`
   width: 100%;
   height: 54rem;
   line-height: initial;
+  background: ${({theme}) => theme.colors.white};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     height: auto;
@@ -29,7 +30,6 @@ export const ImgContainer = styled.div`
     height: 100%;
     object-fit: cover;
     background-position: center;
-    z-index: -1;
   }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
@@ -53,32 +53,33 @@ export const Content = styled.div`
 
   .pre_title {
     margin-right: auto;
-    font-size: 1.35em;
+    font-size: 1.26em;
     color: rgb(80, 90, 99);
-    font-family: Overpass;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-weight: 600;
   }
 
   h1 {
-    font-family: Overpass;
-    font-size: 1.82em;
+    font-family: var(--font-heading);
+    font-size: 2.4em;
     font-weight: 600;
     color: rgb(25, 28, 31);
-    margin: 1.71rem 0 0;
+    margin-top: 1rem;
   }
 
   .title_secondary_text {
-    font-size: 1.5em;
-    font-weight: 600;
+    font-size: 1.4em;
+    font-weight: 500;
     color: rgb(25, 28, 31);
     word-break: break-word;
-    margin: 1.2rem 0 0;
+    margin-top: 1rem;
     padding: 0px;
+    line-height: 1.6em;
   }
   .button {
     margin-top: 1.2em;
     margin-right: auto;
-    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    @media screen and (max-width: 500px) {
       width: 100%;
     }
   }

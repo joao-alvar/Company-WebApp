@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import {IoIosArrowForward} from 'react-icons/io'
 
 import styled from 'styled-components'
 
@@ -10,54 +10,41 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 8em 0 12em;
+  min-height: 35em;
   line-height: initial;
 `
 export const Content = styled.div`
   height: 100%;
   width: 80%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
   text-align: center;
-  flex-direction: column;
-  font-family: 'Inter';
+
+  @media screen and (max-width: 700px) {
+    text-align: start;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
   h2 {
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3.6em;
-    padding: 0.9em 2em 0 2em;
+    padding-bottom: 2rem;
   }
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 90%;
-    h2 {
-      padding: 0.9em 0.1em 0 0.1em;
-    }
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    h2 {
-      padding: 0.9em 0 0 0;
-    }
+
+  .button {
+    position: relative;
+    font-size: 1.6em;
+    margin-top: 1em;
+    padding: 0;
+    border: none;
   }
 `
 
-export const Button = styled(Link)`
-  padding: 0.4em 0.8em;
-  font-size: 1.4em;
-  border-radius: 8px;
-  font-weight: 600;
-  background: ${({theme}) => theme.colors.black};
-  margin-top: 3em;
-  text-decoration: none;
-  color: ${({theme}) => theme.colors.white};
-  &:hover {
-    background: ${({theme}) => theme.colors.primaryTextColor};
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 0.6em 1em;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 90%;
-  }
+export const Icon = styled(IoIosArrowForward)`
+  position: absolute;
+  top: 4px;
+  margin-left: 2px;
+  font-size: 1em;
 `

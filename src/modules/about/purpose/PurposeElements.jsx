@@ -9,7 +9,7 @@ export const Container = styled.div`
   width: 100%;
   height: 47rem;
   line-height: initial;
-  background: ${({theme}) => theme.colors.tertiary};
+  background: ${({theme}) => theme.colors.black};
   @media screen and (max-width: ${({theme}) => theme.size.xs}) {
     padding: 7em 0;
     height: auto;
@@ -19,8 +19,10 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 60%;
   margin: 0 auto;
-  span {
-    font-size: 1.2em;
+
+  p {
+    font-size: 1.13em;
+    letter-spacing: 0.6px;
     font-weight: 600;
     color: ${({theme}) => theme.colors.white};
     text-transform: uppercase;
@@ -28,7 +30,7 @@ export const Content = styled.div`
 
   h2 {
     font-size: 4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     margin-bottom: 0.4em;
     background: -webkit-linear-gradient(
       90deg,
@@ -46,9 +48,10 @@ export const Content = styled.div`
     -webkit-text-fill-color: transparent;
   }
 
-  p {
-    font-size: 1.6em;
-    font-family: Overpass;
+  h3 {
+    font-weight: 600;
+    font-size: 1.54em;
+    line-height: 1.3em;
     color: ${({theme}) => theme.colors.white};
   }
 

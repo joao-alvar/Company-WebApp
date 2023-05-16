@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import {useState} from 'react'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -55,7 +56,11 @@ const DevLead = () => {
           {active == 0 && (
             <>
               <div className="img_wrap">
-                <Image src={ImageActive1} height={300} alt="Computer" />
+                <ImageComponent
+                  src={ImageActive1}
+                  height={300}
+                  alt="Computer"
+                />
               </div>
               <div className="content_wrap">
                 <h2>Top Lead Gen Case Studies</h2>
@@ -88,14 +93,22 @@ const DevLead = () => {
                 </ButtonActive>
               </div>
               <div className="img_wrap">
-                <Image src={ImageActive1} height={300} alt="Computer" />
+                <ImageComponent
+                  src={ImageActive1}
+                  height={300}
+                  alt="Computer"
+                />
               </div>
             </>
           )}
           {active == 2 && (
             <>
               <div className="img_wrap">
-                <Image src={ImageActive1} height={300} alt="Computer" />
+                <ImageComponent
+                  src={ImageActive1}
+                  height={300}
+                  alt="Computer"
+                />
               </div>
               <div className="content_wrap">
                 <h2>Top Lead Gen Case Studies</h2>
