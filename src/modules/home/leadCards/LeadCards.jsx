@@ -14,7 +14,6 @@ import {
   IconSvg,
 } from './LeadCardslements'
 
-import Group from '/public/images/Group.svg'
 import Saving from '/public/images/Saving.svg'
 
 const LeadCards = () => {

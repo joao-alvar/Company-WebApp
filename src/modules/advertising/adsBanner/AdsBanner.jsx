@@ -1,13 +1,10 @@
 import {RxViewGrid} from 'react-icons/rx'
 
-import ImageComponent from '@/components/imageComponent/ImageComponent'
-
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {
   Container,
   Banner,
-  ImageWrap,
   Content,
   TextWrap,
   IconWrap,
@@ -17,21 +14,11 @@ import {
   Text,
 } from './AdsBannerElements'
 
-import building from '/public/images/building.jpeg'
-
 const AdsBanner = () => {
   return (
     <Section id="seo">
       <Container>
         <Banner>
-          {/* <ImageWrap>
-            <ImageComponent
-              src={building}
-              width={300}
-              height={300}
-              alt="Illustration"
-            />
-          </ImageWrap> */}
           <Content>
             <TextWrap>
               <h3>Event overview</h3>
