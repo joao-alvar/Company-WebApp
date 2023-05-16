@@ -5,10 +5,6 @@ const HeroAds = React.lazy(() =>
   import('@/modules/advertising/heroAds/HeroAds')
 )
 
-const AdsLead = React.lazy(() =>
-  import('@/modules/advertising/adsLead/AdsLead')
-)
-
 const AdsWall = React.lazy(() =>
   import('@/modules/advertising/adsWall/AdsWall')
 )
@@ -47,7 +43,6 @@ const advertising = () => {
         <AdsBanner />
         <AdsBenefits />
         <AdsFeatures />
-        <AdsLead />
         <AdsWall />
         <AdsList />
         <AdsCallToAction />

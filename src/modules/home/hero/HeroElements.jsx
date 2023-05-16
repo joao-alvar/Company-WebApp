@@ -83,11 +83,15 @@ export const ButtonContainer = styled.div`
   @media screen and (max-width: 768px) {
     padding-bottom: 1em;
   }
+
+  @media screen and (max-width: 500px) {
+    a {
+      width: 100%;
+    }
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     gap: 1em;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-    flex-direction: column;
   }
   a {
     text-decoration: none;

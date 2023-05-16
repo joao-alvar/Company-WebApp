@@ -13,23 +13,22 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 2em 0 8em;
+  padding-bottom: 5pc;
   line-height: initial;
   flex-direction: column;
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 2em 0 6em;
+    padding-bottom: 3pc;
   }
 `
 
 export const Content = styled.div`
   width: 90%;
   padding-right: 6em;
-  @media screen and (max-width: 690px) {
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     padding: 1em;
-    @media screen and (max-width: 460px) {
-      text-align: center;
-    }
+    padding-right: 2em;
   }
 
   h2 {
@@ -54,8 +53,9 @@ export const BtnWrap = styled.div`
   width: 70%;
   margin: 2em 0;
   gap: 1em;
+
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 98%;
+    width: 100%;
   }
 
   .active {
@@ -89,9 +89,12 @@ export const ActiveContent = styled.div`
   height: auto;
   width: 90%;
   gap: 2em;
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
-    width: 98%;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
 
     .img_wrap {
       width: 100%;
@@ -117,16 +120,12 @@ export const ActiveContent = styled.div`
     display: flex;
     justify-content: start;
     padding-right: 7em;
-    /* margin-left: auto; */
     flex-direction: column;
     font-weight: 600;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       width: 100%;
+      padding-left: 0.5em;
       padding-right: 2em;
-    }
-    @media screen and (max-width: 425px) {
-      text-align: center;
-      padding: 0;
     }
   }
 
@@ -151,11 +150,8 @@ export const ButtonActive = styled(Link)`
   font-size: 1.6em;
   text-decoration: underline;
   width: fit-content;
+
   &:hover {
     color: ${({theme}) => theme.colors.primary};
-  }
-  @media screen and (max-width: 425px) {
-    margin: 0 auto;
-    text-underline-offset: 2px;
   }
 `
