@@ -5,58 +5,54 @@ export const AboutContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  flex-direction: column;
   width: 100%;
   height: auto;
-  min-height: 47rem;
-  padding: 4em 0 4em;
+  min-height: 60rem;
+  padding: 4em 0;
   line-height: initial;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    gap: 2pc;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 `
 
 export const Content = styled.div`
-  width: 70%;
-  padding: 2em 0;
-
-  p {
-    font-weight: 400;
-    font-size: 1.6em;
-    padding: 0 2.5em;
-  }
-
-  img {
-    margin: 0 auto;
-    object-fit: cover;
-    background-size: cover;
-    background-position: center;
-  }
+  width: 50%;
+  padding-right: 2em;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
-
-    p {
-      padding: 0 1.5em;
-    }
   }
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    p {
-      padding: 0 1em;
-      text-align: center;
-    }
+  h2 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 0.4em;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.5em;
+    line-height: 1.4em;
   }
 `
 
-export const AboutTitle = styled.h2`
-  font-weight: 500;
-  font-size: 2.3em;
-  margin: 0 auto;
-  margin-top: 1em;
-  width: 50%;
-  text-align: center;
-  border-top: 1px solid ${({theme}) => theme.colors.secondary};
-  padding: 1em 0 0.41em;
+export const ImageWrap = styled.div`
+  display: flex;
+  width: 45%;
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 70%;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
   }
 `

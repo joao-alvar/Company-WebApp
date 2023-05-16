@@ -6,13 +6,13 @@ const Purpose = () => {
     <AboutSection>
       <Container>
         <Content>
-          <span>Life at Atalaso</span>
+          <p>Life at Atalaso</p>
           <h2>Join our community and help define it.</h2>
-          <p>
+          <h3>
             Explore a collaborative culture of inclusion, growth, and
             originality, supported by resources that make a difference in your
             life.
-          </p>
+          </h3>
         </Content>
       </Container>
     </AboutSection>

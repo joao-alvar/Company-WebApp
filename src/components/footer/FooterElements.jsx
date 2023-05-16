@@ -3,7 +3,7 @@ import {AiOutlineCopyrightCircle} from 'react-icons/ai'
 import styled from 'styled-components'
 
 export const FooterSection = styled.div`
-  background: #15141d;
+  background: ${({theme}) => theme.colors.black};
   position: static;
   bottom: 0;
   height: 10em;

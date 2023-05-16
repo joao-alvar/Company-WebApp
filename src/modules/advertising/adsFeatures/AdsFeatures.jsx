@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import {AiFillCheckCircle} from 'react-icons/ai'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -27,25 +28,27 @@ const AdsFeatures = () => {
             <h2>What is Ultium?</h2>
             <StyledList>
               <li>
-                <Icon as={AiFillCheckCircle} /> Ultium is a game-changing
-                electric vehicle platform
+                <Icon as={AiFillCheckCircle} />
+                <h3>Ultium is a game-changing electric vehicle platform</h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> Built on a flexible battery
-                architecture
+                <Icon as={AiFillCheckCircle} />
+                <h3>Built on a flexible battery architecture</h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> For the production of EVs across
-                different vehicle types
+                <Icon as={AiFillCheckCircle} />
+                <h3>
+                  For the production of EVs across different vehicle types
+                </h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> With outstanding power, range
-                and performance
+                <Icon as={AiFillCheckCircle} />
+                <h3>With outstanding power, range and performance</h3>
               </li>
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <Image
+            <ImageComponent
               src={Ads_1}
               alt=""
               style={{
@@ -60,25 +63,27 @@ const AdsFeatures = () => {
             <h2>What is Ultium?</h2>
             <StyledList>
               <li>
-                <Icon as={AiFillCheckCircle} /> Ultium is a game-changing
-                electric vehicle platform
+                <Icon as={AiFillCheckCircle} />
+                <h3>Ultium is a game-changing electric vehicle platform</h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> Built on a flexible battery
-                architecture
+                <Icon as={AiFillCheckCircle} />
+                <h3>Built on a flexible battery architecture</h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> For the production of EVs across
-                different vehicle types
+                <Icon as={AiFillCheckCircle} />
+                <h3>
+                  For the production of EVs across different vehicle types
+                </h3>
               </li>
               <li>
-                <Icon as={AiFillCheckCircle} /> With outstanding power, range
-                and performance
+                <Icon as={AiFillCheckCircle} />
+                <h3>With outstanding power, range and performance</h3>
               </li>
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <Image
+            <ImageComponent
               src={Ads_2}
               alt=""
               style={{
@@ -88,15 +93,6 @@ const AdsFeatures = () => {
             />
           </ImageWrap>
         </Wrapper>
-        <LinkWrap>
-          <h2>
-            Want to discover more about the benefits of driving an EV powered by
-            Ultium Platform?
-          </h2>
-          <StyledButton href="/" data-clog-click>
-            Learn more
-          </StyledButton>
-        </LinkWrap>
       </Container>
     </Section>
   )

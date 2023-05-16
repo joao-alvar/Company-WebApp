@@ -1,67 +1,98 @@
-import Image from 'next/image'
+import {RxViewGrid} from 'react-icons/rx'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {
   Container,
   Banner,
-  BannerRight,
+  ImageWrap,
   Content,
+  TextWrap,
   IconWrap,
+  GridListed,
+  List,
+  Icon,
+  Text,
 } from './AdsBannerElements'
 
 import building from '/public/images/building.jpeg'
-import illustration_1 from '/public/images/Trend.jpeg'
 
 const AdsBanner = () => {
   return (
     <Section id="seo">
       <Container>
         <Banner>
-          <Content>
-            <span>Event overview</span>
-            <h2>
-              A comprehensive social outreach plan for Facebook and Instagram
-              will be strategically executed on a weekly basis.
-            </h2>
-            <p>
-              propensity of consuming Pocari Sweat. A primary focus will be to
-              reach and penetrate the active “individual performance
-              enthusiast.” The strategies presented here utilize the very latest
-              social media systems and technologies. These are the same tactics
-              utilized by America’s most prominent and successful organizations
-              to drive ongoing brand awareness, ROI, and loyalty.
-            </p>
-          </Content>
-          <IconWrap>
-            <Image
-              src={illustration_1}
+          {/* <ImageWrap>
+            <ImageComponent
+              src={building}
               width={300}
               height={300}
               alt="Illustration"
             />
-          </IconWrap>
-        </Banner>
-        <BannerRight>
+          </ImageWrap> */}
           <Content>
-            <span style={{color: '#ffffff'}}>Event overview</span>
-            <h2>
-              A comprehensive social outreach plan for Facebook and Instagram
-              will be strategically executed on a weekly basis. With the
-              operative key consideration being strategic targeting of an
-              audience profile that has a high
-            </h2>
-            <p style={{color: '#ffffff'}}>
-              propensity of consuming Pocari Sweat. A primary focus will be to
-              reach and penetrate the active “individual performance
-              enthusiast.” The strategies presented here utilize the very latest
-              social media systems and technologies. These are the same tactics
-              utilized by America’s most prominent and successful organizations
-              to drive ongoing brand awareness, ROI, and loyalty.
-            </p>
+            <TextWrap>
+              <h3>Event overview</h3>
+              <h2>A single day, a year&apos;s worth of impact</h2>
+              <p>
+                Stripe Sessions brings together business leaders and builders to
+                discuss the most important internet economy trends. This year,
+                we&apos;re focused on the many ways businesses can continue to
+                accelerate progress in times of change.
+              </p>
+            </TextWrap>
+            <IconWrap>
+              <GridListed>
+                <List>
+                  <Icon as={RxViewGrid} />
+                  <Text>
+                    <h4>Sleek, black-on-black panels.</h4>
+                    <p>
+                      While other solar providers may use blue or silver panels,
+                      ION exclusively uses black-on-black panels for a sleek and
+                      modern design.
+                    </p>
+                  </Text>
+                </List>
+                <List>
+                  <Icon as={RxViewGrid} />
+                  <Text>
+                    <h4>Sleek, black-on-black panels.</h4>
+                    <p>
+                      While other solar providers may use blue or silver panels,
+                      ION exclusively uses black-on-black panels for a sleek and
+                      modern design.
+                    </p>
+                  </Text>
+                </List>
+                <List>
+                  <Icon as={RxViewGrid} />
+                  <Text>
+                    <h4>Sleek, black-on-black panels.</h4>
+                    <p>
+                      While other solar providers may use blue or silver panels,
+                      ION exclusively uses black-on-black panels for a sleek and
+                      modern design.
+                    </p>
+                  </Text>
+                </List>
+                <List>
+                  <Icon as={RxViewGrid} />
+                  <Text>
+                    <h4>Sleek, black-on-black panels.</h4>
+                    <p>
+                      While other solar providers may use blue or silver panels,
+                      ION exclusively uses black-on-black panels for a sleek and
+                      modern design.
+                    </p>
+                  </Text>
+                </List>
+              </GridListed>
+            </IconWrap>
           </Content>
-          <Image src={building} alt="Building" />
-        </BannerRight>
+        </Banner>
       </Container>
     </Section>
   )

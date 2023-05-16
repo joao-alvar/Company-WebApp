@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {AboutContainer, Content, AboutTitle} from './MissionElements'
+import {AboutContainer, Content, AboutTitle, ImageWrap} from './MissionElements'
 
-import AboutIllustration from '/public/images/AboutIllustration.png'
+import Bg from 'public/images/Gallery.jpg'
 
 const Mission = () => {
   return (
@@ -11,45 +11,24 @@ const Mission = () => {
       <AboutSection>
         <AboutContainer>
           <Content>
-            <AboutTitle>Our Mission</AboutTitle>
+            <h2>Our Mission</h2>
             <p>
               Run a business is hard, we know, but lucky you don&apos;t have to
-              do it alone. Your growth and development is our purpose Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Voluptates
-              corrupti provident voluptatem officia totam sequi eum
-              consequuntur, recusandae animi fugit odit, sint dolore. Dolorum
-              quis iste illo illum? Expedita, ex! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptates corrupti provident
-              voluptatem officia totam sequi eum consequuntur, recusandae animi
-              fugit odit, sint dolore. Dolorum quis iste illo illum? Expedita,
-              ex! Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates corrupti provident voluptatem officia totam sequi eum
-              consequuntur, recusandae animi fugit odit, sint dolore. Dolorum
-              quis iste illo illum? Expedita, ex! Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Voluptates corrupti provident
-              voluptatem officia totam sequi eum consequuntur, recusandae animi
-              fugit odit, sint dolore. Dolorum quis iste illo illum? Expedita,
-              ex!
+              do it alone. Your growth and development is our purpose. We want
+              our clients to set new heights and metrics and achieve greatness
+              Our mission is to grown together We take pride in our work and are
+              dedicated to providing our clients with the best digital
+              solutions. We are committed to delivering projects on time and on
+              budget.
             </p>
           </Content>
-          <Content>
-            <AboutTitle>Building the future.</AboutTitle>
-            <Image
-              src={AboutIllustration}
+          <ImageWrap>
+            <ImageComponent
+              src={Bg}
               alt="Statue illustration"
-              placeholder="blur"
               draggable={false}
             />
-            <p>
-              We want our clients to set new heights and metrics and achieve
-              greatness Our mission is to grown together
-            </p>
-            <p>
-              We take pride in our work and are dedicated to providing our
-              clients with the best digital solutions. We are committed to
-              delivering projects on time and on budget.
-            </p>
-          </Content>
+          </ImageWrap>
         </AboutContainer>
       </AboutSection>
     </>
