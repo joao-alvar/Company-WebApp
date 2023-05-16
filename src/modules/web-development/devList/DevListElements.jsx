@@ -20,12 +20,14 @@ export const Container = styled.div`
   margin: 0 auto;
   line-height: initial;
   @media screen and (max-width: 1095px) {
-    width: 98%;
+    width: 100%;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
   }
 
   h2 {
     font-size: 4em;
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     margin-top: 1.5em;
     text-align: center;
@@ -97,17 +99,11 @@ export const ListContent = styled.div`
   h2 {
     font-size: 2.2em;
     text-align: start;
-    @media screen and (max-width: 460px) {
-      text-align: center;
-    }
   }
 
   p {
     font-size: 1.5em;
     text-align: start;
     line-height: 1.5em;
-    @media screen and (max-width: 460px) {
-      text-align: center;
-    }
   }
 `

@@ -3,11 +3,11 @@ import React from 'react'
 
 const Hero = React.lazy(() => import('@/modules/home/hero/Hero'))
 
+const LeadCards = React.lazy(() => import('@/modules/home/leadCards/leadCards'))
+
 const LeadBenefits = React.lazy(() =>
   import('@/modules/home/leadBenefits/LeadBenefits')
 )
-
-const LeadGrid = React.lazy(() => import('@/modules/home/gridCards/GridCards'))
 
 const Lead = React.lazy(() => import('@/modules/home/lead/Lead'))
 
@@ -39,8 +39,8 @@ export default function Home() {
       <main role="main">
         <div>
           <Hero />
-          <LeadGrid />
           <LeadBenefits />
+          <LeadCards />
           <LeadBanner />
           <Lead />
           <LeadWall />

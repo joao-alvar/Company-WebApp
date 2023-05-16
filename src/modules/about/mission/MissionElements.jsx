@@ -10,20 +10,28 @@ export const AboutContainer = styled.div`
   min-height: 60rem;
   padding: 4em 0;
   line-height: initial;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    flex-direction: column;
+    gap: 2pc;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 `
 
 export const Content = styled.div`
   width: 50%;
   padding-right: 2em;
 
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
+
   h2 {
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3em;
     margin-bottom: 0.4em;
-    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      width: 70%;
-    }
   }
 
   p {
@@ -31,26 +39,15 @@ export const Content = styled.div`
     font-size: 1.5em;
     line-height: 1.4em;
   }
-
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-
-    p {
-      padding: 0 1.5em;
-    }
-  }
-
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    p {
-      padding: 0 1em;
-      text-align: center;
-    }
-  }
 `
 
 export const ImageWrap = styled.div`
   display: flex;
   width: 45%;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+  }
 
   img {
     height: 100%;

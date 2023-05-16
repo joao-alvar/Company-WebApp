@@ -98,7 +98,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   display: inline-flex;
   justify-content: center;
-  /* margin: 0 0 1.5em; */
+  align-items: flex-start;
   padding-bottom: 2em;
   gap: 2em;
 
@@ -117,6 +117,7 @@ export const ListItem = styled.li`
 
 export const Icon = styled.div`
   font-size: 4em;
-  margin: auto 0;
+  flex-shrink: 0;
+  flex: none;
   color: ${({theme}) => theme.colors.black};
 `

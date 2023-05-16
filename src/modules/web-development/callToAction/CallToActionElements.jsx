@@ -9,17 +9,20 @@ export const Container = styled.div`
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100px;
+  height: auto;
+  width: 100%;
+  min-height: 30rem;
   overflow: hidden;
   flex-shrink: 0;
-  width: 100%;
-  height: 30rem;
   line-height: initial;
   background: ${({theme}) => theme.colors.black};
   color: ${({theme}) => theme.colors.white};
   border-bottom: 1px solid ${({theme}) => theme.colors.primaryTextColor};
-  @media screen and (max-width: 425px) {
+
+  @media screen and (max-width: 500px) {
     padding: 1em;
+    text-align: start;
+    align-items: start;
   }
 
   h2 {
@@ -31,7 +34,7 @@ export const Container = styled.div`
 
   p {
     font-size: 1.5em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.8em;
   }
 `
 
@@ -40,7 +43,6 @@ export const Button = styled(Link)`
   color: ${({theme}) => theme.colors.white};
   font-size: 1.6em;
   font-weight: 600;
-  padding: 4px 12px;
   border-radius: 8px;
   display: flex;
   &:hover {

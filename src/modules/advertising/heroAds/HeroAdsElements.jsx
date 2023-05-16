@@ -56,19 +56,25 @@ export const Content = styled.div`
 
 export const LinkWrap = styled.div`
   display: flex;
+  gap: 1em;
   margin-top: 2.21em;
+
+  @media screen and (max-width: 768px) {
+    gap: 0.5em;
+
+    .button {
+      width: 100%;
+    }
+  }
 
   a {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
 
-  .button {
-    margin-left: 1em;
-
-    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      width: 100%;
-    }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 1em;
   }
 `
 

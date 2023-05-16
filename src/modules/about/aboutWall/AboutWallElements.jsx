@@ -25,6 +25,42 @@ export const Container = styled.div`
   }
 `
 
+export const HeaderWrap = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  color: ${({theme}) => theme.colors.white};
+  text-align: center;
+
+  p {
+    font-size: 1.13em;
+    letter-spacing: 0.6px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.8em;
+  }
+
+  h2 {
+    font-size: 3.4em;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    margin-bottom: 0.4em;
+  }
+
+  h3 {
+    font-size: 1.54em;
+    line-height: 1.3em;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    text-align: start;
+  }
+`
+
 export const IconTitle = styled.h3`
   font-family: var(--font-heading);
   font-size: 2.5em;

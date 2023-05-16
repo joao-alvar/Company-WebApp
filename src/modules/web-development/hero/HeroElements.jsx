@@ -79,7 +79,7 @@ export const Content = styled.div`
   .button {
     margin-top: 1.2em;
     margin-right: auto;
-    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    @media screen and (max-width: 500px) {
       width: 100%;
     }
   }
