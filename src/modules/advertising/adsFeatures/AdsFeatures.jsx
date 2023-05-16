@@ -11,8 +11,6 @@ import {
   StyledList,
   Wrapper,
   Icon,
-  LinkWrap,
-  StyledButton,
 } from './AdsFeaturesElements'
 
 import Ads_2 from '/public/images/Optimized.jpeg'
