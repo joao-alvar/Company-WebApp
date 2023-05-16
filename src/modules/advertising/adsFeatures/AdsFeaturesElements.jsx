@@ -1,4 +1,3 @@
-import {ButtonPrimary} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -26,27 +25,6 @@ export const Wrapper = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     height: auto;
-  }
-`
-export const ListWrap = styled.div`
-  position: relative;
-  width: max-content;
-  padding-top: 4em;
-  padding-bottom: 4em;
-  @media screen and (max-width: 510px) {
-    width: 100%;
-  }
-
-  span {
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #505a63;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-size: 1.9em;
-    padding-top: 0.31em;
   }
 `
 
@@ -82,8 +60,6 @@ export const StyledList = styled.ul`
     font-family: var(--font-heading);
     font-size: 1.4em;
     font-weight: 500;
-    /* flex-wrap: wrap; */
-    /* padding-right: 2em; */
   }
 `
 
