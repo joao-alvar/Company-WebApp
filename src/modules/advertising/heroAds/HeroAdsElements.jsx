@@ -25,7 +25,7 @@ export const Content = styled.div`
   padding: 3em;
 
   h1 {
-    font-family: Inter;
+    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3.4em;
     margin-bottom: 0.21em;
@@ -33,6 +33,7 @@ export const Content = styled.div`
 
   p {
     font-size: 1.6em;
+    line-height: 1.5em;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
@@ -55,17 +56,25 @@ export const Content = styled.div`
 
 export const LinkWrap = styled.div`
   display: flex;
+  gap: 1em;
   margin-top: 2.21em;
+
+  @media screen and (max-width: 768px) {
+    gap: 0.5em;
+
+    .button {
+      width: 100%;
+    }
+  }
 
   a {
     text-decoration: none;
     transition: all 0.2s ease-in-out;
   }
 
-  .button {
-    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      width: 100%;
-    }
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+    gap: 1em;
   }
 `
 

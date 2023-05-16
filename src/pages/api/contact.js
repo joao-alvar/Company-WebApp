@@ -7,6 +7,7 @@ export default async function verification(req, res) {
     companyName,
     email,
     phone,
+    country,
     advertising_seo,
     paid_search,
     web_development,
@@ -25,24 +26,19 @@ export default async function verification(req, res) {
     },
   })
 
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/verify`)
-  const data = await response.json()
-
-  // console.log('Im here bitch', data)
-
-  if (data.status === 200) {
-    // Nodemailer
-    try {
-      await transporter.sendMail({
-        from: email,
-        to: process.env.NEXT_PUBLIC_USER,
-        subject: `Contact form submission from ${firstName} ${lastName}`,
-        html: `<p>You have a new contact form submission</p><br>
+  // Nodemailer
+  try {
+    await transporter.sendMail({
+      from: email,
+      to: process.env.NEXT_PUBLIC_USER,
+      subject: `Contact form submission from ${firstName} ${lastName}`,
+      html: `<p>You have a new contact form submission</p><br>
       <p><strong>First Name: </strong> ${firstName} </p><br>
       <p><strong>Last Name: </strong> ${lastName} </p><br>
       <p><strong>Company/Organization name: </strong> ${companyName} </p><br>
       <p><strong>Email: </strong> ${email} </p><br>
       <p><strong>Phone: </strong> ${phone} </p><br>
+      <p><strong>Country: </strong> ${country} </p><br>
       <p><strong>Services Advertising and/or SEO: </strong> ${advertising_seo} </p><br>
       <p><strong>Services Paid Search: </strong> ${paid_search} </p><br>
       <p><strong>Services Web Development: </strong> ${web_development} </p><br>
@@ -50,22 +46,12 @@ export default async function verification(req, res) {
       <p><strong>Message: </strong> ${message} </p><br>
       <p><strong>Email policy: </strong> ${mailPolicy} </p><br>
       `,
-      })
-
-      console.log('Message Sent')
-    } catch (err) {
-      console.log(err)
-    }
-
-    res.status(200).json(req.body)
-  } else {
-    res.json({
-      success: false,
-      message: 'Something happened during verification process',
-      data: response.data,
     })
-    return res.status(422).json({
-      message: 'Unprocessable request, please provide the required fields',
-    })
+
+    console.log('Message Sent')
+  } catch (err) {
+    console.log(err)
+    res.status(400).json(req.body)
   }
+  res.status(200).json(req.body)
 }
