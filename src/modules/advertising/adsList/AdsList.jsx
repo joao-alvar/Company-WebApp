@@ -13,8 +13,6 @@ import {
   ContentMobile,
 } from './AdsListElements'
 
-import featuredImage from '/public/images/Results.jpg'
-
 const AdsList = () => {
   const [isOpen, setIsOpen] = useState(0)
   return (
