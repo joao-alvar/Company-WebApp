@@ -1,6 +1,6 @@
 import {ButtonPrimary} from '@/components/button/ButtonElements'
 
-import {Section} from '../LeadFeatures/LeadFeaturesElements'
+import {Section} from '../leadFeatures/LeadFeaturesElements'
 import {Container, LeadInformation, Icon} from './LeadElements'
 
 const Lead = () => {
