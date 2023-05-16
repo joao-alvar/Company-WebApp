@@ -10,7 +10,7 @@ import {
   Button,
 } from './AdsCallToActionElements'
 
-import city_illustration from '/public/images/city-illustration.jpeg'
+import city_illustration from '/public/images/City-illustration.jpeg'
 
 const AdsCallToAction = () => {
   return (
