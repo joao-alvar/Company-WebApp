@@ -1,7 +1,7 @@
 import {ButtonPrimary} from '@/components/button/ButtonElements'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {Container, Content, Button, Icon} from './CallToActionElements'
+import {Container, Content, Icon} from './CallToActionElements'
 
 const AboutCallToAction = () => {
   return (
