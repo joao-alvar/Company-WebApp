@@ -2,8 +2,7 @@ import Image from 'next/image'
 import {useState} from 'react'
 
 import {Section} from '../hero/HeroElements'
-import {TitleContainer} from '../leadGrid/LeadGridElements'
-import {Container, ListContainer, ListContent} from './LeadListElements'
+import {Container, TitleContainer, ListContainer, ListContent} from './LeadListElements'
 
 import Advertising from 'public/images/Advertising.jpg'
 import Creativity from 'public/images/Creativity.jpg'

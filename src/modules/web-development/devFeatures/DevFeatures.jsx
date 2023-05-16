@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import React from 'react'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
@@ -18,7 +19,7 @@ const DevFeatures = () => {
       <Container>
         <Wrapper>
           <ImageContainer>
-            <Image src={TrendImg} alt="" width={500} height={500} />
+            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
           </ImageContainer>
           <Content>
             <h2>Something in the way</h2>
@@ -41,12 +42,12 @@ const DevFeatures = () => {
             </p>
           </Content>
           <ImageContainer>
-            <Image src={TrendImg} alt="" width={500} height={500} />
+            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
           </ImageContainer>
         </Wrapper>
         <Wrapper>
           <ImageContainer>
-            <Image src={TrendImg} alt="" width={500} height={500} />
+            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
           </ImageContainer>
           <Content>
             <h2>Something in the way</h2>

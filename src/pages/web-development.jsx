@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import React from 'react'
-
 const Hero = React.lazy(() => import('@/modules/web-development/hero/Hero'))
 const GridSection = React.lazy(() =>
   import('@/modules/web-development/devGrid/Grid')

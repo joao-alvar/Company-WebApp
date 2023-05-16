@@ -1,19 +1,26 @@
-import {AboutSection} from '../hero/AboutHeroElements'
-import {Container, Content, Button} from './CallToActionElements'
+import {ButtonPrimary} from '@/components/button/ButtonElements'
 
-const AboutWall = () => {
+import {AboutSection} from '../hero/AboutHeroElements'
+import {Container, Content, Button, Icon} from './CallToActionElements'
+
+const AboutCallToAction = () => {
   return (
     <AboutSection>
       <Container>
         <Content>
           <h2>Join 28+ million people who already trust us with their money</h2>
-          <Button href="/contact" data-clog-click>
-            Get Started
-          </Button>
+          <ButtonPrimary
+            href="/contact"
+            isPrimary
+            className="button_secondary button"
+            data-clog-click
+          >
+            Get started <Icon />
+          </ButtonPrimary>
         </Content>
       </Container>
     </AboutSection>
   )
 }
 
-export default AboutWall
+export default AboutCallToAction

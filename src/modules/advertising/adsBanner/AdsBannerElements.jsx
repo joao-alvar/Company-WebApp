@@ -3,13 +3,12 @@ import styled from 'styled-components'
 export const Container = styled.div`
   position: relative;
   display: flex;
-  min-height: 100px;
   max-width: 100%;
   overflow: hidden;
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 12em 2em;
+  padding: 3pc 2em;
   line-height: initial;
   gap: 1.5em;
 
@@ -24,43 +23,8 @@ export const Container = styled.div`
 `
 
 export const Banner = styled.div`
-  display: flex;
-  width: 50%;
-  min-height: 60em;
+  width: 100%;
   height: auto;
-  flex-direction: column;
-  padding: 1em 0;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  border-radius: 18px;
-  margin: 0 auto;
-  transition: all 0.3s;
-  cursor: default;
-
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 99%;
-    height: auto;
-  }
-`
-
-export const BannerRight = styled(Banner)`
-  position: relative;
-  box-shadow: none;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    border-radius: 18px;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    filter: grayscale(100%) brightness(30%);
-  }
-
-  h2 {
-    color: #ffffff;
-  }
 `
 
 export const Content = styled.div`
@@ -70,7 +34,14 @@ export const Content = styled.div`
   padding: 4em;
   gap: 1.2em;
 
-  span {
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    padding: 2em 1.5em;
+  }
+`
+
+export const TextWrap = styled.div`
+  h3 {
+    font-family: var(--font-heading);
     text-transform: uppercase;
     font-size: 1.1em;
     font-weight: 600;
@@ -78,20 +49,16 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-size: 2.4em;
-    font-family: Inter;
+    font-size: 4.2em;
+    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
     font-size: 1.4em;
-    font-family: Overpass;
-    font-weight: 600;
-    color: #6c6c6c;
-  }
-
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 2em 1.5em;
+    font-weight: 500;
+    font-family: var(--font-heading);
+    line-height: 1.6em;
   }
 `
 
@@ -99,5 +66,54 @@ export const IconWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1pc;
   height: 100%;
+`
+
+export const GridListed = styled.ul`
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  grid-column-gap: 2.5rem;
+  grid-row-gap: 3.5rem;
+  grid-template-rows: auto;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
+export const List = styled.li`
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+`
+export const Text = styled.div`
+  display: grid;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  grid-template-rows: auto;
+  padding-bottom: 0.5rem;
+
+  h4 {
+    font-size: 1.6em;
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 1.3em;
+    font-family: var(--font-heading);
+    font-weight: 400;
+  }
+`
+
+export const Icon = styled.span`
+  font-size: 1.8em;
+  color: ${({theme}) => theme.colors.black};
+  flex: none;
+  align-self: flex-start;
+  margin-right: 1rem;
 `
