@@ -12,7 +12,7 @@ import {
   GraphUpIcon,
   HandsIcon,
   IconSvg,
-} from './LeadCardslements'
+} from './LeadCardsElements'
 
 import Saving from '/public/images/Saving.svg'
 
