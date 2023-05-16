@@ -9,9 +9,10 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  padding: 2em 0;
+  /* padding: 2em 0; */
   margin: 0 auto;
   line-height: initial;
+  background-color: ${({theme}) => theme.colors.white};
 `
 
 export const Content = styled.div`
@@ -25,7 +26,7 @@ export const Content = styled.div`
 
   img {
     object-fit: cover;
-    width: 33%;
+    width: 33.33%;
     pointer-events: none;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       width: 100%;

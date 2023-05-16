@@ -1,22 +1,26 @@
 import Head from 'next/head'
 import React from 'react'
 
-const Featured = React.lazy(() => import('@/modules/home/featured/Featured'))
-
 const Hero = React.lazy(() => import('@/modules/home/hero/Hero'))
 
-const LeadGrid = React.lazy(() => import('@/modules/home/leadGrid/LeadGrid'))
+const LeadCards = React.lazy(() => import('@/modules/home/leadCards/leadCards'))
+
+const LeadBenefits = React.lazy(() =>
+  import('@/modules/home/leadBenefits/LeadBenefits')
+)
 
 const Lead = React.lazy(() => import('@/modules/home/lead/Lead'))
 
 const LeadWall = React.lazy(() => import('@/modules/home/leadWall/LeadWall'))
 
-const LeadCard = React.lazy(() => import('@/modules/home/leadCard/LeadCard'))
+const LeadBanner = React.lazy(() =>
+  import('@/modules/home/imageBanner/ImageBanner')
+)
 
 const LeadList = React.lazy(() => import('@/modules/home/leadList/LeadList'))
 
-const LeadFeature = React.lazy(() =>
-  import('@/modules/home/LeadFeature/LeadFeature')
+const LeadFeatures = React.lazy(() =>
+  import('@/modules/home/LeadFeatures/LeadFeatures')
 )
 
 const LeadContact = React.lazy(() =>
@@ -35,13 +39,13 @@ export default function Home() {
       <main role="main">
         <div>
           <Hero />
-          <LeadGrid />
+          <LeadBenefits />
+          <LeadCards />
+          <LeadBanner />
           <Lead />
-          <LeadCard />
           <LeadWall />
           <LeadList />
-          <Featured />
-          <LeadFeature />
+          <LeadFeatures />
           <LeadContact />
         </div>
       </main>

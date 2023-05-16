@@ -9,8 +9,45 @@ export const Container = styled.div`
   min-height: 60em;
   height: auto;
   width: 100%;
-  margin: 8em 0 0;
+  margin-top: 3pc;
   gap: 4em;
+`
+
+export const TitleContainer = styled.div`
+  text-align: center;
+  margin: 2em;
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.6em;
+    color: rgb(80, 90, 99);
+    font-weight: 600;
+  }
+
+  h2 {
+    font-size: 5em;
+    font-weight: 600;
+    color: rgb(25, 28, 31);
+    margin: 0.71rem 0 0;
+    padding: 0;
+    @media screen and (max-width: 700px) {
+      font-size: 3em;
+    }
+  }
+
+  h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: rgb(25, 28, 31);
+    word-break: break-word;
+    margin: 1.2rem 0 0;
+    padding: 0px;
+    @media screen and (max-width: 700px) {
+      font-size: 1.5em;
+    }
+  }
 `
 
 export const ListContainer = styled.div`
@@ -24,7 +61,6 @@ export const ListContainer = styled.div`
   ul {
     width: 50%;
     height: 100%;
-    background: #fff;
     @media screen and (max-width: 970px) {
       width: 100%;
     }
@@ -33,25 +69,23 @@ export const ListContainer = styled.div`
   li {
     width: 80%;
     margin: 0 auto;
-    border-bottom: 1px solid ${({theme}) => theme.colors.secondary};
-    font-family: Overpass;
+    /* border-bottom: 1px solid ${({theme}) => theme.colors.secondary}; */
     font-weight: 600;
     font-size: 2em;
-    cursor: pointer;
+    padding: 0.8em 0;
     @media screen and (max-width: 700px) {
-      width: 98%;
+      width: 92%;
     }
     button {
       color: rgba(0, 0, 0, 0.5);
-      width: 100%;
       display: flex;
-      padding: 0.8em 0;
       text-align: start;
     }
   }
 
   .active {
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({theme}) => theme.colors.black};
+    text-decoration: underline;
   }
 `
 
@@ -64,12 +98,11 @@ export const ListContent = styled.div`
     margin: 0 auto;
   }
   @media screen and (max-width: 700px) {
-    width: 98%;
+    width: 92%;
   }
 
   .image_container {
     width: 100%;
-    background: #fff;
   }
 
   img {
@@ -79,6 +112,9 @@ export const ListContent = styled.div`
     @media screen and (max-width: 970px) {
       width: 100%;
     }
+    @media screen and (max-width: 700px) {
+      border-radius: 8px;
+    }
   }
 
   .text_container {
@@ -86,14 +122,12 @@ export const ListContent = styled.div`
   }
 
   .title {
-    font-family: Inter;
     font-size: 2em;
     font-weight: 600;
-    color: ${({theme}) => theme.colors.primary};
+    color: ${({theme}) => theme.colors.black};
   }
 
   .text_content {
-    font-family: Overpass;
     font-weight: 600;
     font-size: 1.4em;
     margin: 0.5em 0 0;

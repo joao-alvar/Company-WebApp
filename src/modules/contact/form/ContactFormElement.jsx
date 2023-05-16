@@ -1,19 +1,26 @@
 import styled from 'styled-components'
 
+export const Section = styled.section`
+  position: relative;
+  height: auto;
+  width: 100%;
+  min-height: calc(100vh - 40px);
+  background: ${({modalOpen}) => (modalOpen ? '#f2f2f2' : '#fff')};
+`
+
 export const Container = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column;
-  min-height: 100px;
+  justify-content: center;
   max-width: 100%;
+  width: 76%;
+  min-height: 100%;
+  height: auto;
   overflow: hidden;
   flex-shrink: 0;
-  width: 100%;
-  height: auto;
-  padding: 0;
+  padding: 0 1em;
   margin: 0 auto;
   line-height: initial;
-  background: #f2f2f2;
   color: #425466;
 
   .modal {
@@ -21,33 +28,49 @@ export const Container = styled.div`
       display: flex;
     }
   }
+
+  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
+    width: 100%;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    padding: 1em;
+  }
 `
 
 export const Content = styled.div`
   display: flex;
-  width: 100%;
+  width: 50%;
   justify-content: center;
   align-items: center;
-  padding: 4em 2em;
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 4em 0.5em;
+  padding: 4em 0;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-top: 2em;
   }
 `
 
 export const FormControl = styled.form`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 100%;
   padding: 4em 2em;
   border-radius: 18px;
   background: #ffffff;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   gap: 2em;
-  @media screen and (max-width: 1234px) {
-    width: 80%;
+  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
+    width: 95%;
   }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 98%;
+    width: 100%;
   }
 
   .regular_input,
@@ -58,14 +81,13 @@ export const FormControl = styled.form`
     border: 1px solid #ced4da;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     &:focus {
-      box-shadow: 0 0 5px #101010;
+      box-shadow: 0 0 1px #101010;
       border: 1px solid #425466;
     }
   }
 
   label {
     font-size: 1.2em;
-    font-family: Overpass;
     font-weight: 600;
   }
 
@@ -87,6 +109,7 @@ export const FormControl = styled.form`
   }
 
   .wrapper {
+    border: none;
     h2 {
       margin-bottom: 1em;
     }
@@ -98,7 +121,6 @@ export const FormControl = styled.form`
 
   .got_error_message {
     color: #b30808;
-    font-family: Overpass;
     font-weight: 600;
     margin-top: 0.2em;
   }
@@ -123,6 +145,13 @@ export const FormControl = styled.form`
   }
 `
 
+export const Title = styled.div`
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 1.4em;
+  color: ${({theme}) => theme.colors.black};
+`
+
 export const Wrap = styled.div`
   display: flex;
   width: 100%;
@@ -133,10 +162,11 @@ export const Wrap = styled.div`
   }
 `
 
-export const Field = styled.div`
+export const Field = styled.fieldset`
   display: flex;
   width: 100%;
   flex-direction: column;
+  border: none;
 
   input {
     width: 100%;
@@ -147,7 +177,7 @@ export const Checkbox = styled.div`
   display: flex;
   gap: 5px;
   label {
-    margin-top: 3px;
+    margin-top: -1px;
   }
 
   fieldset {
@@ -155,7 +185,7 @@ border: none;
   }
 
   .mail_policy_checkbox {
-    margin-top: .2em;
+    margin-top: .3em;
     margin-right: .4em;
     float: left;
 }
@@ -166,16 +196,9 @@ export const List = styled.ul`
   list-style: none;
   display: flex;
   gap: 1em;
+  flex-wrap: wrap;
+
   @media screen and (max-width: 775px) {
-    flex-wrap: wrap;
     gap: 2em;
   }
-`
-
-export const CapContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 1em 0;
 `

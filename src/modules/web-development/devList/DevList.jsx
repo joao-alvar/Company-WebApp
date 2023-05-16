@@ -1,8 +1,13 @@
 import React, {useState} from 'react'
 
-import {Section} from '@/modules/home/hero/HeroElements'
-
-import {Container, Icon, List, ListContent, StyledList} from './DevListElements'
+import {
+  ListSection,
+  Container,
+  Icon,
+  List,
+  ListContent,
+  StyledList,
+} from './DevListElements'
 
 import DevicesIllustrationImg from 'public/images/DevicesIllustration.jpeg'
 import OptimizationImg from 'public/images/Optimized.jpeg'
@@ -11,7 +16,7 @@ import TrendImg from 'public/images/Trend.jpeg'
 const DevList = () => {
   const [show, setShow] = useState(0)
   return (
-    <Section>
+    <ListSection>
       <Container>
         <h2>Focus areas within technology</h2>
         <p>
@@ -28,6 +33,7 @@ const DevList = () => {
               height={300}
               width={300}
               className={show == 0 ? 'show' : null}
+              onLoadingComplete={(image) => (image.style.opacity = 1)}
             />
             <button data-clog-click>Accelerating tech adoption</button>
           </List>
@@ -41,6 +47,7 @@ const DevList = () => {
               height={300}
               width={300}
               className={show == 1 ? 'show' : null}
+              onLoadingComplete={(image) => (image.style.opacity = 1)}
             />
             <button data-clog-click>Delivering trust and transparency</button>
           </List>
@@ -54,6 +61,7 @@ const DevList = () => {
               height={300}
               width={500}
               className={show == 2 ? 'show' : null}
+              onLoadingComplete={(image) => (image.style.opacity = 1)}
             />
             <button data-clog-click>Strategic planing and development</button>
           </List>
@@ -95,7 +103,7 @@ const DevList = () => {
           </ListContent>
         )}
       </Container>
-    </Section>
+    </ListSection>
   )
 }
 

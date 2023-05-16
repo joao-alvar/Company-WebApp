@@ -1,6 +1,8 @@
-import Image from 'next/image'
-
 import {ButtonPrimary} from '@/components/button/ButtonElements'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
+// import localFont from '@next/font/local'
+
+// const myFont = localFont({ src: '/public/fonts/inter/inter-v12-latin-600.woff' })
 
 import {
   Section,
@@ -10,18 +12,11 @@ import {
   Title,
   HeroText,
   ButtonContainer,
-  ArrowIconWrap,
-  ArrowDown,
 } from './HeroElements'
 
 import HeroBg from 'public/images/HeroArt.png'
 
 const Hero = () => {
-  const handleClickScroll = () => {
-    const element = document.querySelector('#section-1')
-
-    element?.scrollIntoView({behavior: 'smooth'})
-  }
   return (
     <>
       <Section>
@@ -45,7 +40,7 @@ const Hero = () => {
           </ContentLeft>
           <ContentRight>
             <div className="image_container">
-              <Image
+              <ImageComponent
                 src={HeroBg}
                 alt="Hero Art that portraits two birds"
                 width="300"
@@ -53,9 +48,6 @@ const Hero = () => {
               />
             </div>
           </ContentRight>
-          <ArrowIconWrap onClick={handleClickScroll} data-clog-click>
-            <ArrowDown />
-          </ArrowIconWrap>
         </Container>
       </Section>
     </>

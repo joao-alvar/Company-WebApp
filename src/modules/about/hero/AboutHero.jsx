@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {
   AboutSection,
@@ -8,7 +8,7 @@ import {
   Content,
 } from './AboutHeroElements'
 
-import Bg from '/public/images/Bg.jpg'
+import Bg from 'public/images/Gallery.jpg'
 
 const AboutHero = () => {
   return (
@@ -16,14 +16,6 @@ const AboutHero = () => {
       <AboutSection>
         <AboutContainer>
           <Wrapper>
-            <ImageWrap>
-              <Image
-                src={Bg}
-                alt="Maze Illustration"
-                placeholder="blur"
-                draggable={false}
-              />
-            </ImageWrap>
             <Content unselectable="on">
               <h1>Who we are</h1>
               <p>
@@ -33,6 +25,14 @@ const AboutHero = () => {
                 helping our customers on this journey, to find the right path.
               </p>
             </Content>
+            <ImageWrap>
+              <ImageComponent
+                src={Bg}
+                alt="Maze Illustration"
+                placeholder="blur"
+                draggable={false}
+              />
+            </ImageWrap>
           </Wrapper>
         </AboutContainer>
       </AboutSection>

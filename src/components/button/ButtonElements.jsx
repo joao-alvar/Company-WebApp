@@ -7,11 +7,11 @@ export const ButtonPrimary = styled(Link)`
   background: ${({theme}) => theme.colors.black};
   text-decoration: none;
   text-align: center;
-  font-family: Inter;
+  font-family: var(--font-heading);
   font-size: 1.2em;
   border-radius: 8px;
   padding: 0.7rem 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   @media screen and (max-width: 768px) {
     padding: 0.7rem 1.5rem;
   }
@@ -26,20 +26,16 @@ export const ButtonPrimary = styled(Link)`
   ${(props) =>
     props.isPrimary &&
     css`
-      color: blue;
-      font-weight: bold;
       &.button_secondary {
         color: ${({theme}) => theme.colors.black};
         background: transparent;
         padding: 0;
         text-decoration: none;
         text-align: center;
-        font-family: 'Overpass';
-        margin-left: 1em;
+        font-family: var(--font-secondary-text);
         font-size: 1.3em;
         font-weight: 600;
-        @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-          margin-left: 0;
+        @media screen and (max-width: 768px) {
           border: 2px solid ${({theme}) => theme.colors.black};
           border-radius: 8px;
           padding: 5px 12px;
