@@ -8,12 +8,18 @@ import {
   Container,
   BtnWrap,
   Content,
+  Title,
   ActiveContent,
+  Wrapper,
+  TextContent,
+  ImageWrap,
   Button,
   ButtonActive,
 } from './DevLeadElements'
 
-import ImageActive1 from '/public/images/Results.jpg'
+import ImageActive_1 from '/public/images/devices-image.jpeg'
+import ImageActive_3 from '/public/images/landing-templates.jpeg'
+import ImageActive_2 from '/public/images/optimization-image.jpeg'
 
 const DevLead = () => {
   const [active, setActive] = useState(0)
@@ -21,7 +27,9 @@ const DevLead = () => {
     <Section>
       <Container>
         <Content>
-          <h2 style={{marginBottom: '0.5em'}}>Top Lead Gen Case Studies</h2>
+          <Title style={{marginBottom: '0.5em'}}>
+            Top Lead Gen Case Studies
+          </Title>
           <p>
             Lead generation has changed a lot over the years. Getting people
             interested in your business isn&apos;t as simple as it once was. Our
@@ -53,78 +61,60 @@ const DevLead = () => {
           </BtnWrap>
         </Content>
         <ActiveContent>
-          {active == 0 && (
-            <>
-              <div className="img_wrap">
-                <ImageComponent
-                  src={ImageActive1}
-                  height={300}
-                  alt="Computer"
-                />
-              </div>
-              <div className="content_wrap">
-                <h2>Top Lead Gen Case Studies</h2>
-                <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
-                </p>
-                <ButtonActive href="/contact" data-clog-click>
-                  Learn more
-                </ButtonActive>
-              </div>
-            </>
-          )}
-          {active == 1 && (
-            <>
-              <div className="content_wrap">
-                <h2>Top Lead Gen Case Studies</h2>
-                <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
-                </p>
-                <ButtonActive href="/contact" data-clog-click>
-                  Learn more
-                </ButtonActive>
-              </div>
-              <div className="img_wrap">
-                <ImageComponent
-                  src={ImageActive1}
-                  height={300}
-                  alt="Computer"
-                />
-              </div>
-            </>
-          )}
-          {active == 2 && (
-            <>
-              <div className="img_wrap">
-                <ImageComponent
-                  src={ImageActive1}
-                  height={300}
-                  alt="Computer"
-                />
-              </div>
-              <div className="content_wrap">
-                <h2>Top Lead Gen Case Studies</h2>
-                <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
-                </p>
-                <ButtonActive href="/contact" data-clog-click>
-                  Learn more
-                </ButtonActive>
-              </div>
-            </>
-          )}
+          <Wrapper className={active == 0 && 'is_display'}>
+            <ImageWrap>
+              <ImageComponent src={ImageActive_1} height={300} alt="Computer" />
+            </ImageWrap>
+            <TextContent>
+              <h2>Top Lead Gen Case Studies</h2>
+              <p>
+                Lead generation has changed a lot over the years. Getting people
+                interested in your business isn&apos;t as simple as it once was.
+                Our marketing experts create modern, leading-edge marketing
+                strategies producing the results your business needs now and in
+                the long term.
+              </p>
+              <ButtonActive href="/contact" data-clog-click>
+                Learn more
+              </ButtonActive>
+            </TextContent>
+          </Wrapper>
+          <Wrapper className={active == 1 && 'is_display'}>
+            <TextContent>
+              <h2>Top Lead Gen Case Studies</h2>
+              <p>
+                Lead generation has changed a lot over the years. Getting people
+                interested in your business isn&apos;t as simple as it once was.
+                Our marketing experts create modern, leading-edge marketing
+                strategies producing the results your business needs now and in
+                the long term.
+              </p>
+              <ButtonActive href="/contact" data-clog-click>
+                Learn more
+              </ButtonActive>
+            </TextContent>
+            <ImageWrap>
+              <ImageComponent src={ImageActive_2} height={300} alt="Computer" />
+            </ImageWrap>
+          </Wrapper>
+          <Wrapper className={active == 2 && 'is_display'}>
+            <ImageWrap>
+              <ImageComponent src={ImageActive_3} height={300} alt="Computer" />
+            </ImageWrap>
+            <TextContent>
+              <h2>Top Lead Gen Case Studies</h2>
+              <p>
+                Lead generation has changed a lot over the years. Getting people
+                interested in your business isn&apos;t as simple as it once was.
+                Our marketing experts create modern, leading-edge marketing
+                strategies producing the results your business needs now and in
+                the long term.
+              </p>
+              <ButtonActive href="/contact" data-clog-click>
+                Learn more
+              </ButtonActive>
+            </TextContent>
+          </Wrapper>
         </ActiveContent>
       </Container>
     </Section>

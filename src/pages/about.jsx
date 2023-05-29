@@ -1,21 +1,12 @@
 import Head from 'next/head'
-import React from 'react'
 
-const AboutHero = React.lazy(() => import('@/modules/about/hero/AboutHero'))
-
-const Mission = React.lazy(() => import('@/modules/about/mission/Mission'))
-
-const Story = React.lazy(() => import('@/modules/about/story/Story'))
-
-const AboutWall = React.lazy(() =>
-  import('@/modules/about/aboutWall/AboutWall')
-)
-
-const CallToAction = React.lazy(() =>
-  import('@/modules/about/callToAction/CallToAction')
-)
-
-const Purpose = React.lazy(() => import('@/modules/about/purpose/Purpose'))
+import AboutGrid from '@/modules/about/aboutGrid/AboutGrid'
+import AboutWall from '@/modules/about/aboutWall/AboutWall'
+import AboutCallToAction from '@/modules/about/callToAction/CallToAction'
+import AboutHero from '@/modules/about/hero/AboutHero'
+import Mission from '@/modules/about/mission/Mission'
+import Purpose from '@/modules/about/purpose/Purpose'
+import Story from '@/modules/about/story/Story'
 
 const About = () => {
   return (
@@ -32,7 +23,8 @@ const About = () => {
         <AboutWall />
         <Story />
         <Purpose />
-        <CallToAction />
+        <AboutGrid />
+        <AboutCallToAction />
       </main>
     </>
   )

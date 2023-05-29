@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import {ImArrowRight2} from 'react-icons/im'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
 
 import styled from 'styled-components'
@@ -7,11 +8,10 @@ import styled from 'styled-components'
 import {ButtonPrimary} from '../button/ButtonElements'
 
 export const Header = styled.header`
-  position: sticky;
-  height: 8rem;
+  position: fixed;
+  height: var(--nav-header-height);
   width: 100%;
   top: 0;
-  left: 0;
   user-select: none;
   transition: transform 150ms ease-in-out;
   z-index: 9999;
@@ -23,9 +23,9 @@ export const Nav = styled.nav`
   height: 100%;
   backdrop-filter: blur(16px);
   background-color: rgba(234, 237, 240, 0.8);
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
   box-shadow: 0 2px 2rem rgba(0, 0, 0, 0.1);
   justify-content: space-between;
+  align-items: center;
   padding: 0 1em;
 `
 
@@ -36,10 +36,7 @@ export const LogoContainer = styled(Link)`
   z-index: 11;
 `
 
-export const LogoImg = styled(Image)`
-  text-indent: -9999px;
-  margin-bottom: 0.5rem;
-`
+export const LogoImg = styled(Image)``
 
 export const NavList = styled.nav`
   display: flex;
@@ -52,40 +49,31 @@ export const NavList = styled.nav`
     gap: 3.8em;
   }
 
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    transform: ${({isOpen}) =>
-      isOpen ? 'translateX(0)' : 'translateX(-100%)'};
-    position: fixed;
+  @media only screen and (max-width: ${({theme}) => theme.size.md}) {
+    display: ${({isOpen}) => (isOpen ? 'flex' : 'none')};
     align-items: start;
-    width: 100%;
     height: 100%;
-    min-height: ${({isOpen}) => (isOpen ? '1000vh' : '100%')};
-    overflow: auto;
+    min-height: 1000vh;
     top: 0;
     left: 0;
     padding-top: 10em;
-    padding-left: 1.7em;
+    padding-left: 2.9rem;
     gap: 1.5em;
     z-index: 10;
-    transition: transform 0.5s cubic-bezier(0, 0.52, 0, 1);
     background: ${({theme}) => theme.colors.white};
+    overflow: hidden;
+    overscroll-behavior: contain;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+  }
+
+
   }
 
   div {
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
       width: 100%;
-    }
-  }
-
-  .active {
-    @media screen and (min-width: 911px) {
-      &:after {
-        left: 0;
-        width: 100%;
-      }
-    }
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      color: #880707;
     }
   }
 
@@ -110,6 +98,7 @@ export const List = styled.ul`
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+    width: 100%;
   }
 
   li {
@@ -130,7 +119,7 @@ export const List = styled.ul`
     }
   }
 
-  .dropdown_link {
+  .dropdown_list {
     display: flex;
     margin-right: 1em;
     @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -139,8 +128,8 @@ export const List = styled.ul`
   }
   .dropdown_container {
     position: relative;
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      width: 95%;
+    @media only screen and (max-width: ${({theme}) => theme.size.md}) {
+      width: 100%;
       outline: 0;
     }
   }
@@ -156,10 +145,9 @@ export const NavLink = styled(Link)`
     &:after {
       content: '';
       position: absolute;
-      bottom: 0;
+      bottom: -4px;
       left: 50%;
       width: 0%;
-      bottom: -8px;
       height: 2px;
       background-color: ${({theme}) => theme.colors.text};
       transition: 0.2s ease-out;
@@ -169,6 +157,7 @@ export const NavLink = styled(Link)`
       width: 100%;
     }
   }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     font-size: 1.6em;
   }
@@ -194,27 +183,51 @@ export const DropdownMenu = styled.div`
     display: none;
     margin-top: 0.8em;
   }
+`
 
-  a {
-    display: flex;
-    text-decoration: none;
-    align-items: center;
-    font-weight: 600;
-    font-size: 1.3em;
-    color: #1d1d1d;
-    width: 100%;
-    padding: 0 1rem;
-    height: 30px;
-    @media screen and (min-width: 911px) {
-      padding: 1.1em 1rem;
-    }
+export const DropdownLink = styled(Link)`
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.15em;
+  color: rgb(80, 90, 99);
+  transition: background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+    color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+    opacity 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+    box-shadow 200ms cubic-bezier(0.4, 0.3, 0.8, 0.6) 0s;
+  padding-top: 1.1em;
+  padding-bottom: 1.1em;
+  padding-left: 0.8rem;
+  margin-left: 0.6rem;
+  height: 30px;
+  width: 90%;
+  border-radius: 8px;
 
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      font-size: 1.45em;
-    }
-    &:hover {
-      color: #880707;
-    }
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    font-size: 1.25em;
+  }
+
+  &:hover {
+    color: ${({theme}) => theme.colors.primary};
+    background-color: rgba(25, 28, 31, 0.056);
+  }
+`
+
+export const ArrowIconForward = styled(ImArrowRight2)`
+  margin-left: auto;
+  margin-right: 0.5rem;
+  font-size: 1.3rem;
+  color: ${({theme}) => theme.colors.primary};
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-2px);
+  transition: transform 0.3s ease-in, opacity 0.2s ease-out;
+
+  ${DropdownLink}:hover & {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
   }
 `
 
@@ -225,7 +238,7 @@ export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
   transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
   transform: ${({show}) => (show ? 'rotate(179deg)' : '')};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    right: 0;
+    right: 2rem;
     top: -2px;
     font-size: 1.5em;
     transform: ${({show}) => (show ? 'rotate(0)' : 'rotate(-92deg)')};

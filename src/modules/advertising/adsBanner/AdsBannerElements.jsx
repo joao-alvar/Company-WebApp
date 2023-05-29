@@ -14,11 +14,12 @@ export const Container = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
-    padding: 5em 2em;
+    padding-top: 1pc;
+    padding-bottom: 1pc;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 5em 10px;
+    padding: 2pc 10px;
   }
 `
 
@@ -52,6 +53,7 @@ export const TextWrap = styled.div`
     font-size: 4.2em;
     font-family: var(--font-heading);
     font-weight: 600;
+    margin-bottom: 1.5rem;
   }
 
   p {
@@ -59,6 +61,22 @@ export const TextWrap = styled.div`
     font-weight: 500;
     font-family: var(--font-heading);
     line-height: 1.6em;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 560px) {
+    h2 {
+      font-size: 4rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+    }
   }
 `
 

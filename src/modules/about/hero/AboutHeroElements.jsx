@@ -18,6 +18,7 @@ export const AboutContainer = styled.div`
 `
 
 export const Wrapper = styled.div`
+  position: relative;
   width: 98%;
   margin-top: 1em;
   height: 45em;
@@ -25,7 +26,6 @@ export const Wrapper = styled.div`
   align-items: center;
   border-radius: 12px;
   overflow: hidden;
-  background-color: ${({theme}) => theme.colors.black};
   color: ${({theme}) => theme.colors.white};
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -34,13 +34,14 @@ export const Wrapper = styled.div`
 `
 
 export const ImageWrap = styled.div`
-  width: 48%;
-  height: 60%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   margin-left: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right: 4em;
+  z-index: -1;
 
   img {
     width: 100%;
@@ -48,33 +49,48 @@ export const ImageWrap = styled.div`
     object-fit: cover;
     background-size: contain;
     border-radius: 12px;
+    filter: brightness(43%);
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
+    padding-right: 0;
   }
 `
 
 export const Content = styled.div`
-  width: 45%;
+  width: 85%;
   height: 100%;
   display: flex;
-  justify-content: center;
-  align-self: center;
+  align-items: center;
+  // justify-content: center;
+  text-align: center;
   flex-direction: column;
   padding: 3em;
-  user-select: none;
+  padding-top: 11rem;
+  margin: 0 auto;
 
   h1 {
     font-family: var(--font-heading);
-    font-size: 3.4em;
-    font-weight: 600;
+    font-size: 5.4em;
+    font-weight: 800;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      90deg,
+      #28abe1 15%,
+      #ff729f 50%,
+      #f18f01 85%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline;
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.9rem;
     line-height: 1.7em;
     font-weight: 600;
+    color: #fff;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -82,5 +98,11 @@ export const Content = styled.div`
   }
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     padding: 2.5em 1em;
+  }
+  @media screen and (max-width: 450px) {
+    font-size: 0.85rem;
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 `

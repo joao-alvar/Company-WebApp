@@ -1,12 +1,11 @@
-import {LoaderContainer} from './PageLoaderElements'
+import styles from './spinner.module.css'
 
 const PageLoader = () => {
   return (
     <>
-      <LoaderContainer>
-        <div className="loading"></div>
-        <div className="loading-text">loading</div>
-      </LoaderContainer>
+      <div className={styles.wrapper}>
+        <div class={styles.loader} />
+      </div>
     </>
   )
 }

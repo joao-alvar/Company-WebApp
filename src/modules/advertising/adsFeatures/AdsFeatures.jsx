@@ -13,8 +13,8 @@ import {
   Icon,
 } from './AdsFeaturesElements'
 
-import Ads_2 from '/public/images/Optimized.jpeg'
-import Ads_1 from '/public/images/Trend.jpeg'
+import Image_1 from '/public/images/analytics-chart-image.png'
+import Image_2 from '/public/images/marketing-isometric-illustration.png'
 
 const AdsFeatures = () => {
   return (
@@ -46,14 +46,7 @@ const AdsFeatures = () => {
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <ImageComponent
-              src={Ads_1}
-              alt=""
-              style={{
-                borderBottomRightRadius: '8px',
-                borderTopRightRadius: '8px',
-              }}
-            />
+            <ImageComponent src={Image_1} alt="" />
           </ImageWrap>
         </Wrapper>
         <Wrapper>
@@ -81,14 +74,7 @@ const AdsFeatures = () => {
             </StyledList>
           </ListWrap>
           <ImageWrap>
-            <ImageComponent
-              src={Ads_2}
-              alt=""
-              style={{
-                borderBottomRightRadius: '8px',
-                borderTopRightRadius: '8px',
-              }}
-            />
+            <ImageComponent src={Image_2} alt="" className="image_2" />
           </ImageWrap>
         </Wrapper>
       </Container>

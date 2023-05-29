@@ -1,14 +1,18 @@
+import {
+  ButtonPrimary,
+  ButtonSecondary,
+} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  min-height: 100px;
   overflow: hidden;
   flex-shrink: 0;
   width: 100%;
-  height: 57rem;
+  height: 54rem;
+  min-height: 100%;
   line-height: initial;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -26,8 +30,8 @@ export const Content = styled.div`
 
   h1 {
     font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 3.4em;
+    font-weight: 700;
+    font-size: 4rem;
     margin-bottom: 0.21em;
   }
 
@@ -55,21 +59,12 @@ export const Content = styled.div`
 `
 
 export const LinkWrap = styled.div`
-  display: flex;
-  gap: 1em;
+  display: block;
   margin-top: 2.21em;
 
   @media screen and (max-width: 768px) {
-    gap: 0.5em;
-
-    .button {
-      width: 100%;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    display: flex;
+    gap: 0.5rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -78,15 +73,35 @@ export const LinkWrap = styled.div`
   }
 `
 
-export const ImageWrap = styled.div`
+export const Button = styled(ButtonPrimary)`
+  text-decoration: none;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`
+export const SecondButton = styled(ButtonSecondary)`
+  margin-left: 0.5rem;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
+`
+
+export const VideoWrap = styled.div`
   width: 50%;
   height: 100%;
   margin-left: auto;
-  img {
+
+  img,
+  video {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-bottom-left-radius: 12px;
+    border-bottom-left-radius: 1pc;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {

@@ -13,7 +13,6 @@ const ImageComponent = ({
   width,
   height,
   className,
-  quality,
   priority,
   viewBox,
   shapeRendering,
@@ -28,7 +27,7 @@ const ImageComponent = ({
         width={width}
         height={height}
         className={className}
-        quality={quality}
+        quality={100}
         priority={priority}
         viewBox={viewBox}
         shapeRendering={shapeRendering}

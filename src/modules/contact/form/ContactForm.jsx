@@ -1,15 +1,23 @@
+import dynamic from 'next/dynamic'
 import Link from 'next/link'
-import React, {useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import {useForm} from 'react-hook-form'
-import {Toaster, toast} from 'react-hot-toast'
+import {ToastContainer, toast} from 'react-toastify'
+
+import 'react-toastify/dist/ReactToastify.css'
 
 import ButtonLoader from '@/components/loading/buttonLoader/ButtonLoader'
-import Modal from '@/components/modal/Modal'
+import PageLoader from '@/components/loading/pageLoader/PageLoader'
+
+const Modal = dynamic(() => import('../../../components/modal/Modal'), {
+  loading: () => <PageLoader />,
+})
 
 import HeaderContent from '../content/HeaderContent'
 import {
   Section,
   Container,
+  Wrapper,
   Content,
   FormControl,
   Title,
@@ -17,6 +25,7 @@ import {
   Field,
   Checkbox,
   List,
+  ArrowIcon,
 } from './ContactFormElement'
 
 import axios from 'axios'
@@ -27,7 +36,9 @@ const ContactForm = () => {
   const [countries, setCountries] = useState([])
 
   const goToTop = () => {
-    window.scrollTo(0, 0)
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0)
+    }
   }
 
   useEffect(() => {
@@ -44,17 +55,10 @@ const ContactForm = () => {
 
   const notify = () => {
     toast.error('An error occurred while submitting the form.', {
-      duration: 8000,
-      position: 'bottom-center',
-      iconTheme: {
-        primary: '#991212',
-        secondary: '#fff',
-      },
-      // Aria
-      ariaProps: {
-        role: 'status',
-        'aria-live': 'error',
-      },
+      position: toast.POSITION.BOTTOM_CENTER,
+      role: 'alert',
+      'aria-live': 'error',
+      className: 'toast',
     })
   }
 
@@ -85,49 +89,45 @@ const ContactForm = () => {
 
   return (
     <>
-      <div>
-        <Toaster
-          toastOptions={{
-            style: {
-              border: '1px solid #880707',
-              padding: '16px',
-              color: '#000',
-              fontSize: '1.2em',
-              fontWeight: '600',
-            },
-          }}
-        />
-      </div>
       <Section modalOpen={modalOpen}>
-        <Container>
-          {!modalOpen && (
-            <>
+        <ToastContainer
+          autoClose={5000}
+          closeButton={false}
+          hideProgressBar={true}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          role="alert"
+          theme="light"
+        />
+        {!modalOpen ? (
+          <>
+            <Container>
               <HeaderContent />
               <Content>
                 <FormControl onSubmit={handleSubmit(onSubmit)} role="submit">
-                  <Title>
-                    Just fill out the form and we will contact you as soon as
-                    possible.
-                  </Title>
+                  {errors && goToTop()}
                   <Wrap>
                     <Field data-role="control-group">
-                      <label
-                        className={errors.firstName ? 'got_error' : ''}
-                        htmlFor="first-name"
-                      >
-                        First Name*
-                      </label>
+                      <label htmlFor="first-name">First Name*</label>
                       <input
                         id="first-name"
                         type="text"
                         name="first-name"
-                        className="regular_input"
+                        className={
+                          errors.firstName
+                            ? 'got_error regular_input'
+                            : 'regular_input'
+                        }
                         aria-required="true"
                         aria-invalid={errors.firstName ? 'true' : 'false'}
                         {...register('firstName', {
                           required: {
                             value: true,
-                            message: 'You must enter your name',
+                            message: 'Please enter your name',
                           },
                           maxLength: {
                             value: 30,
@@ -142,23 +142,22 @@ const ContactForm = () => {
                       )}
                     </Field>
                     <Field data-role="control-group">
-                      <label
-                        className={errors.lastName ? 'got_error' : ''}
-                        htmlFor="last-name"
-                      >
-                        Last Name*
-                      </label>
+                      <label htmlFor="last-name">Last Name*</label>
                       <input
                         id="last-name"
                         type="text"
                         name="last-name"
-                        className="regular_input"
+                        className={
+                          errors.lastName
+                            ? 'got_error regular_input'
+                            : 'regular_input'
+                        }
                         aria-required="true"
                         aria-invalid={errors.lastName ? 'true' : 'false'}
                         {...register('lastName', {
                           required: {
                             value: true,
-                            message: 'You must enter your last name',
+                            message: 'Please enter your last name',
                           },
                           maxLength: {
                             value: 40,
@@ -175,17 +174,16 @@ const ContactForm = () => {
                   </Wrap>
                   <Wrap>
                     <Field data-role="control-group">
-                      <label
-                        className={errors.companyName ? 'got_error' : ''}
-                        htmlFor="company-name"
-                      >
-                        Company/Organization
-                      </label>
+                      <label htmlFor="company-name">Company/Organization</label>
                       <input
                         id="company-name"
                         type="text"
                         name="company-name"
-                        className="regular_input"
+                        className={
+                          errors.companyName
+                            ? 'got_error regular_input'
+                            : 'regular_input'
+                        }
                         aria-invalid={errors.companyName ? 'true' : 'false'}
                         {...register('companyName', {
                           maxLength: {
@@ -203,23 +201,22 @@ const ContactForm = () => {
                   </Wrap>
                   <Wrap>
                     <Field data-role="control-group">
-                      <label
-                        className={errors.email ? 'got_error' : ''}
-                        htmlFor="email"
-                      >
-                        Email*
-                      </label>
+                      <label htmlFor="email">Work email*</label>
                       <input
                         id="email"
                         type="email"
                         name="email"
-                        className="regular_input"
+                        className={
+                          errors.email
+                            ? 'got_error regular_input'
+                            : 'regular_input'
+                        }
                         aria-required="true"
                         aria-invalid={errors.email ? 'true' : 'false'}
                         {...register('email', {
                           required: {
                             value: true,
-                            message: 'You must enter your email',
+                            message: 'Please provide an email',
                           },
                           pattern: {
                             value:
@@ -267,36 +264,45 @@ const ContactForm = () => {
                   </Wrap>
                   <Wrap>
                     <Field data-role="control-group">
-                      <label
-                        className={errors.country ? 'got_error' : ''}
-                        htmlFor="country"
-                      >
-                        Country*
-                      </label>
-                      <select
-                        id="country"
-                        type="text"
-                        name="country"
-                        className="regular_input"
-                        aria-invalid={errors.country ? 'true' : 'false'}
-                        {...register('country', {
-                          required: {
-                            value: true,
-                            message: 'You must enter your country',
-                          },
-                          minLength: {
-                            value: 2,
-                            message: 'You must enter your country',
-                          },
-                        })}
-                      >
-                        <option value="" hidden aria-hidden="true"></option>
-                        {countries.map((item) => {
-                          return (
-                            <option key={item.country}>{item.country}</option>
-                          )
-                        })}
-                      </select>
+                      <label htmlFor="country">Country*</label>
+                      <div className="select_wrap">
+                        <ArrowIcon />
+                        <select
+                          id="country"
+                          type="text"
+                          name="country"
+                          className={
+                            errors.country
+                              ? 'got_error regular_input'
+                              : 'regular_input'
+                          }
+                          aria-required="true"
+                          aria-invalid={errors.country ? 'true' : 'false'}
+                          {...register('country', {
+                            required: {
+                              value: true,
+                              message: 'Please let us know where you are from',
+                            },
+                            minLength: {
+                              value: 2,
+                              message: 'Please let us know where you are from',
+                            },
+                          })}
+                        >
+                          <option
+                            value=""
+                            hidden="true"
+                            disabled="true"
+                            aria-hidden="true"
+                            selected
+                          ></option>
+                          {countries.map((item) => {
+                            return (
+                              <option key={item.country}>{item.country}</option>
+                            )
+                          })}
+                        </select>
+                      </div>
                       {errors.country && (
                         <span className="got_error_message" role="alert">
                           {errors?.country?.message}
@@ -305,17 +311,22 @@ const ContactForm = () => {
                     </Field>
                   </Wrap>
                   <fieldset className="wrapper">
-                    <h2>What you are looking for? (Check all that apply)</h2>
+                    <h2 className="services_title">
+                      How can our team help you? (check all that apply)
+                    </h2>
                     <List>
                       <li>
                         <Checkbox>
                           <input
-                            id="seo"
+                            id="webDevelopment"
                             type="checkbox"
-                            placeholder="Advertising and/or SEO"
-                            {...register('advertising_seo', {})}
+                            name="web-development"
+                            placeholder="Web Development"
+                            {...register('web_development', {})}
                           />
-                          <label htmlFor="seo">Advertising and/or SEO</label>
+                          <label htmlFor="webDevelopment">
+                            Web Development
+                          </label>
                         </Checkbox>
                       </li>
                       <li>
@@ -333,15 +344,12 @@ const ContactForm = () => {
                       <li>
                         <Checkbox>
                           <input
-                            id="webDevelopment"
+                            id="seo"
                             type="checkbox"
-                            name="web-development"
-                            placeholder="Web Development"
-                            {...register('web_development', {})}
+                            placeholder="SEO"
+                            {...register('seo', {})}
                           />
-                          <label htmlFor="webDevelopment">
-                            Web Development
-                          </label>
+                          <label htmlFor="seo">SEO</label>
                         </Checkbox>
                       </li>
                       <li>
@@ -366,7 +374,7 @@ const ContactForm = () => {
                         className={errors.Message ? 'got_error' : ''}
                         htmlFor="message"
                       >
-                        Briefly describe your project
+                        Anything else? (questions/comments)
                       </label>
                       <textarea
                         id="message"
@@ -393,6 +401,17 @@ const ContactForm = () => {
                       )}
                     </Field>
                   </Wrap>
+                  <Field>
+                    <label className="statement">
+                      By registering, you confirm that you agree to the
+                      processing of your personal data by Atalaso as described
+                      in the{' '}
+                      <Link className="link" href="/privacy-policy">
+                        Privacy Policy
+                      </Link>
+                      .
+                    </label>
+                  </Field>
                   <Checkbox>
                     <fieldset data-role="control-group">
                       <input
@@ -402,16 +421,10 @@ const ContactForm = () => {
                         className="mail_policy_checkbox"
                         {...register('mailPolicy', {})}
                       />
-                      <label htmlFor="mailPolicy">
-                        Get emails from Atalaso about product updates, industry
-                        news, and events. If you change your mind, you can
-                        unsubscribe at any time. Data will be processed
-                        according to our
-                        <Link className="link" href="/privacy-policy">
-                          {' '}
-                          Privacy Policy
-                        </Link>
-                        .
+                      <label htmlFor="mailPolicy" className="mail_policy_label">
+                        Get emails from Atalaso about products, services,
+                        updates, industry news, and events. If you change your
+                        mind, you can unsubscribe at any time.
                       </label>
                     </fieldset>
                   </Checkbox>
@@ -425,15 +438,16 @@ const ContactForm = () => {
                   </button>
                 </FormControl>
               </Content>
-            </>
-          )}
+            </Container>
+          </>
+        ) : (
           <Modal
             onClick={() => {
               setModalOpen(false)
             }}
             className={modalOpen ? 'modal open' : 'modal'}
           />
-        </Container>
+        )}
       </Section>
     </>
   )

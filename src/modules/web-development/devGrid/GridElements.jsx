@@ -6,43 +6,57 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100px;
   overflow: hidden;
   flex-shrink: 0;
   width: 100%;
-  height: 77rem;
+  height: auto;
+  min-height: 70rem;
   line-height: initial;
+  padding-top: 1pc;
+  padding-bottom: 2pc;
+
   @media screen and (max-width: 1000px) {
-    height: auto;
     padding: 2em 0;
   }
 `
-export const Wrapper = styled.div`
+
+export const TitleContainer = styled.div`
+  text-align: center;
+  margin: 2em;
+
+  h2 {
+    font-size: 5.2rem;
+    font-weight: 600;
+    @media screen and (max-width: 700px) {
+      font-size: 4rem;
+    }
+  }
+`
+
+export const Wrapper = styled.ul`
+  list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.3em;
   grid-auto-rows: minmax(200px, auto);
-  padding: 3em;
-  @media screen and (max-width: 805px) {
+  padding: 2em;
+  @media screen and (max-width: 1050px) {
     padding: 1.5em;
     grid-template-columns: repeat(1, 1fr);
   }
 `
-export const Grid = styled.div`
+export const Grid = styled.li`
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   padding: 1em;
   cursor: default;
-  &:hover {
-    transform: scale(1.03);
-  }
 
-  h2 {
+  h3 {
+    font-family: var(--font-heading);
+    font-weight: 600;
     font-size: 1.6em;
-    padding-top: 10px;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
   }
 
   p {
@@ -53,7 +67,4 @@ export const Grid = styled.div`
 export const Icon = styled.span`
   color: #000;
   font-size: 5em;
-  ${Grid}:hover & {
-    color: ${({theme}) => theme.colors.primary};
-  }
 `

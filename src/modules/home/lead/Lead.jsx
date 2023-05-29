@@ -1,7 +1,7 @@
 import {ButtonPrimary} from '@/components/button/ButtonElements'
 
-import {Section} from '../leadFeatures/LeadFeaturesElements'
-import {Container, LeadInformation, Icon} from './LeadElements'
+import {Section} from '../hero/HeroElements'
+import {Container, LeadInformation} from './LeadElements'
 
 const Lead = () => {
   return (
@@ -9,18 +9,11 @@ const Lead = () => {
       <Section id="lead">
         <Container>
           <LeadInformation>
-            <h2>We got you covered</h2>
-            <p>
-              Make day-to-day spending a breeze with all things money in one
-              place
-            </p>
-            <ButtonPrimary
-              href="/"
-              isPrimary
-              className="button_secondary button"
-              data-clog-click
-            >
-              Get started <Icon />
+            <h2>
+              Join 28+ million people who already trust us with their money
+            </h2>
+            <ButtonPrimary href="/contact" data-clog-click>
+              Get started
             </ButtonPrimary>
           </LeadInformation>
         </Container>

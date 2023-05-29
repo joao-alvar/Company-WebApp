@@ -28,6 +28,8 @@ export const ImageWrap = styled.div`
   justify-content: center;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   img {
@@ -37,6 +39,7 @@ export const ImageWrap = styled.div`
     height: 100%;
     pointer-events: none;
     cursor: default;
+    border-radius: 1pc;
     @media screen and (max-width: 700px) {
       width: 100%;
     }
@@ -74,7 +77,7 @@ export const Content = styled.div`
 `
 
 export const Button = styled(Link)`
-  padding: 6px 12px;
+  padding: 0.6rem 1.2rem;
   font-size: 1.5em;
   border-radius: 8px;
   font-weight: 600;
@@ -86,7 +89,9 @@ export const Button = styled(Link)`
     background: ${({theme}) => theme.colors.primaryTextColor};
     border-color: ${({theme}) => theme.colors.primaryTextColor};
   }
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+  @media screen and (max-width: 500px) {
     width: 98%;
+    display: flex;
+    justify-content: center;
   }
 `

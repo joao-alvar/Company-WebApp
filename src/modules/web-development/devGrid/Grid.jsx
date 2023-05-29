@@ -5,9 +5,8 @@ import {MdOutlineDevices} from 'react-icons/md'
 import {TfiWrite, TfiStatsUp} from 'react-icons/tfi'
 
 import {Section} from '@/modules/home/hero/HeroElements'
-import {TitleContainer} from '@/modules/home/leadList/LeadListElements'
 
-import {Container, Wrapper, Grid, Icon} from './GridElements'
+import {Container, TitleContainer, Wrapper, Grid, Icon} from './GridElements'
 
 const GridSection = () => {
   return (
@@ -19,7 +18,7 @@ const GridSection = () => {
         <Wrapper>
           <Grid>
             <Icon as={AiOutlineCode} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               Make day-to-day spending a breeze with all things money in one
               place responsive, user-friendly, and visually stunning. We
@@ -28,7 +27,7 @@ const GridSection = () => {
           </Grid>
           <Grid>
             <Icon as={MdOutlineDevices} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               Make day-to-day spending a breeze with all things money in one
               place responsive, user-friendly, and visually stunning. We
@@ -37,7 +36,7 @@ const GridSection = () => {
           </Grid>
           <Grid>
             <Icon as={AiOutlineUsergroupAdd} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               Make day-to-day spending a breeze with all things money in one
               place responsive, user-friendly, and visually stunning. We
@@ -46,7 +45,7 @@ const GridSection = () => {
           </Grid>
           <Grid>
             <Icon as={TfiWrite} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               Make day-to-day spending a breeze with all things money in one
               place responsive, user-friendly, and visually stunning. We
@@ -55,7 +54,7 @@ const GridSection = () => {
           </Grid>
           <Grid>
             <Icon as={TfiStatsUp} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               Make day-to-day spending a breeze with all things money in one
               place responsive, user-friendly, and visually stunning. We
@@ -64,7 +63,7 @@ const GridSection = () => {
           </Grid>
           <Grid>
             <Icon as={IoTimeOutline} />
-            <h2>Smart business and automation</h2>
+            <h3>Smart business and automation</h3>
             <p>
               {' '}
               Make day-to-day spending a breeze with all things money in one

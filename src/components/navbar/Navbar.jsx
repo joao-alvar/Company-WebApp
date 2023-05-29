@@ -1,5 +1,3 @@
-import Link from 'next/link'
-import {useRouter} from 'next/router'
 import {useState, useEffect, useRef} from 'react'
 
 import MobileMenu from '../mobile/menu/MobileMenu'
@@ -15,6 +13,8 @@ import {
   LogoImg,
   ArrowIconDown,
   DropdownMenu,
+  DropdownLink,
+  ArrowIconForward,
 } from './NavbarElements'
 
 import logoImage from '/public/images/logo-atalaso.svg'
@@ -22,17 +22,15 @@ import logoImage from '/public/images/logo-atalaso.svg'
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
   const [show, setShow] = useState(false)
-  const router = useRouter()
 
-  const openMenu = () => {
-    setOpen(!isOpen)
-    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
-    if (!isOpen) {
-      document.querySelector('body').classList.add('scroll')
+  useEffect(() => {
+    // remove scroll when mobile menu is open
+    if (isOpen === true) {
+      document.querySelector('html').classList.add('mobile_nav_open')
     } else {
-      document.querySelector('body').classList.remove('scroll')
+      document.querySelector('html').classList.remove('mobile_nav_open')
     }
-  }
+  })
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -70,10 +68,13 @@ const Navbar = () => {
       <Header role="banner">
         <Nav role="navigation" aria-label="Primary Navigation">
           <LogoContainer
-            href="https://atalaso.com/"
+            href="/"
             data-clog-click
             aria-label="Atalaso"
             data-qa="logo"
+            onClick={() => {
+              setOpen(false)
+            }}
           >
             <LogoImg
               src={logoImage}
@@ -95,7 +96,7 @@ const Navbar = () => {
                 <NavLink
                   as="button"
                   data-clog-click
-                  className="dropdown_link"
+                  className="dropdown_list"
                   onClick={() => {
                     setShow(!show)
                   }}
@@ -108,51 +109,41 @@ const Navbar = () => {
                   className={`${show ? 'drop' : ''}`}
                   show={show}
                 >
-                  <Link
-                    href="/#overview"
-                    data-clog-click
-                    onClick={() => {
-                      openMenu(false), setShow(!show)
-                    }}
-                  >
-                    Overview
-                  </Link>
-                  <Link
+                  <DropdownLink
                     href="/advertising#paid-search"
                     data-clog-click
                     onClick={() => {
-                      openMenu(false), setShow(!show)
+                      setOpen(false), setShow(false)
                     }}
                   >
-                    Paid Search
-                  </Link>
-                  <Link
-                    href="/advertising#seo"
+                    Paid Search <ArrowIconForward />
+                  </DropdownLink>
+                  <DropdownLink
+                    href="/solutions/seo"
                     data-clog-click
                     onClick={() => {
-                      openMenu(false), setShow(!show)
+                      setOpen(false), setShow(false)
                     }}
                   >
-                    SEO
-                  </Link>
-                  <Link
+                    SEO <ArrowIconForward />
+                  </DropdownLink>
+                  <DropdownLink
                     href="/web-development#optimization"
                     data-clog-click
                     onClick={() => {
-                      openMenu(false), setShow(!show)
+                      setOpen(false), setShow(false)
                     }}
                   >
-                    Optimization
-                  </Link>
+                    Optimization <ArrowIconForward />
+                  </DropdownLink>
                 </DropdownMenu>
               </li>
               <li>
                 <NavLink
                   href="/advertising"
                   data-clog-click
-                  className={router.pathname == '/advertising' ? 'active' : ''}
                   onClick={() => {
-                    openMenu(false)
+                    setOpen(false)
                   }}
                 >
                   Advertising
@@ -163,11 +154,8 @@ const Navbar = () => {
                 <NavLink
                   href="/web-development"
                   data-clog-click
-                  className={
-                    router.pathname == '/web-development' ? 'active' : ''
-                  }
                   onClick={() => {
-                    openMenu(false)
+                    setOpen(false)
                   }}
                 >
                   Web development
@@ -178,25 +166,20 @@ const Navbar = () => {
                 <NavLink
                   href="/about"
                   data-clog-click
-                  className={router.pathname == '/about' ? 'active' : ''}
                   onClick={() => {
-                    openMenu(false)
+                    setOpen(false)
                   }}
                 >
-                  Who we Are
+                  Who we are
                 </NavLink>
               </li>
               <li>
                 <NavLink
                   href="/contact"
                   data-clog-click
-                  className={
-                    router.pathname == '/contact'
-                      ? 'mobile_contact_link active'
-                      : 'mobile_contact_link'
-                  }
+                  className="mobile_contact_link"
                   onClick={() => {
-                    openMenu(false)
+                    setOpen(false)
                   }}
                 >
                   Contact
@@ -210,7 +193,9 @@ const Navbar = () => {
             </NavButton>
           </NavButtonContainer>
           <MobileMenu
-            onClick={openMenu}
+            onClick={() => {
+              setOpen(!isOpen)
+            }}
             className={isOpen ? 'menu__btn open' : 'menu__btn'}
           />
         </Nav>

@@ -233,7 +233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.17.9, @babel/runtime@npm:^7.20.7":
+"@babel/runtime@npm:^7.20.7":
   version: 7.21.0
   resolution: "@babel/runtime@npm:7.21.0"
   dependencies:
@@ -290,6 +290,13 @@ __metadata:
     "@babel/helper-validator-identifier": ^7.19.1
     to-fast-properties: ^2.0.0
   checksum: 43242a99c612d13285ee4af46cc0f1066bcb6ffd38307daef7a76e8c70f36cfc3255eb9e75c8e768b40e761176c313aec4d5c0b9d97a21e494d49d5fd123a9f7
+  languageName: node
+  linkType: hard
+
+"@corex/deepmerge@npm:^4.0.43":
+  version: 4.0.43
+  resolution: "@corex/deepmerge@npm:4.0.43"
+  checksum: f0103bfcfb9938ba478868fad522b018b92615ba186b0322c92aa1f57e539b87d4379d88fee3a404264a83bd4b13c384cfb07834377997d6d71cd840a880b4c4
   languageName: node
   linkType: hard
 
@@ -362,39 +369,6 @@ __metadata:
   version: 8.37.0
   resolution: "@eslint/js@npm:8.37.0"
   checksum: 7a07fb085c94ce1538949012c292fd3a6cd734f149bc03af6157dfbd8a7477678899ef57b4a27e15b36470a997389ad79a0533d5880c71e67720ae1a7de7c62d
-  languageName: node
-  linkType: hard
-
-"@fontsource/inter@npm:^4.5.15":
-  version: 4.5.15
-  resolution: "@fontsource/inter@npm:4.5.15"
-  checksum: d4330957c0a23a6c6a47f6f628b89c5603deec6305f28458fd3277bb652913dc77b31ac454bba96beeaecddef87eaf4b60befa2aad040ebb8c22c39ee33a2cf1
-  languageName: node
-  linkType: hard
-
-"@fontsource/overpass@npm:^4.5.11":
-  version: 4.5.11
-  resolution: "@fontsource/overpass@npm:4.5.11"
-  checksum: cdbcd3fde0d28d12573f0b616441ecdb5af67060a2872616385b0ee6ad5b327631adfbb2bc553579db5bc460843161cd0935fa154d4267cf6632f12776824e6b
-  languageName: node
-  linkType: hard
-
-"@fontsource/titillium-web@npm:^4.5.9":
-  version: 4.5.9
-  resolution: "@fontsource/titillium-web@npm:4.5.9"
-  checksum: 0cae4cfe637cede724eb5d3d6eae6d96867b7d061e01b21eb9d1be1b81673b464a9e2f2892a55eaa67e49a1ec8a4f883a38fd1df66fd6b1f706e213d2c41e1de
-  languageName: node
-  linkType: hard
-
-"@hcaptcha/react-hcaptcha@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@hcaptcha/react-hcaptcha@npm:1.8.1"
-  dependencies:
-    "@babel/runtime": ^7.17.9
-  peerDependencies:
-    react: ">= 16.3.0"
-    react-dom: ">= 16.3.0"
-  checksum: 01fcfe91bce52e1f45c7ddb4a9a6b885765eee0b8241e838c5637fc764cab4cf30f562b120a9a1e88fec27d17f155d3ae172a9769081d0e6c0eb9f7c1f00ae3a
   languageName: node
   linkType: hard
 
@@ -478,13 +452,6 @@ __metadata:
   dependencies:
     glob: 7.1.7
   checksum: 95f9a84922ec1c73aa51b794f9d2dc49c165a1c793db17cab4558097d31aaf65c2e5e3390d0691c056fac105562d6dc974b13b1df79981f8b7faba005f6eb3b5
-  languageName: node
-  linkType: hard
-
-"@next/font@npm:^13.4.1":
-  version: 13.4.1
-  resolution: "@next/font@npm:13.4.1"
-  checksum: 7b365d45e38fb1ffda64e12a98679bfd3b00b95085da8ca1b0fb0d4a479edd45faa215f500f37b7180c78dd6cba5d6c3d915cef28420097fbc2a839046ac6994
   languageName: node
   linkType: hard
 
@@ -1007,6 +974,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clsx@npm:^1.1.1":
+  version: 1.2.1
+  resolution: "clsx@npm:1.2.1"
+  checksum: 30befca8019b2eb7dbad38cff6266cf543091dae2825c856a62a8ccf2c3ab9c2907c4d12b288b73101196767f66812365400a227581484a05f968b0307cfaf12
+  languageName: node
+  linkType: hard
+
 "color-convert@npm:^1.9.0":
   version: 1.9.3
   resolution: "color-convert@npm:1.9.3"
@@ -1088,13 +1062,6 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: d240b7757544460ae0586a341a53110ab0a61126570ef2d8c731e3eab3f0cb6e488e2609e6a69b46727635de49be20b071688698744417ff1b6c1d7ccd03e0de
-  languageName: node
-  linkType: hard
-
-"data-uri-to-buffer@npm:^4.0.0":
-  version: 4.0.1
-  resolution: "data-uri-to-buffer@npm:4.0.1"
-  checksum: 0d0790b67ffec5302f204c2ccca4494f70b4e2d940fea3d36b09f0bb2b8539c2e86690429eb1f1dc4bcc9e4df0644193073e63d9ee48ac9fce79ec1506e4aa4c
   languageName: node
   linkType: hard
 
@@ -1655,7 +1622,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.9":
+"fast-glob@npm:^3.2.11, fast-glob@npm:^3.2.12, fast-glob@npm:^3.2.9":
   version: 3.2.12
   resolution: "fast-glob@npm:3.2.12"
   dependencies:
@@ -1688,16 +1655,6 @@ __metadata:
   dependencies:
     reusify: ^1.0.4
   checksum: 0170e6bfcd5d57a70412440b8ef600da6de3b2a6c5966aeaf0a852d542daff506a0ee92d6de7679d1de82e644bce69d7a574a6c93f0b03964b5337eed75ada1a
-  languageName: node
-  linkType: hard
-
-"fetch-blob@npm:^3.1.2, fetch-blob@npm:^3.1.4":
-  version: 3.2.0
-  resolution: "fetch-blob@npm:3.2.0"
-  dependencies:
-    node-domexception: ^1.0.0
-    web-streams-polyfill: ^3.0.3
-  checksum: f19bc28a2a0b9626e69fd7cf3a05798706db7f6c7548da657cbf5026a570945f5eeaedff52007ea35c8bcd3d237c58a20bf1543bc568ab2422411d762dd3d5bf
   languageName: node
   linkType: hard
 
@@ -1776,26 +1733,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"formdata-polyfill@npm:^4.0.10":
-  version: 4.0.10
-  resolution: "formdata-polyfill@npm:4.0.10"
-  dependencies:
-    fetch-blob: ^3.1.2
-  checksum: 82a34df292afadd82b43d4a740ce387bc08541e0a534358425193017bf9fb3567875dc5f69564984b1da979979b70703aa73dee715a17b6c229752ae736dd9db
-  languageName: node
-  linkType: hard
-
 "front-end@workspace:.":
   version: 0.0.0-use.local
   resolution: "front-end@workspace:."
   dependencies:
     "@babel/eslint-parser": ^7.21.8
     "@babel/preset-react": ^7.18.6
-    "@fontsource/inter": ^4.5.15
-    "@fontsource/overpass": ^4.5.11
-    "@fontsource/titillium-web": ^4.5.9
-    "@hcaptcha/react-hcaptcha": ^1.8.1
-    "@next/font": ^13.4.1
     axios: ^1.4.0
     eslint: ^8.37.0
     eslint-config-next: 13.2.4
@@ -1805,18 +1748,17 @@ __metadata:
     eslint-plugin-react: ^7.32.2
     eslint-plugin-react-hooks: ^4.6.0
     next: 13.2.4
-    node-fetch: ^3.3.1
+    next-seo: ^6.0.0
+    next-sitemap: ^4.1.3
     nodemailer: ^6.9.1
     prettier: 2.8.7
     react: 18.2.0
-    react-country-region-selector: ^3.6.1
     react-dom: 18.2.0
-    react-google-recaptcha: ^2.1.0
     react-hook-form: ^7.43.9
-    react-hot-toast: ^2.4.1
     react-icons: ^4.8.0
     react-is: ^18.2.0
     react-loader-spinner: ^5.3.4
+    react-toastify: ^9.1.3
     styled-components: ^5.3.9
   languageName: unknown
   linkType: soft
@@ -1980,15 +1922,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"goober@npm:^2.1.10":
-  version: 2.1.13
-  resolution: "goober@npm:2.1.13"
-  peerDependencies:
-    csstype: ^3.0.10
-  checksum: 0c00b90d26d1a2fad432e311fd4f47bc9fef1eee2a733158d9e2c72a89cf76d414090d063a8d20fe378f2b2b8087df0a83b0f00a3244d1466b97a0d3b14344a7
-  languageName: node
-  linkType: hard
-
 "gopd@npm:^1.0.1":
   version: 1.0.1
   resolution: "gopd@npm:1.0.1"
@@ -2074,7 +2007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hoist-non-react-statics@npm:^3.0.0, hoist-non-react-statics@npm:^3.3.0":
+"hoist-non-react-statics@npm:^3.0.0":
   version: 3.3.2
   resolution: "hoist-non-react-statics@npm:3.3.2"
   dependencies:
@@ -2548,7 +2481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0, minimist@npm:^1.2.6":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
@@ -2575,6 +2508,34 @@ __metadata:
   version: 1.4.0
   resolution: "natural-compare@npm:1.4.0"
   checksum: 23ad088b08f898fc9b53011d7bb78ec48e79de7627e01ab5518e806033861bef68d5b0cd0e2205c2f36690ac9571ff6bcb05eb777ced2eeda8d4ac5b44592c3d
+  languageName: node
+  linkType: hard
+
+"next-seo@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "next-seo@npm:6.0.0"
+  peerDependencies:
+    next: ^8.1.1-canary.54 || >=9.0.0
+    react: ">=16.0.0"
+    react-dom: ">=16.0.0"
+  checksum: aa986b3731386bc91408df6bca09a9edc0cdd8a7730bcdc331f283ab50803a6d60047b685eeec4b11bde1660dbb792e3737e81ef05a65682323d0d07fa9edd85
+  languageName: node
+  linkType: hard
+
+"next-sitemap@npm:^4.1.3":
+  version: 4.1.3
+  resolution: "next-sitemap@npm:4.1.3"
+  dependencies:
+    "@corex/deepmerge": ^4.0.43
+    fast-glob: ^3.2.12
+    minimist: ^1.2.8
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: de9b292dffdafcaf0a1cd661471f34892aaad37820b613d6776f04a30ab5b1ead21b79890dcfdfb2de72e0f12d052674ffe165692f5b106495759f3d9cf5141e
   languageName: node
   linkType: hard
 
@@ -2646,24 +2607,6 @@ __metadata:
   bin:
     next: dist/bin/next
   checksum: 8531dee41b60181b582f5ee80858907b102f083ef8808ff9352d589dd39e6b3a96f7a11b3776a03eef3a28430cff768336fa2e3ff2c6f8fcd699fbc891749051
-  languageName: node
-  linkType: hard
-
-"node-domexception@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "node-domexception@npm:1.0.0"
-  checksum: ee1d37dd2a4eb26a8a92cd6b64dfc29caec72bff5e1ed9aba80c294f57a31ba4895a60fd48347cf17dd6e766da0ae87d75657dfd1f384ebfa60462c2283f5c7f
-  languageName: node
-  linkType: hard
-
-"node-fetch@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "node-fetch@npm:3.3.1"
-  dependencies:
-    data-uri-to-buffer: ^4.0.0
-    fetch-blob: ^3.1.4
-    formdata-polyfill: ^4.0.10
-  checksum: 62145fd3ba4770a76110bc31fdc0054ab2f5442b5ce96e9c4b39fc9e94a3d305560eec76e1165d9259eab866e02a8eecf9301062bb5dfc9f08a4d08b69d223dd
   languageName: node
   linkType: hard
 
@@ -2913,7 +2856,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.5.0, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -2945,29 +2888,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-async-script@npm:^1.1.1":
-  version: 1.2.0
-  resolution: "react-async-script@npm:1.2.0"
-  dependencies:
-    hoist-non-react-statics: ^3.3.0
-    prop-types: ^15.5.0
-  peerDependencies:
-    react: ">=16.4.1"
-  checksum: 303890eeaf9e18d59fca77f9c891bf3b52d2ec9ea88f0af9d19c160a1f101b447c5104ca46e2dd84c19de756d4797f1f054d041b888a3d57204d9145f4b1b532
-  languageName: node
-  linkType: hard
-
-"react-country-region-selector@npm:^3.6.1":
-  version: 3.6.1
-  resolution: "react-country-region-selector@npm:3.6.1"
-  peerDependencies:
-    prop-types: ^15.5.4
-    react: ">=15"
-    react-dom: ">=15"
-  checksum: 5afbb05ef99a7f88ef972cf5a6c0a0cbff2b4f98b08d0fd482b73dcffba1e40a94b8be07e18413e323021654c3e0e181b73581fc17ae33713d17aabde95da1b1
-  languageName: node
-  linkType: hard
-
 "react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -2980,36 +2900,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-google-recaptcha@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "react-google-recaptcha@npm:2.1.0"
-  dependencies:
-    prop-types: ^15.5.0
-    react-async-script: ^1.1.1
-  peerDependencies:
-    react: ">=16.4.1"
-  checksum: f4f4d248eb95ebfab8db73199e3ca402acf7abec873c616c12fd113c635657df6d844890ef7e7dfe4cb2563302e910dbce54d44404af93863336786dd29e8efa
-  languageName: node
-  linkType: hard
-
 "react-hook-form@npm:^7.43.9":
   version: 7.43.9
   resolution: "react-hook-form@npm:7.43.9"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18
   checksum: 65b94de625f2b7921c4e856bf0abbe142bfe06c052217bd1bcc3a842e2cc37fa3a3e03758119dc038bbcf5edb49e02c29206528b80b201f9a4d601471ef78153
-  languageName: node
-  linkType: hard
-
-"react-hot-toast@npm:^2.4.1":
-  version: 2.4.1
-  resolution: "react-hot-toast@npm:2.4.1"
-  dependencies:
-    goober: ^2.1.10
-  peerDependencies:
-    react: ">=16"
-    react-dom: ">=16"
-  checksum: 3e337816db574782454bf09c63a8aca546bf9c5be3f83d0494d24bdcfd97ca2db64d4c151c4ab0184d2342d7a7226403e6812e70caf03c8b55a07787bb4ad0f2
   languageName: node
   linkType: hard
 
@@ -3047,6 +2943,18 @@ __metadata:
     react: ^16.0.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.0.0 || ^17.0.0 || ^18.0.0
   checksum: 429ee74233b2a225164bd77cce94459c20443411248e00604a21752fabf31a36749cc4d52c2a2cf194b98b37c543e0cbb9b76a0e49188acd1f17087035544ca6
+  languageName: node
+  linkType: hard
+
+"react-toastify@npm:^9.1.3":
+  version: 9.1.3
+  resolution: "react-toastify@npm:9.1.3"
+  dependencies:
+    clsx: ^1.1.1
+  peerDependencies:
+    react: ">=16"
+    react-dom: ">=16"
+  checksum: e8bd92c5cbf831b43a042644ab9bc69abe6ceb3ce91ba71f5cd2d8b6a2c9885ca52770e1f1ba64c5632607f6df962db344a26c7fba57606faf5aa0e7bfc8535f
   languageName: node
   linkType: hard
 
@@ -3541,13 +3449,6 @@ __metadata:
   dependencies:
     punycode: ^2.1.0
   checksum: 7167432de6817fe8e9e0c9684f1d2de2bb688c94388f7569f7dbdb1587c9f4ca2a77962f134ec90be0cc4d004c939ff0d05acc9f34a0db39a3c797dada262633
-  languageName: node
-  linkType: hard
-
-"web-streams-polyfill@npm:^3.0.3":
-  version: 3.2.1
-  resolution: "web-streams-polyfill@npm:3.2.1"
-  checksum: b119c78574b6d65935e35098c2afdcd752b84268e18746606af149e3c424e15621b6f1ff0b42b2676dc012fc4f0d313f964b41a4b5031e525faa03997457da02
   languageName: node
   linkType: hard
 

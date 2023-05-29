@@ -12,14 +12,14 @@ export const Container = styled.div`
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 50rem;
+  min-height: 50rem;
+  height: auto;
   line-height: initial;
-  margin-top: 6em;
-
+  padding-top: 2pc;
+  padding-bottom: 2pc;
   color: ${({theme}) => theme.colors.black};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 5em 0 4em;
-    height: auto;
+    /* padding: 5em 0 4em; */
   }
 `
 
@@ -51,7 +51,7 @@ export const ImageWrap = styled.div`
     width: 90%;
     height: 75%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 1pc;
   }
 `
 

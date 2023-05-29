@@ -11,8 +11,8 @@ import {
   ButtonModal,
 } from './ModalElements'
 
-import mail_illustration from '/public/images/mail_illustration.png'
-import support_illustration from '/public/images/support.jpg'
+import imageMobile from '/public/images/email-illustration-mobile.jpeg'
+import imageDesktop from '/public/images/support.jpg'
 
 const Modal = ({className, onClick}) => {
   return (
@@ -27,26 +27,23 @@ const Modal = ({className, onClick}) => {
             <ReturnIcon onClick={onClick} />
           </ModalButtonReturn>
           <TextContainer>
-            <h2>Thank you for submitting!</h2>
+            <h2>Thank you for reaching out to us!</h2>
             <p>
-              from the common confirmation and appreciation words, this example
-              offers instructions to guide users to download the company&apos;s
-              mobile app. If they don&apos;t want to download it directly on the
-              website, they can choose to type in their phone number and receive
-              a link
+              We appreciate your interest. Our team is now reviewing your
+              inquiry and will respond to you as soon as possible.
             </p>
-            <ButtonModal href="https://atalaso.com">Go home</ButtonModal>
+            <ButtonModal href="/">Go home</ButtonModal>
           </TextContainer>
           <ImageContainer>
             <Image
-              src={support_illustration}
+              src={imageDesktop}
               alt="CallCenter woman giving chat support and a laptop on the desk illustration"
               width={500}
               height={500}
               className="desktop"
             />
             <Image
-              src={mail_illustration}
+              src={imageMobile}
               alt="CallCenter woman giving chat support and a laptop on the desk illustration"
               width={300}
               height={300}

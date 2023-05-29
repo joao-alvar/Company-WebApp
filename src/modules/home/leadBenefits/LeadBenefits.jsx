@@ -17,8 +17,9 @@ import {
   ImageWrap,
 } from './LeadBenefitsElements'
 
-import computerIllustration from 'public/images/computer-illustration.png'
-import deviceIllustration from 'public/images/device-illustration.png'
+import image_1 from 'public/images/abstract-background-3d.jpeg'
+import image_2 from 'public/images/rocket-laptop-illustration.png'
+import image_3 from 'public/images/work-illustration.png'
 
 const leadBenefits = () => {
   return (
@@ -42,13 +43,13 @@ const leadBenefits = () => {
                 </Link>
               </TextWrap>
             </CardContent>
-            <ImageWrap className="card_image_one">
-              <Image src={deviceIllustration} alt="" />
+            <ImageWrap>
+              <Image src={image_1} alt="" className="image_one" />
             </ImageWrap>
           </Cards>
           <Cards>
-            <ImageWrap className="card_image_two">
-              <Image src={deviceIllustration} alt="" />
+            <ImageWrap>
+              <Image src={image_2} alt="" />
             </ImageWrap>
             <CardContent>
               <TextWrap>
@@ -77,8 +78,8 @@ const leadBenefits = () => {
                 </Link>
               </TextWrap>
             </CardContent>
-            <ImageWrap className="card_image_one">
-              <Image src={computerIllustration} alt="" />
+            <ImageWrap>
+              <Image src={image_3} alt="" className="image_three" />
             </ImageWrap>
           </Cards>
         </GridWrap>

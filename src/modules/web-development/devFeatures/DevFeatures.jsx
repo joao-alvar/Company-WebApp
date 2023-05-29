@@ -11,15 +11,17 @@ import {
   Content,
 } from './DevFeaturesElements'
 
-import TrendImg from 'public/images/Trend.jpeg'
+import Image_1 from 'public/images/business-teamwork.png'
+import Image_2 from 'public/images/network-illustration.png'
+import Image_3 from 'public/images/trend-illustration.png'
 
 const DevFeatures = () => {
   return (
     <Section>
       <Container>
-        <Wrapper>
-          <ImageContainer>
-            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
+        <Wrapper className="first_card">
+          <ImageContainer className="first_card_image">
+            <ImageComponent src={Image_1} alt="" width={450} height={450} />
           </ImageContainer>
           <Content>
             <h2>Something in the way</h2>
@@ -42,12 +44,12 @@ const DevFeatures = () => {
             </p>
           </Content>
           <ImageContainer>
-            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
+            <ImageComponent src={Image_2} alt="" width={450} height={400} />
           </ImageContainer>
         </Wrapper>
         <Wrapper>
           <ImageContainer>
-            <ImageComponent src={TrendImg} alt="" width={500} height={500} />
+            <ImageComponent src={Image_3} alt="" width={400} height={400} />
           </ImageContainer>
           <Content>
             <h2>Something in the way</h2>

@@ -5,6 +5,22 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  module: {
+    rules: [
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'video',
+            },
+          },
+        ],
+      },
+    ],
+  },
 }
 
 module.exports = nextConfig

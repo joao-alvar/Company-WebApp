@@ -1,22 +1,11 @@
-import ImageComponent from '@/components/imageComponent/ImageComponent'
-
-import {ContentContainer, Wrapper, ImageWrap} from './HeaderContentElements'
-
-import img from 'public/images/Rocket-illustration.jpeg'
+import {ContentContainer, Wrapper} from './HeaderContentElements'
 
 const HeaderContent = () => {
   return (
     <>
       <ContentContainer>
         <Wrapper>
-          <h1>Doubts? We can help you.</h1>
-          <p>
-            Ask us about our products, pricing or implementation. Our experts
-            are here to help you chart a path to success.
-          </p>
-          <ImageWrap>
-            <ImageComponent src={img} alt="" />
-          </ImageWrap>
+          <h1>We&apos;re here to help.</h1>
         </Wrapper>
       </ContentContainer>
     </>

@@ -13,7 +13,7 @@ import {
   TextWrap,
 } from './AdsWallElements'
 
-import DesignTemplate from '/public/images/DesignTemplate.jpeg'
+import Image from '/public/images/isometric-business-analysis.png'
 
 const AdsWall = () => {
   return (
@@ -26,7 +26,7 @@ const AdsWall = () => {
           <ImageContent>
             <h3>Atalaso is your solution</h3>
             <ImageWrap>
-              <ImageComponent src={DesignTemplate} alt="something" />
+              <ImageComponent src={Image} alt="something" />
             </ImageWrap>
           </ImageContent>
           <Listed>
