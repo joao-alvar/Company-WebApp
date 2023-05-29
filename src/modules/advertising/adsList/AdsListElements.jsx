@@ -15,6 +15,11 @@ export const Container = styled.div`
   line-height: initial;
   padding-top: 4pc;
   padding-bottom: 3pc;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding-top: 2.5pc;
+    padding-bottom: 1pc;
+  }
 `
 
 export const Text = styled.h2`
@@ -26,7 +31,13 @@ export const Text = styled.h2`
   padding-left: 1em;
   padding-right: 1em;
 
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    text-align: start;
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: ${({theme}) => theme.size.sm}) {
     font-size: 3.5em;
   }
 `
@@ -69,7 +80,8 @@ export const Content = styled.div`
     font-weight: 600;
     color: rgb(80, 90, 99);
   }
-  h2 {
+
+  h3 {
     font-size: 3em;
     font-family: var(--font-heading);
     font-weight: 600;
@@ -126,7 +138,7 @@ export const StyledList = styled.ul`
     0 8px 9pt -2px rgba(24, 24, 24, 0.16);
 
   @media only screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 92%;
+    width: 95%;
     margin: 0 auto;
   }
 
@@ -151,7 +163,7 @@ export const StyledList = styled.ul`
     width: 90%;
     padding: 2.5em 0;
     padding-right: 3em;
-    transition: 0.4s all ease-in-out;
+    transition: 0.5s all ease-in-out;
     border-bottom: 1px solid ${({theme}) => theme.colors.black};
     opacity: 0.5;
     transition: opacity 0.2s ease-in-out;

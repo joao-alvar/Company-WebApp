@@ -7,13 +7,14 @@ export const Container = styled.div`
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 54rem;
+  height: auto;
+  min-height: 54rem;
   line-height: initial;
   background: ${({theme}) => theme.colors.white};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     height: auto;
-    padding: 2em 0 4em;
+    padding-top: 2em;
   }
 `
 
@@ -53,16 +54,15 @@ export const Content = styled.div`
 
   .pre_title {
     margin-right: auto;
-    font-size: 1.26em;
-    color: rgb(80, 90, 99);
-    font-family: var(--font-heading);
-    font-weight: 600;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-transform: uppercase;
   }
 
   h1 {
     font-family: var(--font-heading);
-    font-size: 2.4em;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: 700;
     color: rgb(25, 28, 31);
     margin-top: 1rem;
   }
@@ -70,7 +70,6 @@ export const Content = styled.div`
   .title_secondary_text {
     font-size: 1.4em;
     font-weight: 500;
-    color: rgb(25, 28, 31);
     word-break: break-word;
     margin-top: 1rem;
     padding: 0px;

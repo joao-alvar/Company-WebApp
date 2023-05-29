@@ -1,17 +1,49 @@
-import React, {Suspense} from 'react'
+import {DefaultSeo} from 'next-seo'
+import {NextSeo} from 'next-seo'
+import dynamic from 'next/dynamic'
+import Head from 'next/head'
+import {useRouter} from 'next/router'
+import {Suspense} from 'react'
 
-import Footer from '@/components/footer/Footer'
+const Footer = dynamic(() => import('../components/footer/Footer'))
+const Navbar = dynamic(() => import('../components/navbar/Navbar'))
+
 import PageLoader from '@/components/loading/pageLoader/PageLoader'
-import Navbar from '@/components/navbar/Navbar'
+import StructuredData from '@/components/structuredData/StructuredData'
 import {ThemeProvider} from 'styled-components'
 
-// import Fonts from '@/styles/Fonts'
+import SEO from '../../next-seo.config'
+
 import {GlobalStyles} from '@/styles/Global'
 import {theme} from '@/styles/Theme'
 
 const App = ({Component, pageProps}) => {
+  const router = useRouter()
+
+  const structuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Atalaso',
+    url: 'https://www.atalaso.com',
+  }
+
   return (
     <>
+      <Head>
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <meta name="robots" content="index,follow" />
+      </Head>
+      <DefaultSeo {...SEO} />
+      <NextSeo
+        canonical={`https://www.atalaso.com${router.pathname}`}
+        themeColor="#f3f4f5"
+        openGraph={{
+          url: `https://www.atalaso.com${router.pathname}`,
+        }}
+      />
+      <StructuredData data={structuredData} />
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <Suspense fallback={<PageLoader />}>

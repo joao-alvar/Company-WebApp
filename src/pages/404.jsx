@@ -1,9 +1,6 @@
 import Head from 'next/head'
-import React from 'react'
 
-const PageNotFound = React.lazy(() =>
-  import('@/modules/pageNotFound/PageNotFound')
-)
+import PageNotFound from '@/modules/pageNotFound/PageNotFound'
 
 const NotFoundPage = () => {
   return (

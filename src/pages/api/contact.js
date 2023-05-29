@@ -8,7 +8,7 @@ export default async function verification(req, res) {
     email,
     phone,
     country,
-    advertising_seo,
+    seo,
     paid_search,
     web_development,
     optimization_accessibility,
@@ -39,7 +39,7 @@ export default async function verification(req, res) {
       <p><strong>Email: </strong> ${email} </p><br>
       <p><strong>Phone: </strong> ${phone} </p><br>
       <p><strong>Country: </strong> ${country} </p><br>
-      <p><strong>Services Advertising and/or SEO: </strong> ${advertising_seo} </p><br>
+      <p><strong>Services Advertising and/or SEO: </strong> ${seo} </p><br>
       <p><strong>Services Paid Search: </strong> ${paid_search} </p><br>
       <p><strong>Services Web Development: </strong> ${web_development} </p><br>
       <p><strong>Services Optimization and Accessibility: </strong> ${optimization_accessibility} </p><br>

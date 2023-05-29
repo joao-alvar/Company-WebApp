@@ -13,14 +13,13 @@ export const LeadSection = styled.section`
 
 export const LeadContainer = styled.div`
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 45rem;
+  height: auto;
   min-height: auto;
   line-height: initial;
-  padding-bottom: 1em;
+  padding-bottom: 2pc;
   @media screen and (max-width: 800px) {
     height: auto;
     padding-bottom: 4em;
@@ -28,8 +27,9 @@ export const LeadContainer = styled.div`
 `
 export const Card = styled.div`
   display: flex;
+  align-items: center;
   width: 95%;
-  height: 75%;
+  height: 33rem;
   border-radius: 1pc;
   overflow: hidden;
   border: 1px solid rgba(24, 24, 24, 0.04);
@@ -43,6 +43,7 @@ export const Card = styled.div`
 
   @media screen and (max-width: 800px) {
     flex-direction: column;
+    height: auto;
   }
 `
 export const TextContent = styled.div`
@@ -119,6 +120,10 @@ export const ImageWrap = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @media only screen and (max-width: 1000px) and (min-width: 800px) {
+      object-fit: contain;
+    }
   }
 
   @media screen and (max-width: 800px) {

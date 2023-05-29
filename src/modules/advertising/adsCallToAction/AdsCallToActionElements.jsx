@@ -12,7 +12,7 @@ export const Container = styled.div`
   overflow: hidden;
   flex-shrink: 0;
   padding: 0;
-  margin-bottom: 3em;
+  padding-bottom: 3em;
   line-height: initial;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: auto;
@@ -97,7 +97,7 @@ export const Button = styled(ButtonPrimary)`
     margin-top: 2em;
     margin-bottom: 2em;
     font-size: 1.3em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
   }
 `

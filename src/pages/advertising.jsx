@@ -1,33 +1,12 @@
 import Head from 'next/head'
-import React from 'react'
 
-const HeroAds = React.lazy(() =>
-  import('@/modules/advertising/heroAds/HeroAds')
-)
-
-const AdsWall = React.lazy(() =>
-  import('@/modules/advertising/adsWall/AdsWall')
-)
-
-const AdsFeatures = React.lazy(() =>
-  import('@/modules/advertising/adsFeatures/AdsFeatures')
-)
-
-const AdsList = React.lazy(() =>
-  import('@/modules/advertising/adsList/AdsList')
-)
-
-const AdsBanner = React.lazy(() =>
-  import('@/modules/advertising/adsBanner/AdsBanner')
-)
-
-const AdsBenefits = React.lazy(() =>
-  import('@/modules/advertising/adsBenefits/AdsBenefits')
-)
-
-const AdsCallToAction = React.lazy(() =>
-  import('@/modules/advertising/adsCallToAction/AdsCallToAction')
-)
+import AdsBanner from '@/modules/advertising/adsBanner/AdsBanner'
+import AdsBenefits from '@/modules/advertising/adsBenefits/AdsBenefits'
+import AdsCallToAction from '@/modules/advertising/adsCallToAction/AdsCallToAction'
+import AdsFeatures from '@/modules/advertising/adsFeatures/AdsFeatures'
+import AdsList from '@/modules/advertising/adsList/AdsList'
+import AdsWall from '@/modules/advertising/adsWall/AdsWall'
+import HeroAds from '@/modules/advertising/heroAds/HeroAds'
 
 const advertising = () => {
   return (

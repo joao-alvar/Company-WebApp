@@ -32,19 +32,6 @@ export const Container = styled.div`
   @media screen and (max-width: 700px) {
     padding-bottom: 10em;
   } */
-
-  // Card one
-  .card_image_one {
-    background-color: ${({theme}) => theme.colors.medium};
-  }
-
-  // Card two
-  .card_image_two {
-    /* border-top-left-radius: 1.5pc;
-    border-bottom-left-radius: 1.5pc; */
-    background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
-  }
 `
 
 export const TitleWrap = styled.header`
@@ -148,12 +135,20 @@ export const ImageWrap = styled.div`
   width: 50%;
   height: 80%;
   margin: 0 auto;
-  border-radius: 1.5pc;
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 1pc;
+  }
+
+  .image_one {
+    object-fit: contain;
+  }
+
+  .image_three {
+    object-fit: fill;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {

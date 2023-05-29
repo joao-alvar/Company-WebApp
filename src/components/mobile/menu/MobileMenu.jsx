@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {Burger, MobileMenuContainer} from './MobileMenuElements'
+import {MobileMenuContainer, Burger} from './MobileMenuElements'
 
 // import {Divide as Hamburger} from 'hamburger-react'
 
@@ -15,14 +15,11 @@ const MobileMenu = ({onClick, className}) => {
         data-qa="menu"
         data-clog-click
         type="button"
+        className={className}
       >
-        <div className="menu__icon">
-          <div className={className}>
-            <div className="menu__btn__bar_one"></div>
-            <div className="menu__btn__bar_two"></div>
-            <div className="menu__btn__bar_three"></div>
-          </div>
-        </div>
+        <div className="menu__btn__bar_one"></div>
+        <div className="menu__btn__bar_two"></div>
+        <div className="menu__btn__bar_three"></div>
       </Burger>
     </MobileMenuContainer>
   )

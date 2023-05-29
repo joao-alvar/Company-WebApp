@@ -4,8 +4,8 @@ const ButtonLoader = ({className}) => {
   return (
     <>
       <TailSpin
-        height="25"
-        width="25"
+        height="23"
+        width="23"
         color="#ffffff"
         ariaLabel="spin loading"
         role="status loading"

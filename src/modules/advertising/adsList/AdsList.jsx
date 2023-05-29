@@ -22,7 +22,7 @@ const AdsList = () => {
         <Wrapper>
           <Content>
             <div className={isOpen == 0 ? 'text show' : 'text'}>
-              <h2>Electric vehicles will never be the same</h2>
+              <h3>Electric vehicles will never be the same</h3>
               <p>
                 Ultium. The innovation powering General Motors&apos; expanding
                 lineup of EVs for every person and every purpose. Explore the
@@ -30,7 +30,7 @@ const AdsList = () => {
               </p>
             </div>
             <div className={isOpen == 1 ? 'text show' : 'text'}>
-              <h2>Electric vehicles will never be the same</h2>
+              <h3>Electric vehicles will never be the same</h3>
               <p>
                 Ultium. The innovation powering General Motors&apos; expanding
                 lineup of EVs for every person and every purpose. Explore the
@@ -38,7 +38,7 @@ const AdsList = () => {
               </p>
             </div>
             <div className={isOpen == 2 ? 'text show' : 'text'}>
-              <h2>Electric vehicles will never be the same</h2>
+              <h3>Electric vehicles will never be the same</h3>
               <p>
                 Ultium. The innovation powering General Motors&apos; expanding
                 lineup of EVs for every person and every purpose. Explore the
@@ -46,7 +46,7 @@ const AdsList = () => {
               </p>
             </div>
             <div className={isOpen == 3 ? 'text show' : 'text'}>
-              <h2>Electric vehicles will never be the same</h2>
+              <h3>Electric vehicles will never be the same</h3>
               <p>
                 Ultium. The innovation powering General Motors&apos; expanding
                 lineup of EVs for every person and every purpose. Explore the

@@ -7,8 +7,9 @@ export const AboutContainer = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  min-height: 60rem;
-  padding: 4em 0;
+  min-height: 55rem;
+  padding-top: 2pc;
+  padding-bottom: 3pc;
   line-height: initial;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -52,7 +53,7 @@ export const ImageWrap = styled.div`
   img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
+    object-fit: contain;
+    border-radius: 1pc;
   }
 `

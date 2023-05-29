@@ -8,92 +8,69 @@ export const Section = styled.section`
 `
 
 export const Container = styled.div`
-  background: #f5f5f5;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
-  height: 57rem;
+  min-height: 42rem;
+  height: auto;
   line-height: initial;
-  @media screen and (max-width: 768px) {
+  /* padding-top: 3pc;
+  padding-bottom: 3pc; */
+  @media screen and (max-width: 1040px) {
     flex-direction: column;
     height: auto;
-    padding: 3em 0;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 `
 
-export const ContentLeft = styled.div`
-  width: 60%;
+export const Content = styled.div`
+  width: 80%;
   height: 100%;
   display: flex;
+  margin: 0 auto;
+  text-align: center;
   justify-content: center;
-  padding: 0 6em;
   flex-direction: column;
+  padding-left: 5rem;
+  padding-right: 5rem;
   color: ${({theme}) => theme.colors.black};
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1040px) {
     width: 100%;
   }
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     padding: 0 2em 2em;
   }
 `
 
-export const ContentRight = styled.div`
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 40%;
-  height: 100%;
-  @media screen and (max-width: 768px) {
-    width: 100%;
-  }
-
-  .image_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-  }
-  img {
-    background-position: center;
-    object-fit: cover;
-    margin-bottom: 5em;
-  }
-`
-
 export const Title = styled.h1`
-  font-size: 2em;
+  font-size: 4.6rem;
   font-family: var(--font-heading);
-  font-weight: 600;
-  margin-bottom: 0.9em;
-`
-
-export const HeroText = styled.h2`
-  font-size: 1.4em;
-  font-weight: 600;
-  margin: 0 0 2.41em;
-`
-
-export const ButtonContainer = styled.div`
-  display: flex;
-  width: 100%;
-  @media screen and (max-width: 768px) {
-    padding-bottom: 1em;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+  color: ${({theme}) => theme.colors.black};
+  @media screen and (max-width: 710px) {
+    font-size: 4rem;
   }
 
   @media screen and (max-width: 500px) {
-    a {
-      width: 100%;
-    }
+    font-size: 3.4rem;
   }
+`
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    gap: 1em;
-  }
-  a {
-    text-decoration: none;
+export const HeroText = styled.h2`
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2.41rem;
+  line-height: 2.5rem;
+  color: ${({theme}) => theme.colors.black};
+
+  @media screen and (max-width: 500px) {
+    font-size: 1.7rem;
   }
 `

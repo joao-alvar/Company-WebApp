@@ -1,8 +1,10 @@
 import {ButtonPrimary} from '@/components/button/ButtonElements'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {Container, Content, Icon} from './CallToActionElements'
+import {Container, Content, Icon, ImageWrap} from './CallToActionElements'
 
+import abstractPaint from 'public/images/abstract-paint-background.jpeg'
 const AboutCallToAction = () => {
   return (
     <AboutSection>
@@ -18,6 +20,9 @@ const AboutCallToAction = () => {
             Get started <Icon />
           </ButtonPrimary>
         </Content>
+        <ImageWrap>
+          <ImageComponent src={abstractPaint} alt="Ima" />
+        </ImageWrap>{' '}
       </Container>
     </AboutSection>
   )

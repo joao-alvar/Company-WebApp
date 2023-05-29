@@ -9,16 +9,14 @@ export const Container = styled.div`
   min-height: 60em;
   height: auto;
   width: 100%;
-  margin-top: 3pc;
+  padding-top: 1pc;
+  padding-bottom: 2pc;
   gap: 4em;
 `
 
 export const TitleContainer = styled.div`
   text-align: center;
   margin: 2em;
-  @media screen and (max-width: 768px) {
-    margin-top: 0;
-  }
 
   p {
     font-size: 1.6em;
@@ -93,7 +91,7 @@ export const ListContent = styled.div`
   width: 50%;
   height: 100%;
   @media screen and (max-width: 970px) {
-    padding-top: 3em;
+    padding-top: 2em;
     width: 80%;
     margin: 0 auto;
   }
@@ -106,19 +104,26 @@ export const ListContent = styled.div`
   }
 
   img {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-top-left-radius: 1pc;
+    border-bottom-left-radius: 1pc;
     pointer-events: none;
+    width: 100%;
+    height: 100%;
+
     @media screen and (max-width: 970px) {
-      width: 100%;
+      object-fit: cover;
     }
     @media screen and (max-width: 700px) {
       border-radius: 8px;
     }
+
+    @media screen and (max-width: 550px) {
+      object-fit: contain;
+    }
   }
 
   .text_container {
-    margin: 1.8em 0 0;
+    margin-top: 1.8em;
   }
 
   .title {

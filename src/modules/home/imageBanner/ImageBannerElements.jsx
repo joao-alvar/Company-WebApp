@@ -44,14 +44,13 @@ export const ImageWrap = styled.div`
 export const Content = styled.div`
   display: flex;
   width: 40%;
-  /* background-color: #20f; */
-  /* align-items: center; */
   justify-content: center;
   @media screen and (max-width: 1060px) {
     width: 100%;
     height: 20em;
-    width: 30pc;
-    max-width: 45em;
+    // width: 30pc;
+    // max-width: 45em;
+    padding-right: 2em;
     min-height: auto;
   }
   @media screen and (max-width: 500px) {

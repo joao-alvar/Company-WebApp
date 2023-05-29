@@ -3,18 +3,21 @@ import {HiArrowLeft} from 'react-icons/hi'
 import styled from 'styled-components'
 
 import {ButtonPrimary} from '../button/ButtonElements'
+
 export const ModalContainer = styled.div`
   /* position: fixed; */
   display: none;
   align-items: center;
-  z-index: 9000;
+  z-index: 100;
   justify-content: center;
   min-height: 48em;
   width: 100%;
   flex-shrink: 0;
-  background-color: #f2f2f2;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 3rem;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 4em 0;
+    padding-bottom: 2.5pc;
   }
   @media screen and (max-width: 754px) {
     height: 60em;
@@ -22,16 +25,22 @@ export const ModalContainer = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     height: auto;
   }
+
+  &.modal {
+    &.open {
+      display: block;
+    }
+  }
 `
 
 export const ModalContent = styled.div`
   position: relative;
   min-height: 42em;
   height: auto;
-  width: 90%;
+  width: 100%;
   top: 0;
   padding: 2em 0;
-  border-radius: 8px;
+  border-radius: 1pc;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,6 +66,11 @@ export const ModalButtonReturn = styled.button`
   &:focus {
     background-color: #e6e3e3;
   }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    top: 1.5rem;
+    left: 1rem;
+  }
 `
 
 export const ReturnIcon = styled(HiArrowLeft)`
@@ -72,28 +86,38 @@ export const ImageContainer = styled.div`
   align-items: end;
   height: 100%;
   width: 50%;
+
+  img {
+    object-fit: contain;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     .desktop {
       display: none;
     }
-  }
-  img {
-    object-fit: contain;
-  }
-  @media screen and (max-width: 754px) {
-    width: 90%;
-    height: 100%;
-    align-items: start;
+
     img {
       object-fit: cover;
       background-position: center;
     }
   }
-  @media screen and (min-width: 911px) {
+
+  @media only screen and (max-width: ${({theme}) => theme.size.md}) {
     .mobile {
-      display: none;
+      display: block;
     }
   }
+
+  @media screen and (max-width: 754px) {
+    width: 100%;
+    height: 100%;
+    align-items: start;
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.xs}) {
     img {
       object-fit: contain;
@@ -111,7 +135,6 @@ export const TextContainer = styled.div`
   padding-right: 4em;
   gap: 0.8em;
   color: ${({theme}) => theme.colors.black};
-  font-family: var(--font-secondary-text);
   font-weight: 600;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     text-align: center;
@@ -121,10 +144,24 @@ export const TextContainer = styled.div`
   }
 
   h2 {
-    font-size: 3em;
+    font-size: 4.5rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
   }
   p {
-    font-size: 1.3em;
+    font-size: 1.4em;
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    h2 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.64rem;
+    }
   }
 `
 
@@ -141,5 +178,9 @@ export const ButtonModal = styled(ButtonPrimary)`
   a {
     text-decoration: none;
     color: ${({theme}) => theme.colors.white};
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    width: 100%;
   }
 `

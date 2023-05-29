@@ -1,32 +1,12 @@
 import Head from 'next/head'
-import React from 'react'
-const Hero = React.lazy(() => import('@/modules/web-development/hero/Hero'))
-const GridSection = React.lazy(() =>
-  import('@/modules/web-development/devGrid/Grid')
-)
-const DevWall = React.lazy(() =>
-  import('@/modules/web-development/devWall/DevWall')
-)
 
-const CallToAction = React.lazy(() =>
-  import('@/modules/web-development/callToAction/CallToAction')
-)
-
-const DevList = React.lazy(() =>
-  import('@/modules/web-development/devList/DevList')
-)
-
-const DevLead = React.lazy(() =>
-  import('@/modules/web-development/devLead/DevLead')
-)
-
-const DevFeatures = React.lazy(() =>
-  import('@/modules/web-development/devFeatures/DevFeatures')
-)
-
-const DevCases = React.lazy(() =>
-  import('@/modules/web-development/devCases/DevCases')
-)
+import CallToAction from '@/modules/web-development/callToAction/CallToAction'
+import DevCases from '@/modules/web-development/devCases/DevCases'
+import DevFeatures from '@/modules/web-development/devFeatures/DevFeatures'
+import GridSection from '@/modules/web-development/devGrid/Grid'
+import DevLead from '@/modules/web-development/devLead/DevLead'
+import DevWall from '@/modules/web-development/devWall/DevWall'
+import Hero from '@/modules/web-development/hero/Hero'
 
 const solutions = () => {
   return (
@@ -39,10 +19,9 @@ const solutions = () => {
       </Head>
       <main role="main">
         <Hero />
-        <GridSection />
         <DevLead />
         <DevWall />
-        <DevList />
+        <GridSection />
         <DevCases />
         <DevFeatures />
         <CallToAction />

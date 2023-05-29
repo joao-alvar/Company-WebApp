@@ -12,6 +12,10 @@ export const Container = styled.div`
   overflow: hidden;
   flex-shrink: 0;
   padding-top: 2pc;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding-top: 0;
+  }
 `
 export const Wrapper = styled.div`
   display: flex;
@@ -57,8 +61,14 @@ export const ImageWrap = styled.div`
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     pointer-events: none;
+  }
+
+  .image_2 {
+    object-fit: cover;
+    /* width: 70%; */
+    /* height: 70%; */
   }
 `
 
@@ -81,8 +91,6 @@ export const StyledList = styled.ul`
     font-family: var(--font-heading);
     font-size: 1.4em;
     font-weight: 500;
-    /* flex-wrap: wrap; */
-    /* padding-right: 2em; */
   }
 `
 
@@ -91,5 +99,5 @@ export const Icon = styled.span`
   margin-right: 10px;
   flex-shrink: 0;
   flex: none;
-  color: ${({theme}) => theme.colors.primary};
+  color: ${({theme}) => theme.colors.link};
 `

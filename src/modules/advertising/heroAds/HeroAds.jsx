@@ -1,11 +1,13 @@
-import {ButtonPrimary} from '@/components/button/ButtonElements'
-import ImageComponent from '@/components/imageComponent/ImageComponent'
-
 import {Section} from '@/modules/home/hero/HeroElements'
 
-import {Container, Content, LinkWrap, ImageWrap} from './HeroAdsElements'
-
-import billboard from '/public/images/billboard.jpeg'
+import {
+  Container,
+  Content,
+  LinkWrap,
+  Button,
+  SecondButton,
+  VideoWrap,
+} from './HeroAdsElements'
 
 const HeroAds = () => {
   const handleClickScroll = () => {
@@ -23,22 +25,31 @@ const HeroAds = () => {
             Learn what sets ION apart and what you can expect as a customer.
           </p>
           <LinkWrap>
-            <ButtonPrimary href="/contact" className="button">
-              Get started
-            </ButtonPrimary>
-            <ButtonPrimary
+            <Button href="/contact">Get started</Button>
+            <SecondButton
               as="button"
               onClick={handleClickScroll}
               isPrimary
-              className="button_secondary button"
+              className="button_secondary"
             >
               Learn more
-            </ButtonPrimary>
+            </SecondButton>
           </LinkWrap>
         </Content>
-        <ImageWrap>
-          <ImageComponent src={billboard} alt="Something" />
-        </ImageWrap>
+        <VideoWrap>
+          <video
+            title="Social media icons floating and passing through"
+            muted
+            autoPlay
+            loop
+            poster="images/advertising-hero.png"
+          >
+            <source
+              src="videos/social-media-icons-video.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </VideoWrap>
       </Container>
     </Section>
   )

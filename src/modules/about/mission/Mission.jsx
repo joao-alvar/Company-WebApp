@@ -3,7 +3,7 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 import {AboutSection} from '../hero/AboutHeroElements'
 import {AboutContainer, Content, ImageWrap} from './MissionElements'
 
-import Bg from 'public/images/Gallery.jpg'
+import Image from 'public/images/glass-office-meating.jpeg'
 
 const Mission = () => {
   return (
@@ -24,7 +24,7 @@ const Mission = () => {
           </Content>
           <ImageWrap>
             <ImageComponent
-              src={Bg}
+              src={Image}
               alt="Statue illustration"
               draggable={false}
             />

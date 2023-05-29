@@ -8,12 +8,13 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 100px;
   overflow: hidden;
   flex-shrink: 0;
   width: 100%;
+  min-height: 50rem;
   height: auto;
-  padding-bottom: 5pc;
+  padding-top: 7pc;
+  padding-bottom: 7pc;
   line-height: initial;
   flex-direction: column;
 
@@ -27,15 +28,7 @@ export const Content = styled.div`
   padding-right: 6em;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
-    padding: 1em;
-    padding-right: 2em;
-  }
-
-  h2 {
-    font-size: 3.5em;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    margin-left: -8px;
+    padding: 1.5rem;
   }
 
   p {
@@ -45,6 +38,13 @@ export const Content = styled.div`
     font-weight: 500;
     color: ${({theme}) => theme.colors.text};
   }
+`
+
+export const Title = styled.h2`
+  font-size: 3.5em;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  margin-left: -8px;
 `
 
 export const BtnWrap = styled.div`
@@ -57,11 +57,6 @@ export const BtnWrap = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 100%;
   }
-
-  .active {
-    background: ${({theme}) => theme.colors.black};
-    color: ${({theme}) => theme.colors.white};
-  }
 `
 
 export const Button = styled.button`
@@ -69,13 +64,22 @@ export const Button = styled.button`
   font-size: 1.5em;
   transition: all 300ms ease-out;
   border-radius: 8px;
+  flex-shrink: 0;
+  word-wrap: break-word;
   border: 1px solid ${({theme}) => theme.colors.black};
   font-weight: 600;
   color: ${({theme}) => theme.colors.black};
+
   &:hover {
     background: ${({theme}) => theme.colors.black};
     color: ${({theme}) => theme.colors.white};
   }
+
+  &.active {
+    background: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.white};
+  }
+
   @media screen and (max-width: 380px) {
     font-size: 1.2em;
     padding: 4px 10px;
@@ -83,22 +87,52 @@ export const Button = styled.button`
 `
 
 export const ActiveContent = styled.div`
-  display: flex;
-  align-items: center;
+  position: relative;
   padding-top: 4em;
   height: auto;
   width: 90%;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+`
+
+export const Wrapper = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 0;
+  height: inherit;
+  width: 100%;
+  background: none;
   gap: 2em;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out 0.3s;
+
+  &.is_display {
+    z-index: 5;
+    position: relative;
+    visibility: visible;
+    opacity: 1;
+  }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
-    width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
+  }
+`
 
-    .img_wrap {
-      width: 100%;
-    }
+export const ImageWrap = styled.div`
+  display: flex;
+
+  img {
+    border-radius: 1pc;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
 
     img {
       margin: 0 auto;
@@ -106,28 +140,15 @@ export const ActiveContent = styled.div`
       object-fit: cover;
     }
   }
+`
 
-  .img_wrap {
-    display: flex;
-
-    img {
-      border-radius: 8px;
-    }
-  }
-
-  .content_wrap {
-    width: 60%;
-    display: flex;
-    justify-content: start;
-    padding-right: 7em;
-    flex-direction: column;
-    font-weight: 600;
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      width: 100%;
-      padding-left: 0.5em;
-      padding-right: 2em;
-    }
-  }
+export const TextContent = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  padding-right: 7em;
+  flex-direction: column;
+  font-weight: 600;
 
   h2 {
     font-size: 2.4em;
@@ -141,6 +162,12 @@ export const ActiveContent = styled.div`
     padding-bottom: 1em;
     font-weight: 500;
     line-height: 1.5em;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 2em;
   }
 `
 

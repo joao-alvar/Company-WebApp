@@ -13,13 +13,12 @@ export const Container = styled.div`
   flex-shrink: 0;
   line-height: initial;
   padding-top: 4pc;
-  /* padding-bottom: 2pc; */
   background: ${({theme}) => theme.colors.black};
   color: ${({theme}) => theme.colors.white};
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
-    padding: 8em 0;
-    gap: 3em;
+    padding-bottom: 3pc;
   }
 `
 
@@ -31,6 +30,14 @@ export const TitleWrap = styled.header`
     font-weight: 600;
     font-size: 3.6em;
     text-align: center;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+    padding-left: 2em;
+    h2 {
+      text-align: start;
+    }
   }
 `
 
@@ -46,11 +53,13 @@ export const Content = styled.div`
   grid-row-gap: 4.5rem;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     grid-template-columns: none;
     padding-left: 2em;
     padding-right: 2em;
+    margin-top: 4em;
   }
 `
 
@@ -63,7 +72,7 @@ export const ImageContent = styled.div`
 `
 
 export const ImageWrap = styled.div`
-  width: 80%;
+  width: 90%;
   display: flex;
   align-items: center;
   justify-content: center;

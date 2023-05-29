@@ -5,6 +5,10 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-secondary-text: Segoe UI, system-ui, sans-serif;
+  --nav-header-height: 8rem;
+  --toastify-color-error: #991212;
+  --toastify-text-color-light: #000;
+  --color-timeline: #000;
 }
 
 /* Box sizing rules */
@@ -50,11 +54,12 @@ main {
   overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
+  margin-top: var(--nav-header-height);
 }
 
-.scroll {
+.mobile_nav_open {
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    overflow: hidden;
+   overflow: hidden;
   }
 }
 
