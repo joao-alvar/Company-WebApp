@@ -21,46 +21,41 @@ export const Container = styled.div`
   display: flex;
   justify-content: flex-end;
   max-width: 100%;
-  width: 76%;
+  width: 92%;
   min-height: 100%;
   height: auto;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 0 1em;
   margin: 0 auto;
   line-height: initial;
   color: ${({theme}) => theme.colors.black};
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
     width: 100%;
-    padding-right: 1.5em;
-    padding-left: 1.5em;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 965px) {
     flex-direction: column;
     justify-content: center;
-  }
-
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-    padding: 1em;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 `
 
-export const Content = styled.div`
+export const FormWrap = styled.div`
   display: flex;
-  width: 60%;
+  width: 80%;
   justify-content: center;
   align-items: center;
   padding: 4em 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 965px) {
     width: 100%;
-    padding-top: 2em;
+    padding-top: 1em;
   }
 `
 
-export const FormControl = styled.form`
+export const Form = styled.form`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -72,7 +67,7 @@ export const FormControl = styled.form`
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
     width: 95%;
   }
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+  @media screen and (max-width: 965px) {
     width: 100%;
   }
 
@@ -82,6 +77,7 @@ export const FormControl = styled.form`
     background-clip: padding-box;
     outline: none;
     border: 1px solid #ced4da;
+    background: ${({theme}) => theme.colors.white};
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     &:focus {
       box-shadow: 0 0 3px 1px rgba(13, 157, 218, 0.5),
@@ -161,7 +157,7 @@ export const FormControl = styled.form`
       background: ${({theme}) => theme.colors.primaryTextColor};
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 965px) {
       width: 100%;
     }
   }
@@ -177,6 +173,7 @@ export const FormControl = styled.form`
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
+    cursor: pointer;
   }
 `
 
@@ -279,8 +276,4 @@ export const List = styled.ul`
   flex-direction: column;
   gap: 1.1em;
   flex-wrap: wrap;
-
-  /* @media screen and (max-width: 775px) {
-    gap: 2em;
-  } */
 `

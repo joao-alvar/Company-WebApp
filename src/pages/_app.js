@@ -6,7 +6,7 @@ import {useRouter} from 'next/router'
 import {Suspense} from 'react'
 
 const Footer = dynamic(() => import('../components/footer/Footer'))
-const Navbar = dynamic(() => import('../components/navbar/Navbar'))
+const Navbar = dynamic(() => import('../components/header/navbar/Navbar'))
 
 import PageLoader from '@/components/loading/pageLoader/PageLoader'
 import StructuredData from '@/components/structuredData/StructuredData'

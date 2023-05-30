@@ -17,10 +17,8 @@ import HeaderContent from '../content/HeaderContent'
 import {
   Section,
   Container,
-  Wrapper,
-  Content,
-  FormControl,
-  Title,
+  FormWrap,
+  Form,
   Wrap,
   Field,
   Checkbox,
@@ -107,8 +105,8 @@ const ContactForm = () => {
           <>
             <Container>
               <HeaderContent />
-              <Content>
-                <FormControl onSubmit={handleSubmit(onSubmit)} role="submit">
+              <FormWrap>
+                <Form onSubmit={handleSubmit(onSubmit)} role="submit">
                   {errors && goToTop()}
                   <Wrap>
                     <Field data-role="control-group">
@@ -436,8 +434,8 @@ const ContactForm = () => {
                   >
                     {isLoading ? <ButtonLoader /> : 'Submit'}
                   </button>
-                </FormControl>
-              </Content>
+                </Form>
+              </FormWrap>
             </Container>
           </>
         ) : (

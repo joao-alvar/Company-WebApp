@@ -26,8 +26,6 @@ html {
 
 body {
   min-width: 320px;
-  min-height: 100%;
-  direction: ltr;
   font-size: 1.2rem;
   color: #000000;
   background-color: rgb(243, 244, 245);
