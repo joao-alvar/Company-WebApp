@@ -51,6 +51,7 @@ export const GridContent = styled.div`
 
   p {
     font-size: 1.6em;
+    line-height: 1.5em;
   }
 `
 

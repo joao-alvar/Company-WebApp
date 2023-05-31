@@ -43,6 +43,10 @@ export const TitleWrap = styled.header`
     margin-bottom: 1pc;
     color: ${({theme}) => theme.colors.white};
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const GridWrap = styled.div`

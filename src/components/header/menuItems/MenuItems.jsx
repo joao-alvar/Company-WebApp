@@ -41,7 +41,7 @@ export const menuItems = [
   },
 ]
 
-const MenuItems = ({items, onClick}) => {
+const MenuItems = ({items, onClick, linkClick}) => {
   const [dropdown, setDropdown] = useState(false)
 
   function useOutsideAlerter(ref) {
@@ -93,6 +93,7 @@ const MenuItems = ({items, onClick}) => {
             ref={wrapperRef}
             onMouseOver={MouseOver}
             onMouseOut={MouseOut}
+            linkClick={linkClick}
           />
         </>
       ) : (

@@ -31,6 +31,10 @@ export const TitleWrap = styled.header`
     font-weight: 600;
     font-size: 3.84em;
   }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 85%;
+  }
 `
 
 export const Content = styled.div`
