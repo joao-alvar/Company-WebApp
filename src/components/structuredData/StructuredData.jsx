@@ -1,13 +1,13 @@
-import Head from 'next/head';
+import Head from 'next/head'
 
-export default function StructuredData({ data }) {
+export default function StructuredData({data}) {
   return (
     <Head>
       <script
         key="structured-data"
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+        dangerouslySetInnerHTML={{__html: JSON.stringify(data)}}
       />
     </Head>
-  );
+  )
 }

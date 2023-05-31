@@ -1,6 +1,7 @@
 import ImageComponent from '@/components/imageComponent/ImageComponent'
+
 import {Section} from '../../home/hero/HeroElements'
-import {Container, Content,ImageWrap} from './HeroSeoElements'
+import {Container, Content, ImageWrap} from './HeroSeoElements'
 
 import abstractBackground from 'public/images/abstract-color.jpeg'
 

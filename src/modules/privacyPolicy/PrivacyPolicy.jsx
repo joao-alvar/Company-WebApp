@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {Container, Content} from './PrivacyPolicyElements'
