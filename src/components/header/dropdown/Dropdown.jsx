@@ -8,7 +8,7 @@ const Dropdown = ({submenus, dropdown, linkClick, onMouseOver, onMouseOut}) => {
       onMouseOut={onMouseOut}
     >
       {submenus.map((submenu, index) => (
-        <li key={index} className="no_select">
+        <li key={index}>
           <DropdownLink href={submenu.url} onClick={linkClick}>
             {submenu.title} <ArrowIconForward />
           </DropdownLink>
