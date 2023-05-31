@@ -54,7 +54,7 @@ const Navbar = () => {
         </LogoContainer>
         <ContentContainer>
           <NavItemsWrap className={isOpen && 'open'}>
-            <NavList>
+            <NavList className="no_select">
               {menuItems.map((menu, index) => {
                 return (
                   <MenuItems
