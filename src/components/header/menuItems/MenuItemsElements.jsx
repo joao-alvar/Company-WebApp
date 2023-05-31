@@ -21,11 +21,6 @@ export const NavLink = styled(Link)`
   font-weight: 500;
   font-size: 1.5rem;
   cursor: pointer;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none;
-  backface-visibility: hidden;
-  -webkit-tap-highlight-color: transparent;
 
   @media screen and (min-width: 911px) {
     &:after {

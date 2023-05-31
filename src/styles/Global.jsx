@@ -61,6 +61,17 @@ main {
   }
 }
 
+.no_select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  backface-visibility: hidden;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 button {
   border: none;
   background-color: transparent;
