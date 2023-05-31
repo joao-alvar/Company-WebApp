@@ -7,23 +7,27 @@ export const DropdownMenu = styled.ul`
   @media screen and (min-width: 911px) {
     position: absolute;
     padding: 1.2rem 0;
-    margin-top: -1.4em;
+    top: 0;
     border: 1px solid #ebeaeb;
     border-radius: 8px;
     margin-left: -3px;
-    z-index: 9;
     width: 17em;
+    min-width: unset;
     cursor: pointer;
     background-color: #fff;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
     visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+    transition: visibility 0.4s, opacity 0.4s ease,
+      transform 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
     transform: translateY(1em);
 
     &.show {
       visibility: visible;
-      transform: translateY(2.6em);
-      transition: visibility 0.4s, opacity 0.4s ease,
-        transform 0.6s cubic-bezier(0.3, -0.62, 0.21, 1);
+      opacity: 1;
+      transform: translateY(3.3em);
+      z-index: 9;
     }
   }
 
@@ -33,7 +37,6 @@ export const DropdownMenu = styled.ul`
 
     &.show {
       display: block;
-      /* transform: translateY(5px); */
     }
   }
 `
@@ -76,6 +79,7 @@ export const ArrowIconForward = styled(ImArrowRight2)`
   opacity: 0;
   transform: translateX(-2px);
   transition: transform 0.3s ease-in, opacity 0.2s ease-out;
+
   ${DropdownLink}:hover & {
     visibility: visible;
     opacity: 1;

@@ -63,14 +63,15 @@ export const Grid = styled.li`
 
   h3 {
     font-weight: 600;
-    font-size: 1.8em;
+    font-size: 2.6rem;
     padding-top: 10px;
     padding-bottom: 0.4rem;
   }
 
   p {
     font-size: 1.3em;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 2.2rem;
   }
 `
 export const Icon = styled.span`

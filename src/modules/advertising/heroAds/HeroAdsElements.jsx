@@ -36,8 +36,10 @@ export const Content = styled.div`
   }
 
   p {
-    font-size: 1.6em;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
     line-height: 1.5em;
+    font-weight: 400;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {

@@ -28,7 +28,7 @@ export const Content = styled.div`
 
   p {
     font-size: 1.8rem;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.9rem;
     width: 80%;
   }

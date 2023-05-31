@@ -91,6 +91,7 @@ export const Content = styled.div`
   width: 60%;
   justify-content: center;
   padding-right: 7em;
+  font-family: var(--font-heading);
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 98%;
   }
@@ -101,14 +102,13 @@ export const Content = styled.div`
 
   h2 {
     font-size: 3em;
-    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
-    font-size: 1.6em;
+    font-size: 1.8rem;
     font-weight: 500;
-    line-height: 1.4em;
+    line-height: 1.5em;
     padding-top: 0.81em;
   }
 `

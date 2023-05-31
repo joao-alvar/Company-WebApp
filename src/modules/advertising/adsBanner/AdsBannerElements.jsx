@@ -124,6 +124,7 @@ export const Text = styled.div`
   p {
     font-size: 1.3em;
     font-family: var(--font-heading);
+    line-height: 2.4rem;
     font-weight: 400;
   }
 `

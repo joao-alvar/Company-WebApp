@@ -23,13 +23,13 @@ export const AboutContainer = styled.div`
 export const Content = styled.div`
   width: 50%;
   padding-right: 2em;
+  font-family: var(--font-heading);
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
   }
 
   h2 {
-    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 3em;
     margin-bottom: 0.4em;
@@ -37,8 +37,8 @@ export const Content = styled.div`
 
   p {
     font-weight: 500;
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-size: 1.8rem;
+    line-height: 1.5em;
   }
 `
 

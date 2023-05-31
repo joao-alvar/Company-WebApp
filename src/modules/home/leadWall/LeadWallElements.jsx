@@ -91,13 +91,13 @@ export const List = styled.li`
   text-align: center;
   color: ${({theme}) => theme.colors.white};
   gap: 0.8em;
-  /* background-color: ${({theme}) => theme.colors.primary}; */
 
   h4 {
     font-size: 6em;
   }
 
   p {
+    font-family: var(--font-heading);
     font-size: 1.4em;
     font-weight: 500;
   }

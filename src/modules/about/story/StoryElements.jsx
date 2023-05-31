@@ -12,6 +12,7 @@ export const AboutContainer = styled.div`
   padding-top: 2pc;
   padding-bottom: 3pc;
   line-height: initial;
+  font-family: var(--font-heading);
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
@@ -28,7 +29,6 @@ export const TitleWrap = styled.header`
   margin-bottom: 1rem;
 
   h2 {
-    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 4rem;
   }
@@ -76,8 +76,8 @@ export const FloatLeft = styled.div`
   }
 
   p {
-    font-size: 1.8rem;
-    line-height: 2.3rem;
+    font-size: 1.7rem;
+    line-height: 2.4rem;
     font-weight: 500;
   }
 `

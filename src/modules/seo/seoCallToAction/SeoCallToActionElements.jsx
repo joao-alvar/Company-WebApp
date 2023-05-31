@@ -59,7 +59,7 @@ export const Content = styled.div`
   }
 
   p {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1.5em;
     line-height: 1.4em;
     margin-bottom: 2.5rem;

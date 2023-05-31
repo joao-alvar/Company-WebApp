@@ -26,13 +26,15 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 90%;
   padding-right: 6em;
+  font-family: var(--font-heading);
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     padding: 1.5rem;
   }
 
   p {
-    font-size: 1.72em;
+    font-size: 1.6em;
     padding: 0.41em 0 1em;
     line-height: 1.5em;
     font-weight: 500;
@@ -42,7 +44,6 @@ export const Content = styled.div`
 
 export const Title = styled.h2`
   font-size: 3.5em;
-  font-family: var(--font-heading);
   font-weight: 600;
   margin-left: -8px;
 `
@@ -61,13 +62,13 @@ export const BtnWrap = styled.div`
 
 export const Button = styled.button`
   padding: 4px 12px;
-  font-size: 1.5em;
+  font-size: 1.6rem;
   transition: all 300ms ease-out;
   border-radius: 8px;
   flex-shrink: 0;
   word-wrap: break-word;
   border: 1px solid ${({theme}) => theme.colors.black};
-  font-weight: 600;
+  font-weight: 500;
   color: ${({theme}) => theme.colors.black};
 
   &:hover {
@@ -149,19 +150,19 @@ export const TextContent = styled.div`
   padding-right: 7em;
   flex-direction: column;
   font-weight: 600;
+  font-family: var(--font-heading);
 
   h2 {
     font-size: 2.4em;
     padding-bottom: 0.4em;
-    font-family: var(--font-heading);
     font-weight: 600;
   }
 
   p {
-    font-size: 1.4em;
+    font-size: 1.6rem;
     padding-bottom: 1em;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.6em;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {

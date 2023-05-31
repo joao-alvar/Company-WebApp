@@ -52,7 +52,7 @@ export const FloatLeft = styled.div`
   p {
     font-size: 1.5rem;
     line-height: 2.3rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 `
 

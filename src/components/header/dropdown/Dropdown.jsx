@@ -1,8 +1,12 @@
 import {ArrowIconForward, DropdownLink, DropdownMenu} from './DropdownElements'
 
-const Dropdown = ({submenus, dropdown}) => {
+const Dropdown = ({submenus, dropdown, onMouseOver, onMouseOut}) => {
   return (
-    <DropdownMenu className={`dropdown ${dropdown ? 'show' : ''}`}>
+    <DropdownMenu
+      className={`dropdown ${dropdown ? 'show' : ''}`}
+      onMouseOver={onMouseOver}
+      onMouseOut={onMouseOut}
+    >
       {submenus.map((submenu, index) => (
         <li key={index}>
           <DropdownLink href={submenu.url}>

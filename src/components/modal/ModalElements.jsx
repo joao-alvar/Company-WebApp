@@ -150,7 +150,7 @@ export const TextContainer = styled.div`
   }
   p {
     font-size: 1.4em;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 2.5rem;
   }
 
