@@ -1,3 +1,4 @@
+import {NextSeo} from 'next-seo'
 import dynamic from 'next/dynamic'
 import Link from 'next/link'
 import {useEffect, useState} from 'react'
@@ -23,12 +24,9 @@ import {
   Field,
   Checkbox,
   List,
-  ArrowIcon,
 } from './ContactFormElement'
 
 import axios from 'axios'
-
-import {NextSeo} from 'next-seo'
 
 const ContactForm = () => {
   const [isLoading, setLoading] = useState(false)
