@@ -14,10 +14,7 @@ const ImageComponent = ({
   height,
   className,
   priority,
-  viewBox,
-  shapeRendering,
   style,
-  draggable,
 }) => {
   return (
     <>
@@ -29,12 +26,7 @@ const ImageComponent = ({
         className={className}
         quality={100}
         priority={priority}
-        viewBox={viewBox}
-        shapeRendering={shapeRendering}
         style={style}
-        loading="lazy"
-        placeholder="blur"
-        draggable={draggable}
         onLoadingComplete={(image) => (image.style.opacity = 1)}
       />
     </>

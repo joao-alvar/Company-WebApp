@@ -34,6 +34,10 @@ export const Content = styled.div`
     padding-right: 1em;
   }
 
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    font-size: 80%;
+  }
+
   h2 {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -53,6 +57,7 @@ export const Content = styled.div`
     display: flex;
     align-items: center;
     padding: 0.6rem 1.2rem;
+    background-color: transparent;
     border: 2px solid #fff;
     border-radius: 10px;
     text-decoration: none;

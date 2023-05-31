@@ -27,7 +27,11 @@ const Hero = () => {
           </ButtonPrimary>
         </Content>
         <ImgContainer>
-          <ImageComponent src={DevelopmentBg} alt="Laptop illustration" />
+          <ImageComponent
+            src={DevelopmentBg}
+            alt="Laptop illustration"
+            priority
+          />
         </ImgContainer>
       </Container>
     </Section>

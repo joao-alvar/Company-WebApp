@@ -109,5 +109,10 @@ export const VideoWrap = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: 40em;
     width: 100%;
+
+    img,
+    video {
+      border-bottom-left-radius: 0;
+    }
   }
 `

@@ -30,7 +30,7 @@ import axios from 'axios'
 
 const ContactForm = () => {
   const [isLoading, setLoading] = useState(false)
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(true)
   const [countries, setCountries] = useState([])
 
   const goToTop = () => {

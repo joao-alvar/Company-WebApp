@@ -26,8 +26,8 @@ const AboutHero = () => {
               <ImageComponent
                 src={heroImage}
                 alt="Maze Illustration"
-                placeholder="blur"
                 draggable={false}
+                priority
               />
             </ImageWrap>
           </Wrapper>

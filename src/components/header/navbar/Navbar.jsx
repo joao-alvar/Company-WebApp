@@ -49,7 +49,6 @@ const Navbar = () => {
             width={55}
             quality={100}
             unoptimized={true}
-            priority
           />
         </LogoContainer>
         <ContentContainer>

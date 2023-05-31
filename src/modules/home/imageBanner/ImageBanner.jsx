@@ -15,7 +15,7 @@ const LeadBanner = () => {
     <Section>
       <Container>
         <ImageWrap>
-          <ImageComponent src={backgroundImg} alt="" />
+          <ImageComponent src={backgroundImg} alt="" priority />
         </ImageWrap>
         <Content>
           <TextWrap>
