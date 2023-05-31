@@ -33,7 +33,7 @@ export const DropdownMenu = styled.ul`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     display: none;
-    margin-top: 0.8em;
+    margin-top: 2em;
 
     &.show {
       display: block;
@@ -62,7 +62,7 @@ export const DropdownLink = styled(Link)`
   border-radius: 8px;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    font-size: 1.25em;
+    font-size: 1.4em;
   }
 
   &:hover {

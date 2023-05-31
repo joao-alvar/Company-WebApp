@@ -295,10 +295,10 @@ const ContactForm = () => {
                         >
                           <option
                             value=""
-                            hidden
-                            disabled
-                            aria-hidden="true"
-                            selected=""
+                            hidden={true}
+                            disabled={true}
+                            aria-hidden={true}
+                            selected
                           ></option>
                           {countries.map((item) => {
                             return (

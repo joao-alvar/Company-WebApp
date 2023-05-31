@@ -97,7 +97,7 @@ export const NavList = styled.ul`
     width: 100%;
     padding-left: 3rem;
     padding-right: 2.3rem;
-    gap: 1.5em;
+    gap: 2.2em;
   }
 `
 

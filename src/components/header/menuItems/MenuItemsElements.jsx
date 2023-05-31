@@ -21,6 +21,11 @@ export const NavLink = styled(Link)`
   font-weight: 500;
   font-size: 1.5rem;
   cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none;
+  backface-visibility: hidden;
+  -webkit-tap-highlight-color: transparent;
 
   @media screen and (min-width: 911px) {
     &:after {
@@ -42,6 +47,8 @@ export const NavLink = styled(Link)`
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     font-size: 1.8rem;
     font-weight: 600;
+    width: 100%;
+    display: flex;
   }
 `
 
@@ -58,9 +65,6 @@ export const DropdownButton = styled(NavLink)`
     margin-right: 0;
     text-align: start;
     padding: 0;
-    -webkit-user-select: none; /* Safari */
-    -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none;
   }
 `
 
@@ -75,6 +79,7 @@ export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     margin-left: auto;
+    margin-right: 3px;
     font-size: 2.6rem;
     transform: rotate(-90deg);
 
