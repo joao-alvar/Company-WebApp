@@ -97,7 +97,7 @@ const MenuItems = ({items, onClick, linkClick}) => {
           />
         </>
       ) : (
-        <NavLink href={items.url} onClick={onClick}>
+        <NavLink href={items.url} onClick={onClick} className="no_select">
           {items.title}
         </NavLink>
       )}
