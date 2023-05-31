@@ -100,15 +100,11 @@ export const ImageContainer = styled.div`
       display: none;
     }
 
-    img {
-      object-fit: cover;
-      background-position: center;
-    }
-  }
-
-  @media only screen and (max-width: ${({theme}) => theme.size.md}) {
     .mobile {
       display: block;
+      width: 100%;
+      height: 100%;
+      background-position: center;
     }
   }
 

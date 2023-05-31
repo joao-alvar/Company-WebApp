@@ -24,7 +24,7 @@ const CallToAction = () => {
         <Wrapper>
           <GridBanner>
             <ImageWrap>
-              <ImageComponent src={Bg} alt="" />
+              <ImageComponent src={Bg} alt="" priority />
             </ImageWrap>
           </GridBanner>
           <GridBanner>

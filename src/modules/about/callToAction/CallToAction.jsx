@@ -11,17 +11,12 @@ const AboutCallToAction = () => {
       <Container>
         <Content>
           <h2>Join 28+ million people who already trust us with their money</h2>
-          <ButtonPrimary
-            href="/contact"
-            isPrimary
-            className="button_secondary button"
-            data-clog-click
-          >
+          <ButtonPrimary href="/contact" className=" button" data-clog-click>
             Get started <Icon />
           </ButtonPrimary>
         </Content>
         <ImageWrap>
-          <ImageComponent src={abstractPaint} alt="Ima" />
+          <ImageComponent src={abstractPaint} alt="Ima" priority />
         </ImageWrap>{' '}
       </Container>
     </AboutSection>

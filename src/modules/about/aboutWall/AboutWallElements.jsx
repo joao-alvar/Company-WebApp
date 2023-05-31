@@ -54,6 +54,7 @@ export const HeaderWrap = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 90%;
+    font-size: 83%;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
