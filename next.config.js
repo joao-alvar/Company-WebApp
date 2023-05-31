@@ -5,6 +5,12 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  env: {
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
+    NEXT_PUBLIC_USER: process.env.SERVER,
+    NEXT_PUBLIC_PASS: process.env.NEXT_PUBLIC_PASS,
+    NEXT_PUBLIC_SITEMAP_URL: process.env.NEXT_PUBLIC_SITEMAP_URL,
+  },
   module: {
     rules: [
       {

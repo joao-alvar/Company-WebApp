@@ -22,6 +22,10 @@ export default {
   },
   additionalLinkTags: [
     {
+      httpEquiv: 'x-ua-compatible',
+      content: 'IE=edge; chrome=1',
+    },
+    {
       rel: 'icon',
       type: 'image/png',
       href: '/favicon.ico',

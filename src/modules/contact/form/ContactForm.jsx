@@ -28,6 +28,8 @@ import {
 
 import axios from 'axios'
 
+import {NextSeo} from 'next-seo'
+
 const ContactForm = () => {
   const [isLoading, setLoading] = useState(false)
   const [modalOpen, setModalOpen] = useState(false)
@@ -87,6 +89,14 @@ const ContactForm = () => {
 
   return (
     <>
+      <NextSeo
+        additionalMetaTags={[
+          {
+            name: 'viewport',
+            content: 'width=device-width, initial-scale=1, maximum-scale=1"',
+          },
+        ]}
+      />
       <Section modalOpen={modalOpen}>
         <ToastContainer
           autoClose={5000}
