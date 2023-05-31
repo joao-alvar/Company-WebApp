@@ -43,7 +43,6 @@ export const menuItems = [
 
 const MenuItems = ({items, onClick}) => {
   const [dropdown, setDropdown] = useState(false)
-  // const ref = useRef()
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -65,6 +64,14 @@ const MenuItems = ({items, onClick}) => {
   const wrapperRef = useRef(null)
   useOutsideAlerter(wrapperRef)
 
+  function MouseOver() {
+    window.innerWidth > 910 && setDropdown(true)
+  }
+
+  function MouseOut() {
+    window.innerWidth > 910 && setDropdown(false)
+  }
+
   return (
     <ListItems ref={wrapperRef}>
       {items.submenu ? (
@@ -75,7 +82,8 @@ const MenuItems = ({items, onClick}) => {
             aria-haspopup="menu"
             aria-expanded={dropdown ? 'true' : 'false'}
             onClick={() => setDropdown((prev) => !prev)}
-            className="dropdown_button"
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
           >
             {items.title} <ArrowIconDown className={dropdown && 'show'} />
           </DropdownButton>
@@ -83,6 +91,8 @@ const MenuItems = ({items, onClick}) => {
             submenus={items.submenu}
             dropdown={dropdown}
             ref={wrapperRef}
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
           />
         </>
       ) : (

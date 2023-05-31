@@ -10,7 +10,7 @@ export const Header = styled.header`
   top: 0px;
   width: 100%;
   height: var(--nav-header-height);
-  z-index: 2;
+  z-index: 1000;
 `
 
 export const Nav = styled.nav`
@@ -22,17 +22,13 @@ export const Nav = styled.nav`
   position: relative;
   -moz-box-pack: justify;
   justify-content: space-between;
-  max-width: 1300px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
   width: 100%;
-
-  /* &.open {
-    height: 100%;
-    display: flex;
-  } */
+  height: 100%;
 `
 
 export const ContentContainer = styled.div`
@@ -40,12 +36,6 @@ export const ContentContainer = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
-
-  /* @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    position: absolute;
-    top: 0;
-    left: 0;
-  } */
 `
 
 export const LogoContainer = styled(Link)`
@@ -54,7 +44,6 @@ export const LogoContainer = styled(Link)`
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font: inherit;
   flex-shrink: 0;
   min-width: 0px;
   z-index: 10;
@@ -65,10 +54,10 @@ export const NavItemsWrap = styled.nav`
   width: 100%;
   -moz-box-align: center;
   align-items: center;
-  column-gap: 1rem;
+  /* column-gap: 1rem; */
   transition: 0.2s ease-in-out;
   grid-template-columns: 1fr auto auto;
-  margin-left: 3rem;
+  margin-left: 3.5rem;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     position: fixed;
@@ -79,16 +68,14 @@ export const NavItemsWrap = styled.nav`
     width: 100%;
     height: 100%;
     margin: 0;
+    display: flex;
     padding-top: 9.5em;
     flex-direction: column;
     background: ${({theme}) => theme.colors.white};
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.32s cubic-bezier(0.4, 0, 0.6, 1) 80ms,
-      visibility 0.32s step-end 80ms;
 
     &.open {
-      display: flex;
       height: 100%;
       opacity: 1;
       visibility: visible;
@@ -101,7 +88,7 @@ export const NavList = styled.ul`
   display: flex;
   align-items: center;
   -moz-box-align: center;
-  gap: 4em;
+  gap: 3em;
   overflow-x: visible;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -130,7 +117,7 @@ export const ButtonContainer = styled.div`
 `
 
 export const Button = styled(ButtonPrimary)`
-  font-family: var(--font-secondary-text);
+  font-family: var(--font-heading);
   font-size: 1.5rem;
   font-weight: 500;
 

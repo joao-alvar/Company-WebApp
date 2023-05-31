@@ -135,7 +135,7 @@ export const Form = styled.form`
 
   .got_error_message {
     color: ${({theme}) => theme.colors.error};
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 0.4em;
   }
 
@@ -207,7 +207,7 @@ export const Field = styled.fieldset`
 
   .statement {
     font-size: 1.23rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 `
 

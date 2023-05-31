@@ -23,8 +23,8 @@ export const Wrapper = styled.div`
   }
 
   p {
-    font-size: 1.7rem;
-    font-weight: 500;
+    font-size: 1.65rem;
+    font-weight: 600;
     line-height: 2.5rem;
   }
 

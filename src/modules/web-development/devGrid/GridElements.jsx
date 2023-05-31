@@ -48,11 +48,11 @@ export const Wrapper = styled.ul`
 export const Grid = styled.li`
   display: flex;
   flex-direction: column;
+  font-family: var(--font-heading);
   padding: 1em;
   cursor: default;
 
   h3 {
-    font-family: var(--font-heading);
     font-weight: 600;
     font-size: 1.6em;
     margin-top: 1.5rem;
@@ -60,8 +60,9 @@ export const Grid = styled.li`
   }
 
   p {
-    font-size: 1.2em;
+    font-size: 1.4rem;
     font-weight: 500;
+    line-height: 2.1rem;
   }
 `
 export const Icon = styled.span`

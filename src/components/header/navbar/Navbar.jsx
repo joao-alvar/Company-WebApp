@@ -1,4 +1,3 @@
-// import {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
 import {useEffect, useState} from 'react'
 
@@ -15,20 +14,7 @@ import {
   Header,
 } from './NavbarElements'
 
-import logoImage from '/public/images/logo-atalaso.svg'
-
-//   function remove_hash_from_url() {
-//     // Function to hide #elements in url hashNavLink
-//     setTimeout(() => {
-//       history.replaceState(
-//         '',
-//         document.title,
-//         window.location.origin +
-//           window.location.pathname +
-//           window.location.search
-//       )
-//     }, 5)
-//   }
+import logoImage from '/public/images/logo-atalaso.png'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -60,8 +46,7 @@ const Navbar = () => {
           <Image
             src={logoImage}
             alt="Atalaso logo"
-            height={0}
-            width={100}
+            width={55}
             quality={100}
             unoptimized={true}
             priority

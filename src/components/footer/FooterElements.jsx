@@ -26,6 +26,7 @@ export const FooterContainer = styled.div`
   margin: 0 auto;
   gap: 1em;
   font-weight: 500;
+  font-family: var(--font-heading);
 `
 
 export const SocialsContainer = styled.div`
@@ -53,7 +54,6 @@ export const SocialsContainer = styled.div`
       border-radius: 10px;
       text-decoration: none;
       color: inherit;
-      font-family: var(--font-heading);
       font-size: 2rem;
       position: relative;
       &:hover {
@@ -98,7 +98,7 @@ export const LinksContainer = styled.div`
   gap: 1em;
 
   a {
-    font-size: 1.3em;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #88869a;
     text-decoration: none;
@@ -115,7 +115,7 @@ export const LinksContainer = styled.div`
 
 export const AllRights = styled.div`
   display: flex;
-  font-size: 1.3em;
+  font-size: 1.4rem;
   color: #88869a;
 `
 

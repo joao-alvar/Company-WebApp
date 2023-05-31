@@ -107,7 +107,6 @@ const ContactForm = () => {
               <HeaderContent />
               <FormWrap>
                 <Form onSubmit={handleSubmit(onSubmit)} role="submit">
-                  {errors && goToTop()}
                   <Wrap>
                     <Field data-role="control-group">
                       <label htmlFor="first-name">First Name*</label>

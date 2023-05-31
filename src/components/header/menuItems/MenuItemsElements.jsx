@@ -46,31 +46,35 @@ export const NavLink = styled(Link)`
 `
 
 export const DropdownButton = styled(NavLink)`
-  margin-right: 1em;
-
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  z-index: 10;
+  &:after {
+    display: none;
+  }
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     margin-right: 0;
     text-align: start;
+    padding: 0;
   }
 `
 
 export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
   font-size: 1.3em;
-  position: absolute;
-  /* top: -1px; */
   right: -1em;
   transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
 
   &.show {
-    transform: rotate(179deg);
+    transform: rotate(180deg);
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    right: 0;
-    top: -3px;
-    font-size: 1.6em;
+    margin-left: auto;
+    font-size: 2.6rem;
     transform: rotate(-90deg);
+
     &.show {
       transform: rotate(0deg);
     }

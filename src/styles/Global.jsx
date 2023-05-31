@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 :root {
   --font-heading: 'Inter', system-ui, sans-serif;
   --font-secondary-text: Segoe UI, system-ui, sans-serif;
-  --nav-header-height: 8rem;
+  --nav-header-height: 72px;
   --toastify-color-error: #991212;
   --toastify-text-color-light: #000;
   --color-timeline: #000;
@@ -22,6 +22,7 @@ export const GlobalStyles = createGlobalStyle`
 
 html {
   font-size: 62.5%;
+  scroll-padding-top: 150px;
 }
 
 body {
@@ -37,7 +38,6 @@ __#next {
   height: 100%;
   width: 100%;
   line-height: 1.30769231;
-  scroll-behavior: smooth;
   vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;

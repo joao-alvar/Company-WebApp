@@ -46,6 +46,7 @@ export const Content = styled.div`
   flex-direction: column;
   padding: 2em;
   background: #ffffff;
+  font-family: var(--font-heading);
   color: ${({theme}) => theme.colors.black};
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
@@ -55,12 +56,11 @@ export const Content = styled.div`
   .pre_title {
     margin-right: auto;
     font-size: 1.1em;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
   }
 
   h1 {
-    font-family: var(--font-heading);
     font-size: 4rem;
     font-weight: 700;
     color: rgb(25, 28, 31);

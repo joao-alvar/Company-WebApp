@@ -69,6 +69,8 @@ export const Grid = styled.li`
   color: ${({theme}) => theme.colors.black};
   border: 1px solid #000;
   border-radius: 8px;
+  font-family: var(--font-heading);
+  font-weight: 500;
   padding: 4rem;
   box-shadow: -6px 6px 0px rgba(0, 0, 0, 0.9);
   transition: all 0.2s ease-in-out;

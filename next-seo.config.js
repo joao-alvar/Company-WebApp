@@ -24,16 +24,27 @@ export default {
     {
       rel: 'icon',
       type: 'image/png',
-      href: '/favicon.png',
+      href: '/favicon.ico',
+      sizes: '16x16',
+    },
+    {
+      rel: 'icon',
+      type: 'image/png',
+      href: '/favicon-32x32.png',
+      sizes: '32x32',
     },
     {
       rel: 'apple-touch-icon',
-      href: '/apple-touch-icon',
+      href: '/apple-touch-icon.png',
       sizes: '180x180',
     },
     {
       rel: 'manifest',
       href: '/manifest.json',
+    },
+    {
+      rel: 'manifest',
+      href: '/site.webmanifest',
     },
   ],
 }
