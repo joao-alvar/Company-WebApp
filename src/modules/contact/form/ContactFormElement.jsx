@@ -89,6 +89,10 @@ export const Form = styled.form`
     font-family: var(--font-heading);
     font-weight: 600;
     line-height: 2.4rem;
+
+    @media screen and (max-width: 965px) {
+      font-size: 1.4rem;
+    }
   }
 
   .link {
@@ -109,6 +113,10 @@ export const Form = styled.form`
 
   .regular_input {
     padding: 4px;
+
+    @media screen and (max-width: 965px) {
+      font-size: 1.36rem;
+    }
   }
 
   .wrapper {
