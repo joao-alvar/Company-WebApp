@@ -10,7 +10,7 @@ const HeroSeo = () => {
     <Section>
       <Container>
         <Content>
-          <h1>Edge Computing</h1>
+          <h1>A new range of possibilities</h1>
           <p>
             Powered by the cloud, edge computing enables businesses to reimagine
             experiences for people, purpose, and profitability, at speed and

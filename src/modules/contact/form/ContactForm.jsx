@@ -273,7 +273,6 @@ const ContactForm = () => {
                     <Field data-role="control-group">
                       <label htmlFor="country">Country*</label>
                       <div className="select_wrap">
-                        <ArrowIcon />
                         <select
                           id="country"
                           type="text"
@@ -298,10 +297,10 @@ const ContactForm = () => {
                         >
                           <option
                             value=""
-                            hidden="true"
-                            disabled="true"
+                            hidden
+                            disabled
                             aria-hidden="true"
-                            selected
+                            selected=""
                           ></option>
                           {countries.map((item) => {
                             return (

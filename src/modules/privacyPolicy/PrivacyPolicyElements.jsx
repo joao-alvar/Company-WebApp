@@ -11,6 +11,9 @@ export const Container = styled.div`
   padding-bottom: 2em;
   font-weight: 700;
   line-height: initial;
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    padding-top: 0;
+  }
 `
 
 export const Content = styled.div`
@@ -22,7 +25,10 @@ export const Content = styled.div`
   font-family: var(--font-secondary-text);
   font-weight: 400;
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    width: 95%;
+    padding-top: 0;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   h1 {
     width: 50%;
@@ -34,12 +40,17 @@ export const Content = styled.div`
     padding-top: 0.7em;
     padding-bottom: 0.7em;
     border-bottom: 1px solid ${({theme}) => theme.colors.secondary};
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      width: 100%;
+    @media screen and (max-width: 1016px) {
+      width: 80%;
     }
-    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-      font-size: 3.5em;
-      border-bottom: none;
+
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      text-align: start;
+      width: 100%;
+      font-size: 4.5rem;
+    }
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      font-size: 3.8rem;
     }
   }
 

@@ -56,6 +56,10 @@ export const TextWrap = styled.div`
     font-weight: 600;
   }
 
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 90%;
+  }
+
   @media screen and (max-width: 440px) {
     width: 90%;
   }

@@ -50,7 +50,7 @@ export const Content = styled.div`
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    padding: 0 2em 2em;
+    padding: 0 2rem 2rem;
   }
 `
 
@@ -62,11 +62,7 @@ export const Title = styled.h1`
   margin-bottom: 0.5em;
   color: ${({theme}) => theme.colors.black};
   @media screen and (max-width: 710px) {
-    font-size: 4rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    font-size: 3.4rem;
+    font-size: 4.1rem;
   }
 `
 
@@ -78,8 +74,13 @@ export const HeroText = styled.h2`
   width: 65%;
   color: ${({theme}) => theme.colors.black};
 
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 80%;
+  }
+
   @media screen and (max-width: 500px) {
     font-size: 1.7rem;
+    width: 90%;
   }
 `
 

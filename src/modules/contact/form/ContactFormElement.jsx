@@ -1,5 +1,3 @@
-import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
-
 import styled from 'styled-components'
 
 export const Section = styled.section`
@@ -77,7 +75,7 @@ export const Form = styled.form`
     background-clip: padding-box;
     outline: none;
     border: 1px solid #ced4da;
-    background: ${({theme}) => theme.colors.white};
+    background-color: ${({theme}) => theme.colors.white};
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     &:focus {
       box-shadow: 0 0 3px 1px rgba(13, 157, 218, 0.5),
@@ -174,15 +172,10 @@ export const Form = styled.form`
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
+    background: url('images/icons/expand-more-arrow-down.png') calc(100% - 1px)
+      center/25px no-repeat #fff;
+    display: block;
   }
-`
-
-export const ArrowIcon = styled(MdOutlineKeyboardArrowDown)`
-  position: absolute;
-  font-size: 2.2rem;
-  top: 0.2rem;
-  right: 0.2rem;
-  color: ${({theme}) => theme.colors.black};
 `
 
 export const Wrap = styled.div`

@@ -30,9 +30,6 @@ export const TitleContainer = styled.div`
     color: rgb(25, 28, 31);
     margin: 0.71rem 0 0;
     padding: 0;
-    @media screen and (max-width: 700px) {
-      font-size: 3em;
-    }
   }
 
   h3 {
@@ -42,7 +39,21 @@ export const TitleContainer = styled.div`
     word-break: break-word;
     margin: 1.2rem 0 0;
     padding: 0px;
-    @media screen and (max-width: 700px) {
+  }
+
+  @media screen and (max-width: 970px) {
+    text-align: start;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 1pc;
+  }
+
+  @media screen and (max-width: 700px) {
+    h2 {
+      font-size: 3em;
+    }
+
+    h3 {
       font-size: 1.5em;
     }
   }
@@ -60,17 +71,21 @@ export const ListContainer = styled.div`
     width: 50%;
     height: 100%;
     @media screen and (max-width: 970px) {
-      width: 100%;
+      margin: 0 auto;
+      width: 90%;
     }
   }
 
   li {
     width: 80%;
     margin: 0 auto;
-    /* border-bottom: 1px solid ${({theme}) => theme.colors.secondary}; */
     font-weight: 600;
     font-size: 2em;
     padding: 0.8em 0;
+    @media screen and (max-width: 970px) {
+      margin: 0;
+    }
+
     @media screen and (max-width: 700px) {
       width: 92%;
     }
@@ -92,7 +107,7 @@ export const ListContent = styled.div`
   height: 100%;
   @media screen and (max-width: 970px) {
     padding-top: 2em;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
   }
   @media screen and (max-width: 700px) {
@@ -113,6 +128,7 @@ export const ListContent = styled.div`
     @media screen and (max-width: 970px) {
       object-fit: cover;
     }
+
     @media screen and (max-width: 700px) {
       border-radius: 8px;
     }

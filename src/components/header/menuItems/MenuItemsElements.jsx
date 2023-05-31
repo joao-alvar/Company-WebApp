@@ -58,6 +58,9 @@ export const DropdownButton = styled(NavLink)`
     margin-right: 0;
     text-align: start;
     padding: 0;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
   }
 `
 

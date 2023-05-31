@@ -18,9 +18,6 @@ export const Container = styled.div`
   padding-top: 2pc;
   padding-bottom: 2pc;
   color: ${({theme}) => theme.colors.black};
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    /* padding: 5em 0 4em; */
-  }
 `
 
 export const Wrapper = styled.div`
@@ -30,7 +27,7 @@ export const Wrapper = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: 100%;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+  @media screen and (max-width: 1100px) {
     flex-direction: column;
   }
 `
@@ -41,11 +38,11 @@ export const ImageWrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 98%;
+  @media screen and (max-width: 1100px) {
+    width: 100%;
   }
   @media screen and (max-width: 700px) {
-    width: 98%;
+    width: 100%;
   }
   img {
     width: 90%;
@@ -63,7 +60,7 @@ export const ContentContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-top: 4.5em;
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+  @media screen and (max-width: 1100px) {
     width: 89%;
     padding-top: 5.5em;
   }

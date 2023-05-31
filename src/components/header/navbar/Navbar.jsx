@@ -41,7 +41,7 @@ const Navbar = () => {
           data-clog-click
           aria-label="Atalaso"
           data-qa="logo"
-          onClick={toggle}
+          onClick={() => setOpen(false)}
         >
           <Image
             src={logoImage}
@@ -56,7 +56,14 @@ const Navbar = () => {
           <NavItemsWrap className={isOpen && 'open'}>
             <NavList>
               {menuItems.map((menu, index) => {
-                return <MenuItems items={menu} key={index} onClick={toggle} />
+                return (
+                  <MenuItems
+                    items={menu}
+                    key={index}
+                    onClick={toggle}
+                    linkClick={toggle}
+                  />
+                )
               })}
             </NavList>
             <ButtonContainer>

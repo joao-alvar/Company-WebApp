@@ -32,6 +32,9 @@ export const TitleWrap = styled.header`
     font-family: var(--font-heading);
     font-size: 5rem;
     font-weight: 600;
+    @media only screen and (max-width: 768px) {
+      font-size: calc(5rem - 20%);
+    }
   }
 `
 
