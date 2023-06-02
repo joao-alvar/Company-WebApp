@@ -26,7 +26,7 @@ const LeadList = () => {
       <Container>
         <Wrapper>
           <GridContainer>
-            <GridItems>
+            <GridItems href="/">
               <ImageWrap>
                 <ImageComponent
                   src={Creativity}
@@ -48,7 +48,7 @@ const LeadList = () => {
                 </Button>
               </Content>
             </GridItems>
-            <GridItems>
+            <GridItems href="/">
               <ImageWrap>
                 <ImageComponent
                   src={WebDevelopment}
@@ -70,7 +70,7 @@ const LeadList = () => {
                 </Button>
               </Content>
             </GridItems>
-            <GridItems>
+            <GridItems href="/">
               <ImageWrap>
                 <ImageComponent
                   src={Advertising}
@@ -94,7 +94,7 @@ const LeadList = () => {
             </GridItems>
           </GridContainer>
           <GridContainer className="two_columns">
-            <GridItems className="background_color">
+            <GridItems as="div" className="background_color">
               <Content className="white_color">
                 <h3>Atalaso experience Cloud</h3>
                 <h2>End to end. And back again.</h2>
@@ -121,7 +121,7 @@ const LeadList = () => {
                 </ListWrap>
               </Content>
             </GridItems>
-            <GridItems>
+            <GridItems href="/">
               <ImageWrap>
                 <ImageComponent
                   src={Seo}
