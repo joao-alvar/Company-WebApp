@@ -63,8 +63,4 @@ export const ImageWrap = styled.div`
     object-fit: cover;
     filter: brightness(80%);
   }
-
-  @media only screen and (max-width: 768px) {
-
-  }
 `
