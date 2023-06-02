@@ -40,9 +40,7 @@ export const Title = styled.div`
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-    padding-left: 1.5rem;
-    padding-right: 2rem;
+    width: 92%;
 
     a {
       font-size: 1.5rem;
@@ -58,9 +56,7 @@ export const Content = styled.div`
   font-weight: 400;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    width: 92%;
   }
 
   p {

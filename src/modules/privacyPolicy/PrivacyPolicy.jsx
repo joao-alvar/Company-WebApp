@@ -88,7 +88,7 @@ const PrivacyPolicy = () => {
                 grounds we rely on next to each purpose listed below. We use the
                 information we collect or receive:
               </p>
-              <ol className="list_style">
+              <ul className="list_style">
                 <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
@@ -139,14 +139,14 @@ const PrivacyPolicy = () => {
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   informatin.
                 </ListItems>
-              </ol>
+              </ul>
             </li>
             <li>
               <h2>3. Will yout information be shared with anyone?</h2>
               <p>
                 We may process or share data based on the following legal basis:
               </p>
-              <ol className="list_style">
+              <ul className="list_style">
                 <ListItems>
                   Consent: We may process your data if you have given us
                   specific consent to use your personal information in a
@@ -171,7 +171,7 @@ const PrivacyPolicy = () => {
                   authorities to meet national security or law enforcement
                   requirements).
                 </ListItems>
-              </ol>
+              </ul>
             </li>
             <li>
               <h2>4. Do we use cookies and other tracking technologies?</h2>

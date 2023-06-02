@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
 `
 
-export const GridContainer = styled.ul`
+export const GridContainer = styled.div`
   margin: 0 auto;
   height: 80%;
   width: 100%;
@@ -45,14 +45,20 @@ export const GridContainer = styled.ul`
   }
 `
 
-export const GridItems = styled.li`
+export const GridItems = styled(Link)`
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  text-decoration: none;
   background: ${({theme}) => theme.colors.white};
   border: 1px solid rgb(204, 204, 204);
   color: ${({theme}) => theme.colors.black};
+  backface-visibility: hidden;
+
+  &:focus {
+    border-color: ${({theme}) => theme.colors.link};
+  }
 
   &.background_color {
     background: ${({theme}) => theme.colors.black};
@@ -72,6 +78,10 @@ export const ImageWrap = styled.div`
   img {
     width: 100%;
     height: 100%;
+  }
+
+  @media screen and (max-width: 1005px) {
+    height: auto;
   }
 `
 
@@ -102,7 +112,7 @@ export const Content = styled.div`
     margin-bottom: 1.6rem;
   }
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+  @media screen and (max-width: 1005px) {
     height: auto;
   }
 `
@@ -111,34 +121,33 @@ export const ListWrap = styled.div`
   display: block;
   margin-top: 2rem;
   margin-bottom: 1rem;
+  font-weight: 500;
 
   h4 {
     font-size: 1.5rem;
-    font-weight: 500;
     margin-bottom: 1rem;
+    font-weight: 500;
   }
 `
 
-export const List = styled.div`
+export const List = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 1px solid ${({theme}) => theme.colors.white};
 `
 
-export const ListItems = styled.div`
+export const ListItems = styled.li`
   font-size: 1.4rem;
 `
 
-export const Button = styled(Link)`
+export const Button = styled.span`
   display: flex;
   align-items: center;
   width: max-content;
-  text-decoration: none;
   font-size: 1.6rem;
   color: ${({theme}) => theme.colors.link};
 
