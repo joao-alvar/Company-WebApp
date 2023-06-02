@@ -24,11 +24,13 @@ export const Container = styled.div`
 
 export const ImageWrap = styled.div`
   position: fixed;
+  display: block;
   top: 0;
+  bottom: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  display: flex;
 
   img {
     width: 100%;
