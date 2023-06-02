@@ -10,7 +10,7 @@ import {
   ImageWrap,
 } from './LeadContactElements'
 
-import illustration from 'public/images/camping-illustration.jpeg'
+import Image from 'public/images/home-black-abstract-background.jpeg'
 
 const LeadContact = () => {
   return (
@@ -27,7 +27,7 @@ const LeadContact = () => {
               </Button>
             </TextContent>
             <ImageWrap>
-              <ImageComponent src={illustration} alt="" />
+              <ImageComponent src={Image} alt="" />
             </ImageWrap>
           </Card>
         </LeadContainer>

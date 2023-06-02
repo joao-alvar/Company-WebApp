@@ -39,9 +39,10 @@ const HeroAds = () => {
         <VideoWrap>
           <video
             title="Social media icons floating and passing through"
-            muted
             autoPlay
+            muted
             loop
+            playsInline
             poster="images/advertising-hero.png"
           >
             <source

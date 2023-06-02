@@ -30,7 +30,7 @@ const Hero = () => {
           <ImageComponent
             src={DevelopmentBg}
             alt="Laptop illustration"
-            priority
+            priority={true}
           />
         </ImgContainer>
       </Container>

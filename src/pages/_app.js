@@ -1,13 +1,11 @@
 import {DefaultSeo} from 'next-seo'
 import {NextSeo} from 'next-seo'
-import dynamic from 'next/dynamic'
 import Head from 'next/head'
 import {useRouter} from 'next/router'
 import {Suspense} from 'react'
 
-const Footer = dynamic(() => import('../components/footer/Footer'))
-const Navbar = dynamic(() => import('../components/header/navbar/Navbar'))
-
+import Footer from '@/components/footer/Footer'
+import Navbar from '@/components/header/navbar/Navbar'
 import PageLoader from '@/components/loading/pageLoader/PageLoader'
 import StructuredData from '@/components/structuredData/StructuredData'
 import {ThemeProvider} from 'styled-components'
