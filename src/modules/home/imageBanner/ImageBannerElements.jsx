@@ -30,14 +30,17 @@ export const ImageWrap = styled.div`
   height: 100%;
 
   img {
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     object-fit: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: fixed;
     filter: brightness(80%);
   }
 `
