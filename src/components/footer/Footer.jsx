@@ -21,7 +21,9 @@ function Footer() {
   return (
     <FooterSection>
       <FooterContainer>
-        <SocialsContainer>
+        <SocialsContainer
+          className={router?.pathname === '/about' && 'is_border'}
+        >
           {(router?.pathname === '/privacy-policy') |
             (router?.pathname === '/terms') && (
             <div className="call_to_action">
