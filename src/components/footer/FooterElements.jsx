@@ -35,8 +35,12 @@ export const SocialsContainer = styled.div`
   min-height: 7rem;
   width: 100%;
   margin-bottom: 1rem;
-  /* border-top: 1px solid #fff; */
   border-bottom: 1px solid #fff;
+
+  &.is_border {
+    border-top: 1px solid #fff;
+    padding-top: 0.5rem;
+  }
 
   .call_to_action {
     color: #88869a;

@@ -11,51 +11,56 @@ export const Container = styled.div`
   padding-bottom: 2em;
   font-weight: 700;
   line-height: initial;
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding-top: 0;
+`
+
+export const Title = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  min-height: 15rem;
+  font-family: var(--font-heading);
+  border-bottom: 1px solid #d0d1d2;
+
+  h1 {
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.link};
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-left: 0.6rem;
+    border-bottom: 1px solid ${({theme}) => theme.colors.link};
+
+    &:hover {
+      border-width: 2px;
+    }
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    width: 100%;
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+
+    a {
+      font-size: 1.5rem;
+    }
   }
 `
 
 export const Content = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-top: 2em;
-  padding-bottom: 2em;
   width: 80%;
-  font-family: var(--font-secondary-text);
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2em;
   font-weight: 400;
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding-top: 0;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-  h1 {
-    width: 50%;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 6rem;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    padding-top: 0.7em;
-    padding-bottom: 0.7em;
-    border-bottom: 1px solid ${({theme}) => theme.colors.secondary};
-    @media screen and (max-width: 1016px) {
-      width: 80%;
-    }
-
-    @media screen and (max-width: ${({theme}) => theme.size.md}) {
-      text-align: start;
-      width: 100%;
-      font-size: 4.5rem;
-    }
-    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-      font-size: 3.8rem;
-    }
-  }
-
-  .top_gap {
-    margin-top: 2em;
   }
 
   p {
@@ -81,21 +86,21 @@ export const Content = styled.div`
     margin-top: 1em;
     padding-bottom: 1em;
   }
-  .list_style {
-    li {
-      padding-top: 1em;
-      padding-bottom: 1em;
-      padding-right: 2em;
-      margin-left: 2em;
-      font-size: 1.65rem;
-      font-weight: 500;
-      line-height: 164%;
-      list-style: disc outside;
-    }
-  }
 `
 
-export const list = styled.ul`
+export const List = styled.ol`
   display: flex;
-  list-style: none;
+  flex-direction: column;
+  list-style: decimal;
+`
+
+export const ListItems = styled.li`
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 2em;
+  margin-left: 2em;
+  font-size: 1.65rem;
+  font-weight: 500;
+  line-height: 164%;
+  list-style: disc outside;
 `

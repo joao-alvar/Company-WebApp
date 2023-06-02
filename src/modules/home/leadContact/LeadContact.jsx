@@ -1,8 +1,8 @@
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
+import {Section} from '../hero/HeroElements'
 import {
-  LeadSection,
-  LeadContainer,
+  Container,
   Card,
   TextContent,
   Title,
@@ -15,8 +15,8 @@ import Image from 'public/images/home-black-abstract-background.jpeg'
 const LeadContact = () => {
   return (
     <div>
-      <LeadSection>
-        <LeadContainer>
+      <Section>
+        <Container>
           <Card>
             <TextContent>
               <Title>
@@ -30,8 +30,8 @@ const LeadContact = () => {
               <ImageComponent src={Image} alt="" />
             </ImageWrap>
           </Card>
-        </LeadContainer>
-      </LeadSection>
+        </Container>
+      </Section>
     </div>
   )
 }

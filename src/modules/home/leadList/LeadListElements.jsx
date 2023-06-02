@@ -101,6 +101,10 @@ export const Content = styled.div`
     font-size: 1.7rem;
     margin-bottom: 1.6rem;
   }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    height: auto;
+  }
 `
 
 export const ListWrap = styled.div`

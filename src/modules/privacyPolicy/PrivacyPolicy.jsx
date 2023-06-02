@@ -1,13 +1,26 @@
+import Link from 'next/link'
+
 import {Section} from '@/modules/home/hero/HeroElements'
 
-import {Container, Content} from './PrivacyPolicyElements'
+import {
+  Container,
+  Title,
+  Content,
+  List,
+  ListItems,
+} from './PrivacyPolicyElements'
 
 const PrivacyPolicy = () => {
   return (
     <Section>
       <Container>
+        <Title>
+          <header>
+            <h1>Privacy policy</h1>
+            <Link href="/terms">Terms of Services</Link>
+          </header>
+        </Title>
         <Content>
-          <h1>Privacy policy</h1>
           <p className="top_gap">
             Thank you for choosing to be part of our community at Atalaso LLC.
             We are committed to protecting your personal information and your
@@ -33,7 +46,7 @@ const PrivacyPolicy = () => {
             it will help you make informed decisions about sharing your personal
             information with us.
           </p>
-          <list>
+          <List>
             <li>
               <h2>1. What information do we collect?</h2>
               <p>
@@ -75,8 +88,8 @@ const PrivacyPolicy = () => {
                 grounds we rely on next to each purpose listed below. We use the
                 information we collect or receive:
               </p>
-              <ul className="list_style">
-                <li>
+              <ol className="list_style">
+                <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
                   (such as your Google or Facebook account), we use the
@@ -85,8 +98,8 @@ const PrivacyPolicy = () => {
                   performance of the contract. See the section below headed
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   information.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
                   (such as your Google or Facebook account), we use the
@@ -95,8 +108,8 @@ const PrivacyPolicy = () => {
                   performance of the contract. See the section below headed
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   information.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
                   (such as your Google or Facebook account), we use the
@@ -105,8 +118,8 @@ const PrivacyPolicy = () => {
                   performance of the contract. See the section below headed
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   information.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
                   (such as your Google or Facebook account), we use the
@@ -115,8 +128,8 @@ const PrivacyPolicy = () => {
                   performance of the contract. See the section below headed
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   information.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   To facilitate account creation and logon process. If you
                   choose to link your account with us to a third party account
                   (such as your Google or Facebook account), we use the
@@ -125,31 +138,31 @@ const PrivacyPolicy = () => {
                   performance of the contract. See the section below headed
                   &quot;HOW DO WE HANDLE YOUR SOCIAL LOGINS&quot; for further
                   informatin.
-                </li>
-              </ul>
+                </ListItems>
+              </ol>
             </li>
             <li>
               <h2>3. Will yout information be shared with anyone?</h2>
               <p>
                 We may process or share data based on the following legal basis:
               </p>
-              <ul className="list_style">
-                <li>
+              <ol className="list_style">
+                <ListItems>
                   Consent: We may process your data if you have given us
                   specific consent to use your personal information in a
                   specific purpose.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   Legitimate Interests: We may process your data when it is
                   reasonably necessary to achieve our legitimate business
                   interests.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   Performance of a Contract: Where we have entered into a
                   contract with you, we may process your personal information to
                   fulfill the terms of our contract.
-                </li>
-                <li>
+                </ListItems>
+                <ListItems>
                   Legal Obligations: We may disclose your information where we
                   are legally required to do so in order to comply with
                   applicable law, governmental requests, a judicial proceeding,
@@ -157,8 +170,8 @@ const PrivacyPolicy = () => {
                   order or a subpoena (including in response to public
                   authorities to meet national security or law enforcement
                   requirements).
-                </li>
-              </ul>
+                </ListItems>
+              </ol>
             </li>
             <li>
               <h2>4. Do we use cookies and other tracking technologies?</h2>
@@ -230,7 +243,7 @@ const PrivacyPolicy = () => {
                 <a href="mailto:contact@atalaso.com">contact@atalaso.com</a>
               </p>
             </li>
-          </list>
+          </List>
         </Content>
       </Container>
     </Section>

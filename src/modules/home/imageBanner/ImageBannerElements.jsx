@@ -46,7 +46,7 @@ export const Content = styled.div`
   margin-left: 3.5pc;
   padding: 2rem;
   background-color: ${({theme}) => theme.colors.white};
-  border-radius: 1;
+  border-radius: 1pc;
   z-index: 1;
 
   @media screen and (max-width: 768px) {

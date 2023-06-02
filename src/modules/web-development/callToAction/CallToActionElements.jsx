@@ -84,11 +84,12 @@ export const Content = styled.div`
 
 export const Button = styled.h3`
   text-decoration: none;
+  display: flex;
+  align-items: center;
   color: ${({theme}) => theme.colors.white};
   font-size: 1.6em;
   font-weight: 600;
   border-radius: 8px;
-  position: relative;
   align-items: center;
   width: max-content;
   margin-top: auto;
@@ -98,8 +99,7 @@ export const Button = styled.h3`
 `
 
 export const IconArrow = styled(HiArrowRight)`
-  font-size: 0.9em;
-  top: 0.42em;
-  right: -1.4em;
-  position: absolute;
+  font-size: 1.75rem;
+  margin-top: 4px;
+  margin-left: 0.4em;
 `

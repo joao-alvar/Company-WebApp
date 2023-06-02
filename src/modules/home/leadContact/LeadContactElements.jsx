@@ -1,65 +1,60 @@
 import {LeadButton} from '@/components/button/ButtonElements'
 import styled from 'styled-components'
 
-export const LeadSection = styled.section`
+export const Container = styled.div`
   position: relative;
-  height: auto;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-`
-
-export const LeadContainer = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-shrink: 0;
   width: 100%;
+  max-width: 100%;
+  min-height: 33em;
   height: auto;
-  min-height: auto;
   line-height: initial;
-  padding-bottom: 2pc;
-  @media screen and (max-width: 800px) {
+  padding-bottom: 10px;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: auto;
-    padding-bottom: 4em;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    min-height: 20em;
   }
 `
 export const Card = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   width: 95%;
-  min-height: 33rem;
+  height: 100%;
+  min-height: inherit;
   border-radius: 1pc;
   overflow: hidden;
-  border: 1px solid rgba(24, 24, 24, 0.04);
   background-color: transparent;
-  box-shadow: 0 2px 8px -2px rgba(24, 24, 24, 0.08),
-    0 8px 9pt -2px rgba(106, 87, 87, 0.16);
 
-  @media screen and (max-width: 1000px) {
-    width: 95%;
-  }
-
-  @media screen and (max-width: 800px) {
-    flex-direction: column;
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: auto;
   }
 `
 export const TextContent = styled.div`
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  width: 55%;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 8rem;
+  width: 75%;
   height: 100%;
   margin-right: auto;
-  padding: 3rem;
 
-  @media screen and (max-width: 980px) {
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     padding: 2.5em;
   }
 
-  @media screen and (max-width: 550px) {
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     padding: 2rem;
     font-size: 80%;
   }
@@ -72,8 +67,8 @@ export const Title = styled.header`
     font-weight: 600;
     color: ${({theme}) => theme.colors.white};
 
-    @media screen and (max-width: 800px) {
-      margin-top: 0.3em;
+    @media screen and (max-width: 470px) {
+      font-size: 2.5rem;
     }
   }
 `
@@ -83,10 +78,10 @@ export const Button = styled(LeadButton)`
   margin-right: auto;
   margin-top: 2em;
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     width: 100%;
-    font-size: 1.4rem;
-    margin-top: auto;
+    font-size: 1.5rem;
+    margin-top: 4em;
   }
 `
 
@@ -103,9 +98,5 @@ export const ImageWrap = styled.div`
     height: 100%;
     object-fit: cover;
     filter: brightness(80%);
-
-    /* @media only screen and (max-width: 1000px) and (min-width: 800px) {
-      object-fit: contain;
-    } */
   }
 `

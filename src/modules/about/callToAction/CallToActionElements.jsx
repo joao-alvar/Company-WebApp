@@ -3,39 +3,40 @@ import {HiArrowRight} from 'react-icons/hi'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  position: relative;
   display: flex;
+  justify-content: center;
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
   height: auto;
-  min-height: 35em;
+  min-height: 28em;
   line-height: initial;
+  background-color: #000;
 
   @media screen and (max-width: 500px) {
-    min-height: 25em;
+    min-height: auto;
+    padding-top: 2.5pc;
+    padding-bottom: 1rem;
   }
 `
 export const Content = styled.div`
-  width: 100%;
+  position: relative;
+  width: 90%;
   height: 100%;
   min-height: inherit;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  padding-left: 3rem;
   padding-right: 8rem;
-
-  @media screen and (max-width: 700px) {
-    text-align: start;
-    width: 100%;
-    padding-left: 1em;
-    padding-right: 1em;
-  }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     font-size: 80%;
+  }
+
+  @media screen and (max-width: 700px) {
+    text-align: start;
+    padding-right: 1em;
   }
 
   h2 {
@@ -45,6 +46,10 @@ export const Content = styled.div`
     padding-bottom: 2rem;
     color: #fff;
 
+    @media screen and (max-width: 700px) {
+      font-size: 3.6em;
+    }
+
     @media screen and (max-width: 500px) {
       font-size: 3em;
     }
@@ -53,12 +58,12 @@ export const Content = styled.div`
   .button {
     margin-top: 1em;
     margin-left: 0.45rem;
-    color: #fff;
+    color: ${({theme}) => theme.colors.white};
     display: flex;
     align-items: center;
     padding: 0.6rem 1.2rem;
     background-color: transparent;
-    border: 2px solid #fff;
+    border: 2px solid ${({theme}) => theme.colors.white};
     border-radius: 10px;
     text-decoration: none;
     font-family: var(--font-heading);
@@ -71,7 +76,7 @@ export const Content = styled.div`
     }
     @media screen and (max-width: 500px) {
       justify-content: center;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       width: 95%;
     }
   }
@@ -89,22 +94,12 @@ export const ImageWrap = styled.div`
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.376);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-  }
 
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
+    filter: brightness(80%);
   }
 `

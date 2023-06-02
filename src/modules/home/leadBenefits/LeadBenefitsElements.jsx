@@ -92,13 +92,15 @@ export const TextWrap = styled.div`
 
   a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
     color: ${({theme}) => theme.colors.white};
     font-family: var(--font-heading);
     font-size: 1.3em;
     font-weight: 600;
     margin-top: 0.4em;
     width: max-content;
-    position: relative;
+
     &:hover {
       text-decoration: underline;
       color: ${({theme}) => theme.colors.link};
@@ -107,10 +109,9 @@ export const TextWrap = styled.div`
 `
 
 export const Icon = styled(IoIosArrowForward)`
-  position: absolute;
-  top: 4px;
   margin-left: 2px;
-  font-size: 0.95em;
+  margin-top: 2.5px;
+  font-size: 1.6rem;
 `
 
 export const ImageWrap = styled.div`

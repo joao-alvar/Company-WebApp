@@ -82,8 +82,9 @@ export const Button = styled.button`
   }
 
   @media screen and (max-width: 380px) {
-    font-size: 1.2em;
-    padding: 4px 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 1.5rem;
   }
 `
 

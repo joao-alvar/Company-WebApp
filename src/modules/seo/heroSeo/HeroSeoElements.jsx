@@ -55,8 +55,6 @@ export const ImageWrap = styled.div`
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.376);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
   }
 
   img {
@@ -64,5 +62,9 @@ export const ImageWrap = styled.div`
     height: 100%;
     object-fit: cover;
     filter: brightness(80%);
+  }
+
+  @media only screen and (max-width: 768px) {
+
   }
 `
