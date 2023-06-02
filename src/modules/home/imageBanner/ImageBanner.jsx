@@ -8,14 +8,14 @@ import {
   TextWrap,
 } from './ImageBannerElements'
 
-import backgroundImg from '/public/images/Women-with-umbrella-illustration.jpeg'
+import backgroundImg from '/public/images/busy-sidewalk.jpeg'
 
 const LeadBanner = () => {
   return (
     <Section>
       <Container>
         <ImageWrap>
-          <ImageComponent src={backgroundImg} alt="" priority />
+          <ImageComponent src={backgroundImg} alt="" priority={true} />
         </ImageWrap>
         <Content>
           <TextWrap>

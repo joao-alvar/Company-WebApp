@@ -10,63 +10,55 @@ export const Section = styled.div`
 export const Container = styled.div`
   position: relative;
   display: flex;
+  align-items: center;
   flex-shrink: 0;
   width: 100%;
   height: 65rem;
   line-height: initial;
-  /* margin-top: 2pc; */
+  clip-path: inset(0 0 0 0);
 
-  @media screen and (max-width: 1060px) {
-    flex-direction: column;
-    height: auto;
+  @media screen and (max-width: 768px) {
+    align-items: end;
   }
 `
 
 export const ImageWrap = styled.div`
-  display: flex;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  display: flex;
 
   img {
     width: 100%;
     height: 100%;
-    z-index: -1;
-  }
-
-  @media screen and (max-width: 1060px) {
-    position: relative;
+    object-fit: cover;
+    filter: brightness(80%);
   }
 `
 
 export const Content = styled.div`
   display: flex;
-  width: 40%;
+  width: 40rem;
+  height: 30rem;
   justify-content: center;
-  @media screen and (max-width: 1060px) {
-    width: 100%;
-    height: 20em;
-    // width: 30pc;
-    // max-width: 45em;
-    padding-right: 2em;
-    min-height: auto;
-  }
-  @media screen and (max-width: 500px) {
+  margin-left: 3.5pc;
+  padding: 2rem;
+  background-color: ${({theme}) => theme.colors.white};
+  border-radius: 1;
+  z-index: 1;
+
+  @media screen and (max-width: 768px) {
+    width: 95%;
     height: auto;
-    margin-bottom: 3.5pc;
-    flex-wrap: wrap;
-    width: 90%;
+    margin-left: 0;
+    margin: 0 auto;
+    border-radius: 0;
   }
 `
 
 export const TextWrap = styled.div`
-  padding-left: 2em;
-  margin-top: 9pc;
-  width: 70%;
-  z-index: 1;
-
   h2 {
     font-family: var(--font-heading);
     font-size: 3em;
@@ -74,13 +66,17 @@ export const TextWrap = styled.div`
   }
 
   p {
-    font-size: 1.3em;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-top: 0.6em;
   }
 
-  @media screen and (max-width: 1060px) {
-    width: 100%;
-    margin-top: 3pc;
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.45rem;
+    }
   }
 `

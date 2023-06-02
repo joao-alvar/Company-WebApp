@@ -39,7 +39,7 @@ const Modal = ({className, onClick}) => {
               width={500}
               height={500}
               className="desktop"
-              priority
+              priority={true}
             />
             <ImageComponent
               src={imageMobile}
@@ -47,7 +47,7 @@ const Modal = ({className, onClick}) => {
               // width={400}
               // height={400}
               className="mobile"
-              priority
+              priority={true}
             />
           </ImageContainer>
         </ModalContent>

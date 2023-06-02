@@ -16,7 +16,7 @@ import {
   Icon,
 } from './LeadFeaturesElements'
 
-import featuredImage from '/public/images/Results.jpg'
+import featuredImage from '/public/images/fast-transformation.jpeg'
 
 const LeadFeatures = () => {
   return (

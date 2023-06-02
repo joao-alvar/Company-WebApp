@@ -1,14 +1,12 @@
 // import Image from 'next/image'
 
-import Image from 'next/image'
 import Link from 'next/link'
 
-// import ImageComponent from '@/components/imageComponent/ImageComponent'
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {
   GridSection,
   Container,
-  TitleWrap,
   Icon,
   GridWrap,
   Cards,
@@ -17,17 +15,14 @@ import {
   ImageWrap,
 } from './LeadBenefitsElements'
 
-import image_1 from 'public/images/abstract-background-3d.jpeg'
-import image_2 from 'public/images/rocket-laptop-illustration.png'
-import image_3 from 'public/images/work-illustration.png'
+import image_2 from 'public/images/office-and-computer-image.jpeg'
+import image_1 from 'public/images/two-people-looking-tablet.jpeg'
+import image_3 from 'public/images/typing-in-notebook.jpeg'
 
 const leadBenefits = () => {
   return (
     <GridSection id="section-1">
       <Container>
-        <TitleWrap>
-          <h2>We got you covered</h2>
-        </TitleWrap>
         <GridWrap>
           <Cards>
             <CardContent>
@@ -44,12 +39,12 @@ const leadBenefits = () => {
               </TextWrap>
             </CardContent>
             <ImageWrap>
-              <Image src={image_1} alt="" className="image_one" />
+              <ImageComponent src={image_1} alt="" className="image_one" />
             </ImageWrap>
           </Cards>
           <Cards>
             <ImageWrap>
-              <Image src={image_2} alt="" />
+              <ImageComponent src={image_2} alt="" className="image_two" />
             </ImageWrap>
             <CardContent>
               <TextWrap>
@@ -79,7 +74,7 @@ const leadBenefits = () => {
               </TextWrap>
             </CardContent>
             <ImageWrap>
-              <Image src={image_3} alt="" className="image_three" />
+              <ImageComponent src={image_3} alt="" />
             </ImageWrap>
           </Cards>
         </GridWrap>

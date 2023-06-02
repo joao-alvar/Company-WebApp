@@ -27,7 +27,7 @@ const AboutHero = () => {
                 src={heroImage}
                 alt="Maze Illustration"
                 draggable={false}
-                priority
+                priority={true}
               />
             </ImageWrap>
           </Wrapper>

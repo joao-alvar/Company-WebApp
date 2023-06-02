@@ -27,7 +27,7 @@ const Hero = () => {
               </HeroText>
             </Content>
             <ImageContainer>
-              <ImageComponent src={heroImage} alt="" />
+              <ImageComponent src={heroImage} alt="" priority={true} />
             </ImageContainer>
           </Wrapper>
         </Container>

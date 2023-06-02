@@ -16,7 +16,7 @@ const AboutCallToAction = () => {
           </ButtonPrimary>
         </Content>
         <ImageWrap>
-          <ImageComponent src={abstractPaint} alt="Ima" priority />
+          <ImageComponent src={abstractPaint} alt="Ima" priority={true} />
         </ImageWrap>{' '}
       </Container>
     </AboutSection>

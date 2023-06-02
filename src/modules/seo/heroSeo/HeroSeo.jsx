@@ -22,7 +22,7 @@ const HeroSeo = () => {
             src={abstractBackground}
             alt="Statue illustration"
             draggable={false}
-            priority
+            priority={true}
           />
         </ImageWrap>
       </Container>

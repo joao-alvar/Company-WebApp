@@ -25,28 +25,6 @@ export const Container = styled.div`
   padding-top: 2pc;
   padding-bottom: 2pc;
   flex-direction: column;
-
-  /* @media screen and (max-width: 768px) {
-    margin-top: 7em;
-  }
-  @media screen and (max-width: 700px) {
-    padding-bottom: 10em;
-  } */
-`
-
-export const TitleWrap = styled.header`
-  h2 {
-    font-family: var(--font-heading);
-    font-size: 3.4em;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 1pc;
-    color: ${({theme}) => theme.colors.white};
-  }
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `
 
 export const GridWrap = styled.div`
@@ -69,7 +47,7 @@ export const GridWrap = styled.div`
 export const Cards = styled.article`
   display: flex;
   align-items: center;
-  min-height: 35em;
+  min-height: 45em;
   height: auto;
   border-radius: 6px;
   overflow: hidden;
@@ -123,13 +101,14 @@ export const TextWrap = styled.div`
     position: relative;
     &:hover {
       text-decoration: underline;
+      color: ${({theme}) => theme.colors.link};
     }
   }
 `
 
 export const Icon = styled(IoIosArrowForward)`
   position: absolute;
-  top: 3px;
+  top: 4px;
   margin-left: 2px;
   font-size: 0.95em;
 `
@@ -137,22 +116,14 @@ export const Icon = styled(IoIosArrowForward)`
 export const ImageWrap = styled.div`
   display: flex;
   width: 50%;
-  height: 80%;
+  height: 65%;
   margin: 0 auto;
 
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 1pc;
-  }
-
-  .image_one {
-    object-fit: contain;
-  }
-
-  .image_three {
-    object-fit: fill;
+    object-fit: cover;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
