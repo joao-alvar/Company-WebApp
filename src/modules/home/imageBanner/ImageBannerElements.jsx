@@ -19,6 +19,7 @@ export const Container = styled.div`
 
   @media screen and (max-width: 768px) {
     align-items: end;
+    clip-path: none;
   }
 `
 
@@ -28,20 +29,18 @@ export const ImageWrap = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  display: block;
 
   img {
-    position: fixed;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     object-fit: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     filter: brightness(80%);
+  }
+
+  @media screen and (max-width: 768px) {
+    position: absolute;
   }
 `
 

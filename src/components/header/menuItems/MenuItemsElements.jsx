@@ -33,6 +33,7 @@ export const NavLink = styled(Link)`
       background-color: ${({theme}) => theme.colors.text};
       transition: 0.2s ease-out;
     }
+
     &:hover::after {
       left: 0;
       width: 100%;

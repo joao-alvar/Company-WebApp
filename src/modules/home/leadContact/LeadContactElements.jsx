@@ -12,7 +12,8 @@ export const Container = styled.div`
   min-height: 33em;
   height: auto;
   line-height: initial;
-  padding-bottom: 10px;
+  padding: 10px;
+  padding-top: 0;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     height: auto;
@@ -27,7 +28,7 @@ export const Card = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 95%;
+  width: 100%;
   height: 100%;
   min-height: inherit;
   border-radius: 1pc;

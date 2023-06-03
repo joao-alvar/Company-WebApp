@@ -13,7 +13,7 @@ const GridSection = () => {
     <Section>
       <Container>
         <TitleContainer>
-          <h2>Send, spend and save smarter</h2>
+          <h2>Driving changes</h2>
         </TitleContainer>
         <Wrapper>
           <Grid>

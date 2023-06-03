@@ -1,3 +1,7 @@
+import {
+  ButtonPrimary,
+  ButtonSecondary,
+} from '@/components/button/ButtonElements'
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {
@@ -7,10 +11,11 @@ import {
   Content,
   Title,
   HeroText,
+  LinkWrap,
   ImageContainer,
 } from './HeroElements'
 
-import heroImage from 'public/images/home-hero.png'
+import heroImage from 'public/images/Workplace-abstract-illustration.jpg'
 
 const Hero = () => {
   return (
@@ -20,11 +25,13 @@ const Hero = () => {
           <Wrapper>
             <Content>
               {/* <Title>Empowering Your company and expanding your horizons</Title> */}
+              <h3 className="pre_title">Creativity solutions</h3>
               <Title>Your go to solution, scale your business.</Title>
-              <HeroText>
-                We offer a range of services to help you streamline your
-                operations, reach new customers.
-              </HeroText>
+              <HeroText>Scale your business with our services.</HeroText>
+              <LinkWrap>
+                <ButtonPrimary href="/">Get started</ButtonPrimary>
+                <ButtonSecondary href="/">How we work</ButtonSecondary>
+              </LinkWrap>
             </Content>
             <ImageContainer>
               <ImageComponent src={heroImage} alt="" priority={true} />
