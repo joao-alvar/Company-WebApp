@@ -1,5 +1,3 @@
-import ImageComponent from '@/components/imageComponent/ImageComponent'
-
 import {
   Section,
   Container,
@@ -11,8 +9,6 @@ import {
   ListItem,
 } from './LeadFeaturesElements'
 
-import featuredImage from '/public/images/fast-transformation.jpeg'
-
 const LeadFeatures = () => {
   return (
     <Section>
@@ -21,9 +17,6 @@ const LeadFeatures = () => {
           <Header>
             <h2>Relax we take care of you</h2>
           </Header>
-          {/* <ImageWrap>
-            <ImageComponent src={featuredImage} alt="Board meeting" />
-          </ImageWrap> */}
           <ContentContainer>
             <List>
               <ListItem>
