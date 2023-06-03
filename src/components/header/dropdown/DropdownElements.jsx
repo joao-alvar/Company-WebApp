@@ -66,7 +66,6 @@ export const DropdownLink = styled(Link)`
   }
 
   &:hover {
-    color: ${({theme}) => theme.colors.primary};
     background-color: rgba(25, 28, 31, 0.056);
   }
 `
@@ -74,7 +73,6 @@ export const ArrowIconForward = styled(ImArrowRight2)`
   margin-left: auto;
   margin-right: 0.5rem;
   font-size: 1.3rem;
-  color: ${({theme}) => theme.colors.primary};
   visibility: hidden;
   opacity: 0;
   transform: translateX(-2px);

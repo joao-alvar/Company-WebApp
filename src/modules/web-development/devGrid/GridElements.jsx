@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
@@ -16,19 +15,25 @@ export const Container = styled.div`
   padding-bottom: 2pc;
 
   @media screen and (max-width: 1000px) {
-    padding: 2em 0;
+    padding-top: 2em;
+    padding-bottom: 2em;
   }
 `
 
 export const TitleContainer = styled.div`
-  text-align: center;
-  margin: 2em;
+  padding-left: 3em;
+  padding-right: 2rem;
+  padding-top: 3em;
 
   h2 {
     font-size: 5.2rem;
-    font-weight: 600;
-    @media screen and (max-width: 700px) {
-      font-size: 4rem;
+    font-weight: 700;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 2rem;
+    h2 {
+      font-size: 3.5rem;
     }
   }
 `
@@ -40,6 +45,7 @@ export const Wrapper = styled.ul`
   gap: 1.3em;
   grid-auto-rows: minmax(200px, auto);
   padding: 2em;
+
   @media screen and (max-width: 1050px) {
     padding: 1.5em;
     grid-template-columns: repeat(1, 1fr);
@@ -63,6 +69,10 @@ export const Grid = styled.li`
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 2.1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    padding-left: 0;
   }
 `
 export const Icon = styled.span`

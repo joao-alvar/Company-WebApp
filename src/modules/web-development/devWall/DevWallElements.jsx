@@ -55,18 +55,16 @@ export const Content = styled.div`
     padding-right: 0;
     padding-left: 0.5em;
   }
+
   @media screen and (max-width: 700px) {
     width: 95%;
+    font-size: 80%;
   }
 
   h2 {
-    font-size: 3.5em;
+    font-size: 4rem;
     font-family: var(--font-heading);
     font-weight: 600;
-    margin-left: -8px;
-    @media screen and (max-width: 430px) {
-      margin-left: -4px;
-    }
   }
 
   p {

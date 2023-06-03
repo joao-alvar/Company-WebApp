@@ -72,6 +72,10 @@ const MenuItems = ({items, onClick, linkClick}) => {
     window.innerWidth > 910 && setDropdown(false)
   }
 
+  function ClickOn() {
+    window.innerWidth <= 910 && setDropdown((prev) => !prev)
+  }
+
   return (
     <ListItems ref={wrapperRef}>
       {items.submenu ? (
@@ -81,7 +85,7 @@ const MenuItems = ({items, onClick, linkClick}) => {
             type="button"
             aria-haspopup="menu"
             aria-expanded={dropdown ? 'true' : 'false'}
-            onClick={() => setDropdown((prev) => !prev)}
+            onClick={ClickOn}
             onMouseOver={MouseOver}
             onMouseOut={MouseOut}
           >

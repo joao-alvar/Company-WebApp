@@ -43,7 +43,7 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h2`
-  font-size: 3.5em;
+  font-size: 4.3rem;
   font-weight: 600;
   margin-left: -8px;
 `
@@ -176,7 +176,7 @@ export const TextContent = styled.div`
 export const ButtonActive = styled(Link)`
   width: max-content;
   color: ${({theme}) => theme.colors.black};
-  font-size: 1.6em;
+  font-size: 1.5rem;
   text-decoration: underline;
   width: fit-content;
 
