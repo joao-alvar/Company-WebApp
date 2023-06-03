@@ -2,7 +2,6 @@ import {
   Section,
   Container,
   Wrapper,
-  ImageWrap,
   ContentContainer,
   Header,
   List,
