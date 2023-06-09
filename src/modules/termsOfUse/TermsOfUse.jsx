@@ -75,8 +75,8 @@ const TermsOfUse = () => {
               <h2>4. Warranty disclaimer</h2>
               <ol>
                 <ListItems>
-                  This site and its contents are provided on an "as is" basis
-                  without any warranties, express or implied.
+                  This site and its contents are provided on an &quot;as
+                  is&quot; basis without any warranties, express or implied.
                 </ListItems>
                 <ListItems>
                   Atalaso does not warrant the accuracy, completeness, or
