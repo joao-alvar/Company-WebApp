@@ -15,28 +15,28 @@ const SeoBenefits = () => {
       <Container>
         <Wrapper>
           <TitleWrap>
-            <h2>What is edge computing?</h2>
+            <h2>Why SEO is important?</h2>
           </TitleWrap>
           <Content>
             <FloatLeft>
               <p>
-                Much of today&apos;s computing already happens at the edge in
-                places like hospitals, factories and retail locations,
-                processing the most sensitive data and powering critical systems
-                that must function reliably and safely. These places require
-                solutions with low latency that do not need a network
-                connection. What makes edge so exciting is the potential it has
-                for transforming business across every industry and function,
-                from customer engagement and marketing to production and
-                back-office operations. In all cases, edge helps make business
-                functions proactive and adaptive—often in real-time—leading to
-                new, optimized experiences for people.
+                SEO (Search Engine Optimization) offers numerous benefits that
+                make it a crucial investment for businesses of all sizes: In
+                today&apos;s digital age, where consumers heavily rely on search
+                engines to find products and services, SEO is an essential
+                component of any successful online marketing strategy. By
+                leveraging the power of SEO, businesses can enjoy increased
+                visibility, targeted traffic, cost-effectiveness, trust, and
+                long-term growth, ultimately leading to higher conversions and
+                improved business success.
               </p>
             </FloatLeft>
             <FloatRight>
               <h3>
-                What makes edge so exciting is the potential it has for
-                transforming business across every industry and function.
+                {/* What makes edge so exciting is the potential it has for
+                transforming business across every industry and function. */}
+                The crucial aspect of SEO lies in its transformative potential
+                for businesses across all industries and functions.
               </h3>
             </FloatRight>
           </Content>

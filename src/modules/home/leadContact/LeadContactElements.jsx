@@ -23,11 +23,12 @@ export const Container = styled.div`
     min-height: 20em;
   }
 `
+
 export const Card = styled.div`
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: 100%;
   min-height: inherit;
@@ -42,22 +43,24 @@ export const Card = styled.div`
 export const TextContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding-left: 3rem;
-  padding-right: 8rem;
-  width: 75%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* padding-right: 8rem; */
+  width: 100%;
   height: 100%;
   margin-right: auto;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
-    padding: 2.5em;
+    text-align: center;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     padding: 2rem;
     font-size: 80%;
+    text-align: start;
   }
 `
 
@@ -71,12 +74,16 @@ export const Title = styled.header`
     @media screen and (max-width: 470px) {
       font-size: 2.5rem;
     }
+
+    @media screen and (max-width: 335px) {
+      font-size: 2.3rem;
+    }
   }
 `
 export const Button = styled(LeadButton)`
   font-size: 1.6rem;
   width: 9em;
-  margin-right: auto;
+  /* margin-right: auto; */
   margin-top: 2em;
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {

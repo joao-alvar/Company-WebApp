@@ -12,32 +12,13 @@ export const Container = styled.div`
   overflow: hidden;
   flex-shrink: 0;
   line-height: initial;
-  padding-top: 4pc;
+  /* padding-top: 4pc; */
   background: ${({theme}) => theme.colors.black};
   color: ${({theme}) => theme.colors.white};
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
     padding-bottom: 3pc;
-  }
-`
-
-export const TitleWrap = styled.header`
-  width: 80%;
-
-  h2 {
-    font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 3.6em;
-    text-align: center;
-  }
-
-  @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    width: 100%;
-    padding-left: 2em;
-    h2 {
-      text-align: start;
-    }
   }
 `
 
@@ -67,7 +48,7 @@ export const ImageContent = styled.div`
   h3 {
     font-family: var(--font-heading);
     font-weight: 400;
-    font-size: 2.6em;
+    font-size: 3rem;
   }
 `
 
@@ -123,6 +104,7 @@ export const TextWrap = styled.div`
     font-weight: 600;
     font-size: 1.3em;
     line-height: 1.4em;
+    margin-bottom: 0.6rem;
     color: #999999;
   }
 `

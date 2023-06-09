@@ -44,11 +44,15 @@ export const HeaderWrap = styled.div`
     font-family: var(--font-heading);
     font-weight: 600;
     margin-bottom: 0.4em;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 3rem;
+    }
   }
 
   h3 {
     font-size: 1.54em;
-    line-height: 1.3em;
+    line-height: 2.2rem;
     font-weight: 600;
   }
 
@@ -66,6 +70,10 @@ export const IconTitle = styled.h3`
   font-family: var(--font-heading);
   font-size: 2.5em;
   font-weight: 600;
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 2.3rem;
+  }
 `
 
 export const Icon = styled.div`

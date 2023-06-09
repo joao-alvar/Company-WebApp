@@ -1,5 +1,7 @@
 import {IoSpeedometerOutline} from 'react-icons/io5'
 
+import ImageComponent from '@/components/imageComponent/ImageComponent'
+
 import {Section} from '@/modules/home/hero/HeroElements'
 
 import {
@@ -8,8 +10,15 @@ import {
   Content,
   GridContainer,
   Grid,
+  ImageWrap,
   Icon,
 } from './SeoFeaturesElements'
+
+import customerInsightIcon from 'public/images/icons/customer-insight-icon.png'
+import linkIcon from 'public/images/icons/link-icon.png'
+import qualityIcon from 'public/images/icons/quality-icon.png'
+import rotationIcon from 'public/images/icons/rotation-icon.png'
+import structureIcon from 'public/images/icons/structure-icon.png'
 
 const SeoFeatures = () => {
   return (
@@ -17,55 +26,68 @@ const SeoFeatures = () => {
       <Container>
         <Content>
           <TitleWrap>
-            <h2>What is edge computing?</h2>
+            <h2>Some of our approaches</h2>
           </TitleWrap>
           <GridContainer>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <Icon as={IoSpeedometerOutline} />
+              </ImageWrap>
+              <h3>Analytics and measurement</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                Analyze key SEO metrics. Monitor performance, organic traffic,
+                keyword rankings, and conversion rates.
               </p>
             </Grid>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <ImageComponent src={customerInsightIcon} alt="" />
+              </ImageWrap>
+              <h3>User experience (UX)</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                Improve user experience providing intuitive navigation,
+                easy-to-use interfaces, and relevant content. Aim to reduce
+                bounce rates, increase time on page.
               </p>
             </Grid>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <ImageComponent src={linkIcon} alt="" />
+              </ImageWrap>
+              <h3>Link building</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                Build a strong and diverse backlink profile by earning
+                high-quality links from authoritative websites.
               </p>
             </Grid>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <ImageComponent src={qualityIcon} alt="" />
+              </ImageWrap>
+              <h3>Quality content creation</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                Develop high-quality, informative, and engaging content that
+                resonates with your target audience.
               </p>
             </Grid>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <ImageComponent src={structureIcon} alt="" />
+              </ImageWrap>
+              <h3>Technical SEO</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                Optimize website structure, sitemaps, URL structure, canonical
+                tags, and crawlability.
               </p>
             </Grid>
             <Grid>
-              <Icon as={IoSpeedometerOutline} />
-              <h3>Interactive learning</h3>
+              <ImageWrap>
+                <ImageComponent src={rotationIcon} alt="" />
+              </ImageWrap>
+              <h3>Continuous optimization</h3>
               <p>
-                Write real code from day one and get real-time feedback to
-                quickly improve code quality.
+                SEO is an ongoing process. Stay updated with the latest
+                algorithm changes, industry trends, and best practices.
               </p>
             </Grid>
           </GridContainer>

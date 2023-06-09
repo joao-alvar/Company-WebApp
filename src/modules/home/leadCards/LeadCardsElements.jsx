@@ -29,11 +29,11 @@ export const TitleWrap = styled.header`
   h2 {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 3.84em;
-  }
+    font-size: 3.8rem;
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    font-size: 85%;
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 3rem;
+    }
   }
 `
 
@@ -58,6 +58,10 @@ export const TextWrap = styled.div`
     font-weight: 600;
     font-size: 1.5em;
     line-height: 1.5em;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.6rem;
+    }
   }
 `
 
@@ -94,6 +98,10 @@ export const Cards = styled.li`
     font-size: 1.4em;
     line-height: 1.5em;
     flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 82%;
   }
 `
 

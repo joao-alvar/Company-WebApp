@@ -34,18 +34,27 @@ export const Content = styled.div`
   }
 
   p {
-    font-size: 1.6em;
-    padding: 0.41em 0 1em;
-    line-height: 1.5em;
+    font-size: 1.6rem;
+    /* padding-top: 0.4rem; */
+    padding-bottom: 1.7rem;
+    line-height: 2.5rem;
     font-weight: 500;
     color: ${({theme}) => theme.colors.text};
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.5rem;
+    }
   }
 `
 
 export const Title = styled.h2`
-  font-size: 4.3rem;
+  font-size: 4.2rem;
   font-weight: 600;
-  margin-left: -8px;
+  margin-bottom: 1.7rem;
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 3rem;
+  }
 `
 
 export const BtnWrap = styled.div`
@@ -104,7 +113,7 @@ export const ActiveContent = styled.div`
 export const Wrapper = styled.div`
   position: absolute;
   display: flex;
-  align-items: center;
+  justify-content: center;
   top: 0;
   height: inherit;
   width: 100%;
@@ -148,15 +157,20 @@ export const TextContent = styled.div`
   width: 60%;
   display: flex;
   justify-content: start;
-  padding-right: 7em;
+  /* padding-top: 2rem; */
+  padding-right: 2rem;
   flex-direction: column;
   font-weight: 600;
   font-family: var(--font-heading);
 
-  h2 {
+  h3 {
     font-size: 2.4em;
     padding-bottom: 0.4em;
     font-weight: 600;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 2.4rem;
+    }
   }
 
   p {
@@ -164,6 +178,10 @@ export const TextContent = styled.div`
     padding-bottom: 1em;
     font-weight: 500;
     line-height: 1.6em;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.5rem;
+    }
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -174,13 +192,13 @@ export const TextContent = styled.div`
 `
 
 export const ButtonActive = styled(Link)`
+  text-decoration: none;
   width: max-content;
-  color: ${({theme}) => theme.colors.black};
+  color: ${({theme}) => theme.colors.link};
   font-size: 1.5rem;
-  text-decoration: underline;
   width: fit-content;
 
   &:hover {
-    color: ${({theme}) => theme.colors.primary};
+    text-decoration: underline;
   }
 `

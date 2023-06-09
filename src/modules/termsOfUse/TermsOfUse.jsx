@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import {Section} from '../home/hero/HeroElements'
-import {Container, Content, Title} from './TermsOfUseElements'
+import {Container, Content, List, ListItems, Title} from './TermsOfUseElements'
 
 const TermsOfUse = () => {
   return (
@@ -16,70 +16,163 @@ const TermsOfUse = () => {
         <Content>
           <h2>General</h2>
           <p>
-            These Payment Terms describe your agreement to pay for current and
-            future goods and services, together with any charges or fees applied
-            by us related to goods or services. In these Payment Terms,
-            U+0060weU+0060 and U+0060usU+0060 mean the Tesla group entity
-            supplying the goods and services in your country. In order to use
-            certain services, such as Supercharging, authorized automatic or
-            one-time payments, recurring payments and subscriptions, you allow
-            Tesla to store, maintain, and recover funds from your specified
-            payment method in accordance with these Payment Terms. Tesla may
-            amend these terms from time to time and any changes are effective
-            when posted to this page. When you add a payment method to your
-            Tesla Account, such as a credit card, certain information including,
-            but not limited to device location, device identification number,
-            and card information may be sent to Tesla and shared with our
-            payment processor. Card information is encrypted during the
-            transmission and Tesla will not have access to the actual card
-            number. When the stored payment method or a new credit card is used
-            for purchasing goods and services on a Tesla hosted website or
-            application, the necessary information to process payment will be
-            shared with our global processors and our banking partners, to
-            process your payment, comply with financial regulations, to prevent
-            fraud, and for troubleshooting any payment issues. When you pay
-            using your bank account details, those details are stored by Tesla
-            in an encrypted format that prevents unauthorized access without
-            specific permissions. For information on how we handle your payment
-            information, please see TeslaU+0060s Privacy Notice. You must
-            maintain at least one valid payment method in your Tesla Account.
-            Any services received may result in charges being applied to your
-            saved payment method, and charges may include taxes as required by
-            law. Your failure to maintain accurate, complete, and up-to-date
-            payment information, including an invalid or expired payment method,
-            may result in your inability to access or use services such as
-            Supercharging. When you request a bank payment such as an Automated
-            Clearing House (ACH) or Pre-Authorized Debit (PAD) payment transfer,
-            and where required by law, we will inform you at least three days
-            before the initial payment due date, and up to one day before
-            payment is collected. You may amend or cancel this authorization at
-            any time by providing us with thirty (30) daysU+0060 notice. You
-            have certain recourse rights if any debit does not comply with this
-            agreement, such as the right to receive reimbursement in the event
-            of an unauthorized debit inconsistent with these terms. To obtain
-            more information on your recourse rights, contact your financial
-            institution. For charges that support automatic or recurring
-            payments, you understand that your payment method will be charged
-            each time your service automatically renews at the end of the
-            prescribed period, unless turned off at least twenty-four (24) hours
-            prior to the end of the current billing period. You can manage or
-            turn off automatic payments in your Tesla Account at any time.
-            Persons authorized by you to use your vehicle can also make use of
-            the services described in these Payment Terms. In this case, you
-            will remain responsible to Tesla for payment of the applicable
-            charges and Tesla will require payment from you using the payment
-            method saved in your Tesla Account. You will be able to review a
-            summary of transactions in your Tesla Account. In the event that any
-            attempt to recover funds from you should fail using the payment
-            method saved in your Tesla Account, you agree to allow Tesla to
-            recover all or less than all of the amount owed for goods or
-            services as set out in this clause. If we are unable to collect
-            payment, we may contact you based on your information on file or may
-            request payment when we are performing services for you. If you
-            violate these Payment Terms, such as by not paying past due and
-            unchallenged amounts, we may limit or block your vehicle&apos;s
-            ability to use the related services until payment issues are
-            resolved.
+            Please read these Terms of Use (&quot;Terms&quot;) carefully before
+            using our website. By accessing and using this site, you acknowledge
+            and accept the following terms and conditions. If you do not agree
+            with any part of these Terms, please refrain from using the website.
+          </p>
+          <List>
+            <li>
+              <h2>1. Intellectual property</h2>
+              <ol>
+                <ListItems>
+                  All content on this website, including but not limited to
+                  text, graphics, logos, images, videos, and software, is the
+                  property of Atalaso or its licensors and is protected by
+                  copyright laws.
+                </ListItems>
+                <ListItems>
+                  No part of this site may be copied, reproduced, republished,
+                  uploaded, posted, transmitted, or distributed without prior
+                  written consent from Atalaso, except for personal,
+                  non-commercial use.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>2. User conduct</h2>
+              <ol>
+                <ListItems>
+                  You agree to use the website only for lawful purposes and in a
+                  manner that does not violate any applicable laws or
+                  regulations.
+                </ListItems>
+                <ListItems>
+                  You are solely responsible for any content you post or
+                  transmit on the website. You must not post or transmit any
+                  content that is defamatory, obscene, offensive, or infringing
+                  upon any intellectual property rights or privacy rights of
+                  others.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>3. Third-Party websites and content</h2>
+              <ol>
+                <ListItems>
+                  The website may contain links to third-party websites or
+                  resources. These links are provided for your convenience and
+                  do not imply any endorsement or responsibility for the content
+                  or services provided on these websites.
+                </ListItems>
+                <ListItems>
+                  Atalaso does not guarantee the accuracy, completeness, or
+                  reliability of any content on third-party websites.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>4. Warranty disclaimer</h2>
+              <ol>
+                <ListItems>
+                  This site and its contents are provided on an "as is" basis
+                  without any warranties, express or implied.
+                </ListItems>
+                <ListItems>
+                  Atalaso does not warrant the accuracy, completeness, or
+                  reliability of the information provided on this site.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>5. Submission of Information</h2>
+              <ol>
+                <ListItems>
+                  Any information submitted through this site shall be deemed
+                  non-confidential and non-proprietary.
+                </ListItems>
+                <ListItems>
+                  By submitting information, you represent that you have the
+                  lawful right to do so and agree that Atalaso is not obligated
+                  to treat such submissions as confidential.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>6. Unauthorized idea submissions</h2>
+              <ol>
+                <ListItems>
+                  Atalaso does not accept unauthorized idea submissions outside
+                  of established business relationships.
+                </ListItems>
+                <ListItems>
+                  Any ideas disclosed without a pre-existing and documented
+                  confidential business relationship are not confidential and
+                  may be used by Atalaso without compensation or accountability.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>7. Limitation of liability</h2>
+              <ol>
+                <ListItems>
+                  Atalaso shall not be liable for any direct, indirect,
+                  incidental, consequential, or punitive damages arising out of
+                  or in connection with your use of the website or any content
+                  on it.
+                </ListItems>
+                <ListItems>
+                  Atalaso shall not be liable for any loss or damage resulting
+                  from the use of third-party websites or resources linked to
+                  from our website.
+                </ListItems>
+              </ol>
+            </li>
+            <li>
+              <h2>8. Governing law</h2>
+              <p>
+                These Terms shall be governed by and construed in accordance
+                with the laws of New Mexico/U.S.A., without regard to its
+                conflict of laws provisions.
+              </p>
+            </li>
+            <li>
+              <h2>9. Modifications</h2>
+              <p>
+                Atalaso reserves the right to modify or update these Terms at
+                any time without prior notice. It is your responsibility to
+                review these Terms periodically for any changes.
+              </p>
+            </li>
+            <li>
+              <h2>10. Severability</h2>
+              <p>
+                If any provision of these Terms is found to be invalid, illegal,
+                or unenforceable, the remaining provisions shall continue in
+                full force and effect.
+              </p>
+            </li>
+          </List>
+          <p>
+            By using our website, you acknowledge that you have read,
+            understood, and agreed to these Terms of Use. This site is
+            maintained by Atalaso in New Mexico, U.S.A. By using this site, you
+            agree that any legal action or proceeding related to this site shall
+            be governed by the laws of the State of New Mexico, without
+            reference to its choice of law rules. In the event of any legal
+            proceedings against Atalaso, you acknowledge that Atalaso is free to
+            choose the jurisdiction of our preference for the legal action. By
+            using this site, you have agreed to the laws of the State of New
+            Mexico governing any such proceedings. You are responsible for
+            complying with the laws of the jurisdiction from which you access
+            this site, and you agree not to use the information on this site in
+            violation of such laws. Regardless of your location or the location
+            from where you accessed this site, Atalaso reserves the right to
+            defend any legal action in New Mexico as it deems appropriate.
+            Please ensure that you carefully review and comply with the laws of
+            your jurisdiction when accessing this site. If you have any
+            questions or concerns regarding these Terms, please contact us at{' '}
+            <a href="mailto:contact@atalaso.com">contact@atalaso.com</a>.
           </p>
         </Content>
       </Container>

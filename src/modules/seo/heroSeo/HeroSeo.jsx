@@ -3,7 +3,7 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 import {Section} from '../../home/hero/HeroElements'
 import {Container, Content, ImageWrap} from './HeroSeoElements'
 
-import abstractBackground from 'public/images/abstract-color.jpeg'
+import abstractBackground from 'public/images/celebration.jpeg'
 
 const HeroSeo = () => {
   return (
@@ -12,15 +12,14 @@ const HeroSeo = () => {
         <Content>
           <h1>A new range of possibilities</h1>
           <p>
-            Powered by the cloud, edge computing enables businesses to reimagine
-            experiences for people, purpose, and profitability, at speed and
-            scale.
+            Drive organic traffic, boost visibility, and dominate search
+            rankings
           </p>
         </Content>
         <ImageWrap>
           <ImageComponent
             src={abstractBackground}
-            alt="Statue illustration"
+            alt="Happy people celebrate with sparkling candles"
             draggable={false}
             priority={true}
           />

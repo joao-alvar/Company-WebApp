@@ -31,6 +31,7 @@ export const Wrapper = styled.div`
     width: 92%;
     border-radius: 18px;
     margin: 0 auto;
+    overflow: hidden;
   }
 `
 
@@ -52,7 +53,7 @@ export const ContentWrap = styled.div`
 
   h2 {
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.8em;
   }
   @media screen and (max-width: ${({theme}) => theme.size.xs}) {
@@ -78,12 +79,10 @@ export const ImageWrap = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     justify-content: end;
-    padding: 2em;
 
     img {
       width: 100%;
-      border-top-right-radius: 18px;
-      border-bottom-right-radius: 18px;
+      border-radius: 0;
     }
   }
 `

@@ -8,10 +8,10 @@ export const ButtonPrimary = styled(Link)`
   text-decoration: none;
   text-align: center;
   font-family: var(--font-heading);
-  font-size: 1.2em;
+  font-size: 1.5rem;
   border-radius: 8px;
   padding: 0.7rem 1.2rem;
-  font-weight: 400;
+  font-weight: 500;
   transition: all 0.2s ease-in-out;
 
   @media screen and (max-width: 768px) {
@@ -27,7 +27,7 @@ export const ButtonSecondary = styled(Link)`
   text-decoration: none;
   text-align: center;
   font-family: var(--font-heading);
-  font-size: 1.2em;
+  font-size: 1.5rem;
   border-radius: 8px;
   background: transparent;
   color: ${({theme}) => theme.colors.black};

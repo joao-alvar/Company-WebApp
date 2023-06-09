@@ -62,6 +62,8 @@ export const ModalButtonReturn = styled.button`
   top: 2em;
   border-radius: 8px;
   padding-top: 2px;
+  z-index: 5;
+
   &:hover,
   &:focus {
     background-color: #e6e3e3;

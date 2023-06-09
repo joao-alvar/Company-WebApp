@@ -9,6 +9,7 @@ export const Container = styled.div`
   padding-top: 1pc;
   padding-bottom: 1pc;
 `
+
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
@@ -24,29 +25,38 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     gap: 0;
+    padding-top: 0;
   }
 `
 
 export const TitleWrap = styled.div`
   display: block;
-  width: 90%;
-  padding: 2rem;
-  margin: 0 auto;
-  text-align: center;
+  width: 100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
 
   h2 {
-    font-size: 3.5rem;
+    font-size: ${({theme}) => theme.values.headerFontSize};
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
+
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      padding-bottom: 2rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 3.2rem;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: 2.5rem;
+    }
   }
 
-  @media screen and (max-width: 570px) {
+  /* @media screen and (max-width: 570px) {
     text-align: start;
     padding-left: 0.3rem;
-  }
-  @media screen and (max-width: ${({theme}) => theme.size.xs}) {
-    padding-left: 1rem;
-  }
+  } */
 `
 
 export const GridWrap = styled.ul`
@@ -75,6 +85,7 @@ export const GridWrap = styled.ul`
 export const Grid = styled.li`
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 1pc;
   overflow: hidden;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
@@ -84,9 +95,17 @@ export const Grid = styled.li`
     padding: 2rem;
 
     h3 {
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-family: var(--font-heading);
-      font-weight: 600;
+      font-weight: 500;
+
+      @media screen and (max-width: ${({theme}) => theme.size.md}) {
+        font-size: 2.5rem;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 2.1rem;
+      }
     }
 
     p {

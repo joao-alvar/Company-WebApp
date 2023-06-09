@@ -12,21 +12,21 @@ const SeoStrategy = () => {
       <Section>
         <Container>
           <Content>
-            <h2>Our Story</h2>
+            <h2>Driving results that matters</h2>
             <p>
-              Run a business is hard, we know, but lucky you don&apos;t have to
-              do it alone. Your growth and development is our purpose. We want
-              our clients to set new heights and metrics and achieve greatness
-              Our mission is to grown together We take pride in our work and are
-              dedicated to providing our clients with the best digital
-              solutions. We are committed to delivering projects on time and on
-              budget.
+              The best SEO strategy may vary depending on the specific needs and
+              goals of a business, as well as the competitive landscape of the
+              industry. SEO is a long-term investment, and results may take time
+              to materialize. Consistency, adaptability, and a holistic approach
+              are key to implementing an effective SEO strategy that drives
+              organic traffic, improves search rankings, and boosts your online
+              visibility.
             </p>
           </Content>
           <ImageWrap>
             <ImageComponent
               src={seoImage}
-              alt="Statue illustration"
+              alt="Seo-Optimization Scheme For Websites With Words Over Office Desk Background"
               draggable={false}
             />
           </ImageWrap>

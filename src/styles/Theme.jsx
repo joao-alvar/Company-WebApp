@@ -20,7 +20,6 @@ export const theme = {
     danger: '',
     success: '#66A15A',
   },
-
   size: {
     xs: '400px', // for small screen mobile
     sm: '600px', // for mobile screen
@@ -29,5 +28,11 @@ export const theme = {
     // lg: '1280px', // for laptops
     xl: '1440px', // for desktop / monitors
     xxl: '1920px', // for big screens
+  },
+  values: {
+    headerWeight: '700',
+    secondaryWeight: '600',
+    headerFontSize: '4.2rem',
+    primaryRadius: '1pc',
   },
 }

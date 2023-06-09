@@ -10,7 +10,7 @@ import {
   Button,
 } from './AdsCallToActionElements'
 
-import city_illustration from '/public/images/City-illustration.jpeg'
+import city_illustration from '/public/images/fast-transformation.jpeg'
 
 const AdsCallToAction = () => {
   return (
@@ -24,7 +24,7 @@ const AdsCallToAction = () => {
           <ImageWrap>
             <ImageComponent
               src={city_illustration}
-              alt={'City illustration with buildings and a bridge'}
+              alt="Car lights moving fast at night"
             />
           </ImageWrap>
         </Wrapper>

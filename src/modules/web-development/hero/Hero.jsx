@@ -13,14 +13,10 @@ const Hero = () => {
       <Container>
         <Content>
           <p className="pre_title">Development</p>
-          <h1>
-            Web development has become an essential part of modern society
-          </h1>
+          <h1>Transforming businesses for the future</h1>
           <p className="title_secondary_text">
-            with the internet serving as a hub for businesses, communication,
-            entertainment, and much more. Whether you&apos;re an entrepreneur
-            looking to launch an online store, or an established organization
-            seeking to improve your online presence, we are here to guide you.
+            Turning ideas into innovative software solutions for unparalleled
+            success
           </p>
           <ButtonPrimary href="/contact" className="button" data-clog-click>
             Get started
@@ -29,7 +25,7 @@ const Hero = () => {
         <ImgContainer>
           <ImageComponent
             src={DevelopmentBg}
-            alt="Laptop illustration"
+            alt="Web development isometric illustration. Two people program on a laptop, usability and performance website header UI layout, and one person is climbing a ladder and another is running"
             priority={true}
           />
         </ImgContainer>

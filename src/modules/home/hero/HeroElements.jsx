@@ -39,9 +39,9 @@ export const Content = styled.div`
   width: 60%;
   height: 100%;
   display: flex;
+  padding-top: 9em;
   padding-left: 2rem;
   padding-right: 2rem;
-  justify-content: center;
   flex-direction: column;
   font-family: var(--font-heading);
   color: ${({theme}) => theme.colors.black};
@@ -49,6 +49,7 @@ export const Content = styled.div`
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
     width: 100%;
     padding-bottom: 4em;
+    padding-top: 0;
   }
 
   @media screen and (max-width: 500px) {
@@ -69,13 +70,13 @@ export const Content = styled.div`
 `
 
 export const Title = styled.h1`
-  font-size: 5.6rem;
+  font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1.8rem;
   color: ${({theme}) => theme.colors.black};
 
   @media screen and (max-width: 710px) {
-    font-size: 4.1rem;
+    font-size: 4rem;
   }
 `
 

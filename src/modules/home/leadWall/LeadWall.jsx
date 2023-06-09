@@ -13,37 +13,39 @@ const LeadWall = () => {
       <Section>
         <LeadContainer>
           <LeadContent>
-            <TextWrap>
-              <p>Our scientific studies</p>
+            <TextWrap className="home_wall">
+              <p>Case studies</p>
               <header>
                 <h2>
-                  We continually study our platform to understand the real-world
-                  benefits
+                  We continually improve our expertise to better serve our
+                  costumers
                 </h2>
               </header>
               <h3>
-                Collaborating with top mental health experts, we live our values
-                by contributing to mental health knowledge and supporting
-                academic research
+                Adding value and partnering with companies to elevate operations
+                and overcome challenges.
               </h3>
             </TextWrap>
-            <StyledList>
+            <StyledList className="home_wall_list">
               <List>
-                <h4>£5,049</h4>
+                <h4>15%</h4>
                 <p>
-                  estimated annual productivity saving per employee experiencing
-                  low mood or sleep difficulties
+                  estimated only a minority of companies is fully embracing
+                  digital today.
                 </p>
               </List>
               <List>
-                <h4>71%</h4>
-                <p>of participants reported a reduction in stress levels.</p>
+                <h4>77%</h4>
+                <p>
+                  of companies say their relationship with technology is average
+                  or above average.
+                </p>
               </List>
               <List>
-                <h4>30+</h4>
+                <h4>79%</h4>
                 <p>
-                  minutes extra sleep a night for people with sleep
-                  difficulties.
+                  of digitally mature companies have achieved above-average
+                  revenue growth.
                 </p>
               </List>
             </StyledList>

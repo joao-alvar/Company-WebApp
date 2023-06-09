@@ -24,17 +24,23 @@ const Hero = () => {
         <Container>
           <Wrapper>
             <Content>
-              {/* <Title>Empowering Your company and expanding your horizons</Title> */}
-              <h3 className="pre_title">Creativity solutions</h3>
-              <Title>Your go to solution, scale your business.</Title>
-              <HeroText>Scale your business with our services.</HeroText>
+              <h3 className="pre_title">Creative solutions</h3>
+              <Title>Unleash the Extraordinary Reimagine Your Business</Title>
+              <HeroText>
+                Partnering with companies to expand operations, maximize
+                profits, and conquer new markets
+              </HeroText>
               <LinkWrap>
                 <ButtonPrimary href="/">Get started</ButtonPrimary>
                 <ButtonSecondary href="/">How we work</ButtonSecondary>
               </LinkWrap>
             </Content>
             <ImageContainer>
-              <ImageComponent src={heroImage} alt="" priority={true} />
+              <ImageComponent
+                src={heroImage}
+                alt="Girl sitting in front of laptop and a guy in front of web components illustration vector"
+                priority={true}
+              />
             </ImageContainer>
           </Wrapper>
         </Container>

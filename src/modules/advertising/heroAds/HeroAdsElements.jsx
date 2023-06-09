@@ -31,7 +31,7 @@ export const Content = styled.div`
   h1 {
     font-family: var(--font-heading);
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 4.3rem;
     margin-bottom: 0.21em;
   }
 
@@ -51,7 +51,7 @@ export const Content = styled.div`
     padding: 4em;
 
     p {
-      font-size: 1.8em;
+      margin-top: 1rem;
     }
   }
 

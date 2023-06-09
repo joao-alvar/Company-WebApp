@@ -87,21 +87,23 @@ export const ListItem = styled.li`
   padding: 1.5rem;
   font-family: var(--font-heading);
   font-weight: 600;
-  border-left: 1px solid #000;
+  border-left: 1px solid ${({theme}) => theme.colors.black};
   box-shadow: rgba(24, 24, 24, 0.08) 0px 2px 8px -2px,
     rgba(24, 24, 24, 0.16) 0px 8px 12px -2px;
 
   h3 {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 0.8rem;
-    color: ${({theme}) => theme.colors.black};
+    color: ${({theme}) => theme.colors.primary};
   }
 
   p {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-bottom: 0.8rem;
   }
 
   @media screen and (max-width: 965px) {

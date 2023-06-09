@@ -18,7 +18,7 @@ import logoImage from '/public/images/logo-atalaso.png'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
-  const toggle = () => setOpen(!isOpen)
+  const toggle = () => setOpen(false)
 
   useEffect(() => {
     // remove scroll when mobile menu is open
@@ -73,7 +73,7 @@ const Navbar = () => {
           </NavItemsWrap>
         </ContentContainer>
         <MobileMenu
-          onClick={toggle}
+          onClick={() => setOpen(!isOpen)}
           className={isOpen ? 'menu__btn open' : 'menu__btn'}
         />
       </Nav>

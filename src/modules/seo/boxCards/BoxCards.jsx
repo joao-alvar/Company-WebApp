@@ -8,20 +8,20 @@ const BoxCards = () => {
       <Container>
         <GridWrap>
           <Grid>
-            <h2>28+ milion</h2>
-            <p>Personal users</p>
+            <h2>67%</h2>
+            <p>Of clicks go to the first five organic links</p>
           </Grid>
           <Grid>
-            <h2>28+ milion</h2>
-            <p>Personal users</p>
+            <h2>0,78%</h2>
+            <p>Of users click on a link on the second page of results</p>
           </Grid>
           <Grid>
-            <h2>28+ milion</h2>
-            <p>Personal users</p>
+            <h2>53%</h2>
+            <p>Of all website traffic is made of organic search</p>
           </Grid>
           <Grid>
-            <h2>28+ milion</h2>
-            <p>Personal users</p>
+            <h2>95%</h2>
+            <p>Of search traffic comes from the first page results.</p>
           </Grid>
         </GridWrap>
       </Container>

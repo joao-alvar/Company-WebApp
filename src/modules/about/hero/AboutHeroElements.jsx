@@ -63,7 +63,6 @@ export const Content = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
-  // justify-content: center;
   text-align: center;
   flex-direction: column;
   padding: 3em;
@@ -91,14 +90,22 @@ export const Content = styled.div`
     line-height: 1.7em;
     font-weight: 600;
     color: #fff;
+    width: 80%;
+
+    @media screen and (max-width: 450px) {
+      font-size: 1.65rem;
+      width: 90%;
+    }
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
   }
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    padding: 2.5em 1em;
+    padding: 1.5em 1em;
+    justify-content: center;
   }
+
   @media screen and (max-width: 450px) {
     font-size: 0.85rem;
     padding-top: 3rem;

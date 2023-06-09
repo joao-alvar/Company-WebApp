@@ -22,7 +22,7 @@ const About = () => {
         <Mission />
         <AboutWall />
         <Story />
-        <Purpose />
+        {/* <Purpose /> */}
         <AboutGrid />
         <AboutCallToAction />
       </main>

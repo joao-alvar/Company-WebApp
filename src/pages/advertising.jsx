@@ -1,10 +1,11 @@
 import Head from 'next/head'
 
-import AdsBanner from '@/modules/advertising/adsBanner/AdsBanner'
+import Accordion from '@/modules/advertising/accordion/Accordion'
 import AdsBenefits from '@/modules/advertising/adsBenefits/AdsBenefits'
 import AdsCallToAction from '@/modules/advertising/adsCallToAction/AdsCallToAction'
 import AdsFeatures from '@/modules/advertising/adsFeatures/AdsFeatures'
-import AdsList from '@/modules/advertising/adsList/AdsList'
+import AdsLead from '@/modules/advertising/adsLead/AdsLead'
+import AdsOverview from '@/modules/advertising/adsOverview/AdsOverview'
 import AdsWall from '@/modules/advertising/adsWall/AdsWall'
 import HeroAds from '@/modules/advertising/heroAds/HeroAds'
 
@@ -19,11 +20,12 @@ const advertising = () => {
       </Head>
       <main role="main">
         <HeroAds />
-        <AdsBanner />
+        <AdsOverview />
         <AdsBenefits />
         <AdsFeatures />
         <AdsWall />
-        <AdsList />
+        <AdsLead />
+        <Accordion />
         <AdsCallToAction />
       </main>
     </>

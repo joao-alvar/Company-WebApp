@@ -10,7 +10,8 @@ const Lead = () => {
         <Container>
           <LeadInformation>
             <h2>
-              Join 28+ million people who already trust us with their money
+              Reimagine innovation and take a step towards digital
+              transformation!
             </h2>
             <ButtonPrimary href="/contact" data-clog-click>
               Get started

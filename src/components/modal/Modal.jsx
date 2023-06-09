@@ -35,7 +35,7 @@ const Modal = ({className, onClick}) => {
           <ImageContainer>
             <ImageComponent
               src={imageDesktop}
-              alt="CallCenter woman giving chat support and a laptop on the desk illustration"
+              alt="Man sitting on a chair and typing on a laptop and an ok hand icon floating illustration"
               width={500}
               height={500}
               className="desktop"
@@ -43,9 +43,7 @@ const Modal = ({className, onClick}) => {
             />
             <ImageComponent
               src={imageMobile}
-              alt="CallCenter woman giving chat support and a laptop on the desk illustration"
-              // width={400}
-              // height={400}
+              alt="Woman in front a laptop and mail icons floating illustration"
               className="mobile"
               priority={true}
             />

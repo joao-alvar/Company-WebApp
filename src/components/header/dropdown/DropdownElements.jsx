@@ -9,7 +9,7 @@ export const DropdownMenu = styled.ul`
     padding: 1.2rem 0;
     top: 0;
     border: 1px solid #ebeaeb;
-    border-radius: 8px;
+    border-radius: 12px;
     margin-left: -3px;
     width: 17em;
     min-width: unset;
@@ -46,7 +46,7 @@ export const DropdownLink = styled(Link)`
   text-decoration: none;
   align-items: center;
   font-family: var(--font-heading);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.15em;
   color: rgb(80, 90, 99);
   transition: background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
@@ -67,6 +67,7 @@ export const DropdownLink = styled(Link)`
 
   &:hover {
     background-color: rgba(25, 28, 31, 0.056);
+    color: ${({theme}) => theme.colors.text};
   }
 `
 export const ArrowIconForward = styled(ImArrowRight2)`

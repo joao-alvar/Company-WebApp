@@ -56,6 +56,10 @@ export const Content = styled.div`
     font-weight: 600;
     font-size: 3em;
     margin-bottom: 0.4em;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 3rem;
+    }
   }
 
   p {

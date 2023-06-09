@@ -19,6 +19,7 @@ export const AboutContainer = styled.div`
     gap: 2pc;
     padding-left: 1em;
     padding-right: 1em;
+    padding-top: 3pc;
   }
 `
 export const TitleWrap = styled.header`
@@ -29,12 +30,18 @@ export const TitleWrap = styled.header`
   margin-bottom: 1rem;
 
   h2 {
-    font-weight: 600;
-    font-size: 4rem;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
+    font-size: ${({theme}) => theme.values.headerFontSize};
   }
 
   @media screen and (max-width: 980px) {
     margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    h2 {
+      font-size: 3.5rem;
+    }
   }
 
   @media screen and (max-width: 580px) {
@@ -78,7 +85,8 @@ export const FloatLeft = styled.div`
   p {
     font-size: 1.7rem;
     line-height: 2.4rem;
-    font-weight: 500;
+    font-weight: 400;
+    margin-bottom: 1rem;
   }
 `
 
@@ -89,8 +97,8 @@ export const FloatRight = styled(FloatLeft)`
 
   h3 {
     font-family: var(--font-heading);
-    font-weight: 600;
-    font-size: 4em;
+    font-weight: 500;
+    font-size: 2.8rem;
     margin-bottom: 0.4em;
   }
 
@@ -115,6 +123,12 @@ export const FloatRight = styled(FloatLeft)`
           #319197 76.05%
         );
       }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 2.5rem;
     }
   }
 

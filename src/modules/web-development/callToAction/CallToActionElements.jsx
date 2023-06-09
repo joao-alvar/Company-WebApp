@@ -16,18 +16,6 @@ export const Container = styled.div`
   flex-shrink: 0;
   line-height: initial;
   color: ${({theme}) => theme.colors.white};
-
-  h2 {
-    font-size: 3.4em;
-    font-family: var(--font-heading);
-    font-weight: 600;
-    padding-bottom: 0.3em;
-  }
-
-  p {
-    font-size: 1.5em;
-    padding-bottom: 0.8em;
-  }
 `
 
 export const Wrapper = styled.div`
@@ -80,6 +68,21 @@ export const Content = styled.div`
   width: 100%;
   height: 100%;
   background: ${({theme}) => theme.colors.black};
+
+  h2 {
+    font-size: 3.4em;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding-bottom: 0.3em;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      font-size: 3rem;
+    }
+  }
+
+  p {
+    font-size: 1.5em;
+    padding-bottom: 0.8em;
+  }
 `
 
 export const Button = styled.h3`

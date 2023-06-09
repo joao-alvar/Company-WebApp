@@ -16,19 +16,26 @@ export const Container = styled.div`
   padding-bottom: 3pc;
 `
 export const TitleWrap = styled.div`
+  width: 100%;
   display: block;
   margin-bottom: 1rem;
+  padding-left: 7rem;
+  padding-right: 5rem;
+
+  @media screen and (max-width: 500px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 
   h2 {
     font-family: var(--font-heading);
-    font-size: 4rem;
+    font-size: 4.2rem;
     font-weight: 600;
-  }
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    text-align: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 3.2rem;
+    }
+  }
   }
 `
 
@@ -56,6 +63,7 @@ export const GridContainer = styled.ul`
   gap: 3.3rem;
   grid-auto-rows: minmax(200px, auto);
   padding: 2em;
+
   @media screen and (max-width: 965px) {
     padding: 1.5em;
     grid-template-columns: repeat(1, 1fr);
@@ -82,6 +90,8 @@ export const Grid = styled.li`
 
   p {
     font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.5rem;
   }
 
   &:hover {

@@ -36,7 +36,7 @@ export const TextWrap = styled.div`
   text-align: center;
 
   p {
-    font-size: 1.13em;
+    font-size: 1.4rem;
     letter-spacing: 0.6px;
     font-weight: 600;
     text-transform: uppercase;
@@ -48,16 +48,28 @@ export const TextWrap = styled.div`
     font-family: var(--font-heading);
     font-weight: 600;
     margin-bottom: 0.4em;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 3rem;
+    }
   }
 
   h3 {
-    font-size: 1.54em;
+    font-size: 1.8rem;
     line-height: 1.3em;
     font-weight: 600;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.56rem;
+    }
   }
 
-  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
-    font-size: 90%;
+  @media screen and (max-width: 960px) {
+    text-align: start;
+    width: 90%;
+    &.home_wall {
+      margin-bottom: 3pc;
+    }
   }
 
   @media screen and (max-width: 440px) {
@@ -84,6 +96,11 @@ export const StyledList = styled.ul`
   grid-column: 1 / span 12;
   @media screen and (max-width: 960px) {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 7rem;
+
+    &.home_wall_list {
+      row-gap: 2rem;
+    }
   }
 `
 
@@ -91,7 +108,7 @@ export const List = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   text-align: center;
   color: ${({theme}) => theme.colors.white};
   gap: 0.8em;
@@ -104,5 +121,10 @@ export const List = styled.li`
     font-family: var(--font-heading);
     font-size: 1.4em;
     font-weight: 500;
+    line-height: 2.1rem;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 85%;
   }
 `

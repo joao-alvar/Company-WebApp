@@ -87,6 +87,7 @@ export const TextWrap = styled.div`
     font-weight: 600;
     margin-top: 0.6em;
     margin-bottom: 0.6em;
+    line-height: 2.5rem;
     color: #818c96;
   }
 
@@ -105,6 +106,10 @@ export const TextWrap = styled.div`
       text-decoration: underline;
       color: ${({theme}) => theme.colors.link};
     }
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 90%;
   }
 `
 
