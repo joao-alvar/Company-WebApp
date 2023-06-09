@@ -33,17 +33,22 @@ export const Content = styled.div`
   h2 {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 4em;
+    font-size: 4.2rem;
     margin-bottom: 0.4em;
+
     @media only screen and (max-width: 768px) {
-      font-size: calc(5rem - 35%);
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 550px) {
+      font-size: 3.2rem;
     }
   }
 
   p {
-    font-weight: 600;
-    font-size: 1.5em;
-    line-height: 1.4em;
+    font-family: var(--font-heading);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
   }
 `
 

@@ -22,18 +22,16 @@ const LeadCards = () => {
       <Section>
         <Container>
           <TitleWrap>
-            <h2>Learn how Atalaso products help you</h2>
+            <h2>Learn how Atalaso drives change</h2>
           </TitleWrap>
           <Content>
             <TextWrap>
               <p>
-                Customer 360 is our suite of products and services that help 98%
-                of customers meet or exceed their ROI goals. If you&apos;re
-                looking for a strategic wellbeing partner, backed by science and
-                devoted to your business, let us show you how Unmind works.
-                Unmind Insights gives you a data-driven view of organisational
-                wellbeing providing the insights, and actions, you need to drive
-                lasting change.
+                Our services help customers achieve their goals, meet or exceed
+                ROI and scale processes. Whether it&apos;s through cutting-edge
+                software, customized consulting services, or strategic
+                partnerships, we are committed to delivering solutions that
+                drive growth, streamline processes, and improves efficiency.
               </p>
             </TextWrap>
             <ListWrap>
@@ -42,7 +40,8 @@ const LeadCards = () => {
                   <HandsIcon />
                 </IconContainer>
                 <p>
-                  Receive payments in local currency and settle funds faster
+                  Improving, implementing, and elevating organizational
+                  capabilities
                 </p>
               </Cards>
               <Cards>
@@ -50,16 +49,15 @@ const LeadCards = () => {
                   <GraphUpIcon />
                 </IconContainer>
                 <p>
-                  Receive payments in local currency and settle funds faster
+                  Revolutionize your business through innovation, technology and
+                  strategic practices
                 </p>
               </Cards>
               <Cards>
                 <IconContainer>
-                  <IconSvg src={Saving} alt="Hand Savings icon" />
+                  <IconSvg src={Saving} alt="Hand savings a coin icon" />
                 </IconContainer>
-                <p>
-                  Receive payments in local currency and settle funds faster
-                </p>
+                <p>Improve ROI through Digital Transformation</p>
               </Cards>
             </ListWrap>
           </Content>

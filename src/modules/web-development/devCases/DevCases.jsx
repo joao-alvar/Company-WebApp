@@ -15,9 +15,21 @@ const DevCases = () => {
     <Section>
       <Container>
         <Content>
-          <ImageComponent src={Cases_1} alt="" height={250} />
-          <ImageComponent src={Cases_2} alt="" height={250} />
-          <ImageComponent src={Cases_3} alt="" height={250} />
+          <ImageComponent
+            src={Cases_1}
+            alt="Home land-page template with a colorful shaped illustration"
+            height={250}
+          />
+          <ImageComponent
+            src={Cases_2}
+            alt="Home land-page template with a beautiful watch as a background image and a text about marketing presentation"
+            height={250}
+          />
+          <ImageComponent
+            src={Cases_3}
+            alt="Home land-page template with a gradient blue square shape illustration"
+            height={250}
+          />
         </Content>
       </Container>
     </Section>

@@ -21,7 +21,7 @@ const SeoCallToAction = () => {
             <ImageWrap>
               <ImageComponent
                 src={Image}
-                alt="Statue illustration"
+                alt="Office woman typing in laptop and people chatting in background"
                 draggable={false}
               />
             </ImageWrap>

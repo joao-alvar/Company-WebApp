@@ -2,29 +2,44 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
 
-import {Container, ImageWrap, Content, Button} from './DevWallElements'
+import {
+  Container,
+  Title,
+  Wrapper,
+  ImageWrap,
+  Content,
+  Button,
+} from './DevWallElements'
 
-import DesignTemplate from '/public/images/DesignTemplate.jpeg'
+import image from '/public/images/woman-touch-tablet.jpeg'
 
 const DevWall = () => {
   return (
     <Section>
       <Container>
-        <ImageWrap>
-          <ImageComponent src={DesignTemplate} alt="something" />
-        </ImageWrap>
-        <Content>
-          <h2>Top Lead Gen Case Studies</h2>
-          <p>
-            Lead generation has changed a lot over the years. Getting people
-            interested in your business isn&apos;t as simple as it once was. Our
-            marketing experts create modern, leading-edge marketing strategies
-            producing the results your business needs now and in the long term.
-          </p>
-          <Button href="/" data-clog-click>
-            Get started
-          </Button>
-        </Content>
+        <Title>Success thrives on innovation</Title>
+        <Wrapper>
+          <ImageWrap>
+            <ImageComponent
+              src={image}
+              alt="Woman in a office, looking and touching a tablet and smiling, while three people in the background works."
+            />
+          </ImageWrap>
+          <Content>
+            <p>
+              technology adoption is essential for staying relevant in a rapidly
+              changing business landscape. The digital revolution has reshaped
+              consumer expectations, market dynamics, and industry norms.
+              Businesses that fail to adapt to these changes risk becoming
+              obsolete or losing market share to more tech-savvy competitors. By
+              embracing technology, organizations can remain agile, responsive,
+              and adaptable to evolving customer demands and market trends.
+            </p>
+            <Button href="/contact" data-clog-click>
+              Get started
+            </Button>
+          </Content>
+        </Wrapper>
       </Container>
     </Section>
   )

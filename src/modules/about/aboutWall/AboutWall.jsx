@@ -20,15 +20,11 @@ const AboutWall = () => {
         <LeadContent>
           <HeaderWrap>
             <header>
-              <h2>
-                We continually study our platform to understand the real-world
-                benefits
-              </h2>
+              <h2>What we believe</h2>
             </header>
             <h3>
-              Collaborating with top mental health experts, we live our values
-              by contributing to mental health knowledge and supporting academic
-              research
+              Accelerating change, Powering creativity and Reimagining
+              possibilities.
             </h3>
           </HeaderWrap>
           <StyledList>
@@ -39,32 +35,36 @@ const AboutWall = () => {
                   alt="Idea yellow lamp illustration"
                 />
               </Icon>
-              <IconTitle>Proof with passion</IconTitle>
+              <IconTitle>Innovation sparks creativity</IconTitle>
               <p>
-                estimated annual productivity saving per employee experiencing
-                low mood or sleep difficulties
+                spark new ideas, challenge conventional thinking, and push
+                boundaries.
               </p>
             </List>
             <List>
               <Icon>
                 <ImageComponent
                   src={network}
-                  alt="Idea yellow lamp illustration"
+                  alt="Neural connections illustration"
                 />
               </Icon>
-              <IconTitle>Simplicity over complexity</IconTitle>
-              <p>of participants reported a reduction in stress levels.</p>
+              <IconTitle>Meaningful collaboration</IconTitle>
+              <p>
+                By fostering an environment that encourages diverse
+                perspectives, open communication, and shared goals.
+              </p>
             </List>
             <List>
               <Icon className="cogwheels_icon">
                 <ImageComponent
                   src={cogwheels}
-                  alt="Idea yellow lamp illustration"
+                  alt="Cogwheels 3d illustration in front of a blue circle"
                 />
               </Icon>
-              <IconTitle>Embracing the human experience</IconTitle>
+              <IconTitle>Continuous improvement</IconTitle>
               <p>
-                minutes extra sleep a night for people with sleep difficulties.
+                We believe that progress is not a one-time achievement but a
+                journey of constant growth and evolution.
               </p>
             </List>
           </StyledList>

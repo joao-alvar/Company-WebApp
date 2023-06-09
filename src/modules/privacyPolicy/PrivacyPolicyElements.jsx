@@ -9,7 +9,6 @@ export const Container = styled.div`
   height: auto;
   padding-top: 2em;
   padding-bottom: 2em;
-  font-weight: 700;
   line-height: initial;
 `
 
@@ -21,7 +20,7 @@ export const Title = styled.div`
   border-bottom: 1px solid #d0d1d2;
 
   h1 {
-    font-weight: 600;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
     font-size: 4rem;
     margin-bottom: 3rem;
   }
@@ -29,7 +28,7 @@ export const Title = styled.div`
   a {
     text-decoration: none;
     color: ${({theme}) => theme.colors.link};
-    font-weight: 600;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
     font-size: 1.4rem;
     margin-left: 0.6rem;
     border-bottom: 1px solid ${({theme}) => theme.colors.link};
@@ -53,7 +52,7 @@ export const Content = styled.div`
   margin: 0 auto;
   margin-top: 2rem;
   margin-bottom: 2em;
-  font-weight: 400;
+  font-family: var(--font-heading);
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 92%;
@@ -61,8 +60,8 @@ export const Content = styled.div`
 
   p {
     font-size: 1.65rem;
-    line-height: 2.5rem;
-    font-weight: 500;
+    line-height: 2.7rem;
+    font-weight: 400;
   }
 
   a {
@@ -78,9 +77,13 @@ export const Content = styled.div`
   h2 {
     font-size: 2.9rem;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
     margin-top: 1em;
     padding-bottom: 1em;
+  }
+
+  .privacy_statement {
+    margin-top: 2rem;
   }
 `
 
@@ -96,7 +99,7 @@ export const ListItems = styled.li`
   padding-right: 2em;
   margin-left: 2em;
   font-size: 1.65rem;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 164%;
   list-style: disc outside;
 `

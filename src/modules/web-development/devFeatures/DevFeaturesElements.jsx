@@ -14,7 +14,7 @@ export const Container = styled.div`
   padding-bottom: 3pc;
   margin: 0 auto;
   line-height: initial;
-  background-color: #f4efe8;
+  /* background-color: #f4efe8; */
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     .content_reverse {

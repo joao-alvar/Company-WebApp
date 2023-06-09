@@ -20,14 +20,17 @@ const LeadContact = () => {
           <Card>
             <TextContent>
               <Title>
-                <h2> The beginning of your growth Enjoy the journey! </h2>
+                <h2>Let&apos;s make something extraordinary together</h2>
               </Title>
               <Button href="/contact" data-clog-click>
                 Start Now
               </Button>
             </TextContent>
             <ImageWrap>
-              <ImageComponent src={Image} alt="" />
+              <ImageComponent
+                src={Image}
+                alt="Dark abstract background with wave shapes"
+              />
             </ImageWrap>
           </Card>
         </Container>

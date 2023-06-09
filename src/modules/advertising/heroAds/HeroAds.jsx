@@ -21,8 +21,8 @@ const HeroAds = () => {
         <Content>
           <h1>Why choose Atalaso&apos;s expertise as your go to solution?</h1>
           <p>
-            As a homeowner, you have plenty of options when it comes to solar.
-            Learn what sets ION apart and what you can expect as a customer.
+            Drive results, reach new audiences, and maximize ROI with our
+            strategic marketing expertise.
           </p>
           <LinkWrap>
             <Button href="/contact">Get started</Button>
@@ -43,6 +43,7 @@ const HeroAds = () => {
             muted
             loop
             playsInline
+            preload="auto"
             poster="images/advertising-hero.png"
           >
             <source

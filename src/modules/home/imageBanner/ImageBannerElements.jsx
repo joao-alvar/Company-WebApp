@@ -68,7 +68,7 @@ export const TextWrap = styled.div`
   h2 {
     font-family: var(--font-heading);
     font-size: 3em;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   p {
@@ -77,10 +77,31 @@ export const TextWrap = styled.div`
     margin-top: 0.6em;
   }
 
+  a {
+    text-decoration: none;
+    display: flex;
+    font-size: 1.6rem;
+    color: ${({theme}) => theme.colors.link};
+    margin-top: 0.6em;
+    font-weight: 600;
+    display: none;
+
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    a {
+      display: flex;
+    }
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     h2 {
       font-size: 3rem;
     }
+
     p {
       font-size: 1.45rem;
     }

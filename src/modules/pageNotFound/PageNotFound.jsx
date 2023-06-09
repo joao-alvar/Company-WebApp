@@ -22,7 +22,7 @@ const PageNotFound = () => {
           <ImageContainer>
             <ImageComponent
               src={not_found_illustration}
-              alt="Group of people around 404 number illustration"
+              alt="3d illustration of number 404 and construction work tools"
               width={400}
               height={300}
             />
@@ -33,7 +33,7 @@ const PageNotFound = () => {
               You didn&apos;t break the internet, but we can&apos;t find what
               you are looking for.
             </p>
-            <ButtonPrimary href="https://atalaso.com/" data-clog-click>
+            <ButtonPrimary href="/" data-clog-click>
               Go back home
             </ButtonPrimary>
           </TextWrap>

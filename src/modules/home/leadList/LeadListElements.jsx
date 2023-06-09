@@ -68,6 +68,7 @@ export const GridItems = styled(Link)`
       rgba(226, 24, 24, 1) 90%
     ); */
   }
+  z
 `
 
 export const ImageWrap = styled.div`
@@ -95,21 +96,43 @@ export const Content = styled.div`
 
   &.white_color {
     color: ${({theme}) => theme.colors.white};
+
+    h3 {
+      font-weight: 500;
+      font-size: 1.35rem;
+      @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+        font-size: 1.25rem;
+      }
+    }
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 2.8rem;
+    }
   }
 
   h3 {
+    font-size: 1.4rem;
     text-transform: uppercase;
+    font-weight: 700;
     margin-bottom: 0.5rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.2rem;
+    }
   }
 
   p {
     font-size: 1.7rem;
     margin-bottom: 1.6rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.5rem;
+    }
   }
 
   @media screen and (max-width: 1005px) {
@@ -142,6 +165,7 @@ export const List = styled.ul`
 
 export const ListItems = styled.li`
   font-size: 1.4rem;
+  list-style: square inside;
 `
 
 export const Button = styled.span`
@@ -158,6 +182,6 @@ export const Button = styled.span`
 
 export const ArrowIcon = styled(HiArrowRight)`
   margin-left: 0.25em;
-  margin-top: 2px;
+  margin-top: 3px;
   font-size: 0.9em;
 `

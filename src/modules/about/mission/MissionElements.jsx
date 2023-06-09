@@ -11,6 +11,15 @@ export const AboutContainer = styled.div`
   padding-top: 2pc;
   padding-bottom: 3pc;
   line-height: initial;
+`
+
+export const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: start;
+  justify-content: center;
+  margin: 0 auto;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     flex-direction: column;
@@ -30,13 +39,17 @@ export const Content = styled.div`
   }
 
   h2 {
-    font-weight: 600;
-    font-size: 3em;
+    font-weight: ${({theme}) => theme.values.secondaryWeight};
+    font-size: ${({theme}) => theme.values.headerFontSize};
     margin-bottom: 0.4em;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3.5rem;
+    }
   }
 
   p {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.5em;
   }

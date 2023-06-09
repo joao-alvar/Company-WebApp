@@ -5,7 +5,6 @@ import {Section} from '@/modules/home/hero/HeroElements'
 import {
   Container,
   Content,
-  TitleWrap,
   ImageContent,
   ImageWrap,
   Listed,
@@ -13,59 +12,63 @@ import {
   TextWrap,
 } from './AdsWallElements'
 
-import Image from '/public/images/isometric-business-analysis.png'
+import Image from '/public/images/touch-screen-image.jpeg'
 
 const AdsWall = () => {
   return (
     <Section>
       <Container>
-        <TitleWrap>
-          <h2>Top Lead Gen Case Studies</h2>
-        </TitleWrap>
         <Content>
           <ImageContent>
-            <h3>Atalaso is your solution</h3>
+            <h3>Reimagine your marketing operation</h3>
             <ImageWrap>
-              <ImageComponent src={Image} alt="something" />
+              <ImageComponent
+                src={Image}
+                alt="Hand using touch screen tablet at night"
+              />
             </ImageWrap>
           </ImageContent>
           <Listed>
             <ListItems>
               <h3 className="number">1</h3>
               <TextWrap>
-                <h4> Data science verifies accuracy</h4>
+                <h4>Transforming your market approach for continued growth.</h4>
                 <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
+                  Lead generation has evolved significantly in recent years.
+                  Attracting and engaging potential customers with your business
+                  requires a more sophisticated approach than ever before.
+                </p>
+                <p>
+                  Our team of marketing experts specializes in crafting
+                  cutting-edge marketing strategies that deliver the desired
+                  outcomes for your business both in the short and long run.
                 </p>
               </TextWrap>
             </ListItems>
             <ListItems>
               <h3 className="number">2</h3>
               <TextWrap>
-                <h4> Data science verifies accuracy</h4>
+                <h4>Amplifying your brand impact</h4>
                 <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
+                  We craft compelling brand purposes that inspire action,
+                  transforming brands into unforgettable experiences through
+                  powerful and cohesive ideas that authentically convey your
+                  essence across all touchpoints.
                 </p>
               </TextWrap>
             </ListItems>
             <ListItems>
               <h3 className="number">3</h3>
               <TextWrap>
-                <h4> Data science verifies accuracy</h4>
+                <h4>Using data to improve marketing performance</h4>
                 <p>
-                  Lead generation has changed a lot over the years. Getting
-                  people interested in your business isn&apos;t as simple as it
-                  once was. Our marketing experts create modern, leading-edge
-                  marketing strategies producing the results your business needs
-                  now and in the long term.
+                  We centralize and analyze customer data, transforming it into
+                  valuable strategies.
+                </p>
+                <p>
+                  These strategies enable personalized and optimized
+                  interactions along the customer journey, delivering impactful
+                  results throughout the sales funnel.
                 </p>
               </TextWrap>
             </ListItems>

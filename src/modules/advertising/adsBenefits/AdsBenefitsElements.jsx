@@ -3,7 +3,6 @@ import styled from 'styled-components'
 export const Container = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column;
   min-height: 100px;
   max-width: 100%;
   overflow: hidden;
@@ -19,7 +18,27 @@ export const Wrapper = styled.div`
   display: flex;
   max-width: 100%;
   height: 100%;
+  flex-direction: column;
+  color: ${({theme}) => theme.colors.white};
 `
+export const Title = styled.div`
+  font-weight: 800;
+  font-size: 4.5rem;
+  font-family: var(--font-heading);
+  padding-left: 2rem;
+  padding-bottom: 1.6em;
+  text-align: center;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    text-align: start;
+    padding-right: 2rem;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 2.6em;
+  }
+`
+
 export const Grid = styled.div`
   display: grid;
   grid-auto-columns: 1fr;
@@ -40,22 +59,39 @@ export const GridContent = styled.div`
   flex-direction: column;
   height: 100%;
   padding: 2em;
-  color: ${({theme}) => theme.colors.white};
   gap: 1.2em;
 
-  h2 {
+  h3 {
     font-size: 3.2em;
     font-family: var(--font-heading);
     font-weight: 800;
+    padding-right: 3rem;
   }
 
   p {
     font-size: 1.6em;
     line-height: 1.5em;
   }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 80%;
+
+    h3 {
+      padding-right: 0;
+    }
+  }
+
+  /* @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+    font-size: 75%;
+  } */
 `
 
-export const IconWrap = styled.div`
-  color: ${({theme}) => theme.colors.white};
-  font-size: 5em;
+export const ImageWrap = styled.div`
+  width: 50px;
+  height: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 `

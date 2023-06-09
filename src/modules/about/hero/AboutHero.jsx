@@ -19,13 +19,15 @@ const AboutHero = () => {
             <Content>
               <h1>Who we are.</h1>
               <p>
-                To answer this, we need to bring a common problem faced by all
+                Powering individuals and teams to think outside the box,
+                challenging conventional wisdom, and finding innovative
+                solutions to complex problems.
               </p>
             </Content>
             <ImageWrap>
               <ImageComponent
                 src={heroImage}
-                alt="Maze Illustration"
+                alt="People in gallery appreciating the arts on the wall"
                 draggable={false}
                 priority={true}
               />

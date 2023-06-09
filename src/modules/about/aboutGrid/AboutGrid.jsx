@@ -21,38 +21,48 @@ const AboutGrid = () => {
       <Container>
         <Wrapper>
           <TitleWrap>
-            <h2>
-              We&apos;re just getting started. Help us write the next chapter.
-            </h2>
+            <h2>Help us write the next chapter.</h2>
           </TitleWrap>
           <GridWrap>
             <Grid className="grid_first_card">
               <Content>
-                <p>Our mission</p>
+                <p>Atalaso experience</p>
                 <h3>
-                  To unlock the growth potential of professionals and businesses
-                  with a modern end-to-end revenue operating system.
+                  This is where we do the extraordinary, where individual
+                  imaginations converge, united by a shared commitment to the
+                  values that drive exceptional work. Here, is not just a place
+                  to join, but a place where you will contribute and make a
+                  lasting impact.
                 </h3>
               </Content>
             </Grid>
             <Grid>
               <ImageWrap>
-                <ImageComponent src={officeImage} alt="" />
+                <ImageComponent
+                  src={officeImage}
+                  alt="People in office moving really fast"
+                />
               </ImageWrap>
             </Grid>
           </GridWrap>
           <GridWrap className="larger_column">
             <Grid>
               <ImageWrap>
-                <ImageComponent src={buildingImage} alt="" />
+                <ImageComponent
+                  src={buildingImage}
+                  alt="Tall glass buildings"
+                />
               </ImageWrap>
             </Grid>
             <Grid className="grid_third_card">
               <Content>
-                <p>Our mission</p>
+                <p>Our purpose</p>
                 <h3>
-                  To unlock the growth potential of professionals and businesses
-                  with a modern end-to-end revenue operating system.
+                  Build a significant different life. embrace innovation
+                  wholeheartedly, ignite our creative sparks, and strive to be
+                  the catalysts of change. Together, let us harness the power of
+                  innovation to shape a brighter and more prosperous future for
+                  ourselves and generations to come.
                 </h3>
               </Content>
             </Grid>

@@ -61,7 +61,7 @@ export const Content = styled.div`
   }
 
   h1 {
-    font-size: 4rem;
+    font-size: 4.8rem;
     font-weight: 700;
     color: rgb(25, 28, 31);
     margin-top: 1rem;

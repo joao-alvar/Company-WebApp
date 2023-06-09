@@ -1,34 +1,35 @@
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {AboutSection} from '../hero/AboutHeroElements'
-import {AboutContainer, Content, ImageWrap} from './MissionElements'
+import {AboutContainer, Wrapper, Content, ImageWrap} from './MissionElements'
 
-import Image from 'public/images/glass-office-meating.jpeg'
+import Image from 'public/images/glass-office-meeting.jpeg'
 
 const Mission = () => {
   return (
     <>
       <AboutSection>
         <AboutContainer>
-          <Content>
-            <h2>Our Mission</h2>
-            <p>
-              Run a business is hard, we know, but lucky you don&apos;t have to
-              do it alone. Your growth and development is our purpose. We want
-              our clients to set new heights and metrics and achieve greatness
-              Our mission is to grown together We take pride in our work and are
-              dedicated to providing our clients with the best digital
-              solutions. We are committed to delivering projects on time and on
-              budget.
-            </p>
-          </Content>
-          <ImageWrap>
-            <ImageComponent
-              src={Image}
-              alt="Statue illustration"
-              draggable={false}
-            />
-          </ImageWrap>
+          <Wrapper>
+            <Content>
+              <h2>Our Mission</h2>
+              <p>
+                Atalaso is here to be a catalyst for positive change, helping
+                businesses thrive in a rapidly evolving digital landscape. We
+                are here to support our clients on their journey to success,
+                providing the expertise and support they need to achieve their
+                goals and unlock new opportunities. Together, we can achieve
+                greatness and shape a brighter future.
+              </p>
+            </Content>
+            <ImageWrap>
+              <ImageComponent
+                src={Image}
+                alt="People chatting in the glass meeting room"
+                draggable={false}
+              />
+            </ImageWrap>
+          </Wrapper>
         </AboutContainer>
       </AboutSection>
     </>

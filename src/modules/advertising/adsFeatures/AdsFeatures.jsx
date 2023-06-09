@@ -1,5 +1,3 @@
-import {AiFillCheckCircle} from 'react-icons/ai'
-
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import {Section} from '@/modules/home/hero/HeroElements'
@@ -7,75 +5,70 @@ import {Section} from '@/modules/home/hero/HeroElements'
 import {
   Container,
   ListWrap,
-  ImageWrap,
-  StyledList,
   Wrapper,
+  List,
+  StyledList,
+  ContentWrap,
+  ImageWrap,
   Icon,
 } from './AdsFeaturesElements'
 
-import Image_1 from '/public/images/analytics-chart-image.png'
-import Image_2 from '/public/images/marketing-isometric-illustration.png'
+import Image from '/public/images/couple-with-smartphones.jpeg'
+
+const listItems = [
+  {
+    preTitle: 'What and how',
+    title:
+      'Increase click-through rates, drive conversions, and achieve better overall ROI',
+    content: [
+      {
+        text: 'Ad quality score improvement: Monitor and improve your ad quality score, which impacts ad rankings and cost per click.',
+      },
+      {
+        text: 'Landing page optimization: Ensure that your landing pages align with your ad messaging and provide a seamless user',
+      },
+      {
+        text: 'Ad scheduling and bid adjustments: Analyze your campaign data to identify peak performance times and schedule your ads accordingly.',
+      },
+      {
+        text: 'Ad copy testing: Experiment with different ad copy variations to identify the most compelling and effective messaging.',
+      },
+    ],
+  },
+]
 
 const AdsFeatures = () => {
   return (
     <Section>
       <Container>
         <Wrapper>
-          <ListWrap>
-            <span>What and how</span>
-            <h2>What is Ultium?</h2>
-            <StyledList>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>Ultium is a game-changing electric vehicle platform</h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>Built on a flexible battery architecture</h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>
-                  For the production of EVs across different vehicle types
-                </h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>With outstanding power, range and performance</h3>
-              </li>
-            </StyledList>
-          </ListWrap>
-          <ImageWrap>
-            <ImageComponent src={Image_1} alt="" />
-          </ImageWrap>
-        </Wrapper>
-        <Wrapper>
-          <ListWrap>
-            <h2>What is Ultium?</h2>
-            <StyledList>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>Ultium is a game-changing electric vehicle platform</h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>Built on a flexible battery architecture</h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>
-                  For the production of EVs across different vehicle types
-                </h3>
-              </li>
-              <li>
-                <Icon as={AiFillCheckCircle} />
-                <h3>With outstanding power, range and performance</h3>
-              </li>
-            </StyledList>
-          </ListWrap>
-          <ImageWrap>
-            <ImageComponent src={Image_2} alt="" className="image_2" />
-          </ImageWrap>
+          <ContentWrap>
+            <ImageWrap>
+              <ImageComponent
+                src={Image}
+                alt="Young couple shopping online, man holding a credit card while woman holding tablet computer"
+                className="image_2"
+              />
+            </ImageWrap>
+            {listItems.map((item) => {
+              return (
+                <ListWrap key={item}>
+                  <h3>{item.preTitle}</h3>
+                  <h2>{item.title}</h2>
+                  <StyledList item={item}>
+                    {item.content.map((list, index) => {
+                      return (
+                        <List key={index}>
+                          <Icon />
+                          {list.text}
+                        </List>
+                      )
+                    })}
+                  </StyledList>
+                </ListWrap>
+              )
+            })}
+          </ContentWrap>
         </Wrapper>
       </Container>
     </Section>

@@ -40,17 +40,20 @@ export const Grid = styled.li`
   padding: 3rem;
   font-family: var(--font-heading);
   font-weight: 600;
+  text-align: center;
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
   }
 
   p {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
+    font-weight: 500;
   }
 
   @media screen and (max-width: 965px) {
     justify-content: center;
+    text-align: start;
   }
 `

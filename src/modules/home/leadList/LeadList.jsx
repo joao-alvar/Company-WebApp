@@ -26,67 +26,61 @@ const LeadList = () => {
       <Container>
         <Wrapper>
           <GridContainer>
-            <GridItems href="/">
+            <GridItems href="/about">
               <ImageWrap>
                 <ImageComponent
                   src={Creativity}
-                  alt="Computer and design"
+                  alt="Art gallery full of people projecting Van Gogh self portrait onto the wall"
                   placeholder="bluer"
                   height="400"
                   className="test"
                 />
               </ImageWrap>
               <Content>
-                <h3>Atalaso experience Cloud</h3>
-                <h2>End to end. And back again.</h2>
+                <h3>innovative center</h3>
+                <h2>Innovation amplified.</h2>
                 <p>
-                  Experience Cloud products cover your range of customer
-                  experience needs.
+                  Driving breakthroughs and transforming industries with bold
+                  ideas.
                 </p>
-                <Button href="/">
+                <Button>
                   Learn more <ArrowIcon />
                 </Button>
               </Content>
             </GridItems>
-            <GridItems href="/">
+            <GridItems href="/web-development">
               <ImageWrap>
                 <ImageComponent
                   src={WebDevelopment}
-                  alt="Computer and design"
+                  alt="A computer displaying app designs on it"
                   placeholder="bluer"
                   height="400"
                   className="test"
                 />
               </ImageWrap>
               <Content>
-                <h3>Atalaso experience Cloud</h3>
-                <h2>End to end. And back again.</h2>
-                <p>
-                  Experience Cloud products cover your range of customer
-                  experience needs.
-                </p>
-                <Button href="/">
+                <h3>Atalaso experience</h3>
+                <h2>Develop. Transform and Scale.</h2>
+                <p>New possibilities with strategic development initiatives.</p>
+                <Button>
                   Learn more <ArrowIcon />
                 </Button>
               </Content>
             </GridItems>
-            <GridItems href="/">
+            <GridItems href="/advertising">
               <ImageWrap>
                 <ImageComponent
                   src={Advertising}
-                  alt="Computer and design"
+                  alt="3d illustration of a cellphone a social media icons and reactions floating"
                   placeholder="bluer"
                   height="400"
                   className="test"
                 />
               </ImageWrap>
               <Content>
-                <h3>Atalaso experience Cloud</h3>
-                <h2>End to end. And back again.</h2>
-                <p>
-                  Experience Cloud products cover your range of customer
-                  experience needs.
-                </p>
+                <h3>Strategic Advertising</h3>
+                <h2>Amplify your reach, empowering growth</h2>
+                <p>Connect, engage, and drive remarkable results.</p>
                 <Button href="/">
                   Learn more <ArrowIcon />
                 </Button>
@@ -96,49 +90,53 @@ const LeadList = () => {
           <GridContainer className="two_columns">
             <GridItems as="div" className="background_color">
               <Content className="white_color">
-                <h3>Atalaso experience Cloud</h3>
-                <h2>End to end. And back again.</h2>
-                <p>
-                  Experience Cloud products cover your range of customer
-                  experience needs.
-                </p>
+                <h3>Focused on your growth</h3>
+                <h2>Solutions designed for your unique challenges.</h2>
                 <ListWrap>
-                  <h4>Rethinking your business</h4>
+                  <h4>Reimagine your business</h4>
                   <List>
                     <ListItems>UX and UI</ListItems>
-                    <ListItems>Intelligent Operating Model</ListItems>
-                    <ListItems>Intelligent Operating Model</ListItems>
-                    <ListItems>Intelligent Operating Model</ListItems>
+                    <ListItems>Strategic planning</ListItems>
+                    <ListItems>Build to last</ListItems>
+                    <ListItems>
+                      Innovative and adaptable operating model
+                    </ListItems>
                   </List>
                 </ListWrap>
                 <ListWrap>
-                  <h4>Rethinking your business</h4>
+                  <h4>The value we bring</h4>
                   <List>
-                    <ListItems>UX and UI</ListItems>
-                    <ListItems>Intelligent Operating Model</ListItems>
-                    <ListItems>Intelligent Operating Model</ListItems>
+                    <ListItems>Prioritizing our clients needs</ListItems>
+                    <ListItems>Fast. Objective and Scalable</ListItems>
+                    <ListItems>
+                      Custom solutions because each case is unique
+                    </ListItems>
+                    <ListItems>
+                      Streamline your yusiness rrocesses, With focus in Speed
+                      and agility
+                    </ListItems>
                   </List>
                 </ListWrap>
               </Content>
             </GridItems>
-            <GridItems href="/">
+            <GridItems href="/solutions/seo">
               <ImageWrap>
                 <ImageComponent
                   src={Seo}
-                  alt="Computer and design"
+                  alt="Cellphone screen showing applications icons"
                   placeholder="bluer"
                   height="400"
                   className="test"
                 />
               </ImageWrap>
               <Content>
-                <h3>Atalaso experience Cloud</h3>
-                <h2>End to end. And back again.</h2>
+                <h3>Organic sales</h3>
+                <h2>Scale with strategic optimization.</h2>
                 <p>
-                  Experience Cloud products cover your range of customer
-                  experience needs.
+                  Maximize visibility, boost traffic, and dominate your
+                  industry.
                 </p>
-                <Button href="/">
+                <Button>
                   Learn more <ArrowIcon />
                 </Button>
               </Content>

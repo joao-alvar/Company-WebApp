@@ -18,19 +18,27 @@ const Mission = () => {
           <Wrapper>
             <FloatLeft>
               <p>
-                Run a business is hard, we know, but lucky you don&apos;t have
-                to do it alone. Your growth and development is our purpose. We
-                want our clients to set new heights and metrics and achieve
-                greatness Our mission is to grown together We take pride in our
-                work and are dedicated to providing our clients with the best
-                digital solutions. We are committed to delivering projects on
-                time and on budget.
+                Innovation is the catalyst that drives growth, propels
+                industries forward, and allows businesses to stay ahead of the
+                competition. It has the potential to disrupt traditional models,
+                challenge the status quo, and unlock new opportunities that were
+                previously unimaginable.
+              </p>
+              <p>
+                Atalaso helps companies in the transformation process, creating
+                new paths, overcoming challenges, and adopting new technologies.
+                We are convinced that embracing innovation is not just a
+                strategic choice, but a mindset that is essential for long-term
+                success. It is the key that unlocks new possibilities, propels
+                businesses forward, and enables individuals to thrive in an
+                ever-changing world.
               </p>
             </FloatLeft>
             <FloatRight>
               <h3>
-                Our people platform helps businesses take care of their
-                hardworking teams.
+                By continuously evolving and staying at the forefront of
+                industry trends, we ensure that our clients always have access
+                to the latest tools and strategies to stay ahead.
               </h3>
             </FloatRight>
           </Wrapper>

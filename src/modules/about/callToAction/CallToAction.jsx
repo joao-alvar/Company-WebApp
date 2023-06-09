@@ -1,17 +1,19 @@
-import {ButtonPrimary} from '@/components/button/ButtonElements'
-
 import {AboutSection} from '../hero/AboutHeroElements'
-import {Container, Content, Icon} from './CallToActionElements'
+import {Container, Content, Title, Icon, Button} from './CallToActionElements'
 
 const AboutCallToAction = () => {
   return (
     <AboutSection>
       <Container>
         <Content>
-          <h2>Join 28+ million people who already trust us with their money</h2>
-          <ButtonPrimary href="/contact" className=" button" data-clog-click>
+          <Title>
+            <h2>
+              Join us and let&apos;s make a difference that truly matters.
+            </h2>
+          </Title>
+          <Button href="/contact" data-clog-click>
             Get started <Icon />
-          </ButtonPrimary>
+          </Button>
         </Content>
       </Container>
     </AboutSection>

@@ -69,7 +69,7 @@ function Footer() {
         <FooterNav>
           <LinksContainer>
             <Link href="/terms" data-clog-click>
-              Terms of service
+              Terms & Conditions
             </Link>
             <Link href="/privacy-policy" data-clog-click>
               Privacy policy

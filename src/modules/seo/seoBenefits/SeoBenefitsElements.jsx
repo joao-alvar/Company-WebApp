@@ -30,10 +30,14 @@ export const TitleWrap = styled.header`
 
   h2 {
     font-family: var(--font-heading);
-    font-size: 5rem;
+    font-size: 4.2rem;
     font-weight: 600;
+
     @media only screen and (max-width: 768px) {
-      font-size: calc(5rem - 20%);
+      font-size: 4rem;
+    }
+    @media only screen and (max-width: 550px) {
+      font-size: 3.2rem;
     }
   }
 `
@@ -53,9 +57,10 @@ export const FloatLeft = styled.div`
   padding-right: 4rem;
 
   p {
-    font-size: 1.5rem;
-    line-height: 2.3rem;
-    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    font-family: var(--font-heading);
   }
 `
 

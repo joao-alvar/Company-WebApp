@@ -26,12 +26,14 @@ export const TitleContainer = styled.div`
   padding-top: 3em;
 
   h2 {
-    font-size: 5.2rem;
-    font-weight: 700;
+    font-family: var(--font-heading);
+    font-size: 4.2rem;
+    font-weight: 600;
   }
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     padding-left: 2rem;
+
     h2 {
       font-size: 3.5rem;
     }

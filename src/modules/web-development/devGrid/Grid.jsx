@@ -18,57 +18,58 @@ const GridSection = () => {
         <Wrapper>
           <Grid>
             <Icon as={AiOutlineCode} />
-            <h3>Smart business and automation</h3>
+            <h3>API Integration</h3>
             <p>
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              Integrating third-party APIs allows websites to leverage external
+              services and functionalities, such as payment gateways, social
+              media sharing, mapping services, and more.
             </p>
           </Grid>
           <Grid>
             <Icon as={MdOutlineDevices} />
-            <h3>Smart business and automation</h3>
+            <h3>Responsive Web Design</h3>
             <p>
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              Creating websites that are responsive and mobile-friendly is
+              essential in today&apos;s digital landscape. Responsive web design
+              ensures that websites adapt and display optimally across different
+              devices.
             </p>
           </Grid>
           <Grid>
             <Icon as={AiOutlineUsergroupAdd} />
-            <h3>Smart business and automation</h3>
+            <h3>Website Security Solutions</h3>
             <p>
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              Web security is crucial for protecting user data and maintaining
+              the integrity of websites. Implementing SSL certificates, firewall
+              protection, and regular security audits helps safeguard against
+              cyber threats and builds trust with users.
             </p>
           </Grid>
           <Grid>
             <Icon as={TfiWrite} />
-            <h3>Smart business and automation</h3>
+            <h3>Analytics and Tracking</h3>
             <p>
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              Implementing web analytics tools such as Google Analytics provides
+              valuable insights into website performance, user behavior, and
+              conversion tracking.
             </p>
           </Grid>
           <Grid>
             <Icon as={TfiStatsUp} />
-            <h3>Smart business and automation</h3>
+            <h3>E-commerce Solutions</h3>
             <p>
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              For businesses looking to sell products or services online,
+              e-commerce we provide solutions for inventory management, payment
+              integration, and customer tracking.
             </p>
           </Grid>
           <Grid>
             <Icon as={IoTimeOutline} />
-            <h3>Smart business and automation</h3>
+            <h3>Stay Ahead</h3>
             <p>
-              {' '}
-              Make day-to-day spending a breeze with all things money in one
-              place responsive, user-friendly, and visually stunning. We
-              utilize.
+              Nurturing innovation and leverage cutting-edge technologies to
+              deliver groundbreaking solutions, to help business scale and
+              conquer new markets .
             </p>
           </Grid>
         </Wrapper>

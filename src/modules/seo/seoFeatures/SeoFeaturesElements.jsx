@@ -18,13 +18,10 @@ export const Content = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  padding: 5rem 10rem;
+  padding: 5rem 3rem;
   color: ${({theme}) => theme.colors.white};
-  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-  @media screen and (max-width: 500px) {
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -45,7 +42,7 @@ export const GridContainer = styled.ul`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.9rem;
-  grid-auto-rows: minmax(200px, auto);
+  grid-auto-rows: minmax(230px, auto);
   padding-top: 2em;
   padding-bottom: 2em;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
@@ -71,10 +68,20 @@ export const Grid = styled.li`
   p {
     font-size: 1.3em;
     font-weight: 600;
-    line-height: 2.2rem;
+    line-height: 2.4rem;
   }
 `
-export const Icon = styled.span`
-  color: #fff;
-  font-size: 5em;
+export const ImageWrap = styled.div`
+  width: 50px;
+  height: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+`
+
+export const Icon = styled.div`
+  color: ${({theme}) => theme.colors.white};
+  font-size: 4.5rem;
 `

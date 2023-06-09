@@ -56,6 +56,7 @@ export const DropdownButton = styled(NavLink)`
   &:after {
     display: none;
   }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
     margin-right: 0;
@@ -65,8 +66,8 @@ export const DropdownButton = styled(NavLink)`
 `
 
 export const ArrowIconDown = styled(MdOutlineKeyboardArrowDown)`
-  font-size: 1.3em;
-  right: -1em;
+  font-size: 1.9rem;
+  margin-left: 1px;
   transition: 0.3s cubic-bezier(0.3, -0.32, 0.21, 1);
 
   &.show {

@@ -18,18 +18,20 @@ export const Content = styled.div`
   align-items: flex-start;
   flex-direction: column;
   padding: 5rem;
+  min-height: inherit;
   color: ${({theme}) => theme.colors.white};
 
   h1 {
-    font-size: 4rem;
-    font-weight: 600;
+    font-size: 5.8rem;
+    font-weight: 800;
     margin-bottom: 0.5rem;
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 600;
     line-height: 2.9rem;
+    padding-top: 2rem;
     width: 80%;
   }
 
@@ -38,6 +40,16 @@ export const Content = styled.div`
 
     p {
       width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: ${({theme}) => theme.size.sm}) {
+    h1 {
+      font-size: 4.2rem;
+    }
+
+    p {
+      font-size: 1.8rem;
     }
   }
 `
@@ -61,6 +73,6 @@ export const ImageWrap = styled.div`
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(80%);
+    filter: brightness(75%);
   }
 `
