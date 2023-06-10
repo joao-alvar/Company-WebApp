@@ -33,16 +33,17 @@ export const TitleWrap = styled.header`
 
   h2 {
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 3.8rem;
 
-    @media screen and (max-width: 455px) {
+    @media screen and (max-width: 492px) {
       font-size: 3.4rem;
-    }
-
-    @media screen and (max-width: 415px) {
       display: flex;
       flex-direction: column;
+    }
+
+    @media screen and (max-width: 342px) {
+      font-size: 3.1rem;
     }
   }
 `

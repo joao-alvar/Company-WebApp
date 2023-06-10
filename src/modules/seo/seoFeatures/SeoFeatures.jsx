@@ -27,7 +27,7 @@ const SeoFeatures = () => {
         <Content>
           <TitleWrap>
             <h2>
-              Some <span>of our strategies</span>
+              Some <span>of our approaches</span>
             </h2>
           </TitleWrap>
           <GridContainer>

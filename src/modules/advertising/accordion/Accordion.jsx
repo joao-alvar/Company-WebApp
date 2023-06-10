@@ -56,7 +56,9 @@ const Accordion = () => {
                   item={item}
                   key={index}
                   onClick={() => setIsActive(index)}
-                  className={isActive === index && 'active'}
+                  className={
+                    isActive === index ? 'active no_select' : 'no_select'
+                  }
                 >
                   <Button
                     className={
