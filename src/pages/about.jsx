@@ -5,7 +5,6 @@ import AboutWall from '@/modules/about/aboutWall/AboutWall'
 import AboutCallToAction from '@/modules/about/callToAction/CallToAction'
 import AboutHero from '@/modules/about/hero/AboutHero'
 import Mission from '@/modules/about/mission/Mission'
-import Purpose from '@/modules/about/purpose/Purpose'
 import Story from '@/modules/about/story/Story'
 
 const About = () => {
@@ -22,7 +21,6 @@ const About = () => {
         <Mission />
         <AboutWall />
         <Story />
-        {/* <Purpose /> */}
         <AboutGrid />
         <AboutCallToAction />
       </main>
