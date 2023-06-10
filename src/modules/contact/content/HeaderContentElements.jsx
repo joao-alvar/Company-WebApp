@@ -13,10 +13,10 @@ export const Wrapper = styled.div`
   padding-top: 3em;
   padding-right: 2rem;
   color: ${({theme}) => theme.colors.black};
+  font-family: var(--font-heading);
 
   h1 {
     font-size: 5.5rem;
-    font-family: var(--font-heading);
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: #191c1f;
@@ -24,8 +24,12 @@ export const Wrapper = styled.div`
 
   p {
     font-size: 1.65rem;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2.5rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.5rem;
+    }
   }
 
   a {

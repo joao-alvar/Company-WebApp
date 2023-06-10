@@ -87,7 +87,7 @@ export const Form = styled.form`
   label {
     font-size: 1.4rem;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2.4rem;
 
     @media screen and (max-width: 965px) {

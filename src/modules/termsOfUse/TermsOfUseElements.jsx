@@ -71,6 +71,16 @@ export const Content = styled.div`
     line-height: 164%;
     margin-bottom: 1rem;
   }
+
+  a {
+    text-decoration: none;
+    color: ${({theme}) => theme.colors.link};
+    border-bottom: 1px solid ${({theme}) => theme.colors.link};
+
+    &:hover {
+      border-width: 2px;
+    }
+  }
 `
 
 export const List = styled.ol`

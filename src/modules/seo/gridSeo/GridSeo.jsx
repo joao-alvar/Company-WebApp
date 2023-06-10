@@ -12,7 +12,10 @@ const GridSeo = () => {
     <Section>
       <Container>
         <TitleWrap>
-          <h2>An essential component for digital transformation</h2>
+          <h2 className="desktop">
+            An essential component for digital transformation
+          </h2>
+          <h2 className="mobile">Thrive for transformation</h2>
         </TitleWrap>
         <Content>
           <GridContainer>

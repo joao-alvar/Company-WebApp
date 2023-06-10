@@ -54,6 +54,5 @@ export const Grid = styled.li`
 
   @media screen and (max-width: 965px) {
     justify-content: center;
-    text-align: start;
   }
 `

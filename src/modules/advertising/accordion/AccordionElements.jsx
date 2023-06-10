@@ -71,7 +71,8 @@ export const Card = styled.ul`
     0 8px 9pt -2px rgba(24, 24, 24, 0.16);
 
   @media screen and (max-width: 500px) {
-    padding: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 `
 

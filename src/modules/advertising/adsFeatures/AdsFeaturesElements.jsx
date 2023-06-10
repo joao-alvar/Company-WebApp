@@ -57,6 +57,10 @@ export const ListWrap = styled.div`
   position: relative;
   height: 100%;
 
+  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
+    margin-top: 3rem;
+  }
+
   @media screen and (max-width: 510px) {
     font-size: 80%;
   }
