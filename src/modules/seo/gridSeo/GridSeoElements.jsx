@@ -35,7 +35,20 @@ export const TitleWrap = styled.div`
     @media screen and (max-width: ${({theme}) => theme.size.sm}) {
       font-size: 3.2rem;
     }
-  }
+
+    &.mobile {
+      display: none;
+    }
+
+    @media screen and (max-width: 430px) {
+      &.desktop {
+        display: none;
+      }
+
+      &.mobile {
+        display: block;
+      }
+    }
   }
 `
 

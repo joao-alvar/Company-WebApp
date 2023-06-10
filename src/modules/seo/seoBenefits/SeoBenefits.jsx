@@ -15,7 +15,9 @@ const SeoBenefits = () => {
       <Container>
         <Wrapper>
           <TitleWrap>
-            <h2>Why SEO is important?</h2>
+            <h2>
+              Why <span>SEO is important?</span>
+            </h2>
           </TitleWrap>
           <Content>
             <FloatLeft>

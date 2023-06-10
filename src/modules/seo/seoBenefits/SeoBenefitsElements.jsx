@@ -36,8 +36,15 @@ export const TitleWrap = styled.header`
     @media only screen and (max-width: 768px) {
       font-size: 4rem;
     }
+
     @media only screen and (max-width: 550px) {
       font-size: 3.2rem;
+    }
+
+    @media only screen and (max-width: 385px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
 `

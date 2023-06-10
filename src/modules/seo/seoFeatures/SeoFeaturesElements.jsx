@@ -33,8 +33,17 @@ export const TitleWrap = styled.header`
 
   h2 {
     font-family: var(--font-heading);
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: 600;
+    font-size: 3.8rem;
+
+    @media screen and (max-width: 455px) {
+      font-size: 3.4rem;
+    }
+
+    @media screen and (max-width: 415px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 `
 
@@ -45,6 +54,7 @@ export const GridContainer = styled.ul`
   grid-auto-rows: minmax(230px, auto);
   padding-top: 2em;
   padding-bottom: 2em;
+  margin-top: 3rem;
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     padding: 1.5em;
     grid-template-columns: repeat(1, 1fr);
@@ -59,7 +69,7 @@ export const Grid = styled.li`
   cursor: default;
 
   h3 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2.6rem;
     padding-top: 10px;
     padding-bottom: 0.4rem;
@@ -69,6 +79,16 @@ export const Grid = styled.li`
     font-size: 1.3em;
     font-weight: 600;
     line-height: 2.4rem;
+  }
+
+  @media screen and (max-width: 455px) {
+    h3 {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.45rem;
+    }
   }
 `
 export const ImageWrap = styled.div`

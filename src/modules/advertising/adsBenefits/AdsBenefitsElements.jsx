@@ -21,9 +21,9 @@ export const Wrapper = styled.div`
   flex-direction: column;
   color: ${({theme}) => theme.colors.white};
 `
-export const Title = styled.div`
+export const Title = styled.h2`
   font-weight: 800;
-  font-size: 4.5rem;
+  font-size: 4.8rem;
   font-family: var(--font-heading);
   padding-left: 2rem;
   padding-bottom: 1.6em;
@@ -36,6 +36,14 @@ export const Title = styled.div`
 
   @media screen and (max-width: ${({theme}) => theme.size.sm}) {
     font-size: 2.6em;
+  }
+
+  @media screen and (max-width: 435px) {
+    font-size: 2.6rem;
+  }
+
+  @media screen and (max-width: 353px) {
+    font-size: 2.3rem;
   }
 `
 
@@ -78,6 +86,22 @@ export const GridContent = styled.div`
 
     h3 {
       padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 435px) {
+    h3 {
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  @media screen and (max-width: 353px) {
+    h3 {
+      font-size: 2.1rem;
     }
   }
 

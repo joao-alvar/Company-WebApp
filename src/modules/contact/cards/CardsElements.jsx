@@ -37,7 +37,11 @@ export const List = styled.li`
   p {
     font-size: 1.5rem;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 500;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.4rem;
+    }
   }
 `
 export const Icon = styled(BsCheckLg)`
@@ -45,4 +49,8 @@ export const Icon = styled(BsCheckLg)`
   flex-shrink: 0;
   flex: none;
   color: ${({theme}) => theme.colors.black};
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 2.1rem;
+  }
 `

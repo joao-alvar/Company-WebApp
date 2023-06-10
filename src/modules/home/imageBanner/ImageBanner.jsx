@@ -34,7 +34,9 @@ const LeadBanner = () => {
               The adoption of technology allows companies to remain agile and
               gain a competitive advantage.
             </p>
-            <Link href="/contact">Start now</Link>
+            <Link href="/contact" className="no_select">
+              Start now
+            </Link>
           </TextWrap>
         </Content>
       </Container>

@@ -49,6 +49,10 @@ export const ImageContent = styled.div`
     font-family: var(--font-heading);
     font-weight: 400;
     font-size: 3rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      font-size: 2.6rem;
+    }
   }
 `
 
