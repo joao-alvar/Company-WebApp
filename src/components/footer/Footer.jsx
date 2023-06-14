@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 import React from 'react'
-import {FaLinkedin, FaFacebookSquare, FaTwitterSquare} from 'react-icons/fa'
+import {
+  AiOutlineInstagram,
+  AiFillLinkedin,
+  AiFillFacebook,
+} from 'react-icons/ai'
 
 import {
   FooterSection,
@@ -25,44 +29,45 @@ function Footer() {
           className={router?.pathname === '/about' && 'is_border'}
         >
           {(router?.pathname === '/privacy-policy') |
-            (router?.pathname === '/terms') && (
+          (router?.pathname === '/terms') ? (
             <div className="call_to_action">
-              {/* <h3>Ready to start?</h3> */}
               <Link href="/contact">
                 Get in touch <IconArrow />
               </Link>
             </div>
+          ) : (
+            ''
           )}
           <div className="socials_icons">
             <a
-              href="https://en.wikipedia.org/wiki/Next.js"
+              href="https://www.instagram.com/_atalaso/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              title="Instagram"
+              data-clog-click
+            >
+              <Icon as={AiOutlineInstagram} />
+            </a>
+            <a
+              href="https://linkedin.com/company/atalaso"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Linkedin"
               title="Linkedin"
               data-clog-click
             >
-              <Icon as={FaLinkedin} />
+              <Icon as={AiFillLinkedin} />
             </a>
             <a
-              href="https://en.wikipedia.org/wiki/Next.js"
+              href="https://www.facebook.com/atalasohq"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
               title="Facebook"
               data-clog-click
             >
-              <Icon as={FaFacebookSquare} />
-            </a>
-            <a
-              href="https://en.wikipedia.org/wiki/Next.js"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-              title="Twitter"
-              data-clog-click
-            >
-              <Icon as={FaTwitterSquare} />
+              <Icon as={AiFillFacebook} />
             </a>
           </div>
         </SocialsContainer>

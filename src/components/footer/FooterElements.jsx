@@ -73,13 +73,14 @@ export const SocialsContainer = styled.div`
 
   .socials_icons {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin-left: auto;
   }
 `
 
 export const Icon = styled.span`
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #88869a;
 
   &:hover {

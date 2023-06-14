@@ -21,7 +21,7 @@ import image_3 from 'public/images/typing-in-notebook.jpeg'
 
 const leadBenefits = () => {
   return (
-    <GridSection id="section-1">
+    <GridSection id="section-2">
       <Container>
         <GridWrap>
           <Cards>

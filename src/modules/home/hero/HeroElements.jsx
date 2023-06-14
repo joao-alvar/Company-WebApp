@@ -15,7 +15,7 @@ export const Container = styled.div`
   height: 57rem;
   line-height: initial;
 
-  @media screen and (max-width: 1040px) {
+  @media screen and (max-width: ${({theme}) => theme.size.lg}) {
     height: auto;
     padding-top: 3em;
     padding-bottom: 3em;
@@ -103,7 +103,8 @@ export const LinkWrap = styled.div`
   gap: 0.5rem;
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
-    a {
+    a,
+    .secondary_button {
       width: 100%;
     }
   }
@@ -123,11 +124,23 @@ export const ImageContainer = styled.div`
 
   img {
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: contain;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.lg}) {
-    width: 80%;
+    width: 70%;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 `

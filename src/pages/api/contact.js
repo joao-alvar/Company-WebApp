@@ -1,3 +1,6 @@
+import {NextSeo} from 'next-seo'
+;<NextSeo nofollow={true} noindex={true} />
+
 import nodemailer from 'nodemailer'
 
 export default async function verification(req, res) {

@@ -2,10 +2,6 @@
 User-agent: *
 Allow: /
 
-# Block all crawlers for /api/contact
-User-agent: *
-Disallow: /api/contact
-
 # Host
 Host: https://atalaso.com
 

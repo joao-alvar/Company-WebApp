@@ -13,18 +13,18 @@ export const menuItems = [
     title: 'Solutions',
     url: '/solutions',
     submenu: [
-      {
-        title: 'Paid search',
-        url: '/advertising#paid-search',
-      },
+      // {
+      //   title: 'Paid search',
+      //   url: '/advertising#paid-search',
+      // },
       {
         title: 'SEO',
         url: '/solutions/seo',
       },
-      {
-        title: 'Optimization',
-        url: '/web-development#optimization',
-      },
+      // {
+      //   title: 'Optimization',
+      //   url: '/web-development#optimization',
+      // },
     ],
   },
   {

@@ -107,8 +107,12 @@ export const TextWrap = styled.div`
     font-family: var(--font-heading);
     font-weight: 600;
     font-size: 1.3em;
-    line-height: 1.4em;
+    line-height: 2.5rem;
     margin-bottom: 0.6rem;
     color: #999999;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+    font-size: 90%;
   }
 `
