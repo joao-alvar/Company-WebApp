@@ -35,7 +35,7 @@ const CallToAction = () => {
             <ActionLink href="/contact">
               <Content>
                 <h2>Ready to get started?</h2>
-                <p>Join 20,000+ innovative businesses – big and small</p>
+                <p>Be a part of the next big thing!</p>
                 <Button href="/contact" data-clog-click>
                   Start now <IconArrow />
                 </Button>
