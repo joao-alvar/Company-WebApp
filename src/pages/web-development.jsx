@@ -1,5 +1,4 @@
 import {NextSeo} from 'next-seo'
-import Head from 'next/head'
 
 import CallToAction from '@/modules/web-development/callToAction/CallToAction'
 import DevCases from '@/modules/web-development/devCases/DevCases'
