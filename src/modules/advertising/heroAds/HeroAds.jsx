@@ -11,7 +11,7 @@ import {
 
 const HeroAds = () => {
   const handleClickScroll = () => {
-    const element = document.querySelector('#seo')
+    const element = document.querySelector('#overview')
 
     element?.scrollIntoView({behavior: 'smooth'})
   }

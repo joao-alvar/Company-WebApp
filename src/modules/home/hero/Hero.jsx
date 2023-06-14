@@ -17,6 +17,11 @@ import {
 
 import heroImage from 'public/images/Workplace-abstract-illustration.jpg'
 
+const handleClickScroll = () => {
+  const element = document.querySelector('#section-2')
+
+  element?.scrollIntoView({behavior: 'smooth'})
+}
 const Hero = () => {
   return (
     <>
@@ -31,8 +36,14 @@ const Hero = () => {
                 profits, and conquer new markets
               </HeroText>
               <LinkWrap>
-                <ButtonPrimary href="/">Get started</ButtonPrimary>
-                <ButtonSecondary href="/">How we work</ButtonSecondary>
+                <ButtonPrimary href="/contact">Get started</ButtonPrimary>
+                <ButtonSecondary
+                  className="secondary_button"
+                  as="button"
+                  onClick={handleClickScroll}
+                >
+                  How we work
+                </ButtonSecondary>
               </LinkWrap>
             </Content>
             <ImageContainer>

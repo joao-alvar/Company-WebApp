@@ -21,7 +21,7 @@ import webIcon from 'public/images/icons/web-page-icon.png'
 
 const AdsOverview = () => {
   return (
-    <Section id="seo">
+    <Section id="overview">
       <Container>
         <Banner>
           <Content>

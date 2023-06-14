@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
           <link
             rel="preload"
             as="video"
-            href="videos/social-media-icons-video.mp4"
+            href="http://localhost:3000/videos/social-media-icons-video.mp4"
           />
         </Head>
         <body>

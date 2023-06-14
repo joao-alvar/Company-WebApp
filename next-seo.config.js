@@ -1,10 +1,17 @@
 export default {
+  themeColor: '#B12C28',
+  title: 'Atalaso | Powering your growth',
+  description:
+    'Atalaso transforms your business with our expert software development services. We specialize in creating tailored solutions to meet your unique needs and drive growth',
+
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.atalaso.com/',
     siteName: 'Atalaso',
-    title: 'Empowering Your company growth',
+    title: `Atalaso, empowering your company's growth`,
+    description:
+      'Atalaso transforms your business with our expert software development services. We specialize in creating tailored solutions to meet your unique needs and drive growth',
     images: [
       {
         url: 'https://www.atalaso.com/social/atalaso-share-preview.jpg',
@@ -14,13 +21,21 @@ export default {
       },
     ],
   },
-  twitter: {
-    handle: '@atalaso_ofc',
-    site: '@atalaso_ofc',
-    creator: '@atalaso_ofc',
-    cardType: 'summary_large_image',
-  },
+  // twitter: {
+  //   handle: '@atalaso_ofc',
+  //   site: '@atalaso_ofc',
+  //   creator: '@atalaso_ofc',
+  //   cardType: 'summary_large_image',
+  // },
   additionalLinkTags: [
+    {
+      rel: 'preconnect',
+      href: 'https://www.googletagmanager.com',
+    },
+    {
+      rel: 'preconnect',
+      href: 'https://www.google-analytics.com',
+    },
     {
       httpEquiv: 'x-ua-compatible',
       content: 'IE=edge; chrome=1',

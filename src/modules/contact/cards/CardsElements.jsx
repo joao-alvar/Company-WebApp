@@ -38,6 +38,7 @@ export const List = styled.li`
     font-size: 1.5rem;
     font-family: var(--font-heading);
     font-weight: 500;
+    line-height: 2.5rem;
 
     @media screen and (max-width: ${({theme}) => theme.size.sm}) {
       font-size: 1.4rem;
@@ -45,7 +46,7 @@ export const List = styled.li`
   }
 `
 export const Icon = styled(BsCheckLg)`
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   flex-shrink: 0;
   flex: none;
   color: ${({theme}) => theme.colors.black};

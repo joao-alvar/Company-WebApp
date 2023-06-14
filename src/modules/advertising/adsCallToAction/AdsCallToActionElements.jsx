@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     background-color: ${({theme}) => theme.colors.white};
     width: 92%;
-    border-radius: 18px;
+    border-radius: 1pc;
     margin: 0 auto;
     overflow: hidden;
   }
@@ -72,16 +72,15 @@ export const ImageWrap = styled.div`
     width: 100%;
     height: 80%;
     object-fit: cover;
-    border-top-left-radius: 18px;
-    border-bottom-left-radius: 18px;
+    border-top-left-radius: 1pc;
+    border-bottom-left-radius: 1pc;
   }
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
-    justify-content: end;
+    justify-content: center;
 
     img {
-      width: 100%;
       border-radius: 0;
     }
   }

@@ -29,14 +29,10 @@ const App = ({Component, pageProps}) => {
     <>
       <Head>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://www.google-analytics.com" />
-        <meta name="robots" content="index,follow" />
       </Head>
       <DefaultSeo {...SEO} />
       <NextSeo
         canonical={`https://www.atalaso.com${router.pathname}`}
-        themeColor="#f3f4f5"
         openGraph={{
           url: `https://www.atalaso.com${router.pathname}`,
         }}
