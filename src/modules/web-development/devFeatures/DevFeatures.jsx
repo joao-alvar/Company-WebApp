@@ -19,13 +19,13 @@ const DevFeatures = () => {
   return (
     <Section>
       <Container>
-        <Wrapper className="first_card">
-          <ImageContainer className="first_card_image">
+        <Wrapper>
+          <ImageContainer>
             <ImageComponent
               src={Image_1}
               alt="Business teamwork in office vector illustration. Cartoon corporate office workers people meeting and chatting, co-working space with working business team and chat messages isolated on white "
-              width={450}
-              height={450}
+              // width={450}
+              // height={450}
             />
           </ImageContainer>
           <Content>
@@ -54,8 +54,6 @@ const DevFeatures = () => {
             <ImageComponent
               src={Image_2}
               alt="Isometric illustration with network connections and devices, a camera, fax machine, computer, laptop and monitors"
-              width={450}
-              height={400}
             />
           </ImageContainer>
         </Wrapper>
@@ -64,8 +62,6 @@ const DevFeatures = () => {
             <ImageComponent
               src={Image_3}
               alt="Vector illustration featuring a girl checking a floating list while sitting in front of a laptop"
-              width={400}
-              height={400}
             />
           </ImageContainer>
           <Content>
