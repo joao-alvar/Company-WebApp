@@ -69,7 +69,7 @@ const GridSection = () => {
             <p>
               Nurturing innovation and leverage cutting-edge technologies to
               deliver groundbreaking solutions, to help business scale and
-              conquer new markets .
+              conquer new markets.
             </p>
           </Grid>
         </Wrapper>

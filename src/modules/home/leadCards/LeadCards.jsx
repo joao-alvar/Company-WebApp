@@ -49,13 +49,13 @@ const LeadCards = () => {
                   <GraphUpIcon />
                 </IconContainer>
                 <p>
-                  Revolutionize your business through innovation, technology and
-                  strategic practices
+                  Revolutionize your business through innovation, technology,
+                  and strategic practices
                 </p>
               </Cards>
               <Cards>
                 <IconContainer>
-                  <IconSvg src={Saving} alt="Hand savings a coin icon" />
+                  <IconSvg src={Saving} alt="Hand savings, a coin icon" />
                 </IconContainer>
                 <p>Improve ROI through Digital Transformation</p>
               </Cards>

@@ -29,8 +29,8 @@ const PrivacyPolicy = () => {
             our website and services. By accessing and using our website, you
             consent to the terms and practices described in this Privacy Policy.
             If you have any questions or concerns about our policy, or our
-            practices with regards to your personal information, please contact
-            us at <a href="mailto:contact@atalaso.com">contact@atalaso.com</a>,
+            practices in regard to your personal information, please contact us
+            at <a href="mailto:contact@atalaso.com">contact@atalaso.com</a>,
             When you visit our website{' '}
             <a href="https://www.atalaso.com">https://www.atalaso.com</a>, and
             use our services, you trust us with your personal information. We

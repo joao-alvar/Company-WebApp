@@ -9,10 +9,10 @@ const BoxCards = () => {
         <GridWrap>
           <Grid>
             <h2>67%</h2>
-            <p>Of clicks go to the first five organic links</p>
+            <p>Of clicks, go to the first five organic links</p>
           </Grid>
           <Grid>
-            <h2>0,78%</h2>
+            <h2>0.78%</h2>
             <p>Of users click on a link on the second page of results</p>
           </Grid>
           <Grid>

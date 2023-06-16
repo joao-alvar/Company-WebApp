@@ -30,7 +30,7 @@ const LeadWall = () => {
               <List>
                 <h4>15%</h4>
                 <p>
-                  estimated only a minority of companies is fully embracing
+                  estimated, only a minority of companies is fully embracing
                   digital today.
                 </p>
               </List>

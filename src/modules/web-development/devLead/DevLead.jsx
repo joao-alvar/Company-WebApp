@@ -40,7 +40,7 @@ const DevLead = () => {
             Automated processes, advanced software solutions, and digital tools
             enable businesses to automate repetitive tasks, improve
             productivity, and reduce human error. This not only saves time and
-            resources but also allows employees to focus on higher-value
+            resources, but also allows employees to focus on higher-value
             activities that contribute to business growth.
           </p>
           <BtnWrap>
@@ -73,7 +73,7 @@ const DevLead = () => {
               <ImageComponent
                 src={ImageActive_1}
                 height={300}
-                alt="Devices in a desk, computer, laptop, tablet, cellphone and a lamp next"
+                alt="Devices in a desk, computer, laptop, tablet, cellphone, and a lamp next"
               />
             </ImageWrap>
             <TextContent>
@@ -81,7 +81,7 @@ const DevLead = () => {
               <p>
                 A professional web-site enhances your brand&apos;s image and
                 credibility, helps build trust and establishing your authority
-                in the industry. you can further instill confidence in your
+                in the industry. You can further instill confidence in your
                 visitors and increase the likelihood of conversions.
               </p>
               <p>

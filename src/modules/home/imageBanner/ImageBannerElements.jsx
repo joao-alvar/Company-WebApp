@@ -75,6 +75,7 @@ export const TextWrap = styled.div`
     font-size: 1.6rem;
     font-weight: 600;
     margin-top: 0.6em;
+    line-height: 2.5rem;
   }
 
   a {

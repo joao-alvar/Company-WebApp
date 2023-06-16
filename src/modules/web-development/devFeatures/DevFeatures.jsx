@@ -53,7 +53,7 @@ const DevFeatures = () => {
           <ImageContainer>
             <ImageComponent
               src={Image_2}
-              alt="Isometric illustration with network connections and devices, a camera, fax machine, computer, laptop and monitors"
+              alt="Isometric illustration with network connections and devices, a camera, fax machine, computer, laptop, and monitors"
             />
           </ImageContainer>
         </Wrapper>

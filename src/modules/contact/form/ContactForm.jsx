@@ -362,11 +362,11 @@ const ContactForm = () => {
                             id="optimization"
                             type="checkbox"
                             name="optimization-accessibility"
-                            placeholder="Optimization and Accessibility"
-                            {...register('optimization_accessibility', {})}
+                            placeholder="Conversion rate optimization"
+                            {...register('conversion_rate_optimization', {})}
                           />
                           <label htmlFor="optimization">
-                            Optimization and Accessibility
+                            Conversion rate optimization
                           </label>
                         </Checkbox>
                       </li>

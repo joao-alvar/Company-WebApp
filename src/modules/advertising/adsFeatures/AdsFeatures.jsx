@@ -46,7 +46,7 @@ const AdsFeatures = () => {
             <ImageWrap>
               <ImageComponent
                 src={Image}
-                alt="Young couple shopping online, man holding a credit card while woman holding tablet computer"
+                alt="Young couple shopping online, man holding a credit card while woman holding a tablet computer"
                 className="image_2"
               />
             </ImageWrap>

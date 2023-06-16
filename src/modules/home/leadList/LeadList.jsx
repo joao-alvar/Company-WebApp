@@ -30,7 +30,7 @@ const LeadList = () => {
               <ImageWrap>
                 <ImageComponent
                   src={Creativity}
-                  alt="Art gallery full of people projecting Van Gogh self portrait onto the wall"
+                  alt="Art gallery full of people projecting Van Gogh self-portrait onto the wall"
                   placeholder="bluer"
                   height="400"
                   className="test"
@@ -71,7 +71,7 @@ const LeadList = () => {
               <ImageWrap>
                 <ImageComponent
                   src={Advertising}
-                  alt="3d illustration of a cellphone a social media icons and reactions floating"
+                  alt="3d illustration of a cellphone social media icons and reactions floating"
                   placeholder="bluer"
                   height="400"
                   className="test"
@@ -112,8 +112,8 @@ const LeadList = () => {
                       Custom solutions because each case is unique
                     </ListItems>
                     <ListItems>
-                      Streamline your yusiness rrocesses, With focus in Speed
-                      and agility
+                      Streamline your business processes, with focus in Speed
+                      and Agility
                     </ListItems>
                   </List>
                 </ListWrap>
