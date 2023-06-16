@@ -32,7 +32,7 @@ const AdsOverview = () => {
                 The best digital marketing strategies and approaches may vary
                 based on your specific industry, target audience, and business
                 goals. It&apos;s important to develop a tailored strategy that
-                aligns with your unique needs and consistently adapt and refine
+                aligns with your unique needs, and consistently adapt and refine
                 your approach based on data and market trends.
               </p>
             </TextWrap>
@@ -55,7 +55,10 @@ const AdsOverview = () => {
                 </List>
                 <List>
                   <ImageWrap>
-                    <ImageComponent src={phoneIcon} alt="Two cellphones icon" />
+                    <ImageComponent
+                      src={phoneIcon}
+                      alt="Two cellphones icons"
+                    />
                   </ImageWrap>
                   <Text>
                     <h4>Mobile marketing</h4>

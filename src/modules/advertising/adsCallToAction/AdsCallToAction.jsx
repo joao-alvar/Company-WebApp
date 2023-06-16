@@ -18,13 +18,13 @@ const AdsCallToAction = () => {
       <Container>
         <Wrapper>
           <ContentWrap>
-            <h2>Not sure yet? we&apos;ll put you on the right path</h2>
+            <h2>Not sure yet? We&apos;ll put you on the right path</h2>
             <Button href="/contact">Get in touch</Button>
           </ContentWrap>
           <ImageWrap>
             <ImageComponent
               src={city_illustration}
-              alt="Car lights moving fast at night"
+              alt="Car lights moving fast at night."
             />
           </ImageWrap>
         </Wrapper>

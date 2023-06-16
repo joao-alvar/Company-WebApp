@@ -14,7 +14,7 @@ export default async function verification(req, res) {
     seo,
     paid_search,
     web_development,
-    optimization_accessibility,
+    conversion_rate_optimization,
     message,
     mailPolicy,
   } = req.body
@@ -45,7 +45,7 @@ export default async function verification(req, res) {
       <p><strong>Services Advertising and/or SEO: </strong> ${seo} </p><br>
       <p><strong>Services Paid Search: </strong> ${paid_search} </p><br>
       <p><strong>Services Web Development: </strong> ${web_development} </p><br>
-      <p><strong>Services Optimization and Accessibility: </strong> ${optimization_accessibility} </p><br>
+      <p><strong>Services Conversion rate optimization: </strong> ${conversion_rate_optimization} </p><br>
       <p><strong>Message: </strong> ${message} </p><br>
       <p><strong>Email policy: </strong> ${mailPolicy} </p><br>
       `,

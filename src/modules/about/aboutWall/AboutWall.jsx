@@ -35,7 +35,7 @@ const AboutWall = () => {
                   alt="Idea yellow lamp illustration"
                 />
               </Icon>
-              <IconTitle>Innovation sparks creativity</IconTitle>
+              <IconTitle>Creativity sparks innovation</IconTitle>
               <p>
                 spark new ideas, challenge conventional thinking, and push
                 boundaries.

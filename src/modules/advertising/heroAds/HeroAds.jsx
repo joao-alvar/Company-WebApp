@@ -19,7 +19,7 @@ const HeroAds = () => {
     <Section>
       <Container>
         <Content>
-          <h1>Why choose Atalaso&apos;s expertise as your go to solution?</h1>
+          <h1>Why choose Atalaso&apos;s expertise as your go-to solution?</h1>
           <p>
             Drive results, reach new audiences, and maximize ROI with our
             strategic marketing expertise.

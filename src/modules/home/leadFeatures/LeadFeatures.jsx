@@ -14,7 +14,7 @@ const LeadFeatures = () => {
       <Container>
         <Wrapper>
           <Header>
-            <h2>Relax we take care of you</h2>
+            <h2>Relax, we take care of you</h2>
           </Header>
           <ContentContainer>
             <List>

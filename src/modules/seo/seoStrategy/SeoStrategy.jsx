@@ -12,7 +12,7 @@ const SeoStrategy = () => {
       <Section>
         <Container>
           <Content>
-            <h2>Driving results that matters</h2>
+            <h2>Driving results that matter</h2>
             <p>
               The best SEO strategy may vary depending on the specific needs and
               goals of a business, as well as the competitive landscape of the

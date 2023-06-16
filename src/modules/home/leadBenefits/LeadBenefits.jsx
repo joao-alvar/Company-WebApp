@@ -44,7 +44,7 @@ const leadBenefits = () => {
             <ImageWrap>
               <ImageComponent
                 src={image_1}
-                alt="Business people having meeting in office hall near window."
+                alt="Business people having meeting in office hall near the window."
                 className="image_one"
               />
             </ImageWrap>
@@ -53,7 +53,7 @@ const leadBenefits = () => {
             <ImageWrap>
               <ImageComponent
                 src={image_2}
-                alt="Modern office technology innovative screen devices."
+                alt="Modern office technology, innovative screen devices."
                 className="image_two"
               />
             </ImageWrap>

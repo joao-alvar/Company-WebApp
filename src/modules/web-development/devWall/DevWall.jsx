@@ -22,12 +22,12 @@ const DevWall = () => {
           <ImageWrap>
             <ImageComponent
               src={image}
-              alt="Woman in a office, looking and touching a tablet and smiling, while three people in the background works."
+              alt="Woman in an office, looking and touching a tablet and smiling, while three people in the background works."
             />
           </ImageWrap>
           <Content>
             <p>
-              technology adoption is essential for staying relevant in a rapidly
+              Technology adoption is essential for staying relevant in a rapidly
               changing business landscape. The digital revolution has reshaped
               consumer expectations, market dynamics, and industry norms.
               Businesses that fail to adapt to these changes risk becoming

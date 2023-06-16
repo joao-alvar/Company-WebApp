@@ -58,7 +58,7 @@ const AboutGrid = () => {
               <Content>
                 <p>Our purpose</p>
                 <h3>
-                  Build a significant different life. embrace innovation
+                  Build a significant different life. Embrace innovation
                   wholeheartedly, ignite our creative sparks, and strive to be
                   the catalysts of change. Together, let us harness the power of
                   innovation to shape a brighter and more prosperous future for

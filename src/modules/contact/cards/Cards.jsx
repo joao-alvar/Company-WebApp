@@ -9,7 +9,7 @@ const Cards = () => {
           <div>
             <p>
               We understand that every business is unique, and we take a
-              customized approach to meet your specific needs. providing
+              customized approach to meet your specific needs. Providing
               tailored strategies that will drive your success.
             </p>
           </div>
