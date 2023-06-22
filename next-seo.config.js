@@ -1,17 +1,18 @@
-const title = `Atalaso helps business overcome challenges through technological solutions, focusing on solving problems with an innovative approach, and improving business tech capabilities.`
+const title = `Atalaso | Creative software development and marketing solutions`
+const description = `Atalaso helps business overcome challenges through technological solutions, focusing on solving problems with an innovative approach, and improving business tech capabilities.`
 
 export default {
   themeColor: '#2596BE',
-  title: `Atalaso | Creative software development and marketing solutions`,
-  description: title,
+  title: title,
+  description: description,
 
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.atalaso.com/',
     siteName: 'Atalaso',
-    title: `Atalaso, Powering your growth`,
-    description: title,
+    title: title,
+    description: description,
     images: [
       {
         url: 'https://www.atalaso.com/social/atalaso-share-preview.jpg',
