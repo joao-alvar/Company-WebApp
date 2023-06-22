@@ -1,4 +1,4 @@
-import {HiArrowRight} from 'react-icons/hi'
+import Link from 'next/link'
 
 import styled from 'styled-components'
 
@@ -42,40 +42,27 @@ export const SocialsContainer = styled.div`
     padding-top: 0.5rem;
   }
 
-  .call_to_action {
-    color: #88869a;
-
-    h3 {
-      font-size: 1.6rem;
-      font-weight: 600;
-    }
-
-    a {
-      display: flex;
-      align-items: center;
-      padding: 0.4rem 1.5rem;
-      border: 2px solid #88869a;
-      border-radius: 10px;
-      text-decoration: none;
-      color: inherit;
-      font-size: 2rem;
-      position: relative;
-      &:hover {
-        color: #fff;
-        border-color: #fff;
-      }
-    }
-
-    @media only screen and (max-width: 500px) {
-      display: none;
-    }
-  }
-
   .socials_icons {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-left: auto;
+  }
+`
+export const LogoContainer = styled(Link)`
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  flex-shrink: 0;
+  min-width: 0px;
+
+  img {
+    width: 100%;
+    height: 100%;
   }
 `
 
@@ -122,9 +109,4 @@ export const AllRights = styled.div`
   display: flex;
   font-size: 1.4rem;
   color: #88869a;
-`
-
-export const IconArrow = styled(HiArrowRight)`
-  font-size: 0.9em;
-  margin-left: 0.25em;
 `

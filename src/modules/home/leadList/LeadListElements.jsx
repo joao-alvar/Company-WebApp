@@ -28,18 +28,18 @@ export const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3em;
-  grid-auto-rows: minmax(50rem);
+  grid-auto-rows: minmax(50rem, auto);
   padding: 1.5em 3em;
-  @media screen and (max-width: 1005px) {
+  @media screen and (max-width: 1054px) {
     padding: 1.5em;
     grid-template-columns: none;
-    grid-auto-rows: minmax(auto);
+    grid-auto-rows: minmax(40rem, auto);
   }
 
   &.two_columns {
     grid-template-columns: 2.1fr 1fr;
 
-    @media screen and (max-width: 1005px) {
+    @media screen and (max-width: 1054px) {
       grid-template-columns: none;
     }
   }
@@ -81,7 +81,7 @@ export const ImageWrap = styled.div`
     height: 100%;
   }
 
-  @media screen and (max-width: 1005px) {
+  @media screen and (max-width: 1054px) {
     height: auto;
   }
 `
@@ -135,7 +135,7 @@ export const Content = styled.div`
     }
   }
 
-  @media screen and (max-width: 1005px) {
+  @media screen and (max-width: 1054px) {
     height: auto;
   }
 `

@@ -114,7 +114,7 @@ const ContactForm = () => {
             <Container>
               <HeaderContent />
               <FormWrap>
-                <Form onSubmit={handleSubmit(onSubmit)} role="submit">
+                <Form onSubmit={handleSubmit(onSubmit)}>
                   <Wrap>
                     <Field data-role="control-group">
                       <label htmlFor="first-name">First Name*</label>
