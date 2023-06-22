@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
-import React from 'react'
 import {
   AiOutlineInstagram,
   AiFillLinkedin,
@@ -13,13 +11,10 @@ import {
   FooterContainer,
   SocialsContainer,
   Icon,
-  LogoContainer,
   FooterNav,
   LinksContainer,
   AllRights,
 } from './FooterElements'
-
-import logo from '/public/images/footer-logo.png'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -31,14 +26,6 @@ function Footer() {
         <SocialsContainer
           className={router?.pathname === '/about' && 'is_border'}
         >
-          <LogoContainer href="/">
-            <Image
-              src={logo}
-              alt="Atalaso logo"
-              quality={100}
-              unoptimized={true}
-            />
-          </LogoContainer>
           <div className="socials_icons">
             <a
               href="https://www.instagram.com/atalasohq/"
