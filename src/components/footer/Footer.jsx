@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import {useRouter} from 'next/router'
 import React from 'react'
@@ -7,7 +8,6 @@ import {
   AiFillFacebook,
 } from 'react-icons/ai'
 
-import ImageComponent from '../imageComponent/ImageComponent'
 import {
   FooterSection,
   FooterContainer,
@@ -32,7 +32,12 @@ function Footer() {
           className={router?.pathname === '/about' && 'is_border'}
         >
           <LogoContainer href="/">
-            <ImageComponent src={logo} alt="Atalaso logo" />
+            <Image
+              src={logo}
+              alt="Atalaso logo"
+              quality={100}
+              unoptimized={true}
+            />
           </LogoContainer>
           <div className="socials_icons">
             <a
