@@ -43,15 +43,26 @@ export const LogoContainer = styled(Link)`
   align-items: center;
   justify-content: center;
   /* height: 3rem; */
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
   flex-shrink: 0;
-  min-width: 0px;
   z-index: 10;
 
   img {
     width: 100%;
+    object-fit: cover;
+  }
+
+  .mobile_logo {
+    display: none;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    .mobile_logo {
+      display: block;
+    }
+
+    .desktop_logo {
+      display: none;
+    }
   }
 `
 

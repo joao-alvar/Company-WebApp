@@ -49,21 +49,6 @@ export const SocialsContainer = styled.div`
     margin-left: auto;
   }
 `
-export const LogoContainer = styled(Link)`
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  flex-shrink: 0;
-  min-width: 0px;
-
-  img {
-    width: 100%;
-  }
-`
 
 export const Icon = styled.span`
   font-size: 2.5rem;
