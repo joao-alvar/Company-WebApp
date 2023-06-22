@@ -7,16 +7,19 @@ import {
   AiFillFacebook,
 } from 'react-icons/ai'
 
+import ImageComponent from '../imageComponent/ImageComponent'
 import {
   FooterSection,
   FooterContainer,
   SocialsContainer,
   Icon,
+  LogoContainer,
   FooterNav,
   LinksContainer,
   AllRights,
-  IconArrow,
 } from './FooterElements'
+
+import logo from '/public/images/footer-logo.png'
 
 function Footer() {
   const year = new Date().getFullYear()
@@ -28,19 +31,12 @@ function Footer() {
         <SocialsContainer
           className={router?.pathname === '/about' && 'is_border'}
         >
-          {(router?.pathname === '/privacy-policy') |
-          (router?.pathname === '/terms') ? (
-            <div className="call_to_action">
-              <Link href="/contact">
-                Get in touch <IconArrow />
-              </Link>
-            </div>
-          ) : (
-            ''
-          )}
+          <LogoContainer href="/">
+            <ImageComponent src={logo} alt="Atalaso logo" />
+          </LogoContainer>
           <div className="socials_icons">
             <a
-              href="https://www.instagram.com/_atalaso/"
+              href="https://www.instagram.com/atalasohq/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"

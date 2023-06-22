@@ -41,12 +41,20 @@ export const ContentContainer = styled.div`
 export const LogoContainer = styled(Link)`
   display: flex;
   align-items: center;
+  justify-content: center;
+  /* height: 3rem; */
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
   flex-shrink: 0;
   min-width: 0px;
   z-index: 10;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 `
 
 export const NavItemsWrap = styled.nav`
@@ -56,7 +64,7 @@ export const NavItemsWrap = styled.nav`
   align-items: center;
   /* column-gap: 1rem; */
   transition: 0.2s ease-in-out;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto;
   margin-left: 3.5rem;
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {

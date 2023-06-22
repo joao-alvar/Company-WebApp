@@ -1,17 +1,17 @@
+const title = `Atalaso helps business overcome challenges through technological solutions, focusing on solving problems with an innovative approach, and improving business tech capabilities.`
+
 export default {
-  themeColor: '#B12C28',
-  title: 'Atalaso | Powering your growth',
-  description:
-    'Atalaso transforms your business with our expert software development services. We specialize in creating tailored solutions to meet your unique needs and drive growth',
+  themeColor: '#A92420',
+  title: `Atalaso | Creative software development and marketing solutions`,
+  description: title,
 
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.atalaso.com/',
     siteName: 'Atalaso',
-    title: `Atalaso, empowering your company's growth`,
-    description:
-      'Atalaso transforms your business with our expert software development services. We specialize in creating tailored solutions to meet your unique needs and drive growth',
+    title: `Atalaso, Powering your growth`,
+    description: title,
     images: [
       {
         url: 'https://www.atalaso.com/social/atalaso-share-preview.jpg',

@@ -76,6 +76,10 @@ export const TextWrap = styled.div`
     font-weight: 600;
     margin-top: 0.6em;
     line-height: 2.5rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.xs}) {
+      line-height: 2.2rem;
+    }
   }
 
   a {
