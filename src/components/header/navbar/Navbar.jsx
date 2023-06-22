@@ -47,8 +47,7 @@ const Navbar = () => {
             src={logo}
             alt="Atalaso logo"
             quality={100}
-            className="desktop_logo"
-            // unoptimized={true}
+            unoptimized={true}
           />
         </LogoContainer>
         <ContentContainer>
