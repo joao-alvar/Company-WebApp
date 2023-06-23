@@ -1,5 +1,6 @@
-import Image from 'next/image'
 import {useEffect, useState} from 'react'
+
+import ImageComponent from '@/components/imageComponent/ImageComponent'
 
 import MobileMenu from '../../mobile/menu/MobileMenu'
 import MenuItems, {menuItems} from '../menuItems/MenuItems'
@@ -15,7 +16,6 @@ import {
 } from './NavbarElements'
 
 import logo from '/public/images/logo-atalaso.png'
-import logoMobile from '/public/images/logo-icon-mobile.png'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -44,18 +44,12 @@ const Navbar = () => {
           data-qa="logo"
           onClick={() => setOpen(false)}
         >
-          <Image
+          <ImageComponent
             src={logo}
             alt="Atalaso logo"
+            width={55}
             quality={100}
-            className="desktop_logo"
-            // unoptimized={true}
-          />
-          <Image
-            src={logoMobile}
-            alt="Atalaso logo"
-            quality={100}
-            className="mobile_logo"
+            unoptimized={true}
           />
         </LogoContainer>
         <ContentContainer>

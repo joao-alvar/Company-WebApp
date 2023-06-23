@@ -2,7 +2,7 @@ const title = `Atalaso | Creative software development and marketing solutions`
 const description = `Atalaso helps business overcome challenges through technological solutions, focusing on solving problems with an innovative approach, and improving business tech capabilities.`
 
 export default {
-  themeColor: '#2596BE',
+  themeColor: '#A92420',
   title: title,
   description: description,
 
