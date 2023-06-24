@@ -24,7 +24,7 @@ const ImageComponent = ({
         width={width}
         height={height}
         className={className}
-        quality={100}
+        quality={75}
         priority={priority}
         style={style}
         onLoadingComplete={(image) => (image.style.opacity = 1)}
