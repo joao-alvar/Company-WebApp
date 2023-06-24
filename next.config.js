@@ -8,6 +8,7 @@ const nextConfig = {
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
     NEXT_PUBLIC_USER: process.env.SERVER,
+    NEXT_SHARP_PATH=/tmp/node_modules/sharp,
     NEXT_PUBLIC_PASS: process.env.NEXT_PUBLIC_PASS,
     NEXT_PUBLIC_SITEMAP_URL: process.env.NEXT_PUBLIC_SITEMAP_URL,
   },
