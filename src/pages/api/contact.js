@@ -24,8 +24,8 @@ export default async function verification(req, res) {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.NEXT_PUBLIC_USER,
-      pass: process.env.NEXT_PUBLIC_PASS,
+      user: process.env.USER_KEY,
+      pass: process.env.PASS_KEY,
     },
   })
 
@@ -33,7 +33,7 @@ export default async function verification(req, res) {
   try {
     await transporter.sendMail({
       from: email,
-      to: process.env.NEXT_PUBLIC_USER,
+      to: process.env.USER_KEY,
       subject: `Contact form submission from ${firstName} ${lastName}`,
       html: `<p>You have a new contact form submission</p><br>
       <p><strong>First Name: </strong> ${firstName} </p><br>

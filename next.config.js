@@ -7,9 +7,12 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    NEXT_PUBLIC_USER: process.env.SERVER,
-    NEXT_PUBLIC_PASS: process.env.NEXT_PUBLIC_PASS,
+    USER_KEY: process.env.USER_KEY,
+    PASS_KEY: process.env.PASS_KEY,
     NEXT_PUBLIC_SITEMAP_URL: process.env.NEXT_PUBLIC_SITEMAP_URL,
+  },
+  images: {
+    unoptimized: true,
   },
   webpack: (config) => {
     config.module.rules.push({

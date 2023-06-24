@@ -1,8 +1,8 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 import styled from 'styled-components'
 
-const ImageStyled = styled(Image)`
+const ImageStyled = styled.span`
   transition: opacity 2s;
   opacity: 0;
 `
@@ -26,6 +26,7 @@ const ImageComponent = ({
         className={className}
         quality={75}
         priority={priority}
+        placeholder="blur"
         style={style}
         onLoadingComplete={(image) => (image.style.opacity = 1)}
       />
