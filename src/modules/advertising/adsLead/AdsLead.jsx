@@ -4,7 +4,7 @@ import {Section} from '@/modules/home/hero/HeroElements'
 
 import {Container, Title, Wrapper, ImageWrap, Content} from './AdsLeadElements'
 
-import Image from 'public/images/carpenter-looking.jpeg'
+import Image from 'public/images/carpenter-looking.jpg'
 
 const AdsList = () => {
   return (

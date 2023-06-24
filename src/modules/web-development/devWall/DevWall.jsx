@@ -11,7 +11,7 @@ import {
   Button,
 } from './DevWallElements'
 
-import image from '/public/images/woman-touch-tablet.jpeg'
+import image from '/public/images/woman-touch-tablet.jpg'
 
 const DevWall = () => {
   return (

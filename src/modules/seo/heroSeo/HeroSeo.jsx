@@ -3,7 +3,7 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 import {Section} from '../../home/hero/HeroElements'
 import {Container, Content, ImageWrap} from './HeroSeoElements'
 
-import abstractBackground from 'public/images/celebration.jpeg'
+import abstractBackground from 'public/images/celebration.jpg'
 
 const HeroSeo = () => {
   return (

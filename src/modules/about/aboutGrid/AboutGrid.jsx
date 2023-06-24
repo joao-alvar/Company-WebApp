@@ -12,8 +12,8 @@ import {
   ImageWrap,
 } from './AboutGridElements'
 
-import buildingImage from 'public/images/building-image.jpeg'
-import officeImage from 'public/images/office-walking.jpeg'
+import buildingImage from 'public/images/building-image.jpg'
+import officeImage from 'public/images/office-walking.jpg'
 
 const AboutGrid = () => {
   return (

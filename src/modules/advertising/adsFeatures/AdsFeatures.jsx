@@ -13,7 +13,7 @@ import {
   Icon,
 } from './AdsFeaturesElements'
 
-import Image from '/public/images/couple-with-smartphones.jpeg'
+import Image from '/public/images/couple-with-smartphones.jpg'
 
 const listItems = [
   {

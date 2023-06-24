@@ -10,7 +10,7 @@ import {
   TextWrap,
 } from './ImageBannerElements'
 
-import backgroundImg from '/public/images/busy-sidewalk.jpeg'
+import backgroundImg from '/public/images/busy-sidewalk.jpg'
 
 const LeadBanner = () => {
   return (

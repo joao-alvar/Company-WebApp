@@ -3,7 +3,7 @@ import ImageComponent from '@/components/imageComponent/ImageComponent'
 import {AboutSection} from '../hero/AboutHeroElements'
 import {AboutContainer, Wrapper, Content, ImageWrap} from './MissionElements'
 
-import Image from 'public/images/glass-office-meeting.jpeg'
+import Image from 'public/images/glass-office-meeting.jpg'
 
 const Mission = () => {
   return (

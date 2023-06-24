@@ -5,7 +5,7 @@ import {Section} from '@/modules/home/hero/HeroElements'
 
 import {Container, ImgContainer, Content} from './HeroElements'
 
-import DevelopmentBg from 'public/images/DevelopmentHero.jpeg'
+import DevelopmentBg from 'public/images/DevelopmentHero.jpg'
 
 const Hero = () => {
   return (

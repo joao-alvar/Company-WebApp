@@ -10,7 +10,7 @@ import {
   ImageWrap,
 } from './LeadContactElements'
 
-import Image from 'public/images/home-black-abstract-background.jpeg'
+import Image from 'public/images/home-black-abstract-background.jpg'
 
 const LeadContact = () => {
   return (

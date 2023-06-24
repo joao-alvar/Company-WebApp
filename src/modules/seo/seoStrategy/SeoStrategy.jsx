@@ -4,7 +4,7 @@ import {Section} from '@/modules/home/hero/HeroElements'
 
 import {Container, Content, ImageWrap} from './SeoStrategyElements'
 
-import seoImage from 'public/images/seo-strategy.jpeg'
+import seoImage from 'public/images/seo-strategy.jpg'
 
 const SeoStrategy = () => {
   return (

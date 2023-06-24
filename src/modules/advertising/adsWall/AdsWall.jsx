@@ -12,7 +12,7 @@ import {
   TextWrap,
 } from './AdsWallElements'
 
-import Image from '/public/images/touch-screen-image.jpeg'
+import Image from '/public/images/touch-screen-image.jpg'
 
 const AdsWall = () => {
   return (
