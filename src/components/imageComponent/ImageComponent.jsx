@@ -1,8 +1,8 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 
 import styled from 'styled-components'
 
-const ImageStyled = styled.span`
+const ImageStyled = styled(Image)`
   transition: opacity 2s;
   opacity: 0;
 `

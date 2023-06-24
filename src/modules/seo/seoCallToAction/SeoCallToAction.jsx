@@ -10,7 +10,7 @@ import {
 
 import {Container, Content, Wrapper, ImageWrap} from './SeoCallToActionElements'
 
-import Image from 'public/images/business-laptop-typing.jpeg'
+import Image from 'public/images/business-laptop-typing.jpg'
 
 const SeoCallToAction = () => {
   return (

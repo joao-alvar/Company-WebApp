@@ -15,7 +15,7 @@ import {
   IconArrow,
 } from './CallToActionElements'
 
-import Bg from 'public/images/Planning.jpeg'
+import Bg from 'public/images/Planning.jpg'
 
 const CallToAction = () => {
   return (

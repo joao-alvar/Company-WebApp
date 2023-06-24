@@ -15,9 +15,9 @@ import {
   ImageWrap,
 } from './LeadBenefitsElements'
 
-import image_2 from 'public/images/office-and-computer-image.jpeg'
-import image_1 from 'public/images/two-people-looking-tablet.jpeg'
-import image_3 from 'public/images/typing-in-notebook.jpeg'
+import image_2 from 'public/images/office-and-computer-image.jpg'
+import image_1 from 'public/images/two-people-looking-tablet.jpg'
+import image_3 from 'public/images/typing-in-notebook.jpg'
 
 const leadBenefits = () => {
   return (

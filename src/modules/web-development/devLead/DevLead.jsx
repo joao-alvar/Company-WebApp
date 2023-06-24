@@ -16,9 +16,9 @@ import {
   Button,
 } from './DevLeadElements'
 
-import ImageActive_1 from '/public/images/devices-image.jpeg'
-import ImageActive_3 from '/public/images/landing-templates.jpeg'
-import ImageActive_2 from '/public/images/optimization-image.jpeg'
+import ImageActive_1 from '/public/images/devices-image.jpg'
+import ImageActive_3 from '/public/images/landing-templates.jpg'
+import ImageActive_2 from '/public/images/optimization-image.jpg'
 
 const DevLead = () => {
   const [active, setActive] = useState(0)

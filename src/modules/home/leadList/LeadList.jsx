@@ -16,7 +16,7 @@ import {
 } from './LeadListElements'
 
 import Creativity from 'public/images/Creativity.jpg'
-import Advertising from 'public/images/phone-social-media-reactions-image.jpeg'
+import Advertising from 'public/images/phone-social-media-reactions-image.jpg'
 import Seo from 'public/images/Seo.jpg'
 import WebDevelopment from 'public/images/WebDevelopment.jpg'
 
