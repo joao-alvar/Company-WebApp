@@ -11,7 +11,6 @@ const nextConfig = {
     NEXT_PUBLIC_PASS: process.env.NEXT_PUBLIC_PASS,
     NEXT_PUBLIC_SITEMAP_URL: process.env.NEXT_PUBLIC_SITEMAP_URL,
   },
-  target: 'serverless',
   module: {
     rules: [
       {
