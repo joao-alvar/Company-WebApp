@@ -7,7 +7,7 @@ const nextConfig = {
   },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
-    USER_KEY: process.env.USER_KEY,
+    USER_KEY: process.env.SERVER,
     PASS_KEY: process.env.PASS_KEY,
     NEXT_PUBLIC_SITEMAP_URL: process.env.NEXT_PUBLIC_SITEMAP_URL,
   },
