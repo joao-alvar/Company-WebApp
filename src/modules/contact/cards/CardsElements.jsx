@@ -35,7 +35,7 @@ export const List = styled.li`
   color: ${({theme}) => theme.colors.black};
 
   p {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
     font-family: var(--font-heading);
     font-weight: 500;
     line-height: 2.5rem;
