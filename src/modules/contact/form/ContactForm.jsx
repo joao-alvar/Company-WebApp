@@ -73,7 +73,6 @@ const ContactForm = () => {
 
     try {
       const response = await axios(config)
-      console.log(response)
       if (response.status == 200) {
         reset()
         goToTop()

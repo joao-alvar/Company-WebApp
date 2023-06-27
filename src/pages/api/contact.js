@@ -50,10 +50,7 @@ export default async function verification(req, res) {
       <p><strong>Email policy: </strong> ${mailPolicy} </p><br>
       `,
     })
-
-    console.log('Message Sent')
   } catch (err) {
-    console.log(err)
     res.status(400).json(req.body)
   }
   res.status(200).json(req.body)
