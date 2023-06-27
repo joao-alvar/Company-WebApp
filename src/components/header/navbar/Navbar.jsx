@@ -47,7 +47,7 @@ const Navbar = () => {
           <ImageComponent
             src={logo}
             alt="Atalaso logo"
-            width={55}
+            width={40}
             quality={100}
             unoptimized={true}
           />
