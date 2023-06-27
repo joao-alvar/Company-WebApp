@@ -47,6 +47,20 @@ export const LogoContainer = styled(Link)`
   flex-shrink: 0;
   min-width: 0px;
   z-index: 10;
+
+  .mobile {
+    display: none;
+  }
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
+    }
+  }
 `
 
 export const NavItemsWrap = styled.nav`
@@ -54,7 +68,6 @@ export const NavItemsWrap = styled.nav`
   width: 100%;
   -moz-box-align: center;
   align-items: center;
-  /* column-gap: 1rem; */
   transition: 0.2s ease-in-out;
   grid-template-columns: 1fr auto;
   margin-left: 3.5rem;

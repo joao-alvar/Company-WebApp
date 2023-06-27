@@ -19,6 +19,7 @@ import {
 import ImageActive_1 from '/public/images/devices-image.jpg'
 import ImageActive_3 from '/public/images/landing-templates.jpg'
 import ImageActive_2 from '/public/images/optimization-image.jpg'
+import ImageActive_3_mobile from '/public/images/website-template.jpg'
 
 const DevLead = () => {
   const [active, setActive] = useState(0)
@@ -119,7 +120,13 @@ const DevLead = () => {
               <ImageComponent
                 src={ImageActive_3}
                 height={300}
+                className="desktop"
                 alt="Four land-pages design templates with creative illustrations"
+              />
+              <ImageComponent
+                src={ImageActive_3_mobile}
+                className="mobile"
+                alt="Vector illustration featuring a girl checking a floating list while sitting in front of a laptop"
               />
             </ImageWrap>
             <TextContent>

@@ -142,6 +142,10 @@ export const ImageWrap = styled.div`
     border-radius: 1pc;
   }
 
+  .mobile {
+    display: none;
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     width: 100%;
 
@@ -149,6 +153,15 @@ export const ImageWrap = styled.div`
       margin: 0 auto;
       width: 100%;
       object-fit: cover;
+    }
+
+    .mobile {
+      display: block;
+      height: 100%;
+    }
+
+    .desktop {
+      display: none;
     }
   }
 `
