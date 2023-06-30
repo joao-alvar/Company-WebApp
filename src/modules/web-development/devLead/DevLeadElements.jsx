@@ -152,12 +152,12 @@ export const ImageWrap = styled.div`
     img {
       margin: 0 auto;
       width: 100%;
+      height: 100%;
       object-fit: cover;
     }
 
     .mobile {
       display: block;
-      height: 100%;
     }
 
     .desktop {
