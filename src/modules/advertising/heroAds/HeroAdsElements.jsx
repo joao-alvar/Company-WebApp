@@ -90,6 +90,11 @@ export const SecondButton = styled(ButtonSecondary)`
   @media screen and (max-width: 768px) {
     margin-left: 0;
     width: 100%;
+    border: 2px solid ${({theme}) => theme.colors.black};
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 `
 

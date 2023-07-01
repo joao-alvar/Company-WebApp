@@ -32,12 +32,11 @@ export const ButtonSecondary = styled(Link)`
   background: transparent;
   color: ${({theme}) => theme.colors.black};
   font-weight: 600;
-  border: 2px solid ${({theme}) => theme.colors.black};
   padding: 0.5rem 1.2rem;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    box-shadow: inset 0 0 0 0.8px ${({theme}) => theme.colors.black};
+    text-decoration: underline;
   }
 
   @media screen and (max-width: 768px) {

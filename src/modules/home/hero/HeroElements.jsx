@@ -106,6 +106,11 @@ export const LinkWrap = styled.div`
     a,
     .secondary_button {
       width: 100%;
+      border: 2px solid ${({theme}) => theme.colors.black};
+
+      &:hover {
+        text-decoration: none;
+      }
     }
   }
 
