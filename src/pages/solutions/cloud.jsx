@@ -7,11 +7,11 @@ import CloudFeatures from '@/modules/cloud/cloudFeatures/CloudFeatures'
 import CloudGrid from '@/modules/cloud/cloudGrid/CloudGrid'
 import HeroCloud from '@/modules/cloud/heroCloud/HeroCloud'
 
-const seo = () => {
-  const titleTag = `SEO solutions | Enhance your SEO Performance with Effective Strategies | Atalaso`
-  const descriptionTag = `Atalaso improves your website's search engine rankings and visibility with proven SEO strategies. Our expert team will help you optimize your site, increase organic traffic, and achieve higher conversions.`
+const cloud = () => {
+  const titleTag = `Cloud services & solutions | Drive agility and innovation for seamless adaptation | Atalaso`
+  const descriptionTag = `Atalaso accelerates your business growth with scalable and customized cloud services and solutions. Power your digital transformation journey, efficiently embrace innovation.`
   const keywordsTag =
-    'Atalaso SEO strategies, search engine optimization, organic traffic, higher rankings, website visibility, conversion optimization'
+    'Atalaso cloud services, cloud solutions, what are cloud services, Cloud security, Cloud storage, Scalable cloud, Cloud-based applications, cloud consulting, types of cloud services, cloud capabilities'
   return (
     <>
       <NextSeo
@@ -36,4 +36,4 @@ const seo = () => {
   )
 }
 
-export default seo
+export default cloud
