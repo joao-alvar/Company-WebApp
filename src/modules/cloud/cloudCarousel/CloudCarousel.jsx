@@ -20,7 +20,7 @@ const imageThreeAlt =
   'The blurry lights of city traffic. Budapest, Hungary. Evening illumination of the building'
 
 const items = [
-  <div className="item" data-value="1">
+  <div className="item" data-value="1" key="1">
     <Content>
       <h2>Driving results that matter</h2>
       <p>
@@ -33,7 +33,7 @@ const items = [
       <ImageComponent src={ImageOne} alt={imageOneAlt} draggable={false} />
     </ImageWrap>
   </div>,
-  <div className="item" data-value="2">
+  <div className="item" data-value="2" key="2">
     <Content>
       <h2>Continuous monitoring and optimization</h2>
       <p>
@@ -46,7 +46,7 @@ const items = [
       <ImageComponent src={ImageTwo} alt={imageTwoAlt} draggable={false} />
     </ImageWrap>
   </div>,
-  <div className="item" data-value="3">
+  <div className="item" data-value="3" key="3">
     <Content>
       <h2>Audience targeting options</h2>
       <p>
@@ -71,6 +71,7 @@ const CloudCarousel = () => {
             disableButtonsControls
             infinite
             items={items}
+            key={items}
             mouseTracking
             keyboardNavigation={true}
           />
