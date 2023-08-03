@@ -8,7 +8,7 @@ import CloudGrid from '@/modules/cloud/cloudGrid/CloudGrid'
 import HeroCloud from '@/modules/cloud/heroCloud/HeroCloud'
 
 const cloud = () => {
-  const titleTag = `Cloud services & solutions | Drive agility and innovation for seamless adaptation | Atalaso`
+  const titleTag = `Cloud services & solutions | Atalaso`
   const descriptionTag = `Atalaso accelerates your business growth with scalable and customized cloud services and solutions. Power your digital transformation journey, efficiently embrace innovation.`
   const keywordsTag =
     'Atalaso cloud services, cloud solutions, what are cloud services, Cloud security, Cloud storage, Scalable cloud, Cloud-based applications, cloud consulting, types of cloud services, cloud capabilities'
