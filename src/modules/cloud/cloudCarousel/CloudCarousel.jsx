@@ -11,10 +11,10 @@ import ImageOne from 'public/images/smiling-man-laptop.jpg'
 import ImageTwo from 'public/images/smiling-woman.jpg'
 
 const imageOneAlt =
-  'Happy young creative entrepreneur laughing smiling writes in a notebook next to laptop in a modern workspace office at home'
+  'A smiling businessman sitting down, writing in a notebook, and looking at a laptop in the office'
 
 const imageTwoAlt =
-  'Portrait of smiling business woman sitting enjoy the idea with tablet and laptop at office.'
+  'A smiling businesswoman sits and enjoys the idea with a tablet and laptop at her office'
 
 const imageThreeAlt =
   'The blurry lights of city traffic. Budapest, Hungary. Evening illumination of the building'
@@ -22,11 +22,13 @@ const imageThreeAlt =
 const items = [
   <div className="item" data-value="1" key="1">
     <Content>
-      <h2>Driving results that matter</h2>
+      <h2>Enhancing data accessibility and insights</h2>
       <p>
-        The sky is full of satellites…but how to harness the data? e-GEOS’
-        solution is an AI-powered product that makes geoinformation data
-        accessible through a simple user interface.
+        Data is the lifeblood of businesses today. Cloud integration empowers
+        organizations to access and share data easily across departments,
+        locations, and stakeholders. This increased accessibility of data fuels
+        data-driven decision-making, enabling leaders to gain valuable insights
+        and respond quickly to market trends and customer needs.
       </p>
     </Content>
     <ImageWrap>
@@ -35,11 +37,14 @@ const items = [
   </div>,
   <div className="item" data-value="2" key="2">
     <Content>
-      <h2>Continuous monitoring and optimization</h2>
+      <h2>Seamless customer experience</h2>
       <p>
-        Coral reefs, like rainforests, are severely threatened by climate change
-        and pollution. But a new cloud-based AI tool is revolutionizing marine
-        conservation around the world..
+        For businesses, providing a seamless customer experience is critical.
+        Cloud integration allows companies to consolidate customer data from
+        multiple sources, leading to a comprehensive understanding of customer
+        preferences and behaviors. Armed with this knowledge, companies can
+        deliver personalized and targeted experiences, promoting customer
+        loyalty and satisfaction.
       </p>
     </Content>
     <ImageWrap>
@@ -48,11 +53,13 @@ const items = [
   </div>,
   <div className="item" data-value="3" key="3">
     <Content>
-      <h2>Audience targeting options</h2>
+      <h2>Unifying disparate systems</h2>
       <p>
-        We bring mythical creatures and surreal surroundings to life for
-        Netflix, through visual effects (VFX) that suspend disbelief and empower
-        imagination.
+        The modern business ecosystem relies on a diverse range of applications,
+        databases, and software systems. Cloud integration acts as a unifying
+        force, bridging the gaps between these disparate systems, integrating
+        cloud-based solutions with on-premises and third-party applications,
+        companies achieve a cohesive and streamlined operating landscape.
       </p>
     </Content>
     <ImageWrap>
@@ -67,7 +74,7 @@ const CloudCarousel = () => {
         <>
           <AliceCarousel
             autoPlay
-            autoPlayInterval={3500}
+            autoPlayInterval={5000}
             disableButtonsControls
             infinite
             items={items}

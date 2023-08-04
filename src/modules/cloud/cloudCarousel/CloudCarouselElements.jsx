@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-shrink: 0;
   width: 100%;
   height: auto;
-  /* min-height: 43rem; */
   padding-top: 6pc;
   padding-bottom: 3.5pc;
   line-height: initial;
@@ -27,7 +26,6 @@ export const Container = styled.div`
   }
 
   .alice-carousel__dots-item {
-    /* background-color: #bec2c8; */
     background-color: #5e636e;
     border-radius: 0;
     width: 20px;
@@ -57,12 +55,13 @@ export const Content = styled.div`
   h2 {
     font-family: var(--font-heading);
     font-weight: 600;
-    font-size: 4.2rem;
+    font-size: 3.5rem;
     margin-bottom: 0.4em;
 
     @media only screen and (max-width: 768px) {
       font-size: 4rem;
     }
+
     @media only screen and (max-width: 550px) {
       font-size: 3.2rem;
     }

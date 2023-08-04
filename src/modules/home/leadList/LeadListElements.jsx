@@ -93,6 +93,8 @@ export const Content = styled.div`
   font-weight: 600;
   padding: 1rem;
   padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
 
   &.white_color {
     color: ${({theme}) => theme.colors.white};
@@ -173,6 +175,8 @@ export const Button = styled.span`
   align-items: center;
   width: max-content;
   font-size: 1.6rem;
+  margin-top: auto;
+  margin-bottom: 0.5rem;
   color: ${({theme}) => theme.colors.link};
 
   &:hover {

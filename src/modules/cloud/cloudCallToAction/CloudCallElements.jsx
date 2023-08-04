@@ -37,7 +37,7 @@ export const Card = styled.div`
     height: auto;
   }
 
-  @media screen and (max-width: 762px) {
+  @media screen and (max-width: 800px) {
     flex-direction: column;
     padding: 0;
   }
@@ -52,26 +52,38 @@ export const TextContent = styled.div`
   height: 100%;
   border-left: 3px solid #000;
 
-  @media screen and (max-width: 762px) {
+  @media screen and (max-width: 800px) {
     margin: 0;
     padding-top: 2rem;
     padding-bottom: 1.3rem;
   }
+
+  h2 {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+
+    @media screen and (max-width: ${({theme}) => theme.size.sm}) {
+      font-size: 1.3rem;
+    }
+  }
 `
 
 export const Title = styled.header`
-  h2 {
-    font-size: 3em;
+  h3 {
+    font-size: 2.4em;
     font-family: var(--font-heading);
-    font-weight: 600;
+    font-weight: 500;
     color: ${({theme}) => theme.colors.black};
 
-    @media screen and (max-width: 470px) {
-      font-size: 2.5rem;
+    @media screen and (max-width: ${({theme}) => theme.size.md}) {
+      font-size: 2.3rem;
     }
 
     @media screen and (max-width: 335px) {
-      font-size: 2.3rem;
+      font-size: 2.1rem;
     }
   }
 `
@@ -121,7 +133,7 @@ export const ImageWrap = styled.div`
     flex: none;
   }
 
-  @media screen and (max-width: 762px) {
+  @media screen and (max-width: 800px) {
     width: 100%;
     height: auto;
   }

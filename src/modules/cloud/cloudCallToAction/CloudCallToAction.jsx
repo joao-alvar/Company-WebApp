@@ -23,12 +23,16 @@ const LeadContact = () => {
             <ImageWrap>
               <ImageComponent
                 src={Image}
-                alt="Happy business woman smiling, wearing headphones sitting listening to music in a relaxed manner at the office."
+                alt="A happy businesswoman is smiling, wearing headphones, sitting, and listening to music in a relaxed manner at the office."
               />
             </ImageWrap>
             <TextContent>
+              <h2>Grow with cloud</h2>
               <Title>
-                <h2>Let&apos;s make something extraordinary together</h2>
+                <h3>
+                  A full range of services and solutions to help you adopt the
+                  Cloud and start growing!
+                </h3>
               </Title>
               <Button href="/contact" data-clog-click>
                 Start Now <IconArrow />

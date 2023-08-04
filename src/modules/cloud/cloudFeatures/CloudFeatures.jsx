@@ -19,30 +19,26 @@ import SecurityIcon from 'public/images/icons/security-icon.png'
 
 const gridContent = [
   {
-    title: 'Keyword optimization and research',
-    paragraph:
-      'To identify relevant and high-performing keywords  for your ads. Continuously monitor and refine your keyword list based on performance metrics and user search behavior.',
+    title: 'Scalability',
+    paragraph: `Cloud services provide seamless scalability, allowing businesses to swiftly adjust resources based on demand. This flexibility ensures optimal performance during peak times and avoids unnecessary over provisioning.`,
     image: BlockIcon,
-    alt: 'Icon of three geometrical stacked boxes with three arrows facing opposite directions',
+    alt: 'Icon of three stacked cubes with three arrows facing opposite directions',
   },
   {
-    title: 'Continuous monitoring and optimization',
-    paragraph:
-      'Regularly review campaign performance, monitor key metrics, and make data-driven optimizations. Test new strategies, adjust bidding strategies, and refine targeting parameters to continually improve your PPC advertising efforts.',
+    title: 'Business continuity',
+    paragraph: ` Cloud-based disaster recovery solutions minimize downtime during unexpected incidents, ensuring continuous operations and data resilience.`,
     image: ImprovementIcon,
     alt: 'Icon of a cog wheel with three rotation arrows and checklists representing continuous improvement',
   },
   {
-    title: 'Audience targeting options',
-    paragraph:
-      'Utilize audience targeting options to reach your desired customer segments. Segment your audience based on demographics, interests, and behavior to deliver tailored ads and maximize relevance.',
+    title: 'Cost-efficient',
+    paragraph: `Cloud migration eliminates the need for upfront hardware investments and reduces operational expenses. Organizations pay only for the resources they use, optimizing costs and improving budget allocation.`,
     image: SavingIcon,
     alt: 'Icon of a hand holding a flying coin',
   },
   {
-    title: 'Conversion tracking and measurement',
-    paragraph:
-      'Implement conversion tracking to measure the effectiveness of your PPC campaigns. Track key metrics such as conversions, cost per acquisition, and return on ad spend (ROAS) to optimize your bidding and budgeting strategies.',
+    title: 'Cloud security',
+    paragraph: `By implementing robust security measures, organizations can confidently leverage the cloud's benefits. A well-designed cloud security framework ensures data privacy, regulatory compliance, and protection against evolving cyber threats, enabling businesses to navigate the digital landscape with confidence.`,
     image: SecurityIcon,
     alt: 'Icon of a server with a security shield in front',
   },
@@ -55,7 +51,7 @@ const CloudFeatures = () => {
         <Content>
           <TitleWrap>
             <h2>
-              Some <span>of our approaches</span>
+              Some <span>key benefits of cloud</span>
             </h2>
           </TitleWrap>
           <GridContainer>

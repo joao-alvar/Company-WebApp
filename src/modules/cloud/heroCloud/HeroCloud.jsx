@@ -20,7 +20,7 @@ const HeroCloud = () => {
           <ImageWrap>
             <ImageComponent
               src={heroImage}
-              alt="Focused business woman sitting at home office holds financial documents, working on laptop"
+              alt="A focused businesswoman sitting in her home office holds financial documents smiles while working on her laptop."
               priority={true}
             />
           </ImageWrap>
