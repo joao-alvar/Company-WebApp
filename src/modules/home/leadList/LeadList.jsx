@@ -37,7 +37,7 @@ const LeadList = () => {
                 />
               </ImageWrap>
               <Content>
-                <h3>Innovative center</h3>
+                <h3>innovative center</h3>
                 <h2>Innovation amplified.</h2>
                 <p>
                   Driving breakthroughs and transforming industries with bold
