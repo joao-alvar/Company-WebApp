@@ -18,34 +18,30 @@ import ImageThree from 'public/images/team-worker cooperate.jpg'
 
 const gridContent = [
   {
-    pretitle: 'Keyword optimization',
-    title: 'Keyword optimization and research',
-    paragraph:
-      'To identify relevant and high-performing keywords  for your ads. Continuously monitor and refine your keyword list based on performance metrics and user search behavior.',
+    pretitle: 'Business innovation unleashed',
+    title: 'IT infrastructure lays the foundation for innovation',
+    paragraph: `With cloud-based solutions, your teams can experiment, iterate, and deploy new ideas faster than ever before. The cloud's flexible nature allows for quick prototyping and testing, empowering you to bring revolutionary products and services to market at unprecedented speed.`,
     image: ImageOne,
-    alt: 'Two colleagues a man and a woman, using a laptop together at an office desk',
+    alt: 'Two colleagues, a man and a woman, are using a laptop together at an office desk.',
   },
   {
-    pretitle: 'Keyword',
-    title: 'Continuous monitoring and optimization',
-    paragraph:
-      'Regularly review campaign performance, monitor key metrics, and make data-driven optimizations. Test new strategies, adjust bidding strategies, and refine targeting parameters to continually improve your PPC advertising efforts.',
+    pretitle: 'Scalability powers your growth',
+    title: 'Scale your IT operations with a cloud infrastructure',
+    paragraph: `Your business can effortlessly expand as your success soars, scale your resources up or down with ease, ensuring that your IT infrastructure never becomes a hindrance to your ambitions.`,
     image: ImageTwo,
-    alt: 'Two employees discussing cooperation planning having conversation and productive work',
+    alt: 'IT professional checking data center hardware equipment',
   },
   {
-    pretitle: 'Keyword',
-    title: 'Audience targeting options',
-    paragraph:
-      'Utilize audience targeting options to reach your desired customer segments. Segment your audience based on demographics, interests, and behavior to deliver tailored ads and maximize relevance.',
+    pretitle: 'Strategic advantage',
+    title: 'In an ever-changing world, agility is a non-negotiable advantage',
+    paragraph: `Traditional on-premises infrastructures can impede adaptability and scalability, but cloud solutions free your business from rigid hardware constraints. With the agility of the cloud, you'll find your organization seamlessly adjusts to market changes, customer demands, and unforeseen challenges.`,
     image: ImageThree,
     alt: 'Two industry engineers operate heavy control machine with computer laptop to help operational problem analysis.',
   },
   {
-    pretitle: 'Keyword',
-    title: 'Conversion tracking and measurement',
-    paragraph:
-      'Implement conversion tracking to measure the effectiveness of your PPC campaigns. Track key metrics such as conversions, cost per acquisition, and return on ad spend (ROAS) to optimize your bidding and budgeting strategies.',
+    pretitle: 'Cloud migration',
+    title: 'Transition your operations to the cloud with ease',
+    paragraph: `With our meticulous cloud migration planning, we follow all implementation guidelines based on methodologies and best practices to expedite your migration to the cloud safely, with the support of specialized professionals with extensive experience in the cloud migration process.`,
     image: ImageFour,
     alt: 'Colorful light exposure in a tunnel.',
   },
@@ -57,7 +53,7 @@ const CloudGrid = () => {
       <Container>
         <TitleWrap>
           <h2 className="desktop">
-            An essential component for digital transformation
+            Adopting the cloud to help solve challenges
           </h2>
           <h2 className="mobile">Thrive for transformation</h2>
         </TitleWrap>

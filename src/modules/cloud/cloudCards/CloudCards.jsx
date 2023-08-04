@@ -10,19 +10,19 @@ import {
 
 const gridContent = [
   {
-    title: 'Network',
-    subtitle: '1/4',
-    paragraph: 'To identify relevant and high-performing.',
+    title: 'Cost savings',
+    subtitle: '30%',
+    paragraph: 'Reduction in IT infrastructure costs.',
   },
   {
-    title: 'Continuous',
-    subtitle: '>3X',
-    paragraph: 'Regularly review campaign performance.',
+    title: 'Data analytics and insights',
+    subtitle: '52%',
+    paragraph: 'Better data analytics capabilities.',
   },
   {
-    title: 'Audience',
-    subtitle: '20X',
-    paragraph: 'Utilize audience targeting options.',
+    title: 'Enhanced security',
+    subtitle: '94%',
+    paragraph: 'Of businesses improved security.',
   },
 ]
 
@@ -32,17 +32,15 @@ const CloudCards = () => {
       <Container>
         <TitleWrap>
           <h2 className="desktop">
-            An essential component for digital transformation
+            IT infrastructure at a fraction of the cost
           </h2>
           <h2 className="mobile">Thrive for transformation</h2>
           <p>
-            Save money without inflexible up-front commitments. In contrast to
-            others, OCI has the same low price in all cloud regions, including
-            government and dedicated regions. We offer innovative features, such
-            as flexible compute, auto-tuning storage, up to 10X lower data
-            egress fees, and free tools and reports to help eliminate needless
-            overpayment and billing surprises. Committed use discounts, software
-            license portability, and loyalty rewards are also available.
+            Cloud migration enables businesses to leverage cutting-edge
+            technology, achieve cost efficiencies, and become more agile in
+            today&apos;s dynamic market landscape. By embracing cloud solutions,
+            organizations can transform their operations, improve security, and
+            drive innovation to remain ahead of the competition.
           </p>
         </TitleWrap>
         <Content>
