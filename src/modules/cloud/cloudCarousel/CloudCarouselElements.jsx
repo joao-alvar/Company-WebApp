@@ -31,6 +31,10 @@ export const Container = styled.div`
     width: 20px;
     height: 5px;
 
+    &:hover {
+      background-color: #8f96a3;
+    }
+
     &.__active {
       background-color: ${({theme}) => theme.colors.white};
     }
