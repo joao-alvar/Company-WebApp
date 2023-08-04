@@ -1,6 +1,6 @@
 {
   "name": "front-end",
-  "packageManager": "yarn@3.3.1",
+  "packageManager": "yarn@3.6.1",
   "version": "0.1.0",
   "private": true,
   "scripts": {
