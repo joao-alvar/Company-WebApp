@@ -324,24 +324,12 @@ const ContactForm = () => {
                             id="webDevelopment"
                             type="checkbox"
                             name="web-development"
-                            placeholder="Web development"
+                            placeholder="Web Development"
                             {...register('web_development', {})}
                           />
                           <label htmlFor="webDevelopment">
-                            Web development
+                            Web Development
                           </label>
-                        </Checkbox>
-                      </li>
-                      <li>
-                        <Checkbox>
-                          <input
-                            id="cloudServices"
-                            type="checkbox"
-                            name="cloud-services"
-                            placeholder="Cloud services"
-                            {...register('cloud_services', {})}
-                          />
-                          <label htmlFor="cloudServices">Cloud services</label>
                         </Checkbox>
                       </li>
                       <li>
@@ -350,10 +338,10 @@ const ContactForm = () => {
                             id="paidSearch"
                             type="checkbox"
                             name="paid-search"
-                            placeholder="Paid search"
+                            placeholder="Paid Search"
                             {...register('paid_search', {})}
                           />
-                          <label htmlFor="paidSearch">Paid search</label>
+                          <label htmlFor="paidSearch">Paid Search</label>
                         </Checkbox>
                       </li>
                       <li>
