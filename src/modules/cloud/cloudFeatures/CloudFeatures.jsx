@@ -50,9 +50,7 @@ const CloudFeatures = () => {
       <Container>
         <Content>
           <TitleWrap>
-            <h2>
-              Some <span>key benefits of cloud</span>
-            </h2>
+            <h2>Some key benefits of cloud</h2>
           </TitleWrap>
           <GridContainer>
             <>

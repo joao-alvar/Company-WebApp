@@ -102,6 +102,7 @@ export const Content = styled.div`
     h3 {
       font-weight: 500;
       font-size: 1.35rem;
+
       @media screen and (max-width: ${({theme}) => theme.size.sm}) {
         font-size: 1.25rem;
       }
@@ -176,7 +177,6 @@ export const Button = styled.span`
   width: max-content;
   font-size: 1.6rem;
   margin-top: auto;
-  margin-bottom: 0.5rem;
   color: ${({theme}) => theme.colors.link};
 
   &:hover {

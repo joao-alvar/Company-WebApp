@@ -30,18 +30,8 @@ export const TitleWrap = styled.div`
     padding-left: 1.3rem;
     border-left: 3px solid #000000;
 
-    &.mobile {
-      display: none;
-    }
-
     @media screen and (max-width: 430px) {
-      &.desktop {
-        display: none;
-      }
-
-      &.mobile {
-        display: block;
-      }
+      font-size: 2.4rem;
     }
   }
 

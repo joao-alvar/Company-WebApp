@@ -31,10 +31,7 @@ const CloudCards = () => {
     <Section>
       <Container>
         <TitleWrap>
-          <h2 className="desktop">
-            IT infrastructure at a fraction of the cost
-          </h2>
-          <h2 className="mobile">Thrive for transformation</h2>
+          <h2>IT infrastructure at a fraction of the cost</h2>
           <p>
             Cloud migration enables businesses to leverage cutting-edge
             technology, achieve cost efficiencies, and become more agile in

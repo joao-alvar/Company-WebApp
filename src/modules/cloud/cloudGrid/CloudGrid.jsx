@@ -52,10 +52,7 @@ const CloudGrid = () => {
     <Section>
       <Container>
         <TitleWrap>
-          <h2 className="desktop">
-            Adopting the cloud to help solve challenges
-          </h2>
-          <h2 className="mobile">Thrive for transformation</h2>
+          <h2>Adopting the cloud to help solve challenges</h2>
         </TitleWrap>
         <Content>
           <GridContainer>

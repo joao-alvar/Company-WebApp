@@ -38,18 +38,8 @@ export const TitleWrap = styled.div`
       font-size: 2.3rem;
     }
 
-    &.mobile {
-      display: none;
-    }
-
     @media screen and (max-width: 430px) {
-      &.desktop {
-        display: none;
-      }
-
-      &.mobile {
-        display: block;
-      }
+      font-size: 2.4rem;
     }
   }
 `
