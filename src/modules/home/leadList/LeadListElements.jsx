@@ -141,6 +141,10 @@ export const Content = styled.div`
   @media screen and (max-width: 1054px) {
     height: auto;
   }
+
+  @media screen and (max-width: 450px) {
+    height: 70%;
+  }
 `
 
 export const ListWrap = styled.div`

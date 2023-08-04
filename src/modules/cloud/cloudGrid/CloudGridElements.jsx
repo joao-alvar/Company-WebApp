@@ -14,6 +14,11 @@ export const Container = styled.div`
   line-height: initial;
   padding-top: 6pc;
   padding-bottom: 3pc;
+
+  @media screen and (max-width: ${({theme}) => theme.size.md}) {
+    padding-top: 2pc;
+    padding-bottom: 0;
+  }
 `
 export const TitleWrap = styled.div`
   width: 100%;
