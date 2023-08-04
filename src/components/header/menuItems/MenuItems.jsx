@@ -13,10 +13,10 @@ export const menuItems = [
     title: 'Solutions',
     url: '/solutions',
     submenu: [
-      {
-        title: 'Cloud',
-        url: '/solutions/cloud',
-      },
+      // {
+      //   title: 'Paid search',
+      //   url: '/advertising#paid-search',
+      // },
       {
         title: 'SEO',
         url: '/solutions/seo',

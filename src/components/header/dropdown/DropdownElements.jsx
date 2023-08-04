@@ -33,8 +33,7 @@ export const DropdownMenu = styled.ul`
 
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
     display: none;
-    margin-top: 0.5rem;
-    position: relative;
+    margin-top: 2em;
 
     &.show {
       display: block;
