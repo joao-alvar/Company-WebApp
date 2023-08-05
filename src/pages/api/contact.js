@@ -13,6 +13,7 @@ export default async function verification(req, res) {
     country,
     seo,
     paid_search,
+    cloud_services,
     web_development,
     conversion_rate_optimization,
     message,
@@ -43,8 +44,9 @@ export default async function verification(req, res) {
       <p><strong>Phone: </strong> ${phone} </p><br>
       <p><strong>Country: </strong> ${country} </p><br>
       <p><strong>Services Advertising and/or SEO: </strong> ${seo} </p><br>
-      <p><strong>Services Paid Search: </strong> ${paid_search} </p><br>
-      <p><strong>Services Web Development: </strong> ${web_development} </p><br>
+      <p><strong>Services Paid search: </strong> ${paid_search} </p><br>
+      <p><strong>Services Web development: </strong> ${web_development} </p><br>
+      <p><strong>Services cloud services: </strong> ${cloud_services} </p><br>
       <p><strong>Services Conversion rate optimization: </strong> ${conversion_rate_optimization} </p><br>
       <p><strong>Message: </strong> ${message} </p><br>
       <p><strong>Email policy: </strong> ${mailPolicy} </p><br>
