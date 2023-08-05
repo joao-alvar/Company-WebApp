@@ -76,7 +76,6 @@ const CloudCarousel = () => {
             autoPlay
             autoPlayInterval={5000}
             disableButtonsControls
-            infinite
             items={items}
             key={items}
             mouseTracking
