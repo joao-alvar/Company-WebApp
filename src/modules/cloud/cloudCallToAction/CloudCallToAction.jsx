@@ -1,6 +1,6 @@
 import ImageComponent from '@/components/imageComponent/ImageComponent'
 
-import {IconArrow} from '@/modules/web-development/callToAction/CallToActionElements'
+import {IconArrow} from '@/modules/software-development/callToAction/CallToActionElements'
 
 import {AboutSection} from '../../about/hero/AboutHeroElements'
 import {
