@@ -6,7 +6,7 @@ import {Section} from '@/modules/home/hero/HeroElements'
 import {
   Button,
   IconArrow,
-} from '@/modules/web-development/callToAction/CallToActionElements'
+} from '@/modules/software-development/callToAction/CallToActionElements'
 
 import {Container, Content, Wrapper, ImageWrap} from './SeoCallToActionElements'
 
