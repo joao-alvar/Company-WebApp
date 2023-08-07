@@ -10,30 +10,26 @@ import {
 
 export const menuItems = [
   {
-    title: 'Solutions',
-    url: '/solutions',
+    title: 'Services',
+    url: '/Services',
     submenu: [
       {
         title: 'Cloud',
-        url: '/solutions/cloud',
+        url: '/services/cloud',
       },
       {
         title: 'SEO',
-        url: '/solutions/seo',
+        url: '/services/seo',
       },
-      // {
-      //   title: 'Optimization',
-      //   url: '/web-development#optimization',
-      // },
+      {
+        title: 'Software development',
+        url: '/services/software-development',
+      },
     ],
   },
   {
     title: 'Advertising',
     url: '/advertising',
-  },
-  {
-    title: 'Web development',
-    url: '/web-development',
   },
   {
     title: 'Who we are',
