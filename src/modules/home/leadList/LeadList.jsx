@@ -48,7 +48,7 @@ const LeadList = () => {
                 </Button>
               </Content>
             </GridItems>
-            <GridItems href="/web-development">
+            <GridItems href="/services/software-development">
               <ImageWrap>
                 <ImageComponent
                   src={WebDevelopment}
