@@ -36,7 +36,7 @@ const leadBenefits = () => {
                   an organization, fundamentally reshaping the way business is
                   conducted.
                 </p>
-                <Link href="/web-development">
+                <Link href="/services/software-development">
                   Explore <Icon />
                 </Link>
               </TextWrap>
