@@ -1,12 +1,12 @@
 import {NextSeo} from 'next-seo'
 
-import CallToAction from '@/modules/web-development/callToAction/CallToAction'
-import DevCases from '@/modules/web-development/devCases/DevCases'
-import DevFeatures from '@/modules/web-development/devFeatures/DevFeatures'
-import GridSection from '@/modules/web-development/devGrid/Grid'
-import DevLead from '@/modules/web-development/devLead/DevLead'
-import DevWall from '@/modules/web-development/devWall/DevWall'
-import Hero from '@/modules/web-development/hero/Hero'
+import CallToAction from '@/modules/software-development/callToAction/CallToAction'
+import DevCases from '@/modules/software-development/devCases/DevCases'
+import DevFeatures from '@/modules/software-development/devFeatures/DevFeatures'
+import GridSection from '@/modules/software-development/devGrid/Grid'
+import DevLead from '@/modules/software-development/devLead/DevLead'
+import DevWall from '@/modules/software-development/devWall/DevWall'
+import Hero from '@/modules/software-development/hero/Hero'
 
 const solutions = () => {
   const titleTag =

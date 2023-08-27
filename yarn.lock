@@ -2114,6 +2114,7 @@ __metadata:
     nodemailer: ^6.9.1
     prettier: 2.8.7
     react: 18.2.0
+    react-alice-carousel: ^2.7.1
     react-dom: 18.2.0
     react-hook-form: ^7.43.9
     react-icons: ^4.8.0
@@ -3845,6 +3846,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-alice-carousel@npm:^2.7.1":
+  version: 2.7.1
+  resolution: "react-alice-carousel@npm:2.7.1"
+  dependencies:
+    vanilla-swipe: ^2.4.1
+  peerDependencies:
+    react: ">=15.4"
+  checksum: 7d8cbc035a2c889c5de40bc9a35d41ae9ac15ab1070916572a4320ea99e7990c9fde2de30f9c8bcb26dcc19a0cfff321753722b15dd62ef44deda505fcb76a4a
+  languageName: node
+  linkType: hard
+
 "react-dom@npm:18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
@@ -4678,6 +4690,13 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 474acf1146cb2701fe3b074892217553dfcf9a031280919ba1b8d651a068c9b15d863b7303cb15bd00a862b498e6cf4ad7b4a08fb134edd5a6f7641681cb54a2
+  languageName: node
+  linkType: hard
+
+"vanilla-swipe@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "vanilla-swipe@npm:2.4.1"
+  checksum: d054fbf1c6acc705de5780c3e2ec69e5330c58daac188c38f6139623932fad9b42bdd718a1a115895bdf96cf49d447f6b36cda0a487f60d95d9e5f4420ec5e8c
   languageName: node
   linkType: hard
 
