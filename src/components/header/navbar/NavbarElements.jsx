@@ -21,7 +21,6 @@ export const Nav = styled.nav`
   padding-bottom: 0.75rem;
   position: relative;
   -moz-box-pack: justify;
-  justify-content: space-between;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;

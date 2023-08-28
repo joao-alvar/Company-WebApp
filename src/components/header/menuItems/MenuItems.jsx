@@ -21,15 +21,7 @@ export const menuItems = [
         title: 'SEO',
         url: '/services/seo',
       },
-      {
-        title: 'Software development',
-        url: '/services/software-development',
-      },
     ],
-  },
-  {
-    title: 'Advertising',
-    url: '/advertising',
   },
   {
     title: 'Who we are',
