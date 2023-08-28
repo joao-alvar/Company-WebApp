@@ -73,8 +73,6 @@ const CloudCarousel = () => {
       <Container>
         <>
           <AliceCarousel
-            autoPlay
-            autoPlayInterval={5000}
             disableButtonsControls
             items={items}
             key={items}

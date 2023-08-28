@@ -9,6 +9,7 @@ export const GlobalStyles = createGlobalStyle`
   --toastify-color-error: #991212;
   --toastify-text-color-light: #000;
   --color-timeline: #000;
+  --page-padding: 5rem;
 }
 
 /* Box sizing rules */
