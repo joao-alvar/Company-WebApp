@@ -15,8 +15,7 @@ import {
   Header,
 } from './NavbarElements'
 
-import logo from '/public/images/logo-atalaso-horizontal.png'
-import logoMobile from '/public/images/logo-atalaso.png'
+import logoImage from '/public/images/logo-atalaso.png'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -46,20 +45,11 @@ const Navbar = () => {
           onClick={() => setOpen(false)}
         >
           <ImageComponent
-            src={logo}
+            src={logoImage}
             alt="Atalaso logo"
-            width={200}
+            width={180}
             quality={100}
             className="desktop"
-            unoptimized={true}
-          />
-          <ImageComponent
-            src={logoMobile}
-            alt="Atalaso logo"
-            width={42}
-            quality={100}
-            className="mobile"
-            unoptimized={true}
           />
         </LogoContainer>
         <ContentContainer>

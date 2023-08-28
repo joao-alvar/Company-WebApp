@@ -21,7 +21,6 @@ export const Nav = styled.nav`
   padding-bottom: 0.75rem;
   position: relative;
   -moz-box-pack: justify;
-  justify-content: space-between;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -48,17 +47,9 @@ export const LogoContainer = styled(Link)`
   min-width: 0px;
   z-index: 10;
 
-  .mobile {
-    display: none;
-  }
-
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    .mobile {
-      display: block;
-    }
-
-    .desktop {
-      display: none;
+    img {
+      width: 120px;
     }
   }
 `
