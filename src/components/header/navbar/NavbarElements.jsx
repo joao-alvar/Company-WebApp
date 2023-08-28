@@ -47,9 +47,17 @@ export const LogoContainer = styled(Link)`
   min-width: 0px;
   z-index: 10;
 
+  .mobile {
+    display: none;
+  }
+
   @media screen and (max-width: ${({theme}) => theme.size.md}) {
-    img {
-      width: 120px;
+    .mobile {
+      display: block;
+    }
+
+    .desktop {
+      display: none;
     }
   }
 `

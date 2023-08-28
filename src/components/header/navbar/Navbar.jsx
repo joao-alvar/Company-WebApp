@@ -15,6 +15,7 @@ import {
   Header,
 } from './NavbarElements'
 
+import logoMobile from '/public/images/logo-atalaso-mobile.png'
 import logoImage from '/public/images/logo-atalaso.png'
 
 const Navbar = () => {
@@ -50,6 +51,13 @@ const Navbar = () => {
             width={180}
             quality={100}
             className="desktop"
+          />
+          <ImageComponent
+            src={logoMobile}
+            alt="Atalaso logo"
+            width={32}
+            quality={100}
+            className="mobile"
           />
         </LogoContainer>
         <ContentContainer>
